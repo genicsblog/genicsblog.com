@@ -1,0 +1,10 @@
+---
+---
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+    @apply bg-slate-700;
+    /* background-color: #e5f3ff; */
+}

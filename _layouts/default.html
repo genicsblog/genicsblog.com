@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <title>{{ page.title }}</title>
+    {% if jekyll.environment == 'production' %}
+    <!-- change your GA id in _config.yml -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', '{{site.google_analytics}}');
+    </script>
+
+    <!-- Adsense -->
+    <script async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense-data-ad-client }}"
+        crossorigin="anonymous"></script>
+    {% endif %}
+</head>
+
+<body>
+    {{ content }}
+</body>
+
+</html>

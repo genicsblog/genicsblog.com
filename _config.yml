@@ -8,11 +8,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+permalink: /:title
 
 # Build settings
 plugins:
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-minifier
 
 exclude:
   - .sass-cache/
@@ -25,3 +27,13 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - postcss.config.js
+  - tailwind.config.js
+  - package.json
+  - package-lock.json
+
+postcss:
+  cache: false
+
+jekyll-minifier:
+  exclude: ["postcss.config.js", "tailwind.config.js", "assets/css/theme.css"]

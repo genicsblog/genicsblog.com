@@ -5,6 +5,7 @@ gem "jekyll", "~> 4.2.1"
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-postcss"
+  gem "jekyll-minifier"
 end
 
 # Performance-booster for watching directories on Windows
