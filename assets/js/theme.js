@@ -1,7 +1,7 @@
 function toggleNav() {
-    let menuOpen = document.getElementById("menu-open")
-    let menuClose = document.getElementById("menu-close")
-    let mobileNav = document.getElementById("mobile-nav")
+    var menuOpen = document.getElementById("menu-open")
+    var menuClose = document.getElementById("menu-close")
+    var mobileNav = document.getElementById("mobile-nav")
     
     if (menuClose.classList.contains("hidden")) {
         // nav is opened
