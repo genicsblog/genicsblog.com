@@ -10,7 +10,18 @@
 
 body {
     font-family: "Sen", sands-serif;
+}
+
+nav, footer {
     background-color: var(--theme-color);
+}
+
+footer {
+    @apply text-white;
+}
+
+.nav-item {
+    @apply cursor-pointer inline-flex items-center px-1 border-transparent text-base font-medium leading-6 text-white hover:text-slate-400 transition;
 }
 
 article p, pre {
