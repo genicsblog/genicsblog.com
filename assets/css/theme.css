@@ -4,7 +4,24 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+:root {
+    --theme-color: #16161f;
+}
+
 body {
-    @apply bg-slate-700;
-    /* background-color: #e5f3ff; */
+    font-family: "Sen", sands-serif;
+    background-color: var(--theme-color);
+}
+
+article p, pre {
+    @apply mb-6;
+}
+
+.highlighter-rouge {
+    @apply bg-slate-200 py-1 px-1 rounded-md;
+    font-family: "Fira Code", sands-serif;
+}
+
+pre {
+    @apply bg-slate-800 rounded-lg;
 }

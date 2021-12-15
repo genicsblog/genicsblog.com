@@ -1,0 +1,13 @@
+visible: true
+
+# For mobile devices
+small: "We are now open-source!"
+
+# For tablets and higher screen resolution
+large: "We are now open-source!"
+
+link:
+  visible: true
+  text: "Learn more &rarr;"
+  url: "/wait"
+  target: "_self"
