@@ -21,7 +21,15 @@ footer {
 }
 
 .nav-item {
-    @apply cursor-pointer inline-flex items-center px-1 border-transparent text-base font-medium leading-6 text-white hover:text-slate-400 transition;
+    @apply cursor-pointer px-2 font-bold text-white hover:text-slate-300 hover:underline;
+}
+
+.mobile-nav-item {
+    @apply p-2 flex rounded-md hover:bg-gray-700;
+}
+
+.mobile-nav-item span {
+    @apply font-medium text-slate-300 mx-auto;
 }
 
 article p, pre {
