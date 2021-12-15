@@ -32,6 +32,7 @@ exclude:
   - tailwind.config.js
   - package.json
   - package-lock.json
+  - README.md
 
 postcss:
   cache: false

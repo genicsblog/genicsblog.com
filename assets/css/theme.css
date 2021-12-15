@@ -20,6 +20,10 @@ footer {
     @apply text-white;
 }
 
+footer a {
+    @apply underline hover:text-slate-300;
+}
+
 .nav-item {
     @apply cursor-pointer px-2 font-bold text-white hover:text-slate-300 hover:underline;
 }
