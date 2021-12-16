@@ -41,7 +41,7 @@ article p, pre {
 }
 
 .highlighter-rouge {
-    @apply bg-slate-200 py-1 px-1 rounded-md;
+    @apply bg-slate-200 py-0.5 px-2 rounded-md text-sm;
     font-family: "Fira Code", sands-serif;
 }
 

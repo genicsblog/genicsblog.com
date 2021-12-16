@@ -17,6 +17,9 @@ plugins:
   - jekyll-postcss
   - jekyll-minifier
 
+include: 
+  - _pages
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
