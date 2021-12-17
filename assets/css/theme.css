@@ -27,7 +27,7 @@ footer a {
 
 .nav-item:after {
     @apply absolute bg-slate-300 w-[90%] left-[5%] right-[5%] bottom-0 h-0.5 origin-bottom-right;
-    content: '';
+    content: "";
     transform: scaleX(0);
     transition: transform 0.25s ease-out;
 }
