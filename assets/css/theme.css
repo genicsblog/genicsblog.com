@@ -22,7 +22,7 @@ footer a {
 }
 
 .nav-item {
-    @apply inline-block relative cursor-pointer px-2 font-bold text-white hover:text-slate-300;
+    @apply inline-block relative cursor-pointer px-2 font-bold hover:text-slate-300;
 }
 
 .nav-item:after {

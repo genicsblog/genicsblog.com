@@ -16,12 +16,18 @@
         </div>
         <div class="flex items-center h-16">
             <div class="hidden lg:block pr-5">
-                <a class="nav-item" href="/categories">Categories</a>
-                <a class="nav-item" href="/about">About Us</a>
-                <a class="nav-item" href="/contact">Contact</a>
-                <a class="nav-item" href="/advertise">Advertise</a>
-                <a class="nav-item" href="/terms">T&C</a>
-                <a class="nav-item" href="/privacy-policy">Privacy Policy</a>
+                <a class="nav-item {% if page.url contains '/categories' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/categories">Categories</a>
+                <a class="nav-item {% if page.url contains '/about' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/about">About Us</a>
+                <a class="nav-item {% if page.url contains '/contact' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/contact">Contact</a>
+                <a class="nav-item {% if page.url contains '/advertise' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/advertise">Advertise</a>
+                <a class="nav-item {% if page.url contains '/terms' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/terms">T&C</a>
+                <a class="nav-item {% if page.url contains '/privacy-policy' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/privacy-policy">Privacy Policy</a>
             </div>
             <a class="px-2.5 py-1.5 font-bold rounded-md bg-white hover:bg-slate-300 hover:scale-110 transition"
                 href="/contribute">Contribute</a>
