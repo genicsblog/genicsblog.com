@@ -1,0 +1,13 @@
+{% assign announcement = site.data.announcement %}
+{% if announcement.visible and page.url != announcement.link.url %}
+<header class="bg-blue-600 w-screen p-3 text-center text-white">
+    <p class="font-medium flex flex-col sm:block">
+        <span class="md:hidden px-1">{{ site.data.announcement.small }}</span>
+        <span class="hidden md:inline px-1">{{ site.data.announcement.large }}</span>
+        {% if site.data.announcement.link.visible %}
+        <a href="{{ site.data.announcement.link.url }}" target="{{ site.data.announcement.link.target }}"
+            class="font-bold underline">{{ site.data.announcement.link.text}}</a>
+        {% endif %}
+    </p>
+</header>
+{% endif %}

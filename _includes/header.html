@@ -1,14 +1,17 @@
-<section class="bg-background text-white p-10">
+<header class="bg-background text-white p-8 sm:p-10">
     {% if page.layout != 'post' %}
     <div class="sm:text-center">
         {% if page.title %}
-        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">{{ page.title }}</span>
+        <h1 class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">
+            {{ page.title }}
+        </h1>
         {% else %}
-        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">Genics Blog</span>
+        <h1 class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">
+            Genics Blog
+        </h1>
         {% endif %}
         {% if page.excerpt %}
-        {% if page.excerpt == "" %}
-        {% else %}
+        {% if page.excerpt != "" %}
         <p class="mt-4">
             {{ page.excerpt }}
         </p>
@@ -28,4 +31,4 @@
         <div>Hi2</div>
     </div>
     {% endif %}
-</section>
+</header>

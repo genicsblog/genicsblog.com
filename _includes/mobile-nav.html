@@ -1,0 +1,28 @@
+<div class="hidden pb-6 lg:hidden" id="mobile-nav">
+    <div class="py-5 px-4">
+        <div class="grid grid-cols-2 gap-y-2 gap-x-4">
+            <a class="group mobile-nav-item {% if page.url contains '/categories' %}bg-gray-700{% endif %}"
+                href="/categories">
+                <span class="group-hover:text-white">Categories</span>
+            </a>
+            <a class="group mobile-nav-item {% if page.url contains '/advertise' %}bg-gray-700{% endif %}"
+                href="/advertise">
+                <span class="group-hover:text-white">Advertise</span>
+            </a>
+            <a class="group mobile-nav-item {% if page.url contains '/about' %}bg-gray-700{% endif %}" href="/about">
+                <span class="group-hover:text-white">About Us</span>
+            </a>
+            <a class="group mobile-nav-item {% if page.url contains '/privacy-policy' %}bg-gray-700{% endif %}"
+                href="/privacy-policy">
+                <span class="group-hover:text-white">Privacy Policy</span>
+            </a>
+            <a class="group mobile-nav-item {% if page.url contains '/contact' %}bg-gray-700{% endif %}"
+                href="/contact">
+                <span class="group-hover:text-white">Contact Us</span>
+            </a>
+            <a class="group mobile-nav-item {% if page.url contains '/terms' %}bg-gray-700{% endif %}" href="/terms">
+                <span class="group-hover:text-white">Terms & Conditions</span>
+            </a>
+        </div>
+    </div>
+</div>
