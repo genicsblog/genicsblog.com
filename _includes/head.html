@@ -1,0 +1,31 @@
+<section class="bg-background text-white p-10">
+    {% if page.layout != 'post' %}
+    <div class="sm:text-center">
+        {% if page.title %}
+        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">{{ page.title }}</span>
+        {% else %}
+        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">Genics Blog</span>
+        {% endif %}
+        {% if page.excerpt %}
+        {% if page.excerpt == "" %}
+        {% else %}
+        <p class="mt-4">
+            {{ page.excerpt }}
+        </p>
+        {% endif %}
+        {% else %}
+        <p class="mt-4">
+            An
+            <span
+                class="font-black text-lg bg-gradient-to-r from-sky-300 to-blue-500 text-transparent bg-clip-text">open-source
+            </span> developer publication.
+        </p>
+        {% endif %}
+    </div>
+    {%else%}
+    <div class="grid grid-flow-row lg:grid-flow-col">
+        <div>Hi1</div>
+        <div>Hi2</div>
+    </div>
+    {% endif %}
+</section>

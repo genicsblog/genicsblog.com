@@ -55,7 +55,7 @@
                                 <div class="h-12 w-12">
                                     <img src="/assets/images/genicsblog.png" class="h-12 w-12 rounded-full" />
                                 </div>
-                                <span class="font-bold text-xl tracking-tight text-white group-hover:text-slate-300"> Genics Blog</span>
+                                <span class="font-bold hidden sm:block text-xl tracking-tight text-white group-hover:text-slate-300"> Genics Blog</span>
                             </div>
                         </div>
                     </a>
@@ -69,8 +69,8 @@
                         <a class="nav-item" href="/terms">T&C</a>
                         <a class="nav-item" href="/privacy-policy">Privacy Policy</a>
                     </div>
-                    <a class="px-2.5 py-1.5  font-bold rounded-md bg-white hover:bg-slate-300 hover:scale-110 transition"
-                        href="{{ site.github_repo }}" target="_blank">Contribute</a>
+                    <a class="px-2.5 py-1.5 font-bold rounded-md bg-white hover:bg-slate-300 hover:scale-110 transition"
+                        href="/contribute">Contribute</a>
 
                     <div class="ml-4 lg:hidden cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-white hover:stroke-slate-300"
@@ -113,9 +113,8 @@
             </div>
         </div>
     </nav>
-    <div class="banner">
-
-    </div>
+    
+    {% include head.html %}
 
     <main>
         {{ content }}

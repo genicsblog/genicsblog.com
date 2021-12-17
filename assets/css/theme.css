@@ -13,7 +13,7 @@ body {
 }
 
 nav, footer {
-    background-color: var(--theme-color);
+    @apply bg-background;
 }
 
 footer {
