@@ -27,17 +27,17 @@
     </div>
     {%else%}
     <div class="grid grid-flow-row lg:grid-flow-col">
-        <div class="flex justify-center items-center mb-10 lg:mb-0">
+        <div class="flex justify-center items-center lg:mb-0">
             {% if page.image %}
-            <img src="{{ page.image }}" class="w-full max-w-md sm:max-w-lg lg:max-w-lg rounded-xl shadow-xl object-cover" />
+            <img src="{{ page.image }}" class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-xl rounded-xl shadow-xl object-cover m-8" />
             {% endif %}
         </div>
-        <div class="flex flex-col justify-center items-center xl:items-start m-12">
+        <div class="flex flex-col justify-center items-center lg:items-start my-10 mx-2 lg:mx-0 lg:ml-8">
             {% if page.title %}
             <h1 class="text-4xl font-black tracking-tighter">{{page.title}}</h1>
             {% endif %}
             {% if page.excerpt %}
-            <span class="mt-2">{{ page.excerpt }}</span>
+            <span class="mt-2 text-justify">{{ page.excerpt }}</span>
             {% endif %}
         </div>
     </div>
