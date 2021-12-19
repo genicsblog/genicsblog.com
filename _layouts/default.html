@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="/assets/css/theme.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Sen&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?{% if page.layout == 'post' %}family=Fira+Code&{%endif%}family=Sen&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/prism.css" />
 
     <title>{{ page.title }}</title>
 
@@ -49,5 +52,8 @@
 </body>
 
 <script src="/assets/js/theme.js"></script>
+{% if page.layout == 'post' %}
+<script src="/assets/js/prism.js"></script>
+{% endif %}
 
 </html>

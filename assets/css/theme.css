@@ -18,42 +18,62 @@ footer {
 }
 
 footer a {
-    @apply underline hover:text-slate-300;
+    @apply font-bold hover:text-slate-300;
 }
 
-.nav-item {
-    @apply inline-block relative cursor-pointer px-2 font-bold hover:text-slate-300;
+a {
+    @apply inline-block relative;
 }
 
-.nav-item:after {
-    @apply absolute bg-slate-300 w-[90%] left-[5%] right-[5%] bottom-0 h-0.5 origin-bottom-right;
+a:after {
+    @apply absolute bg-slate-300 w-full left-0 right-0 bottom-0 h-0.5 origin-bottom-right;
     content: "";
     transform: scaleX(0);
     transition: transform 0.25s ease-out;
 }
 
-.nav-item:hover:after {
+a:hover:after {
     @apply origin-bottom-left origin-bottom-left;
     transform: scaleX(1);
+}
+
+article p, div.highlight {
+    @apply mb-6;
+}
+
+article a, aside a {
+    @apply text-primary;
+}
+
+article a:after, aside a:after {
+    @apply bg-primary;
+}
+
+p code {
+    @apply bg-slate-200 py-0.5 px-2 rounded-md text-sm;
+    font-family: "Fira Code", sands-serif;
+}
+
+pre {
+    @apply bg-slate-800 rounded-xl text-sm text-[#b5c4f2] p-4;
+}
+
+.nav-item {
+    @apply mx-2 font-bold hover:text-slate-300;
 }
 
 .mobile-nav-item {
     @apply p-2 flex rounded-md hover:bg-gray-700;
 }
 
+.mobile-nav-item:after, .header-anchor:after, .logo-anchor:after, a.button:after {
+    @apply w-0;
+}
+
 .mobile-nav-item span {
     @apply font-medium text-slate-300 mx-auto;
 }
 
-article p, pre {
-    @apply mb-6;
-}
-
-.highlighter-rouge {
-    @apply bg-slate-200 py-0.5 px-2 rounded-md text-sm;
-    font-family: "Fira Code", sands-serif;
-}
-
-pre {
-    @apply bg-slate-800 rounded-lg;
+.lang-name {
+    @apply rounded-sm p-0.5 text-xs px-1 bg-slate-300 text-slate-800 float-right;
 }
