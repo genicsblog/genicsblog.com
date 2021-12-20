@@ -4,6 +4,30 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-black tracking-tight mb-1;
+    }
+    h1 {
+        @apply text-4xl;
+    }
+    h2 {
+        @apply text-3xl;
+    }
+    h3 {
+        @apply text-2xl;
+    }
+    h4 {
+        @apply text-xl;
+    }
+    h5 {
+        @apply text-lg;
+    }
+    h6 {
+        @apply text-base;
+    }
+}
+
 body {
     @apply bg-slate-50;
     font-family: "Sen", sands-serif;
@@ -22,7 +46,7 @@ footer a {
 }
 
 a {
-    @apply inline-block relative;
+    @apply inline-block relative cursor-pointer;
 }
 
 a:after {
@@ -50,7 +74,7 @@ article a:after, aside a:after {
 }
 
 p code {
-    @apply bg-slate-200 py-0.5 px-2 rounded-md text-sm;
+    @apply bg-slate-200 py-0.5 px-1.5 rounded-md text-sm;
     font-family: "Fira Code", sands-serif;
 }
 

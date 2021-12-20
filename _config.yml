@@ -24,8 +24,35 @@ pagination:
   sort_field: 'date'
   sort_reverse: true
 
+autopages:
+  enabled: true
+
+  categories: 
+    layouts: 
+      - 'default.html'
+    title: 'Posts in category :cat'
+    permalink: '/category/:cat'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: true
+
+  collections:
+    enabled: false
+
+  tags:
+    layouts: 
+      - 'default.html'
+    title: 'Posts tagged with :tag'
+    permalink: '/tag/:tag'
+    silent: false
+    slugify:
+      mode: 'default'
+      case: true
+      
 # Build settings
 plugins:
+  - jemoji
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postcss

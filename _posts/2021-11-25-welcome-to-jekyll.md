@@ -8,6 +8,41 @@ categories: android
 author: gouravkhunger
 ---
 
+# QuotesApp
+
+<img alt = "QuotesApp Logo" src="https://raw.githubusercontent.com/GouravKhunger/QuotesApp/main/images/logo.png" height="150px" width="150px" align="right"/>
+
+A beautiful Quotes App where you can read and save quotes.
+
+This repository contains source code of a Quotes app, which helps you stay motivated by providing best picked quotes
+stated by famous personalities. This app uses [zen quotes](https://zenquotes.io) api, for retrieving quotes.
+
+[Download](https://github.com/GouravKhunger/QuotesApp/releases/latest) the latest `apk` file of this project and do provide feedback.
+
+# Introduction
+
+Hi
+
+## Sub-heading
+
+ok
+
+### Even bigger sub heading
+
+omk
+
+#### I see
+
+lol
+
+##### Nice
+
+yeah!
+
+##### final
+
+The final one :)
+
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
 Jekyll requires blog post files to be named according to the following format:
