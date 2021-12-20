@@ -1,8 +1,8 @@
 ---
 ---
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
@@ -100,4 +100,13 @@ pre {
 
 .lang-name {
     @apply rounded-sm p-0.5 text-xs px-1 bg-slate-300 text-slate-800 float-right;
+}
+
+.category-name, .tag-name {
+    @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-125 transition bg-slate-300 text-black;
+    font-family: "Fira Code", monospace;
+}
+
+.android {
+    @apply bg-android; 
 }

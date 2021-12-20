@@ -25,28 +25,54 @@
         </p>
         {% endif %}
     </div>
-    {%else%}
-    <div class="grid grid-flow-row lg:grid-flow-col">
+    {% else %}
+    <div class="grid grid-flow-row lg:grid-flow-col mx-8 lg:mx-14">
         <div class="flex justify-center items-center lg:mb-0">
             {% if page.image %}
             <img src="{{ page.image }}"
-                class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-xl rounded-xl shadow-xl object-cover m-8" />
+                class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl rounded-xl shadow-xl object-cover m-8" />
+            </div>
             {% endif %}
-        </div>
-        <div class="flex flex-col justify-center items-center lg:items-start my-10 mx-2 lg:mx-0 lg:ml-8">
+        <div class="flex flex-col justify-center lg:items-start my-10 lg:mx-0 lg:ml-14">
             {% if page.title %}
-            <h1 class="text-4xl font-black tracking-tighter">{{page.title}}</h1>
+            <h1 class="text-4xl font-black tracking-tighter">{{ page.title }}</h1>
             {% endif %}
             {% if page.excerpt %}
             <span class="mt-0.5 text-justify">{{ page.excerpt }}</span>
             {% endif %}
+            {% if page.author %}
+            <div class="flex items-center mt-8">
+                <img class="rounded-full w-14 h-14" src="{{ site.data.contributors[page.author].image }}" />
+                <div class="ml-4 leading-3">
+                    <a class="font-extrabold text-xl" href="/author/{{ page.author }}">
+                        {{ page.author }}
+                    </a><br />
+                    <span class="text-sm">
+                        Posted on {{ page.date | date:"%B %e, %Y" }}
+                    </span>
+                </div>
+            </div>
+            {% endif %}
+            {% if page.category %}
             <div class="mt-8">
-                <!-- Print categories -->
+                <span>Category: </span>
                 {% for category in page.categories %}
-                <a class="inline-block text-white bg-gradient-to-r {{ category | downcase }} text-transparent bg-clip-text after:bg-blue-400"
-                    href="{{ category.url }}" target="_blank">#{{ category }}</a>
+                <a class="text-sm ml-2 hover:scale-110 category-name {{ category }} button"
+                    href="/category/{{ category }}">#{{ category }}</a>
                 {% endfor %}
             </div>
+            {% endif %}
+            {% assign tagSize = page.tags | size %}
+            {% if tagSize != 0 %}
+            <div class="mt-1">
+                <span>Tags: </span>
+                {% for tag in page.tags %}
+                {% assign tagName = tag | slugify %}
+                <a class="text-sm ml-2 hover:scale-110 tag-name {{ tagName }} button" href="/tag/{{ tagName }}">#{{
+                    tagName }}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
         </div>
     </div>
     {% endif %}

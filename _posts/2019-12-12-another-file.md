@@ -4,7 +4,7 @@ title:  "Another file!"
 excerpt: "A demo post that comes along with the start template jjdsaklfjsadkl ksdjf kasdjf sdaklfj sdlkfj salkfj adklfj sdlkfj saldfk."
 image: "https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&w=1740&q=80"
 languages: ["java", "python"]
-categories: android
+category: android
 author: gouravkhunger
 ---
 

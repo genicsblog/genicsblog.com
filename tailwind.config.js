@@ -8,7 +8,8 @@ module.exports = {
         extend: {
             colors: {
                 'background': '#16161f',
-                'primary': 'rgb(37, 99, 235)'
+                'primary': '#2564eb',
+                'android': '#3ddc84'
             }
         },
     },
