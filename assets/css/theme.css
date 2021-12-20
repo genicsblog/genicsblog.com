@@ -55,7 +55,7 @@ p code {
 }
 
 pre {
-    @apply bg-slate-800 rounded-xl text-sm text-[#b5c4f2] p-4;
+    @apply bg-slate-800 rounded-xl text-sm text-[#b5c4f2] p-4 overflow-x-scroll;
 }
 
 .nav-item {

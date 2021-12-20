@@ -1,10 +1,10 @@
 visible: true
 
 # For mobile devices
-small: "We are now open-source!"
+small: "We are open-source now!"
 
 # For tablets and higher screen resolution
-large: "We are now open-source!"
+large: "We are open-source now!"
 
 link:
   visible: true

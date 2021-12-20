@@ -4,28 +4,26 @@ layout: default
 
 <section class="block lg:flex">
 
-  <article class="bg-white rounded-2xl text-base md:text-lg m-8 md:m-10 lg:m-14 p-6 md:p-8 shadow-xl shadow-slate-200">
+  <article class="bg-white rounded-2xl text-base md:text-lg m-8 md:m-10 lg:m-14 p-6 md:p-8 shadow-xl shadow-slate-200 lg:max-w-[65%] xl:max-w-[70%]">
     {{ content }}
   </article>
 
-  <aside class="m-8 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:min-w-3xl lg:max-w-4xl xl:max-w-4xl">
+  <aside class="m-8 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 w-full lg:min-w-[20%] xl:min-w-[15%]">
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-14">
-      <img class="w-24 h-24 rounded-full mx-auto" src="/assets/images/genicsblog.png" alt="" width="384" height="512">
+      <img class="w-24 h-24 rounded-full mx-auto" src="/assets/images/genicsblog.png" alt="">
       <div class="pt-4 space-y-4">
         <figcaption class="font-medium text-center">
-          <div class="text-sky-500">
-            <a href="/author/{{ page.author }}" class="text-xl md:text-2xl font-bold">{{
-              site.data.authors[page.author].name }}</a>
+          <div>
+            <a href="/author/{{ page.author }}" class="text-xl md:text-xl font-bold">{{
+              site.data.contributors[page.author].name }}</a>
           </div>
-          <div class="text-gray-700">
-            Staff Engineer, Algolia
+          <div class="text-gray-700 text-sm">
+            {{ site.data.contributors[page.author].role }}
           </div>
         </figcaption>
         <blockquote>
           <p class="leading-5 font-medium text-justify">
-            "Tailwind CSS is the only framework that I've seen scale
-            on large teams. It's easy to customize, adapts to any design,
-            and the build size is tiny."
+            {{ site.data.contributors[page.author].bio }}
           </p>
         </blockquote>
       </div>
