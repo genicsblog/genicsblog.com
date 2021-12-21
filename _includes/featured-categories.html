@@ -1,5 +1,5 @@
 {% assign featuredCatSize = site.data.featured.categories | size %}
-{% if featuredCatSize != 0 %}
+{% if featuredCatSize != 0 and page.url == '/index.html' %}
 <section class="m-10 p-8">
     <h1 class="mb-4">Featured Categories</h1>
     {% for category in site.data.featured.categories %}
@@ -8,7 +8,6 @@
     </a>
     <div
         class="flex flex-col md:grid {% if featuredCatSize > 1 %}md:grid-cols-2 {% endif %}{% if featuredCatSize > 2 %}lg:grid-cols-3 {% endif %}md:gap-4 lg:gap-6 text-center">
-        <!-- <div class="flex flex-col lg:grid lg:grid-flow-col lg:grid-row-2 my-4"> -->
         {% assign posts = site.posts | where: "category", category %}
         {% for post in posts limit:3 %}
         <div class="mt-4 mb-6 rounded-lg border-4 border-slate-300 h-72">{{ post.title }}</div>
