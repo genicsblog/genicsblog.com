@@ -84,4 +84,4 @@ postcss:
   cache: false
 
 jekyll-minifier:
-  exclude: ["assets/css/theme.css", "assets/js/prism.js"]
+  exclude: ["sitemap.xml", "feed.xml", "assets/css/theme.css", "assets/js/prism.js"]
