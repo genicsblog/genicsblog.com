@@ -10,12 +10,10 @@
             Genics Blog
         </h1>
         {% endif %}
-        {% if page.excerpt %}
-        {% if page.excerpt != "" %}
+        {% if page.excerpt != blank %}
         <p class="mt-4">
             {{ page.excerpt }}
         </p>
-        {% endif %}
         {% else %}
         <p class="mt-4">
             An
@@ -26,14 +24,14 @@
         {% endif %}
     </div>
     {% else %}
-    <div class="grid grid-flow-row lg:grid-flow-col mx-4 lg:mx-14">
+    <div class="grid grid-flow-row lg:grid-flow-col p-6">
         <div class="flex justify-center items-center lg:mb-0">
             {% if page.image %}
             <img src="{{ page.image }}"
-                class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl rounded-xl shadow-xl object-cover m-8" />
-            </div>
+                class="w-full sm:max-w-2xl lg:max-w-full xl:max-w-4xl rounded-xl shadow-xl object-cover m-8" />
             {% endif %}
-        <div class="flex flex-col justify-center lg:items-start my-10 lg:mx-0 lg:ml-14">
+        </div>
+        <div class="flex flex-col justify-center lg:items-start lg:ml-12">
             {% if page.title %}
             <h1 class="text-4xl font-black tracking-tighter">{{ page.title }}</h1>
             {% endif %}
@@ -42,7 +40,7 @@
             {% endif %}
             {% if page.author %}
             <div class="flex items-center mt-8">
-                <img class="rounded-full w-14 h-14" src="{{ site.data.contributors[page.author].image }}" />
+                <img class="rounded-full w-14 h-14" src="{{ site.data.contributors[page.author].avatar }}" />
                 <div class="ml-4 leading-3">
                     <a class="font-extrabold text-xl" href="/author/{{ page.author }}">
                         {{ page.author }}
@@ -57,7 +55,7 @@
             <div class="mt-8">
                 <span>Category: </span>
                 {% for category in page.categories %}
-                <a class="text-sm ml-2 hover:scale-110 category-name {{ category }} button"
+                <a class="text-sm ml-2 hover:scale-110 category-name bg-{{ category }} underline-none"
                     href="/category/{{ category }}">#{{ category }}</a>
                 {% endfor %}
             </div>
@@ -68,7 +66,8 @@
                 <span>Tags: </span>
                 {% for tag in page.tags %}
                 {% assign tagName = tag | slugify %}
-                <a class="text-sm ml-2 hover:scale-110 tag-name {{ tagName }} button" href="/tag/{{ tagName }}">#{{
+                <a class="text-sm ml-2 hover:scale-110 tag-name bg-{{ tagName }} underline-none"
+                    href="/tag/{{ tagName }}">#{{
                     tagName }}</a>
                 {% endfor %}
             </div>

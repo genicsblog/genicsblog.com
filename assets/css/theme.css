@@ -6,7 +6,7 @@
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
-        @apply font-black tracking-tight mb-1;
+        @apply font-black tracking-tight;
     }
     h1 {
         @apply text-4xl;
@@ -61,8 +61,8 @@ a:hover:after {
     transform: scaleX(1);
 }
 
-article p, div.highlight {
-    @apply mb-6;
+article > p, div.highlight {
+    @apply mb-4;
 }
 
 article a, aside a {
@@ -90,7 +90,7 @@ pre {
     @apply p-2 flex rounded-md hover:bg-gray-700;
 }
 
-.mobile-nav-item:after, .header-anchor:after, .logo-anchor:after, a.button:after {
+.mobile-nav-item:after, .header-anchor:after, .logo-anchor:after, .underline-none:after {
     @apply w-0;
 }
 
@@ -103,10 +103,6 @@ pre {
 }
 
 .category-name, .tag-name {
-    @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-125 transition bg-slate-300 text-black;
+    @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-125 transition bg-slate-200 text-black;
     font-family: "Fira Code", monospace;
-}
-
-.android {
-    @apply bg-android; 
 }
