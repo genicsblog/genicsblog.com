@@ -1,13 +1,9 @@
 ---
 layout: page
-title: "Terms"
-excerpt: "This text will be replaced."
+title: "Terms and Conditions"
+excerpt: "Last updated: December 22, 2021"
 permalink: /terms
 ---
-
-# Terms and Conditions
-
-Last updated: December 22, 2021
 
 Please read these terms and conditions carefully before using Our Service.
 

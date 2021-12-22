@@ -1,13 +1,9 @@
 ---
 layout: page
 title: "Privacy Policy"
-excerpt: "This text will be replaced."
+excerpt: "Last updated: December 22, 2021"
 permalink: /privacy-policy
 ---
-
-# Privacy Policy
-
-Last updated: December 22, 2021
 
 This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.
 
