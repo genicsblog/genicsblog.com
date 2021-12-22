@@ -1,13 +1,12 @@
 module.exports = {
-    important: true,
     content: [
         './_includes/**/*.html',
         './_layouts/**/*.html',
         './*.html',
     ],
     safelist: [
-        'bg-android',
-        'bg-web',
+        '!bg-android',
+        '!bg-web',
         'hover:border-android',
         'hover:border-web'
     ],

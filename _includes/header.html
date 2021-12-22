@@ -55,7 +55,7 @@
             <div class="mt-8">
                 <span>Category: </span>
                 {% for category in page.categories %}
-                <a class="text-sm ml-2 hover:scale-110 category-name bg-{{ category }} underline-none"
+                <a class="text-sm ml-2 hover:scale-110 category-name !bg-{{ category }} underline-none"
                     href="/category/{{ category }}">#{{ category }}</a>
                 {% endfor %}
             </div>

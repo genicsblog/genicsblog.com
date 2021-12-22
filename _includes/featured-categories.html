@@ -3,7 +3,7 @@
 <section class="m-6 lg:m-8 p-4 featured-section">
     <h1 class="mb-4">Featured Categories</h1>
     {% for category in site.data.featured.categories %}
-    <a class="mt-6 text-xl category-name bg-{{ category }} underline-none" href="/category/{{ category }}">
+    <a class="mt-6 text-xl category-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
         #{{ category }}
     </a>
     <div
