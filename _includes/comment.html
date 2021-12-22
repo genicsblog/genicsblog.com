@@ -1,9 +1,8 @@
 {% assign author = site.data.contributors[page.author] %}
-{%- capture article_class %}comment bg-white rounded-2xl shadow-xl shadow-slate-200{% if include.is_reply %} mb-8 ml-14{% else %} mb-2{% endif %}{% endcapture %}
+{%- capture article_class %}comment bg-white rounded-2xl shadow-xl shadow-slate-200{% if include.is_reply %} ml-14{% else %} mb-2{% endif %}{% endcapture %}
 {% assign comment_id = include.id | prepend: 'comment-' %}
-<section id="{{ comment_id }}"
-  class="{{ article_class }} p-8 bg-white">
-  <div>
+<section class="{% if include.is_reply %}mb-2{% else %}mb-8{% endif %}">
+  <div class="{{ article_class }} p-8 bg-white">
     <div class="sm:flex sm:items-center">
       {% if include.name == author.name %}
       <img class="rounded-full w-14 h-14 border-4 border-primary"
@@ -32,16 +31,14 @@
     <div class="mt-4">
       {{ include.message | strip_html | markdownify }}
     </div>
-  </div>
 
   {% if include.is_reply %}
-</section>
+</div>
 {% else %}
 
 <a rel="nofollow" class="px-2.5 py-1 mt-4 text-sm rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition underline-none"
   onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ include.id }}')">Reply</a>
-</section>
-
+</div>
 {%- capture this_id %}{{ include.id }}{% endcapture %}
 {%- assign replies = site.data.comments[page.slug] | where_exp: "item", "item.replying_to_id == this_id" %}
 {%- assign replies_date = replies | sort: 'date' %}
@@ -54,3 +51,4 @@
 {% endfor %}
 
 {% endif %}
+</section>

@@ -3,7 +3,7 @@
         {% assign comments = site.data.comments[page.slug] | where_exp: "item", "item.replying_to_id == ''" %}
         {% assign comments_by_date = comments | sort: 'date' | reverse %}
 
-        <div class="mt-5 mb-5">
+        <div>
             {% for comment in comments_by_date %}
                 {%- assign id              = comment._id %}
                 {%- assign name            = comment.name %}
@@ -21,4 +21,4 @@
     {% include comment-form.html %}
 </div>
 
-<script src="{{site.baseurl}}/assets/js/comment.js"></script>
+<script src="/assets/js/comment.js"></script>
