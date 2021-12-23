@@ -1,25 +1,27 @@
-<div class="comment-form my-3">
+<div class="bg-white rounded-2xl shadow-xl shadow-slate-200 p-8 my-3">
     <h5 id="form-title">Add a comment</h5>
     <form class="actual-form" method="POST" action="{{ site.staticman_url }}">
         <input name="options[slug]" type="hidden" value="{{ page.slug }}">
         <input type="hidden" id="replying-to-id" name="fields[replying_to_id]" value="">
 
-        <div class="form-group">
-            <label for="commentbox-name">Name</label>
-            <input name="fields[name]" type="text" class="form-control" id="commentbox-name" placeholder="John Doe"
+        <div>
+            <label for="commentbox-name">Name</label><br />
+            <input name="fields[name]" type="text" class="w-full" id="commentbox-name" placeholder="John Doe"
                 required>
         </div>
 
-        <div class="form-group">
-            <label for="commentbox-message">Message</label>
+        <div class="mt-4">
+            <label for="commentbox-message">Message</label><br />
             <textarea type="text" name="fields[message]" class="form-control" id="commentbox-message" rows="5"
                 placeholder="Hey samdisha, this post is awesome!" required></textarea>
         </div>
 
-        <button class="btn mr-2 btn-primary" id="cancel-reply-btn" style="display: none">
-            Cancel Reply
-        </button>
-        <button class="submit-form btn btn-primary">Submit</button>
+        <div>
+            <button class="btn mr-2 btn-primary" id="cancel-reply-btn" style="display: none">
+                Cancel Reply
+            </button>
+            <button class="submit-form btn btn-primary">Submit</button>
+        </div>
     </form>
 
     <div id="modal">
