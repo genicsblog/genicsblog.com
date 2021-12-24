@@ -5,6 +5,10 @@
 @tailwind utilities;
 
 @layer base {
+    body {
+        @apply bg-slate-50;
+        font-family: "Sen", sands-serif;
+    }
     h1, h2, h3, h4, h5, h6 {
         @apply font-black tracking-tight mb-4;
     }
@@ -26,60 +30,65 @@
     h6 {
         @apply text-base;
     }
-}
-
-body {
-    @apply bg-slate-50;
-    font-family: "Sen", sands-serif;
-}
-
-nav, footer {
-    @apply bg-background;
-}
-
-footer {
-    @apply text-white;
-}
-
-footer a {
-    @apply font-bold hover:text-slate-300;
-}
-
-a {
-    @apply inline-block relative cursor-pointer;
-}
-
-a:after {
-    @apply absolute bg-slate-300 w-full left-0 right-0 bottom-0 h-0.5 origin-bottom-right;
-    content: "";
-    transform: scaleX(0);
-    transition: transform 0.25s ease-out;
-}
-
-a:hover:after {
-    @apply origin-bottom-left origin-bottom-left;
-    transform: scaleX(1);
-}
-
-article > p, li, div.highlight {
-    @apply mb-6;
-}
-
-article a, aside a {
-    @apply text-primary;
-}
-
-article a:after, aside a:after {
-    @apply bg-primary;
-}
-
-p code {
-    @apply bg-slate-200 py-0.5 px-1.5 rounded-md text-sm;
-    font-family: "Fira Code", sands-serif;
-}
-
-pre {
-    @apply bg-slate-800 rounded-xl text-sm text-[#b5c4f2] p-4 overflow-x-scroll;
+    img {
+        @apply rounded-xl;
+    }
+    article img {
+        @apply mx-auto;
+    }
+    ul li {
+        @apply list-disc list-outside ml-12;
+    }
+    ol li {
+        @apply list-decimal list-outside ml-12;
+    }
+    strong {
+        @apply tracking-tighter;
+    }
+    nav, footer {
+        @apply bg-background;
+    }
+    footer {
+        @apply text-white;
+    }
+    footer a {
+        @apply font-bold hover:text-slate-300;
+    }
+    a {
+        @apply inline-block relative cursor-pointer;
+    }
+    a:after {
+        @apply absolute bg-slate-300 w-full left-0 right-0 bottom-0 h-0.5 origin-bottom-right;
+        content: "";
+        transform: scaleX(0);
+        transition: transform 0.25s ease-out;
+    }
+    a:hover:after {
+        @apply origin-bottom-left origin-bottom-left;
+        transform: scaleX(1);
+    }
+    article > p, li, blockquote, div.highlight {
+        @apply mb-6;
+    }
+    article a, aside a {
+        @apply text-primary;
+    }
+    article a:after, aside a:after {
+        @apply bg-primary;
+    }
+    blockquote {
+        @apply bg-slate-200 rounded-xl border-l-4 border-slate-400 p-6;
+    }
+    code {
+        @apply bg-slate-200 py-0.5 px-1.5 rounded-md text-sm;
+        font-family: "Fira Code", sands-serif;
+    }
+    pre {
+        @apply bg-slate-800 rounded-xl text-sm text-[#b5c4f2] p-4 overflow-x-scroll;
+    }
+    pre > code {
+        @apply bg-slate-800;
+    }
 }
 
 .nav-item {

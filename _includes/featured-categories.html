@@ -6,21 +6,10 @@
     <a class="mt-6 text-xl category-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
         #{{ category }}
     </a>
-    <div
-        class="flex flex-col md:grid {% if featuredCatSize > 1 %}md:grid-cols-2 {% endif %}{% if featuredCatSize > 2 %}lg:grid-cols-3 {% endif %}md:gap-4 lg:gap-6 text-center">
+    <div class="flex flex-col md:grid lg:grid-cols-3 md:gap-4 lg:gap-6 text-center">
         {% assign posts = site.posts | where: "category", category %}
-        {% for post in posts limit:3 %}
-        <a class="underline-none" href="{{ post.url }}">
-            <div
-                class="mt-4 mb-6 relative group rounded-lg border-4 hover:border-{{ category }} text-4xl hover:shadow-xl transition">
-                <img class="opacity-0 group-hover:opacity-100 transition duration-500 object-cover h-72" src="" />
-                <div class="absolute top-0 w-full h-full">
-                    <div class="flex justify-center items-center h-full w-full">
-                        {{ post.title }}
-                    </div>
-                </div>
-            </div>
-        </a>
+        {% for post in posts %}
+        {% include postbox.html %}
         {% endfor %}
     </div>
     {% endfor %}

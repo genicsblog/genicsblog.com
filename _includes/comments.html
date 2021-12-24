@@ -2,7 +2,6 @@
     {% if site.data.comments[page.slug] %}
         {% assign comments = site.data.comments[page.slug] | where_exp: "item", "item.replying_to_id == ''" %}
         {% assign comments_by_date = comments | sort: 'date' | reverse %}
-
         <div>
             {% for comment in comments_by_date %}
                 {%- assign id              = comment._id %}
