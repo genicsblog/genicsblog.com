@@ -1,13 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-24T08:54:05+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://genicsblog.com/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-25T00:00:00+00:00</published><updated>2021-11-25T00:00:00+00:00</updated><id>https://genicsblog.com/welcome-to-jekyll</id><content type="html" xml:base="https://genicsblog.com/welcome-to-jekyll">&lt;h1 id=&quot;quotesapp&quot;&gt;QuotesApp&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-24T19:22:02+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://genicsblog.com/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-25T00:00:00+00:00</published><updated>2021-11-25T00:00:00+00:00</updated><id>https://genicsblog.com/welcome-to-jekyll</id><content type="html" xml:base="https://genicsblog.com/welcome-to-jekyll">&lt;h1 id=&quot;quotesapp&quot;&gt;QuotesApp&lt;/h1&gt;
 
 &lt;p&gt;&lt;img alt=&quot;QuotesApp Logo&quot; src=&quot;https://raw.githubusercontent.com/GouravKhunger/QuotesApp/main/images/logo.png&quot; height=&quot;150px&quot; width=&quot;150px&quot; align=&quot;right&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;A beautiful Quotes App where you can read and save quotes.&lt;/p&gt;
 
 &lt;p&gt;This repository contains source code of a Quotes app, which helps you stay motivated by providing best picked quotes
-stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes.io&quot;&gt;zen quotes&lt;/a&gt; api, for retrieving quotes.&lt;/p&gt;
+stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes.io&quot;&gt;zen quotes&lt;/a&gt; api, for retrieving quotes :sweat: :innocent:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/GouravKhunger/QuotesApp/releases/latest&quot;&gt;Download&lt;/a&gt; the latest &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk&lt;/code&gt; file of this project and do provide feedback.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
 
@@ -71,21 +73,25 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;&lt;a href=&quot;https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio&quot;&gt;Last time&lt;/a&gt;, after we created a new app, this kind of screen popped up after the app was built.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1631773265969/Sq2JDNXFps.png&quot; alt=&quot;Android Studio main window&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=1&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=1&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We’ll go through the window pane-by-pane. On the left side of the IDE window, you can see the project files in different views. By default, the project opens in the “Android” view, whereby you can see all the files that are relevant for your final app.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632131895518/PvcNew3hC.png&quot; alt=&quot;rl-2Vl276G.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=2&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=2&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;There are many other default files that (most of the time) aren’t needed to mess with, so Android Studio provides a really handy way to keep aside the mess and focus on what files you need for the project.&lt;/p&gt;
 
 &lt;p&gt;These are the different views you can use to show/hide relevant files.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632131754395/fELwPHyzG.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=3&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=3&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;But, most of the time, you would only need either the “Android” view or the “Project” view.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632131855925/kIBWYnRTxg.png&quot; alt=&quot;7IM_tC9oR.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=4&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=4&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Android View&lt;/strong&gt;: This view shows only relevant files related to your app screens and layout/resources.&lt;/p&gt;
 
@@ -93,21 +99,25 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Let’s get back to the main window, where you can write code.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632132266927/V7A34rdSN.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=5&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=5&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can double-click on any file on the left pane, and it will open in the editor. The image above is of is an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XML&lt;/code&gt; file. Each &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;XML&lt;/code&gt; file has three different views, &lt;strong&gt;Code&lt;/strong&gt;, &lt;strong&gt;Split&lt;/strong&gt; and &lt;strong&gt;Design&lt;/strong&gt; view.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632132831458/ziYWINZCA.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=6&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=6&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;You can see just the code in the &lt;strong&gt;Code&lt;/strong&gt; view, see code as well as and live updates in the &lt;strong&gt;Split&lt;/strong&gt; view, or access the drag and drop layout builder in the &lt;strong&gt;Design&lt;/strong&gt; view.&lt;/p&gt;
 
 &lt;p&gt;On the top bar, you would be able to see the various standard features any IDE would have. You can try going through all the options and find various things you might need.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632129954919/ip7yaj4dw.png&quot; alt=&quot;JDNXFps.pn&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=7&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=7&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;And just below the bar, there are various useful things. On the left side you can see the current file you are working on, and the path it has inside the project.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632133059267/0869cuIRl.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=1&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=1&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;On the right side, you can see various buttons, which I will explain one by one:&lt;/p&gt;
 
@@ -133,7 +143,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;On the bottom, you would be able to see this:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632136020773/S-5CQBIRt.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=10&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=10&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The specific tabs open up to show different things. Like, the debug tab opens up when you press the debug button, Profiler opens when you press profile, Logcat can be used to find logs of the running app, TODO lists all the TODOs (reminder to yourself) you have set anywhere in the project, etc.&lt;/p&gt;
 
@@ -145,7 +156,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;I would recommend you to open the &lt;em&gt;Project&lt;/em&gt; view for understanding what responsibility each file/folder has.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632138739381/mVpoCB8HG.jpeg&quot; alt=&quot;Screenshot 2021-09-20 172135.jpg&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=14&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=14&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Under the root folder, there are sub-folders for different things.&lt;/p&gt;
 
@@ -177,13 +189,15 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Let’s move to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;app&lt;/code&gt; folder now. This is where the source code of our app lives.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632139910393/1n9oXmT24.jpeg&quot; alt=&quot;Screenshot 2021-09-20 172135.jpg&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=15&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=15&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;libs&lt;/code&gt; folder here would contain any external libraries you would import to the project. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;build&lt;/code&gt; folder is the same, it contains generated files. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;proguard-rules.pro&lt;/code&gt; file has configurations for ProGuard - which allows obfuscating code for an app.&lt;/p&gt;
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;src&lt;/code&gt; folder is the big deal. It contains all of your code files that define different pages(activities) in your app. All things related to the functioning of the app are contained inside this folder.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632321699792/96aiZUoGx.png&quot; alt=&quot;Screenshot 2021-09-22 at 8.09.30 PM.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=16&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=16&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;androidTest&lt;/code&gt; folder contains tests written to test the user interface of the app. For example, Tests that validate if a screen opens properly in different scenarios.&lt;/li&gt;
@@ -197,7 +211,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Now, you will be able to see three elements:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632327366167/XuraJ03g0.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=17&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=17&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;We will start with the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AndroidManifest.xml&lt;/code&gt; file. Consider this scenario, someone gives you a book but in an ambiguous way, they just pass you the pages, and the book isn’t bound altogether. Then, the pages and the chapters won’t make any sense to you, right?&lt;/p&gt;
 
@@ -207,13 +222,15 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Now, I am sure it would be clear to you what &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AndroidManifest.xml&lt;/code&gt; file does. Now, hop into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;java&lt;/code&gt; folder.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632328494066/T3uWJn4wF.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=12&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=12&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;It contains different packages with different files for anything you want to do. It can contain activity classes, utility classes for some functions that you want to reuse in the project again and again, for implementing data classes to store data, and basically anything that isn’t related to the user interface.&lt;/p&gt;
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;xml&lt;/code&gt; folder is where all the UI elements should be placed.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1632328636033/7q5XnEdIC.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;img src=&quot;https://source.unsplash.com/random/300x200?sig=13&quot; alt=&quot;Android Studio main window&quot; title=&quot;&quot; class=&quot;mx-auto&quot; /&gt;&lt;/noscript&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://source.unsplash.com/random/300x200?sig=13&quot; alt=&quot;Android Studio main window&quot; title=&quot;Android Studio main window&quot; class=&quot;mx-auto lazyload&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;drawable&lt;/code&gt; folder should contain vector graphics that can be shown on the screen.&lt;/li&gt;
@@ -454,7 +471,7 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;I use this snippet to refresh the Auth0 access token periodically:&lt;/p&gt;
 
-&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Function to renew Auth0 Management API access token&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// Function to renew Auth0 Management API access token&lt;/span&gt;
 &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getAccessToken&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
 
   &lt;span class=&quot;c1&quot;&gt;// time after which token must be refreshed, It will be updated later&lt;/span&gt;
@@ -647,4 +664,4 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
   &lt;li&gt;Instagram: &lt;a href=&quot;https://instagram.com/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@_gourav.khunger_&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/channel/UCkv-J_D8jK2N02nBcyM92mQ&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gourav Khunger&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Discord: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gourav#2215&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="android" /><category term="jekyll" /><category term="open-source" /><summary type="html">A project I made for the Hashnode x Auth0 August Hackathon.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" /><media:content medium="image" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="android" /><category term="jekyll" /><category term="open-source" /><summary type="html">A project I made for the Hashnode x Auth0 August Hackathon.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" /><media:content medium="image" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 1</title><link href="https://genicsblog.com/test-file" rel="alternate" type="text/html" title="Test post 1" /><published>2020-01-01T00:00:00+00:00</published><updated>2020-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file</id><content type="html" xml:base="https://genicsblog.com/test-file">&lt;p&gt;Hi, demo post.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 2</title><link href="https://genicsblog.com/test-file-2" rel="alternate" type="text/html" title="Test post 2" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-2</id><content type="html" xml:base="https://genicsblog.com/test-file-2">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="web" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 3</title><link href="https://genicsblog.com/test-file-3" rel="alternate" type="text/html" title="Test post 3" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-3</id><content type="html" xml:base="https://genicsblog.com/test-file-3">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 4</title><link href="https://genicsblog.com/test-file-4" rel="alternate" type="text/html" title="Test post 4" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-4</id><content type="html" xml:base="https://genicsblog.com/test-file-4">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 5</title><link href="https://genicsblog.com/test-file-5" rel="alternate" type="text/html" title="Test post 5" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-5</id><content type="html" xml:base="https://genicsblog.com/test-file-5">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 6</title><link href="https://genicsblog.com/test-file-6" rel="alternate" type="text/html" title="Test post 6" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-6</id><content type="html" xml:base="https://genicsblog.com/test-file-6">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Test post 7</title><link href="https://genicsblog.com/test-file-7" rel="alternate" type="text/html" title="Test post 7" /><published>2019-01-01T00:00:00+00:00</published><updated>2019-01-01T00:00:00+00:00</updated><id>https://genicsblog.com/test-file-7</id><content type="html" xml:base="https://genicsblog.com/test-file-7">&lt;p&gt;Hi, demo post 2.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="test" /><summary type="html">Demo post to test pagination.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
