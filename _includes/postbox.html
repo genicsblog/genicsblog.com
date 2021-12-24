@@ -1,8 +1,8 @@
 {% assign author = site.data.contributors[post.author] %}
 {% assign category = post.category %}
-<a class="mt-4 mb-6 p-6 bg-white rounded-2xl shadow-xl shadow-slate-200 border-4 hover:border-{{ category }} transition underline-none"
+<a class="postbox mt-4 mb-6 p-6 bg-white rounded-2xl shadow-xl shadow-slate-200 border-4 hover:border-{{ category }} transition underline-none"
     href="{{ post.url }}">
-    <img class="transition duration-200 aspect-video" src="{{ post.image }}" />
+    <img class="transition duration-200 aspect-video mt-4" src="{{ post.image }}" />
     <div class="mt-6 mb-16">
         <h2>
             {{ post.title | truncate: 40}}
@@ -17,7 +17,7 @@
                 <img class="rounded-full w-10 h-10" src="{{ author.avatar }}" />
                 <span class="ml-2">{{ author.name | split:' ' | first}}</span>
             </div>
-            <span>{{ post.date | date:"%B %e, %Y" }}</span>
+            <span>{{ post.date | date:"%b %e, %Y" }}</span>
         </div>
     </div>
 </a>

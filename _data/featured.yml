@@ -1,1 +1,3 @@
-categories: ["android", "web"]
+categories: ["android", "web", test]
+posts: 
+  - "/welcome-to-jekyll"

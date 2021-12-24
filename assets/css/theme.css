@@ -33,7 +33,7 @@
     img {
         @apply rounded-xl;
     }
-    article img {
+    article img:not(.emoji) {
         @apply mx-auto;
     }
     ul li {
@@ -76,6 +76,9 @@
     article a:after, aside a:after {
         @apply bg-primary;
     }
+    hr {
+        @apply w-11/12 mb-6 mx-auto rounded-lg border-t-4 border-gray-200 bg-slate-200;
+    }
     blockquote {
         @apply bg-slate-200 rounded-xl border-l-4 border-slate-400 p-6;
     }
@@ -107,6 +110,10 @@
     @apply font-medium text-slate-300 mx-auto;
 }
 
+.emoji {
+    @apply inline-block;
+}
+
 .lang-name {
     @apply rounded-sm p-0.5 text-xs px-1 bg-slate-300 text-slate-800 float-right;
 }
@@ -114,4 +121,8 @@
 .category-name, .tag-name {
     @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-125 transition bg-slate-200 text-black;
     font-family: "Fira Code", monospace;
+}
+
+.postbox {
+    @apply hover:border-black;
 }

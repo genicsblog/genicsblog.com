@@ -1,0 +1,38 @@
+{% assign featuredCategories = site.data.featured.categories %}
+{% assign featuredPosts = site.data.featured.posts %}
+{% assign featuredPostsSize = featuredPosts | size %}
+{% assign featuredCategoriesSize = featuredCategories | size %}
+{% if page.url == '/index.html' %}
+{% if featuredPostsSize != 0 %}
+<h1>Featured Posts</h1>
+<div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">
+{% for featuredPost in featuredPosts %}
+{% assign post = site.posts | where_exp:"post", "post.url == featuredPost" | first %}
+{% include postbox.html %}
+{% endfor %}
+</div>
+<hr />
+{% endif %}
+{% if featuredCategoriesSize != 0 %}
+<h1>Featured Categories</h1>
+{% for category in featuredCategories %}
+<a class="mt-2 text-xl category-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
+    #{{ category }}
+</a>
+<div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">
+    {% assign posts = site.posts | where: "category", category %}
+    {% for post in posts | limit: 3 %}
+    {% include postbox.html %}
+    {% endfor %}
+</div>
+<div class="my-6 flex justify-center">
+    <a class="px-4 py-2 font-bold hover:shadow-xl hover:shadow-slate-200 rounded-md bg-black text-white text-lg hover:scale-110 transition underline-none"
+        href="/category/{{ category }}">
+        Read more on #{{ category }}
+    </a>
+</div>
+{% endfor %}
+<hr />
+{% endif %}
+<h1>All Posts</h1>
+{% endif %}

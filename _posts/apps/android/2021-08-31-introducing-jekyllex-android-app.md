@@ -214,7 +214,7 @@ To get user profiles from Auth0 Management API, we first get an access token tha
 
 I use this snippet to refresh the Auth0 access token periodically:
 
-```js
+```javascript
 // Function to renew Auth0 Management API access token
 function getAccessToken() {
 

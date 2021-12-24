@@ -18,7 +18,7 @@ collections:
 
 pagination:
   enabled: true
-  per_page: 1
+  per_page: 5
   permalink: '/page/:num/'
   title: ':title - page :num'
   sort_field: 'date'
@@ -29,8 +29,8 @@ autopages:
 
   categories: 
     layouts: 
-      - 'default.html'
-    title: 'Posts in category :cat'
+      - 'archive.html'
+    title: 'Posts in category #:cat'
     permalink: '/category/:cat'
     silent: false
     slugify:
@@ -42,7 +42,7 @@ autopages:
 
   tags:
     layouts: 
-      - 'default.html'
+      - 'archive.html'
     title: 'Posts tagged with :tag'
     permalink: '/tag/:tag'
     silent: false

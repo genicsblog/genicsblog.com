@@ -16,9 +16,11 @@ author: gouravkhunger
 A beautiful Quotes App where you can read and save quotes.
 
 This repository contains source code of a Quotes app, which helps you stay motivated by providing best picked quotes
-stated by famous personalities. This app uses [zen quotes](https://zenquotes.io) api, for retrieving quotes.
+stated by famous personalities. This app uses [zen quotes](https://zenquotes.io) api, for retrieving quotes :sweat: :innocent:
 
 [Download](https://github.com/GouravKhunger/QuotesApp/releases/latest) the latest `apk` file of this project and do provide feedback.
+
+---
 
 # Introduction
 

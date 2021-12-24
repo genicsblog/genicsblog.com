@@ -21,21 +21,21 @@ Let's dig into it!
 
 [Last time](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio), after we created a new app, this kind of screen popped up after the app was built.
 
-![Android Studio main window](https://cdn.hashnode.com/res/hashnode/image/upload/v1631773265969/Sq2JDNXFps.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=1" alt="Android Studio main window" %}
 
 We'll go through the window pane-by-pane. On the left side of the IDE window, you can see the project files in different views. By default, the project opens in the "Android" view, whereby you can see all the files that are relevant for your final app. 
 
-![rl-2Vl276G.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632131895518/PvcNew3hC.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=2" alt="Android Studio main window" %}
 
 There are many other default files that (most of the time) aren't needed to mess with, so Android Studio provides a really handy way to keep aside the mess and focus on what files you need for the project.
 
 These are the different views you can use to show/hide relevant files.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632131754395/fELwPHyzG.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=3" alt="Android Studio main window" %}
 
 But, most of the time, you would only need either the "Android" view or the "Project" view.
 
-![7IM_tC9oR.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632131855925/kIBWYnRTxg.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=4" alt="Android Studio main window" %}
 
 **Android View**: This view shows only relevant files related to your app screens and layout/resources.
 
@@ -43,21 +43,21 @@ But, most of the time, you would only need either the "Android" view or the "Pro
 
 Let's get back to the main window, where you can write code.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632132266927/V7A34rdSN.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=5" alt="Android Studio main window" %}
 
 You can double-click on any file on the left pane, and it will open in the editor. The image above is of is an `XML` file. Each `XML` file has three different views, **Code**, **Split** and **Design** view.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632132831458/ziYWINZCA.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=6" alt="Android Studio main window" %}
 
 You can see just the code in the **Code** view, see code as well as and live updates in the **Split** view, or access the drag and drop layout builder in the **Design** view.
 
 On the top bar, you would be able to see the various standard features any IDE would have. You can try going through all the options and find various things you might need.
 
-![JDNXFps.pn](https://cdn.hashnode.com/res/hashnode/image/upload/v1632129954919/ip7yaj4dw.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=7" alt="Android Studio main window" %}
 
 And just below the bar, there are various useful things. On the left side you can see the current file you are working on, and the path it has inside the project.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632133059267/0869cuIRl.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=1" alt="Android Studio main window" %}
 
 On the right side, you can see various buttons, which I will explain one by one:
 
@@ -77,7 +77,7 @@ On the right side, you can see various buttons, which I will explain one by one:
 
 On the bottom, you would be able to see this:
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632136020773/S-5CQBIRt.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=10" alt="Android Studio main window" %}
 
 The specific tabs open up to show different things. Like, the debug tab opens up when you press the debug button, Profiler opens when you press profile, Logcat can be used to find logs of the running app, TODO lists all the TODOs (reminder to yourself) you have set anywhere in the project, etc. 
 
@@ -89,7 +89,7 @@ Now, as you have learned Android Studio. Let's understand what files constitute 
 
 I would recommend you to open the *Project* view for understanding what responsibility each file/folder has.
 
-![Screenshot 2021-09-20 172135.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1632138739381/mVpoCB8HG.jpeg)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=14" alt="Android Studio main window" %}
 
 Under the root folder, there are sub-folders for different things.
 
@@ -113,13 +113,13 @@ Then there comes a cluster of files, I will cover them together because they are
 
 Let's move to the `app` folder now. This is where the source code of our app lives.
 
-![Screenshot 2021-09-20 172135.jpg](https://cdn.hashnode.com/res/hashnode/image/upload/v1632139910393/1n9oXmT24.jpeg)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=15" alt="Android Studio main window" %}
 
 The `libs` folder here would contain any external libraries you would import to the project. The `build` folder is the same, it contains generated files. The `proguard-rules.pro` file has configurations for ProGuard - which allows obfuscating code for an app.
 
 The `src` folder is the big deal. It contains all of your code files that define different pages(activities) in your app. All things related to the functioning of the app are contained inside this folder.
 
-![Screenshot 2021-09-22 at 8.09.30 PM.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632321699792/96aiZUoGx.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=16" alt="Android Studio main window" %}
 
 - The `androidTest` folder contains tests written to test the user interface of the app. For example, Tests that validate if a screen opens properly in different scenarios.
 - the `test` folder has test files to test general functions implemented in the app. For example, Tests that validate if a function that validates E-Mail formatting is working fine or not.
@@ -131,7 +131,7 @@ Now, open the `main` folder. Here comes the interesting part. Don't worry if the
 
 Now, you will be able to see three elements:
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632327366167/XuraJ03g0.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=17" alt="Android Studio main window" %}
 
 We will start with the `AndroidManifest.xml` file. Consider this scenario, someone gives you a book but in an ambiguous way, they just pass you the pages, and the book isn't bound altogether. Then, the pages and the chapters won't make any sense to you, right?
 
@@ -141,13 +141,13 @@ Here comes the `AndroidManifest.xml` file into play. It is a structured file tha
 
 Now, I am sure it would be clear to you what `AndroidManifest.xml` file does. Now, hop into the `java` folder.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632328494066/T3uWJn4wF.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=12" alt="Android Studio main window" %}
 
 It contains different packages with different files for anything you want to do. It can contain activity classes, utility classes for some functions that you want to reuse in the project again and again, for implementing data classes to store data, and basically anything that isn't related to the user interface.
 
 The `xml` folder is where all the UI elements should be placed.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1632328636033/7q5XnEdIC.png)
+{% include image.html src="https://source.unsplash.com/random/300x200?sig=13" alt="Android Studio main window" %}
 
 - The `drawable` folder should contain vector graphics that can be shown on the screen.
 - The `layout` folder is the place where the screens are actually placed. It should contain the files that implement the user interface for different screens.
