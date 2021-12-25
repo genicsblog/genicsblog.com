@@ -1,7 +1,6 @@
-# run this command before running the python -m nltk.downloader brown punkt
-from pathlib import Path
 import nltk
 import json
+from pathlib import Path
 from textblob import TextBlob
 
 search_file = Path("_site/search.json")

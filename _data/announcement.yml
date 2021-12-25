@@ -1,13 +1,13 @@
 visible: true
 
 # For mobile devices
-small: "We are open-source now!"
+small: "Connect with us on discord to stay updated."
 
 # For tablets and higher screen resolution
-large: "We are open-source now!"
+large: "Connect with us on discord to stay updated on blog's development."
 
 link:
   visible: true
-  text: "Learn more &rarr;"
-  url: "/wait"
-  target: "_self"
+  text: "Join >"
+  url: "https://discord.gg/qQEsNkF7F6"
+  target: "_blank"

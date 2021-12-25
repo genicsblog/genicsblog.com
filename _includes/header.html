@@ -1,4 +1,4 @@
-<header class="bg-background text-white p-6 sm:p-10">
+<header class="bg-background text-white p-6 sm:p-10" id="banner">
     {% if page.layout != 'post' %}
     <div class="flex flex-col sm:items-center">
         {% if page.title %}
@@ -22,6 +22,7 @@
             </a> developer publication.
         </p>
         {% endif %}
+        {% if page.url == '/index.html' %}
         <button
             class="flex items-center w-full sm:w-1/2 xl:w-1/3 mt-12 text-left space-x-3 px-4 h-12 bg-white hover:bg-slate-200 shadow-sm rounded-lg text-gray-400"
             onclick="showSearch()">
@@ -32,6 +33,7 @@
             </svg>
             <span class="flex-auto">Search for posts...</span>
         </button>
+        {% endif %}
     </div>
     {% else %}
     {% assign author = site.data.contributors[page.author]%}
