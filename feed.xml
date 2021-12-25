@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-24T19:22:02+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://genicsblog.com/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-25T00:00:00+00:00</published><updated>2021-11-25T00:00:00+00:00</updated><id>https://genicsblog.com/welcome-to-jekyll</id><content type="html" xml:base="https://genicsblog.com/welcome-to-jekyll">&lt;h1 id=&quot;quotesapp&quot;&gt;QuotesApp&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-25T12:35:37+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://genicsblog.com/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-25T00:00:00+00:00</published><updated>2021-11-25T00:00:00+00:00</updated><id>https://genicsblog.com/welcome-to-jekyll</id><content type="html" xml:base="https://genicsblog.com/welcome-to-jekyll">&lt;h1 id=&quot;quotesapp&quot;&gt;QuotesApp&lt;/h1&gt;
 
 &lt;p&gt;&lt;img alt=&quot;QuotesApp Logo&quot; src=&quot;https://raw.githubusercontent.com/GouravKhunger/QuotesApp/main/images/logo.png&quot; height=&quot;150px&quot; width=&quot;150px&quot; align=&quot;right&quot; /&gt;&lt;/p&gt;
 
@@ -8,6 +8,37 @@
 stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes.io&quot;&gt;zen quotes&lt;/a&gt; api, for retrieving quotes :sweat: :innocent:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/GouravKhunger/QuotesApp/releases/latest&quot;&gt;Download&lt;/a&gt; the latest &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk&lt;/code&gt; file of this project and do provide feedback.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Syntax&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+      &lt;th&gt;Syntax&lt;/th&gt;
+      &lt;th&gt;Description&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Header&lt;/td&gt;
+      &lt;td&gt;Title&lt;/td&gt;
+      &lt;td&gt;Header&lt;/td&gt;
+      &lt;td&gt;Title&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Paragraph&lt;/td&gt;
+      &lt;td&gt;Text&lt;/td&gt;
+      &lt;td&gt;Syntax&lt;/td&gt;
+      &lt;td&gt;Description&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Paragraph&lt;/td&gt;
+      &lt;td&gt;Text&lt;/td&gt;
+      &lt;td&gt;Paragraph&lt;/td&gt;
+      &lt;td&gt;Text&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 
 &lt;hr /&gt;
 
@@ -310,7 +341,10 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Check out the demo video to know how to use JekyllEx!&lt;/p&gt;
 
-&lt;p&gt;%[https://www.youtube.com/watch?v=U92BmvFzmCc]&lt;/p&gt;
+&lt;div class=&quot; mb-6 aspect-video&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/U92BmvFzmCc&quot; class=&quot;w-full h-full rounded-xl&quot; allowfullscreen=&quot;&quot;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;h3 id=&quot;-some-handy-links&quot;&gt;🔗 Some Handy Links:&lt;/h3&gt;
 
