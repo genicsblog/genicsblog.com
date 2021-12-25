@@ -73,6 +73,7 @@ include:
   - .nojekyll
 
 exclude:
+  - analysecontent.py
   - .sass-cache/
   - .jekyll-cache/
   - gemfiles/

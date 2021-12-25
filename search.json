@@ -9,20 +9,32 @@ layout: none
       "tags"     : "{{ post.tags | join: ', ' }}",
       "url"      : "{{ site.baseurl }}{{ post.url }}",
       "date"     : "{{ post.date }}",
-      "content"  : "{{ post.content | strip_html | escape | strip_newlines | escape }}"
+      "content"  : "{{ post.content | strip_html | strip_newlines | escape }}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
   ,
+  {% assign pageblacklist = "Privacy Policy,Terms and Conditions,404- Not Found,page" | split: ',' %}
+  {% assign urlBlackList = "/wait" | split: ',' %}
   {% for page in site.pages %}
-   {
-     {% if page.title != blank %}
+     {% unless page.title == blank %}
+     {% unless pageblacklist contains page.title %}
+     {% unless urlBlackList contains page.url %}
+     {% assign urlItems = page.url | split: '/'%}
+     {% assign urlItemsSize = page.url | split: '/' | size%}
+     {% if urlItemsSize > 2 %}
+     {% unless urlItems contains 'index.html' and urlItems contains 'page' %}
+     {
         "title"    : "{{ page.title | escape }}",
         "category" : "{{ page.category }}",
         "tags"     : "{{ page.tags | join: ', ' }}",
         "url"      : "{{ site.baseurl }}{{ page.url }}",
         "date"     : "{{ page.date }}",
-        "content"  : "{{ page.content | strip_html | escape | strip_newlines }}"
+        "content"  : "{{ page.content | strip_html | strip_newlines | escape }}"
+      }{% unless forloop.last %},{% endunless %}
+     {% endunless %}
      {% endif %}
-   } {% unless forloop.last %},{% endunless %}
+     {% endunless %}
+     {% endunless %}
+     {% endunless %}
   {% endfor %}
 ]
