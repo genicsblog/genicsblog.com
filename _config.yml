@@ -15,6 +15,16 @@ collections:
   author_pages:
     permalink: /author/:name
     output: true
+          
+# Build settings
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postcss
+  - jekyll-minifier
+  - jekyll-archives
+  - jekyll-paginate-v2
 
 pagination:
   enabled: true
@@ -43,23 +53,21 @@ autopages:
   tags:
     layouts: 
       - 'archive.html'
-    title: 'Posts tagged with :tag'
+    title: 'Posts tagged with #:tag'
     permalink: '/tag/:tag'
     silent: false
     slugify:
       mode: 'default'
       case: true
-      
-# Build settings
-plugins:
-  - jemoji
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-postcss
-  - jekyll-minifier
-  - jekyll-archives
-  - jekyll-paginate-v2
 
+postcss:
+  cache: false
+
+jekyll-minifier:
+  exclude: ["sitemap.xml", "feed.xml", "assets/css/theme.css", "assets/js/prism.js", "assets/js/comment.js"]
+  uglifier_args:
+    harmony: true
+    
 include: 
   - _pages
   - .nojekyll
@@ -77,9 +85,3 @@ exclude:
   - package.json
   - package-lock.json
   - README.md
-
-postcss:
-  cache: false
-
-jekyll-minifier:
-  exclude: ["sitemap.xml", "feed.xml", "assets/css/theme.css", "assets/js/prism.js", "assets/js/comment.js"]

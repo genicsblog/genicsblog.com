@@ -4,17 +4,21 @@
 {% assign featuredCategoriesSize = featuredCategories | size %}
 {% if page.url == '/index.html' %}
 {% if featuredPostsSize != 0 %}
-<h1>Featured Posts</h1>
+<div class="flex justify-center">
+    <h1>Popular this month</h1>
+</div>
 <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">
-{% for featuredPost in featuredPosts %}
-{% assign post = site.posts | where_exp:"post", "post.url == featuredPost" | first %}
-{% include postbox.html %}
-{% endfor %}
+    {% for featuredPost in featuredPosts %}
+    {% assign post = site.posts | where_exp:"post", "post.url == featuredPost" | first %}
+    {% include postbox.html %}
+    {% endfor %}
 </div>
 <hr />
 {% endif %}
 {% if featuredCategoriesSize != 0 %}
-<h1>Featured Categories</h1>
+<div class="flex justify-center">
+    <h1>Featured Categories</h1>
+</div>
 {% for category in featuredCategories %}
 <a class="mt-2 text-xl category-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
     #{{ category }}

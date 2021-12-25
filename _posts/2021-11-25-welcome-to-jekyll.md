@@ -20,6 +20,12 @@ stated by famous personalities. This app uses [zen quotes](https://zenquotes.io)
 
 [Download](https://github.com/GouravKhunger/QuotesApp/releases/latest) the latest `apk` file of this project and do provide feedback.
 
+| Syntax      | Description |  Syntax     | Description |
+| ----------- | ----------- | ----------- | ----------- |
+| Header      | Title       |  Header      | Title       |
+| Paragraph   | Text        |  Syntax      | Description | 
+| Paragraph   | Text        |  Paragraph   | Text        |
+
 ---
 
 # Introduction

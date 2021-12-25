@@ -63,7 +63,7 @@ Download and install the [latest release](https://github.com/jekyllex/jekyllex-a
 
 Check out the demo video to know how to use JekyllEx!
 
-%[https://www.youtube.com/watch?v=U92BmvFzmCc]
+{% include youtube.html id='U92BmvFzmCc' %}
 
 ### 🔗 Some Handy Links:
 

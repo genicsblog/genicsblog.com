@@ -1,6 +1,28 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<!--{{ content }}-->
+<head>
+    {% include seo.html %}
+</head>
 
+<body>
+    {% include announcement.html %}
+
+    <nav>
+        {% include default-nav.html %}
+        {% include mobile-nav.html %}
+    </nav>
+
+    {% include header.html %}
+
+    <main>
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+    {% include search.html %}
+
+    {% include scripts.html %}
+</body>
+
+</html>

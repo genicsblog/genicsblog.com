@@ -5,6 +5,9 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
     body {
         @apply bg-slate-50;
         font-family: "Sen", sands-serif;
@@ -33,8 +36,20 @@
     img {
         @apply rounded-xl;
     }
-    article img:not(.emoji) {
-        @apply mx-auto;
+    article {
+        @apply overflow-auto;
+    }
+    table {
+        @apply mb-6 w-full rounded-xl bg-slate-200;
+    }
+    thead {
+        @apply bg-slate-400;
+    }
+    tbody tr:nth-child(even) {
+        @apply rounded-md;
+    }
+    td, th {
+        @apply px-2 py-1 text-center;
     }
     ul li {
         @apply list-disc list-outside ml-12;
@@ -64,7 +79,7 @@
         transition: transform 0.25s ease-out;
     }
     a:hover:after {
-        @apply origin-bottom-left origin-bottom-left;
+        @apply origin-bottom-left;
         transform: scaleX(1);
     }
     article > p, li, blockquote, div.highlight {
@@ -108,6 +123,10 @@
 
 .mobile-nav-item span {
     @apply font-medium text-slate-300 mx-auto;
+}
+
+.search-item {
+    @apply m-2 p-2 cursor-pointer flex border-4 border-transparent hover:rounded-md hover:border-slate-200;
 }
 
 .emoji {

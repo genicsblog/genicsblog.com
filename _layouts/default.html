@@ -2,35 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="icon" href="assets/images/genicsblog.png" type="image/x-icon" />
-    <link rel="stylesheet" href="/assets/css/theme.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?{% if page.layout == 'post' %}family=Fira+Code&{%endif%}family=Sen&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="/assets/css/prism.css" />
-
-    <title>{{ page.title }}</title>
-
-    <!-- {% if jekyll.environment == 'production' %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', '{{site.google_analytics}}');
-    </script>
-
-    <script async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense-data-ad-client }}"
-        crossorigin="anonymous"></script>
-    {% endif %} -->
+    {% include seo.html %}
 </head>
 
 <body>
@@ -48,12 +20,9 @@
     </main>
 
     {% include footer.html %}
+    {% include search.html %}
 
-    <script src="/assets/js/theme.js"></script>
-    {% if page.layout == 'post' %}
-    <script src="/assets/js/prism.js"></script>
-    {% endif %}
-    <script src="/assets/js/lazysizes.min.js" async=""></script>
+    {% include scripts.html %}
 </body>
 
 </html>
