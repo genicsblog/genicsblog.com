@@ -28,10 +28,11 @@ setTimeout(() => {
     var codeBlocks = document.querySelectorAll('pre');
     codeBlocks.forEach((block) => {
         var langNameHolder = document.createElement("div");
+        langNameHolder.style.position = "relative";
         var langName = document.createElement("span");
         langName.classList.add("lang-name");
         langName.textContent = block.className.split(" ")[1].split("-")[1];
         langNameHolder.appendChild(langName);
-        block.prepend(langNameHolder);
+        block.parentElement.prepend(langNameHolder);
     })
 }, 500)

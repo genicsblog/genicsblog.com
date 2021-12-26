@@ -9,7 +9,10 @@
 <link
     href="https://fonts.googleapis.com/css2?{% if page.layout == 'post' %}family=Fira+Code&{%endif%}family=Sen&display=swap"
     rel="stylesheet" />
+{% assign languageArrSize = page.languages | size %}
+{% if page.layout == 'post' and languageArrSize != 0 %}
 <link rel="stylesheet" href="/assets/css/prism.css" />
+{% endif %}
 
 <title>{{ page.title }}</title>
 

@@ -4,6 +4,7 @@ title:  "Introducing JekyllEx - The easiest way to manage a Jekyll blog from an 
 excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
 image: "https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
 category: android
+languages: ["android"]
 tags: ["android", "jekyll", "open-source"]
 author: gouravkhunger
 ---
@@ -93,7 +94,7 @@ This section showcases the UI of the JekyllEx app.
 
 This is the auth page where the user must connect his GitHub account with JekyllEx to authorize the App to manage the blog repository.
 
-![auth-page.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png)
+![auth-page.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png){:.img}
 
 ### Home Page
 

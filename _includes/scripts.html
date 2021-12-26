@@ -1,23 +1,6 @@
-<script>
-window.onscroll = function() {setStickyness()};
-
-var navbar = document.getElementById("navbar");
-var banner = document.getElementById("banner");
-var sticky = navbar.offsetTop;
-
-function setStickyness() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("fixed");
-    banner.classList.add("mt-16");
-    // top-16 sm:top-12
-  } else {
-    navbar.classList.remove("fixed");
-    banner.classList.remove("mt-16");
-  }
-}
-</script>
 <script src="/assets/js/theme.js"></script>
-{% if page.layout == 'post' %}
+<script src="/assets/js/search.js"></script>
+{% assign languageArrSize = page.languages | size %}
+{% if page.layout == 'post' and languageArrSize != 0 %}
 <script src="/assets/js/prism.js"></script>
 {% endif %}
-<script src="/assets/js/lazysizes.min.js" async=""></script>

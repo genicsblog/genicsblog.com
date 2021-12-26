@@ -26,6 +26,7 @@ plugins:
   - jekyll-archives
   - jekyll-hostname
   - jekyll-paginate-v2
+  - jekyll-loading-lazy
 
 pagination:
   enabled: true

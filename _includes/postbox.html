@@ -2,7 +2,7 @@
 {% assign category = post.category %}
 <a class="postbox mt-4 mb-6 px-6 pt-2 pb-6 bg-white rounded-2xl shadow-xl shadow-slate-200 border-4 hover:border-{{ category }} transition underline-none"
     href="{{ post.url }}">
-    <img data-src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}" class="aspect-video w-full mt-4 lazyload" />
+    <img src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}" class="aspect-video w-full mt-4" />
     <div class="mt-6 mb-16">
         <h2>
             {{ post.title | truncate: 40}}
@@ -14,7 +14,7 @@
     <div class="absolute mt-20 right-6 bottom-6 left-6">
         <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
-                <img data-src="{{ author.avatar }}" alt="{{ author.name }}'s Profile Picture" title="{{ author.name }}'s Profile Picture" class="rounded-full w-10 h-10 lazyload" />
+                <img src="{{ author.avatar }}" alt="{{ author.name }}'s Profile Picture" title="{{ author.name }}'s Profile Picture" class="rounded-full w-10 h-10" />
                 <span class="ml-2">{{ author.name | split:' ' | first}}</span>
             </div>
             <span>{{ post.date | date:"%b %e, %Y" }}</span>

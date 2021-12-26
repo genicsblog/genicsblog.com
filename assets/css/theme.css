@@ -36,6 +36,9 @@
     img {
         @apply rounded-xl;
     }
+    article img {
+        @apply mx-auto;
+    }
     article {
         @apply overflow-auto;
     }
@@ -138,7 +141,7 @@
 }
 
 .lang-name {
-    @apply rounded-sm p-0.5 text-xs px-1 bg-slate-300 text-slate-800 float-right;
+    @apply rounded-sm py-0.5 text-xs px-1 bg-slate-300 text-slate-800 absolute right-2 top-2;
 }
 
 .category-name, .tag-name {

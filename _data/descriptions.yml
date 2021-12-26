@@ -1,5 +1,5 @@
 android:
   description: "Android is the most beloved topic on Genics Blog because that's what this blog was all about in the beginning!"
 
-open-source:
-  description: "Open-Source hello"
+jekyll:
+  description: "Jekyll is a static-site generator which also happens to power this site."

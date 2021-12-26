@@ -1,11 +1,11 @@
 {% assign announcement = site.data.announcement %}
 {% if announcement.visible and page.url != announcement.link.url %}
 <p class="bg-primary p-3 text-center text-white font-medium flex flex-col sm:block">
-    <span class="md:hidden px-1">{{ site.data.announcement.small }}</span>
-    <span class="hidden md:inline px-1">{{ site.data.announcement.large }}</span>
-    {% if site.data.announcement.link.visible %}
+    <span class="md:hidden px-1">{{ announcement.small }}</span>
+    <span class="hidden md:inline px-1">{{ announcement.large }}</span>
+    {% if announcement.link.visible %}
     <a href="{{ site.data.announcement.link.url }}" target="{{ site.data.announcement.link.target }}"
-        class="font-bold underline header-anchor">{{ site.data.announcement.link.text}}</a>
+        class="font-bold underline header-anchor hover:text-slate-300">{{ announcement.link.text}}</a>
     {% endif %}
 </p>
 {% endif %}
@@ -42,7 +42,7 @@
                 </div>
 
                 <button onclick="showSearch()">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-white" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-white hover:stroke-slate-300" fill="none"
                         viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
