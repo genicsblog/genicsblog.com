@@ -6,7 +6,11 @@ Static site for genicsblog.com
 
 ### Prerequisites
 
-Should have installed [ruby](https://www.ruby-lang.org) and [Node.js](https://nodejs.org) before proceeding.
+Should have installed [ruby](https://www.ruby-lang.org) and [Node.js](https://nodejs.org) before proceeding. Install `jekyll` and `bundler` with:
+
+```
+gem install bundler jekyll
+```
 
 ### Steps
 
@@ -25,4 +29,9 @@ Should have installed [ruby](https://www.ruby-lang.org) and [Node.js](https://no
 - Run the static site on localhost
     ```shell
     bundle exec jekyll serve
+    ```
+
+    If you get an error with file permissions, try:
+    ```shell
+    rake serve
     ```
