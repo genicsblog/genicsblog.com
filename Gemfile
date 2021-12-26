@@ -9,6 +9,7 @@ group :jekyll_plugins do
   gem "jekyll-postcss"
   gem "jekyll-minifier"
   gem "jekyll-archives"
+  gem "jekyll-hostname"
   gem "jekyll-paginate-v2"
 end
 

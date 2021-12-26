@@ -3,8 +3,10 @@ layout: post
 title:  "Welcome to Jekyll!"
 excerpt: "A demo post that comes along with the start template jjdsaklfjsadkl ksdjf kasdjf sdaklfj sdlkfj salkfj adklfj sdlkfj saldfk."
 image: "https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&w=1740&q=80"
+notice: "The code described in this post was tested on **Android Studio 3.4** with **Android SDK 11**."
+original: "https://genicsblog.com/next-js"
 languages: ["java", "python"]
-category: android
+category: web
 tags: ["quotes app"]
 author: gouravkhunger
 ---

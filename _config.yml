@@ -24,6 +24,7 @@ plugins:
   - jekyll-postcss
   - jekyll-minifier
   - jekyll-archives
+  - jekyll-hostname
   - jekyll-paginate-v2
 
 pagination:

@@ -4,10 +4,28 @@ layout: default
 
 <section class="block lg:flex">
 
-  <article
-    class="bg-white rounded-2xl shadow-xl shadow-slate-200 md:text-lg m-6 md:m-10 lg:m-14 p-6 md:p-8 lg:w-full lg:max-w-[65%] xl:max-w-[70%]">
-    {{ content }}
-  </article>
+  <div
+    class="bg-white rounded-2xl shadow-xl shadow-slate-200 md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]">
+    {% if page.notice != blank or page.original != blank %}
+    <div class="notice w-full px-4 py-2 rounded-tl-2xl rounded-tr-2xl bg-slate-200">
+      {% if page.original != blank %}
+      {% assign host = page.original | hostname %}
+      <span class="text-base italic">
+        Originally published at <a href="{{ page.original }}" target="_blank">{{ host }}</a>
+      </span>
+      {% endif %}
+      {% if page.notice != blank and page.original != blank %}<div class="my-2"></div>{% endif %}
+      {% if page.notice != blank %}
+      <span class="text-base italic">
+          {{ page.notice | markdownify }}
+      </span>
+      {% endif %}
+    </div>
+    {% endif %}
+    <article class=" p-6 md:p-8">
+      {{ content }}
+    </article>
+  </div>
 
   <aside class="m-6 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]">
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200">
@@ -22,9 +40,9 @@ layout: default
             {{ site.data.contributors[page.author].role }}
           </div>
         </figcaption>
-          <p class="leading-5 font-medium text-justify">
-            {{ site.data.contributors[page.author].bio }}
-          </p>
+        <p class="leading-5 font-medium text-justify">
+          {{ site.data.contributors[page.author].bio }}
+        </p>
       </div>
     </figure>
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-14 mt-8">
@@ -37,14 +55,14 @@ layout: default
 
 <section class="block lg:flex">
   <div class="md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]">
-      {% include comments.html %}
+    {% include comments.html %}
   </div>
   <aside class="m-8 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]">
     <div class="p-6 md:p-8  space-y-4 lg:sticky lg:top-14 rounded-2xl bg-white shadow-xl shadow-slate-200">
-        <p class="leading-5 font-medium text-justify">
-          Please adhere to our Code of Conduct and other stuff because we don't want you to fight in our comments
-          sections lmao
-        </p>
+      <p class="leading-5 font-medium text-justify">
+        Please adhere to our Code of Conduct and other stuff because we don't want you to fight in our comments
+        sections lmao
+      </p>
     </div>
   </aside>
 </section>

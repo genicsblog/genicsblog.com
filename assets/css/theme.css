@@ -85,10 +85,10 @@
     article > p, li, blockquote, div.highlight {
         @apply mb-6;
     }
-    article a, aside a {
+    article a, aside a, .notice a {
         @apply text-primary;
     }
-    article a:after, aside a:after {
+    article a:after, aside a:after, .notice a:after {
         @apply bg-primary;
     }
     hr {
@@ -138,7 +138,7 @@
 }
 
 .category-name, .tag-name {
-    @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-125 transition bg-slate-200 text-black;
+    @apply rounded-md px-2 py-1 hover:underline hover:shadow-md hover:scale-110 transition bg-slate-200 text-black;
     font-family: "Fira Code", monospace;
 }
 

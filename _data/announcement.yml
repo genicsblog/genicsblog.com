@@ -4,7 +4,7 @@ visible: true
 small: "Connect with us on discord to stay updated."
 
 # For tablets and higher screen resolution
-large: "Connect with us on discord to stay updated on blog's development."
+large: "Connect with us on discord to stay updated on the blog's development."
 
 link:
   visible: true

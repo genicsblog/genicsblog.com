@@ -2,11 +2,11 @@
     {% if page.layout != 'post' %}
     <div class="flex flex-col sm:items-center">
         {% if page.title %}
-        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">
+        <span class="font-black text-4xl sm:text-5xl text-white group-hover:text-slate-300">
             {{ page.title }}
         </span>
         {% else %}
-        <span class="font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">
+        <span class="font-black text-4xl sm:text-5xl text-white group-hover:text-slate-300">
             Genics Blog
         </span>
         {% endif %}
@@ -45,7 +45,7 @@
         </div>
         <div class="flex flex-col justify-center lg:items-start w-full lg:w-1/2 lg:ml-12">
             {% if page.title %}
-            <h1 class="text-4xl font-black tracking-tighter">{{ page.title }}</h1>
+            <h1 class="text-4xl font-black tracking-tight">{{ page.title }}</h1>
             {% endif %}
             {% if page.excerpt %}
             <span class="mt-0.5 text-justify">{{ page.excerpt }}</span>
@@ -74,11 +74,11 @@
             {% endif %}
             {% assign tagSize = page.tags | size %}
             {% if tagSize != 0 %}
-            <div class="mt-1">
+            <div class="mt-4 sm:mt-1">
                 <span>Tags: </span>
                 {% for tag in page.tags %}
                 {% assign tagName = tag | slugify %}
-                <a class="text-sm ml-2 hover:scale-110 tag-name !bg-{{ tagName }} underline-none"
+                <a class="text-sm ml-2 my-0.5 hover:scale-110 tag-name !bg-{{ tagName }} underline-none"
                     href="/tag/{{ tagName }}">#{{
                     tagName }}</a>
                 {% endfor %}
