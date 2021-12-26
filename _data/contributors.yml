@@ -3,9 +3,10 @@ gouravkhunger:
   role: "Owner of Genics Blog"
   avatar: "/assets/images/genicsblog.png"
   bio: "16 year old passionate App developer. I have interests in web development too."
-
-gouravkhunge:
-  name: "Goure Khunger"
-  role: "Noob of Genics Blog"
-  avatar: "/assets/images/genicsblog.png"
-  bio: "0 year old passionate App developer. I have interests in web development too."
+  links:
+    stackoverflow: "9819031"
+    github: "gouravkhunger"
+    linkedin: "in/gourav-khunger-584351216/"
+    twitter: "gourav_khunger"
+    instagram: "_gourav.khunger_"
+    youtube: "channel/UCkv-J_D8jK2N02nBcyM92mQ"
