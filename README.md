@@ -30,8 +30,3 @@ gem install bundler jekyll
     ```shell
     bundle exec jekyll serve
     ```
-
-    If you get an error with file permissions, try:
-    ```shell
-    rake serve
-    ```
