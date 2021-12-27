@@ -1,20 +1,24 @@
-title: Your awesome title
+title: Genics Blog
 email: your-email@example.com
-description: >- # this means to ignore newlines until "baseurl:"
+description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://genicsblog.com" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ""
+url: "https://genicsblog.com"
 twitter_username: jekyllrb
 github_username:  genicsblog
 github_repo: http://github.com/genicsblog/genicsblog.github.io
 permalink: /:title
 
 collections:
-  author_pages:
+  authors:
     permalink: /author/:name
     output: true
+
+extlinks:
+  attributes: {rel: nofollow noopener noreferrer, target: _blank}
+  rel_exclude: ["genicsblog.com", "jekyllex.xyz"]
           
 # Build settings
 plugins:

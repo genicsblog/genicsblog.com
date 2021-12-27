@@ -1,0 +1,39 @@
+---
+layout: page
+title: "Topics"
+excerpt: "All the categories and tags on which articles have been written till now."
+permalink: /topics
+---
+
+<div class="flex justify-center">
+    <h1>Categories</h1>
+</div>
+
+<div class="grid gap-6 grid-cols-2">
+    {% for category in site.categories %}
+    <div class="flex justify-center">
+        <a class="text-xl category-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
+            #{{ category[0] }}
+        </a>
+    </div>
+    <div class="flex justify-center">
+        <a class="text-xl category-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
+            #{{ category[0] }}
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="flex justify-center mt-6">
+    <h1>Tags</h1>
+</div>
+
+<div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+    {% for tag in site.tags %}
+    <div class="flex justify-center">
+        <a class="text-xl category-name !bg-{{ tag[0] }} underline-none" href="/category/{{ tag[0] }}">
+            #{{ tag[0] }}
+        </a>
+    </div>
+    {% endfor %}
+</div>

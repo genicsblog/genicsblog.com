@@ -2,14 +2,12 @@
 layout: post
 title:  "Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!"
 excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
-image: "https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
+image: "https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png"
 category: android
-languages: ["android"]
-tags: ["android", "jekyll", "open-source"]
+languages: ["javascript", "java"]
+tags: ["open-source", "apps", "jekyll"]
 author: gouravkhunger
 ---
-
-## Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!
 
 Hello, awesome people! 
 
@@ -17,9 +15,13 @@ Today I present to you my latest project - [JekyllEx](https://jekyllex.xyz), whi
 
 ## 🎊 Detailed Background
 
+---
+
 **TLDR**: I built JekyllEx because Jekyll(a static site generator) has a lot of potentials, but the learning curve for a non-tech-savvy person was high. 
 
 To bridge the gap, I am presenting JekyllEx which can intuitively manage a Jekyll blog's posts with a much simpler UI and effective editor- using which you don't need to mess with code and commits for any article you write!
+
+---
 
 A few months ago, I got to learn about [Jekyll](https://jekyllrb.com/), which is a static site generator. In short:
 
@@ -27,7 +29,7 @@ A few months ago, I got to learn about [Jekyll](https://jekyllrb.com/), which is
 
 This caught my attention in the first go as I am a blogging freak who has been [testing different blogging solutions for a few years now](https://genicsblog.com/introductory-first-post) 😆.
 
-I used Jekyll in many places, testing things locally and then finally making [my sister's blog](https://samdisha.me) with it, and helped someone(can't mention) to make a [small blog](https://60wordsofwisdom.xyz) for him.
+I used Jekyll in many places, testing things locally and then finally making [my sister's blog](https://samdisha.me){:rel="dofollow"} with it, and helped someone(can't mention) to make a [small blog](https://60wordsofwisdom.xyz) for him.
 
 It was just the fact that after initial setup, all we need to do for a new post is write markdown and let Jekyll do the further work... And, since it builds a static site, we can host it for free on Github Pages!
 
@@ -54,6 +56,8 @@ To put things in a better structure, these were the points that lead me to make 
 - I also wanted to do something for this blog, as it had been inactive for some months because I couldn't get the time to post anything 😅
 - Hashnode's august hackathon in partnership with Auth0 provided the zeal required to start a new project!
 
+---
+
 ## 🚀 Introducing JekyllEx
 
 ![round_logo.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630347657127/VGBAZJ7zN.png)
@@ -64,7 +68,9 @@ Download and install the [latest release](https://github.com/jekyllex/jekyllex-a
 
 Check out the demo video to know how to use JekyllEx!
 
-{% include youtube.html id='U92BmvFzmCc' %}
+%[https://www.youtube.com/watch?v=U92BmvFzmCc]
+
+---
 
 ### 🔗 Some Handy Links:
 
@@ -86,6 +92,8 @@ Go smash a star on all of 'em 😆. If not all, do star the app's repository �
 - API: https://api.jekyllex.xyz
 - Demo blog used for testing Jekyll app: https://demo.jekyllex.xyz
 
+---
+
 ## 🔎 App Tour
 
 This section showcases the UI of the JekyllEx app.
@@ -94,7 +102,7 @@ This section showcases the UI of the JekyllEx app.
 
 This is the auth page where the user must connect his GitHub account with JekyllEx to authorize the App to manage the blog repository.
 
-![auth-page.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png){:.img}
+![auth-page.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png)
 
 ### Home Page
 
@@ -141,6 +149,8 @@ The app has a cool profile page that shows user information that it receives fro
 These are some of the things that were left in the above images, so included aside:
 
 ![other.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1630356234366/bxtpJ84ko.png)
+
+---
 
 ## 🛠 Technical Details
 
@@ -190,6 +200,8 @@ The API is built using express and is hosted on Heroku.
 ### 🛡️ License
 
 This project is [`MIT`](https://github.com/jekyllex/jekyllex-android/blob/main/LICENSE) licensed.
+
+---
 
 ## 👨🏻‍💻 Development Journey
 
@@ -365,6 +377,8 @@ viewModel.scrollDist.observe(viewLifecycleOwner, {
 
 The same logic was used for text, as soon as text would be edited, it will be observed by the Preview Fragment and set the rendered markdown.
 
+---
+
 ## 🔥 Roadmap
 
 JekyllEx solves the major problem of managing posts. But there exists another problem, one can manage their blog from JekyllEx, but how could they make the Jekyll blog in the first place?
@@ -384,14 +398,18 @@ Here's a list of features I am planning to add to JekyllEx in the future:
 - Save deleted posts to local DB to act as a restore point if deleted in error.
 - **If possible**, make a section to share your article with other JekyllEx users, like a community sort of thing.
 
+---
+
 ## 💡 Real Usage
 
 JekyllEx is already being used to manage:
 
-- [The personal blog of my sister](https://samdisha.me)
+- [The personal blog of my sister](https://samdisha.me){:rel="dofollow"}
 - [60 w.o.w blog](https://60wordsofwisdom.xyz)
 
 If you use JekyllEx <s>and want to get some backlinks and referral</s>, you can get listed here by comment your experience with using JekyllEx and providing a link to your blog!
+
+---
 
 ## 😊 Final Words
 
@@ -400,6 +418,8 @@ On an ending note, I would say making JekyllEx for this hackathon was extremely 
 I would really appreciate it if you could take a moment and comment on your views on my project! Also, react to the post to spread some love :)
 
 All kinds of feedbacks are welcome 😄
+
+---
 
 ## 🌏 Connect with me!
 

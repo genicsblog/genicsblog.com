@@ -5,7 +5,10 @@
     <span class="hidden md:inline px-1">{{ announcement.large }}</span>
     {% if announcement.link.visible %}
     <a href="{{ site.data.announcement.link.url }}" target="{{ site.data.announcement.link.target }}"
-        class="font-bold underline header-anchor hover:text-slate-300">{{ announcement.link.text}}</a>
+        class="font-bold underline header-anchor hover:text-slate-300"
+        {% if announcement.link.rel %}rel="{{ announcement.link.rel }}"{% endif %}>
+        {{ announcement.link.text }}
+    </a>
     {% endif %}
 </p>
 {% endif %}
@@ -21,15 +24,15 @@
                             </div>
                             <span
                                 class="font-bold hidden sm:block text-xl tracking-tight text-white group-hover:text-slate-300">
-                                Genics Blog</span>
+                                {{ site.title }}</span>
                         </div>
                     </div>
                 </a>
             </div>
             <div class="flex items-center h-16">
                 <div class="hidden lg:block pr-5">
-                    <a class="nav-item {% if page.url contains '/categories' %}text-slate-400{% else %}text-white{% endif %}"
-                        href="/categories">Categories</a>
+                    <a class="nav-item {% if page.url contains '/topics' %}text-slate-400{% else %}text-white{% endif %}"
+                        href="/topics">Topics</a>
                     <a class="nav-item {% if page.url contains '/about' %}text-slate-400{% else %}text-white{% endif %}"
                         href="/about">About Us</a>
                     <a class="nav-item {% if page.url contains '/contact' %}text-slate-400{% else %}text-white{% endif %}"

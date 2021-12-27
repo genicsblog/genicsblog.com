@@ -29,7 +29,7 @@
       </div>
     </div>
     <div class="mt-4">
-      {{ include.message | strip_html | markdownify }}
+      {{ include.message | strip_html | markdownify | extlinks }}
     </div>
 
   {% if include.is_reply %}
