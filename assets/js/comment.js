@@ -10,15 +10,13 @@ var addComment = function () {
         return document.getElementById(id);
     };
 
-    document.getElementById('modal').innerHTML = '<div id="resultsmodal" class="modal fade show d-block"  tabindex="-1" role="dialog"> <div class="modal-dialog shadow" role="document"> <div class="modal-content"> <div class="modal-header" id="modtit"> <button type="button" class="close" id="btnx" data-dismiss="modal"> &times; </button> </div> <div class="modal-body"> <p class="mb-0"> </p>    </div> <div class="modal-footer"><button id="btnx" type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button></div></div> </div></div>';
-    // $("#modal").hide();
-
     var submitButton = select(".submit-form");
 
-    var form = select(".actual-form");
+    var form = select(".form");
     form.doReset = function () {
         submitButton.innerHTML = "Submit";
         this.classList.remove("disabled");
+        this.disabled = false;
     };
 
     form.addEventListener("submit", function (event) {
@@ -26,6 +24,7 @@ var addComment = function () {
 
         submitButton.innerHTML = "Posting...";
         submitButton.classList.add("disabled");
+        submitButton.disabled = true;
 
         var errorHandler = function (title, err) {
             console.log(err);
@@ -34,8 +33,6 @@ var addComment = function () {
             form.doReset();
         }
 
-        form.classList.add("disabled");
-
         fetch(this.getAttribute("action"), {
             method: "POST",
             body: new URLSearchParams(new FormData(this)),
@@ -43,7 +40,10 @@ var addComment = function () {
         }).then(
             function (data) {
                 if (data.ok) {
-                    showModal("Comment submitted!", "Your comment is awaiting approval. It will appear when approved :)");
+                    showModal(
+                        "Comment submitted!",
+                        "Thanks for your comment! It will be published after it's been approved by the Genics Blog team :)"
+                    );
                 } else {
                     data.json().then(function (err) {
                         errorHandler("Server Error", err);
@@ -58,16 +58,18 @@ var addComment = function () {
     });
 
     function showModal(title, message) {
-        // $("#modal").show(400);
-        // $("body").addClass("modal-open");
-        document.getElementById("modtit").innerHTML = `<h5 class="modal-title">${title}</h5>`;
-        document.querySelectorAll("#modal p")[0].innerHTML = message;
+        I("modal").classList.remove("hidden");
 
-        select("#btnx").addEventListener("click", function () {
-            // $("#modal").hide(5);
-            // $("body").removeClass("modal-open");
+        document.getElementById("modal-title").textContent = title;
+        document.getElementById("modal-message").textContent = message;
+
+        select("#close").addEventListener("click", function () {
+            I("modal").classList.add("hidden");
+
             submitButton.innerHTML = "Submit";
             submitButton.classList.remove("disabled");
+            submitButton.disabled = false;
+
             form.reset();
             form.doReset();
         });
@@ -105,8 +107,9 @@ var addComment = function () {
 
             comm.parentNode.insertBefore(respond, comm.nextSibling);  // move the form from the bottom to above the next sibling
             parentIdF.value = parentId;
+            I("form-parent").classList.add("ml-14");
             I("form-title").innerHTML = "Add a reply";
-            cancel.style.display = "";                        // make the cancel link visible
+            cancel.classList.remove("hidden");                     // make the cancel link visible
 
             cancel.onclick = function () {
                 var temp = I("sm-temp-form-div");            // temp is the original bookmark
@@ -116,16 +119,17 @@ var addComment = function () {
                     return;
                 }
 
+                I("form-parent").classList.remove("ml-14");
                 I("form-title").innerHTML = "Add a comment";
                 I("replying-to-id").value = null;
                 temp.parentNode.insertBefore(respond, temp);  // move the comment form to its original location
                 temp.parentNode.removeChild(temp);            // remove the bookmark div
-                this.style.display = "none";                  // make the cancel link invisible
+                this.classList.add("hidden");                 // make the cancel link invisible
                 this.onclick = null;                          // retire the onclick handler
                 return false;
             };
 
-            I("commentbox-message").focus();
+            I("commentbox-name").focus();
 
             return false;
         }

@@ -64,6 +64,9 @@
 
     {% include footer.html %}
     {% include search.html %}
+    {% if page.layout == "post" and page.comments != false %}
+    {% include modal.html %}
+    {% endif %}
     {% include scripts.html %}
 </body>
 

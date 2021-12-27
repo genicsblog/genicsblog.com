@@ -11,13 +11,14 @@ layout: default
       {% if page.original != blank %}
       {% assign host = page.original | hostname %}
       <span class="text-base italic">
-        Originally published at <a href="{{ page.original }}" target="_blank">{{ host }}</a>
+        Originally published at
+        <a href="{{ page.original }}" target="_blank" rel="nofollow noopener noreferrer">{{ host }}</a>
       </span>
       {% endif %}
       {% if page.notice != blank and page.original != blank %}<div class="my-2"></div>{% endif %}
       {% if page.notice != blank %}
       <span class="text-base">
-          {{ page.notice | markdownify }}
+        {{ page.notice | markdownify }}
       </span>
       {% endif %}
     </div>
@@ -26,15 +27,16 @@ layout: default
       {{ content | extlinks }}
     </article>
   </div>
-{% assign author = site.data.contributors[page.author] %}
+  {% assign author = site.data.contributors[page.author] %}
   <aside class="m-6 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]">
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200">
       <img class="w-24 h-24 rounded-full mx-auto" src="{{ site.data.contributors[page.author].avatar }}" alt="">
       <div class="pt-4 space-y-4">
         <figcaption class="font-medium text-center">
           <div>
-            <a href="/author/{{ page.author }}" class="text-xl md:text-xl font-bold">{{
-              author.name }}</a>
+            <a href="/author/{{ page.author }}" class="text-xl md:text-xl font-bold">
+              {{ author.name }}
+            </a>
           </div>
           <div class="text-gray-700 text-sm">
             {{ author.role }}

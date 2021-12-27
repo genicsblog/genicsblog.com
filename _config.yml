@@ -1,15 +1,16 @@
 title: Genics Blog
-email: your-email@example.com
+email: gouravkhunger18@gmail.com
 description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: ""
 url: "https://genicsblog.com"
-twitter_username: jekyllrb
-github_username:  genicsblog
-github_repo: http://github.com/genicsblog/genicsblog.github.io
+twitter_username: "jekyllrb"
+github_username: "genicsblog"
+github_repo: "genicsblog/genicsblog.github.io"
 permalink: /:title
+staticman_url: ""
 
 collections:
   authors:

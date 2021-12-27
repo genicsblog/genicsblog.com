@@ -1,7 +1,7 @@
 {% assign author = site.data.contributors[page.author] %}
 {%- capture article_class %}comment bg-white rounded-2xl shadow-xl shadow-slate-200{% if include.is_reply %} ml-14{% else %} mb-2{% endif %}{% endcapture %}
 {% assign comment_id = include.id | prepend: 'comment-' %}
-<section class="{% if include.is_reply %}mb-2{% else %}mb-8{% endif %}">
+<section id="{{ comment_id }}" class="{% if include.is_reply %}mb-2{% else %}mb-8{% endif %}">
   <div class="{{ article_class }} p-8 bg-white">
     <div class="sm:flex sm:items-center">
       {% if include.name == author.name %}
@@ -36,7 +36,7 @@
 </div>
 {% else %}
 
-<a rel="nofollow" class="px-2.5 py-1 mt-4 text-sm rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition underline-none"
+<a rel="nofollow" class="px-2.5 py-0.5 mt-4 text-sm rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition underline-none"
   onclick="return addComment.moveForm('{{ comment_id }}', 'respond', '{{ include.id }}')">Reply</a>
 </div>
 {%- capture this_id %}{{ include.id }}{% endcapture %}

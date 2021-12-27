@@ -155,3 +155,7 @@
 .postbox {
     @apply hover:border-black;
 }
+
+.disabled {
+    @apply opacity-40 cursor-auto hover:!scale-100 hover:!shadow-none;
+}
