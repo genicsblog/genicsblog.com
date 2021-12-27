@@ -2,7 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://genicsblog.com/author/gouravkhunger</loc>
-<lastmod>2021-12-27T19:12:31+00:00</lastmod>
+<lastmod>2021-12-27T19:58:18+00:00</lastmod>
+</url>
+<url>
+<loc>https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs</loc>
+<lastmod>2021-02-08T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://genicsblog.com/how-to-make-efficient-content-applications-in-android</loc>
+<lastmod>2021-02-09T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/how-to-make-accordions-in-android</loc>
@@ -15,6 +23,10 @@
 <url>
 <loc>https://genicsblog.com/android-application-fundamentals</loc>
 <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+</url>
+<url>
+<loc>https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app</loc>
+<lastmod>2021-11-07T00:00:00+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/swipe-animation-on-a-cardview-android</loc>
@@ -51,10 +63,10 @@
 <loc>https://genicsblog.com/</loc>
 </url>
 <url>
-<loc>https://genicsblog.com/tag/accordions/</loc>
+<loc>https://genicsblog.com/tag/app-development/</loc>
 </url>
 <url>
-<loc>https://genicsblog.com/tag/app-development/</loc>
+<loc>https://genicsblog.com/tag/accordions/</loc>
 </url>
 <url>
 <loc>https://genicsblog.com/tag/open-source/</loc>
@@ -64,6 +76,12 @@
 </url>
 <url>
 <loc>https://genicsblog.com/tag/jekyll/</loc>
+</url>
+<url>
+<loc>https://genicsblog.com/tag/android-libraries/</loc>
+</url>
+<url>
+<loc>https://genicsblog.com/tag/a11y/</loc>
 </url>
 <url>
 <loc>https://genicsblog.com/tag/animation/</loc>

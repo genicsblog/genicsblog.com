@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-27T19:12:31+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Genics Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to Add Swipe Animations to a CardView in an Android App</title><link href="https://genicsblog.com/swipe-animation-on-a-cardview-android" rel="alternate" type="text/html" title="How to Add Swipe Animations to a CardView in an Android App" /><published>2021-11-15T00:00:00+00:00</published><updated>2021-11-15T00:00:00+00:00</updated><id>https://genicsblog.com/swipe-animation-on-a-cardview-android</id><content type="html" xml:base="https://genicsblog.com/swipe-animation-on-a-cardview-android">&lt;p&gt;If you’re building an Android app, you should consider adding animations. They can improve your app’s user experience and increase retention.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-27T19:58:18+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Genics Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to Add Swipe Animations to a CardView in an Android App</title><link href="https://genicsblog.com/swipe-animation-on-a-cardview-android" rel="alternate" type="text/html" title="How to Add Swipe Animations to a CardView in an Android App" /><published>2021-11-15T00:00:00+00:00</published><updated>2021-11-15T00:00:00+00:00</updated><id>https://genicsblog.com/swipe-animation-on-a-cardview-android</id><content type="html" xml:base="https://genicsblog.com/swipe-animation-on-a-cardview-android">&lt;p&gt;If you’re building an Android app, you should consider adding animations. They can improve your app’s user experience and increase retention.&lt;/p&gt;
 
 &lt;p&gt;These days, if you see an app that has no animation, it can feel odd and out-dated. And since interactive experiences are kind of the new norm, you’ll want to figure out ways to set your app apart.&lt;/p&gt;
 
@@ -362,7 +362,132 @@
 
 &lt;p&gt;Thanks a lot for reading so far, I hope this post added some value. Subscribe to my newsletter(at the top of the article) to stay updated with latest Android content!&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://genicsblog.com/contact&quot;&gt;Let’s Connect&lt;/a&gt;&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="animation" /><category term="app-development" /><summary type="html">Learn how to add swipe animation to a card view. In this tutorial, we will add a sliding animation to a card view to simulate slide to refresh behaviour.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Android Application Fundamentals - Understand the bits and bytes</title><link href="https://genicsblog.com/android-application-fundamentals" rel="alternate" type="text/html" title="Android Application Fundamentals - Understand the bits and bytes" /><published>2021-09-22T00:00:00+00:00</published><updated>2021-09-22T00:00:00+00:00</updated><id>https://genicsblog.com/android-application-fundamentals</id><content type="html" xml:base="https://genicsblog.com/android-application-fundamentals">&lt;p&gt;Hello there!&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://genicsblog.com/contact&quot;&gt;Let’s Connect&lt;/a&gt;&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="animation" /><category term="app-development" /><summary type="html">Learn how to add swipe animation to a card view. In this tutorial, we will add a sliding animation to a card view to simulate slide to refresh behaviour.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to Support Multiple Fonts in an Android App</title><link href="https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app" rel="alternate" type="text/html" title="How to Support Multiple Fonts in an Android App" /><published>2021-11-07T00:00:00+00:00</published><updated>2021-11-07T00:00:00+00:00</updated><id>https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app</id><content type="html" xml:base="https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app">&lt;p&gt;You would hardly see any Android app that allows its users to be able to choose from a set of fonts to be used for the whole app, based on the user’s preference. The major reason being it is hard to implement!&lt;/p&gt;
+
+&lt;h2 id=&quot;why-should-you-bother&quot;&gt;Why should you bother?&lt;/h2&gt;
+
+&lt;p&gt;Accessibility is a major aspect that every app developer should focus on. Imagine an app with an amazing utility but one that is barely usable. You don’t want to loose your user base!&lt;/p&gt;
+
+&lt;p&gt;I used to neglect this, but here’s why I am writing this post.&lt;/p&gt;
+
+&lt;p&gt;If you follow me on any social media, or here on my blog, you know that &lt;a href=&quot;https://genicsblog.com/introducing-jekyllex-android-app&quot;&gt;I built JekyllEx&lt;/a&gt; to be able to manage Jekyll blogs from my Android device.&lt;/p&gt;
+
+&lt;p&gt;Recently, I &lt;a href=&quot;https://github.com/jekyllex/jekyllex-android/issues/2&quot;&gt;a person reached out&lt;/a&gt; to discuss about their chronic headaches that are triggered by font and colours that don’t go well on their eyes and it would be great if I allowed some settings to be able to customise it based on user preferences.&lt;/p&gt;
+
+&lt;p&gt;I quickly went to have a look at what the &lt;a href=&quot;https://developer.android.com/guide/topics/ui/accessibility&quot;&gt;Android accessibility guidelines&lt;/a&gt; had to say.&lt;/p&gt;
+
+&lt;p&gt;But to my surprise- I DIDN’T FIND ANYTHING. If you take a look at those guidelines, you’ll find Google actually emphasizes developers a lot to take measures and make their app accessible for all kind of users. But such a common problem hasn’t been addressed. Believe me, there are many a people with varied levels of such reading problems.&lt;/p&gt;
+
+&lt;p&gt;And I usually don’t enable such settings in apps, but I thought it would be a great challenge to overcome, because mostly, all the solutions that already exist are inefficient: most stack overflow answers ask to traverse the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewGroup&lt;/code&gt;’s children and apply custom typeface as they find Text.&lt;/p&gt;
+
+&lt;p&gt;I had some other thoughts and it was obvious I would be making an Android library that somehow resolves this issue.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-challenge&quot;&gt;The Challenge&lt;/h2&gt;
+
+&lt;p&gt;In broad aspects, an Android app is just a set of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;View&lt;/code&gt;(s), held together by &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ViewGroup&lt;/code&gt;(s), that perform certain actions when loaded, clicked, etc. All that together makes the functional app.&lt;/p&gt;
+
+&lt;p&gt;But here’s the catch- each view has its own &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Context&lt;/code&gt;, that gives access to the current state of the view, and that makes it harder to think about how to implement the multiple-font feature, as each view needs separate handling to update its font.&lt;/p&gt;
+
+&lt;p&gt;Here is a typical example of how to update the font of a single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextView&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;typeface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@MainActivity&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;source_code_pro&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// get font from res/font/ directory&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;binding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;helloWorld&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;typeface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typeface&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// apply the font to the text view&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636027952199/bY0CrvEb8.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Imagine you have 20+ text views, or rather a RecyclerView(as in &lt;a href=&quot;https://jekyllex.xyz&quot;&gt;JekyllEx&lt;/a&gt;), in which each of the items has a significantly large number of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextView&lt;/code&gt;(s).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636028456465/fi0vdUzhZ.png&quot; alt=&quot;image.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, &lt;a href=&quot;https://github.com/jekyllex/jekyllex-android/blob/main/app/src/main/res/layout/other_repository_item.xml&quot;&gt;each RecyclerView item&lt;/a&gt; actually has 8 TextViews! Imagine updating the font manually for each view, one-by-one. It would be really inconvenient!&lt;/p&gt;
+
+&lt;p&gt;I had a look to some stack overflow questions and as told earlier, most of them were old and in-efficient.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-solution&quot;&gt;The Solution&lt;/h2&gt;
+
+&lt;p&gt;From the very beginning I knew I would store the default font in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt;. For those who don’t know about it, it is Android’s way to allow apps to store simple key-value paired data that the app can use without write access to the disk. For most of the cases, it suffices to use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt; instead of writing to disk and it was super handy in this case.&lt;/p&gt;
+
+&lt;p&gt;I would store the resource id, an integer identifier that is given to all types of resources in any app, in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt;, and retrieve that value to apply the font when the view is inflated (rendered on screen).&lt;/p&gt;
+
+&lt;p&gt;This was the most efficient way I could come up with, because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt; is really optimised. The values are cached and retrieving multiple values within a short time doesn’t affect performance much.&lt;/p&gt;
+
+&lt;p&gt;There exists another way, by changing the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;themes.xml&lt;/code&gt; values at runtime and applying font directly from the styles itself, but it requires minimum API level 23 (Android 6.0). So it wouldn’‘t be backward compatible and make the app crash on lower Android versions. I didn’t want to do so.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-result&quot;&gt;The Result&lt;/h2&gt;
+
+&lt;p&gt;As a result, I built the android library &lt;a href=&quot;https://github.com/gouravkhunger/Fontize&quot;&gt;Fontize&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Once you add it to your project, you need to follow certain steps mentioned in the &lt;a href=&quot;https://github.com/gouravkhunger/Fontize/blob/main/README.md&quot;&gt;repository’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;README.md&lt;/code&gt; file&lt;/a&gt; and your project will migrate to use intelligent &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fontize&lt;/code&gt; views that can work united and can change fonts in a snap.&lt;/p&gt;
+
+&lt;p&gt;Here’s a demo of what you can Achieve with Fontize:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636224247599/d04oZY7Pf.gif&quot; alt=&quot;Fontize Android library demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To set the default font for the app, you just have to add this line of code just below &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCreate()&lt;/code&gt; function in your app’s launcher activity (the one that is triggered when app icon is clicked) only once:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Fontize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDefaultFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;exo_2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// replace with the font you desire&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Internally, this function creates a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt; value if it doesn’t already exist:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setDefaultFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resourceId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;sharedPref&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PreferenceManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getDefaultSharedPreferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;fontId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sharedPref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ID_NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fontId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ID_NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;sharedPref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;edit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;putInt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resourceId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;To update the font for the entire app, you just need to run this code and Fontize will handle it automatically for you:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;Fontize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;updateFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;font&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;zen_old_mincho&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// updates fontFamily throughout app&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here’s the interesting part, this function just updates the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;fontFamily&lt;/code&gt; value stored in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt; for the app:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;updateFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;resourceId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;sharedPref&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PreferenceManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getDefaultSharedPreferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;sharedPref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;edit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;putInt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resourceId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;apply&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The actual work happens in the view classes. Let’s take the example of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FontizeTextView&lt;/code&gt;, or any similar class. It just extends the parent View and applies the font by picking its value from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SharedPreference&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FontizeTextView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AttributeSet&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatTextView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;attrs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nf&quot;&gt;init&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;prefs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PreferenceManager&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getDefaultSharedPreferences&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;fontId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;prefs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getInt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;fontFamily&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ID_NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fontId&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;!=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ID_NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;typeface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ResourcesCompat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getFont&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontId&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;typeface&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;typeface&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;All this code does is, to override the default view to apply the font family as soon as it inflates. Similar classes for views that support texts within them, like workarounds for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MenuItem&lt;/code&gt;(s) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Toolbar&lt;/code&gt;(s),  will be shipped soon.&lt;/p&gt;
+
+&lt;p&gt;If you need to look at a live project that uses Fontize in production- &lt;a href=&quot;https://github.com/jekyllex/jekyllex-android&quot;&gt;checkout JekyllEx app on GitHub&lt;/a&gt;. It doesn’t use the initial version that was published on Jitpack, but it uses a custom fork as per its needs and requirements, but Fontize will soon evolve and be able to do a lot more than just &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextViews&lt;/code&gt; 😄&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Believe me or not, starting this project, to finishing the base version with a working &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;FontizeTextView&lt;/code&gt;, to publishing it on jitpack- all just finished within 2 hours! &lt;a href=&quot;https://github.com/gouravkhunger/Fontize&quot;&gt;Fontize&lt;/a&gt; deserves a star for that effort 😎.&lt;/p&gt;
+
+&lt;p&gt;I hope you learnt something new out of this post. If you want to keep reading quality Android development content, consider joining my newsletter, fill out the box at the top of the article.&lt;/p&gt;
+
+&lt;p&gt;Do comment and let me know what topic should I pick to publish an article next week. All kinds of feedbacks are appreciated :)&lt;/p&gt;
+
+&lt;p&gt;Thanks and happy coding!&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="app-development" /><category term="android-libraries" /><category term="a11y" /><summary type="html">This article explains how to increase an android app's accessibility by providing users the option to choose from a variety of fonts that suite their need.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Android Application Fundamentals - Understand the bits and bytes</title><link href="https://genicsblog.com/android-application-fundamentals" rel="alternate" type="text/html" title="Android Application Fundamentals - Understand the bits and bytes" /><published>2021-09-22T00:00:00+00:00</published><updated>2021-09-22T00:00:00+00:00</updated><id>https://genicsblog.com/android-application-fundamentals</id><content type="html" xml:base="https://genicsblog.com/android-application-fundamentals">&lt;p&gt;Hello there!&lt;/p&gt;
 
 &lt;p&gt;In the last article at the &lt;a href=&quot;https://genicsblog.com/series/android-development&quot;&gt;Android app development series&lt;/a&gt;, we learned &lt;a href=&quot;https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio&quot;&gt;how to make a Hello World app&lt;/a&gt;. We made a new project in Android Studio and ran the app.&lt;/p&gt;
 
@@ -598,7 +723,10 @@
 
 &lt;p&gt;Check out the demo video to know how to use JekyllEx!&lt;/p&gt;
 
-&lt;p&gt;%[https://www.youtube.com/watch?v=U92BmvFzmCc]&lt;/p&gt;
+&lt;div class=&quot; mb-6 aspect-video&quot;&gt;
+    &lt;iframe src=&quot;https://www.youtube.com/embed/U92BmvFzmCc&quot; class=&quot;w-full h-full rounded-xl&quot; allowfullscreen=&quot;&quot;&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;
 
 &lt;hr /&gt;
 
@@ -611,19 +739,19 @@
 &lt;p&gt;Go smash a star on all of ‘em 😆. If not all, do star the app’s repository 😀&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;GitHub Organisation: https://github.com/jekyllex&lt;/li&gt;
-  &lt;li&gt;JekyllEx Android App: https://github.com/jekyllex/jekyllex-android&lt;/li&gt;
-  &lt;li&gt;Proxy API: https://github.com/jekyllex/jekyllex-api&lt;/li&gt;
-  &lt;li&gt;Demo blog: https://github.com/gouravkhunger/demo-jekyll-blog&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyllex&quot;&gt;GitHub Organisation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyllex/jekyllex-android&quot;&gt;JekyllEx Android App&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/jekyllex/jekyllex-api&quot;&gt;Proxy API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/gouravkhunger/demo-jekyll-blog&quot;&gt;Demo Jekyll blog&lt;/a&gt;(to test the app)&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&quot;others&quot;&gt;Others&lt;/h4&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Website: https://jekyllex.xyz&lt;/li&gt;
-  &lt;li&gt;Documentation: https://docs.jekyllex.xyz (under construction)&lt;/li&gt;
-  &lt;li&gt;API: https://api.jekyllex.xyz&lt;/li&gt;
-  &lt;li&gt;Demo blog used for testing Jekyll app: https://demo.jekyllex.xyz&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://jekyllex.xyz&quot;&gt;Landing Page&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.jekyllex.xyz&quot;&gt;Documentation&lt;/a&gt; (under construction)&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://api.jekyllex.xyz&quot;&gt;Hosted API&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://demo.jekyllex.xyz&quot;&gt;Demo blog’s link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -1167,4 +1295,210 @@
 
 &lt;p&gt;I hope you enjoyed the article and it helped you!&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;What did you learn from this tutorial&lt;/em&gt;? Comment and let me know! 🙂&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="accordions" /><category term="app-development" /><summary type="html">Making accordions in Android can be hard, but here's an easy way to build them.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;p&gt;&lt;em&gt;What did you learn from this tutorial&lt;/em&gt;? Comment and let me know! 🙂&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="accordions" /><category term="app-development" /><summary type="html">Making accordions in Android can be hard, but here's an easy way to build them.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to Make Efficient Content Applications in Android?</title><link href="https://genicsblog.com/how-to-make-efficient-content-applications-in-android" rel="alternate" type="text/html" title="How to Make Efficient Content Applications in Android?" /><published>2021-02-09T00:00:00+00:00</published><updated>2021-02-09T00:00:00+00:00</updated><id>https://genicsblog.com/how-to-make-efficient-content-applications-in-android</id><content type="html" xml:base="https://genicsblog.com/how-to-make-efficient-content-applications-in-android">&lt;p&gt;Everyone knows this! Android is one of the best OS out there. Every day, many people enter the world of Android coding. And yes, it is also very easy. This is one of the major reasons for the success of Android. People try to get their hands into Android, by starting out with basic apps, understanding activities, fragments, and Intents.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1612890480557/QhWgrxWHd.jpeg&quot; alt=&quot;android.jpeg&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then, they move on to something complex such as Lists, Arrays, different Views, Messaging, etc, expanding their knowledge of Android. Then they come upon the idea of making and publishing their own app. This is a general way, people tend to move into Android coding. And, it works well.&lt;/p&gt;
+
+&lt;p&gt;A good approach is to start with making a static content application that teaches others about a specific theme or content, i.e., A content application. This is also a good idea. And it is also famous as people download new apps to learn a particular thing. And, of course, this article is for you if you wish to make a static content based Android application.&lt;/p&gt;
+
+&lt;h1 id=&quot;a-general-outline-of-the-thought-process&quot;&gt;A general outline of the thought process&lt;/h1&gt;
+
+&lt;p&gt;If you also thought of making such an app, then I can tell, what most novice or even some intermediate Android coders would think. Suppose, your application is about learning HTML. You know HTML very well and want to share your knowledge. Then you started an app and here comes the thing.&lt;/p&gt;
+
+&lt;p&gt;You might have thought to make a Home page(activity, if you know) followed by a splash screen. There you would link other activities to the Home activity with buttons.&lt;/p&gt;
+
+&lt;p&gt;This implies that you are making different activities for each activity containing specific content that you want to show to the user!&lt;/p&gt;
+
+&lt;p&gt;And what that means is, if you give information about more than 100 HTML tag(approx.), you will end up making these many activities(plus About page, credits, etc)! This now makes sense that handling that number of activities is not worthy enough and we need to do something efficiently!&lt;/p&gt;
+
+&lt;p&gt;If we make 100+ activities and link them to the Home activity, the size of the app and load on the system would increase incredibly.&lt;/p&gt;
+
+&lt;h1 id=&quot;the-solution&quot;&gt;The solution&lt;/h1&gt;
+
+&lt;p&gt;Don’t worry! I am here to solve your problem. Just follow me.&lt;/p&gt;
+
+&lt;p&gt;You can proceed to make your basic activities, including SplashScreen, HomePage, Contact, About, and Credits. These are the basic requirements for almost every kind of app. This makes your app feel special and worthy.&lt;/p&gt;
+
+&lt;p&gt;Then, don’t start making activities like hell, just make another Activity named &lt;em&gt;Content&lt;/em&gt;(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.java&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.kt&lt;/code&gt;– your choice, this article will teach the steps in java). And don’t make other activities by their single name.&lt;/p&gt;
+
+&lt;p&gt;Now, what we are going to do is the dynamic viewing of static content! Doesn’t that seem interesting, lets dig into it.&lt;/p&gt;
+
+&lt;h2 id=&quot;what-to-do-after-that&quot;&gt;What to do after that?&lt;/h2&gt;
+
+&lt;p&gt;After that, include all the content/information just into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings.xml&lt;/code&gt; file. Since we want our content to be beautiful, let’s make use of basic HTML for it(later, I will show you how to render that text into TextView):&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;resource&amp;gt;&lt;/span&gt;
+...
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tag_anchor&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[
+        &amp;lt;h1&amp;gt;&lt;/span&gt;Anchor tag&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Anchor Tag is used to make hyperlinks. It links webpages.....&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        ...
+    ]]&amp;gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;string&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;tag_heading&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;![CDATA[
+        &amp;lt;h1&amp;gt;&lt;/span&gt;Heading tags&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h1&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Heading tags enable us to enlarge text and make headings.....&lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+        ...
+    ]]&amp;gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;/string&amp;gt;&lt;/span&gt;
+...
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/resource&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Be sure to wrap the HTML in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;![CDATA[&lt;/code&gt; tag to allow HTML usage in TextView.&lt;/p&gt;
+
+&lt;p&gt;Then, in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setOnClickListener()&lt;/code&gt; functions of buttons in the Home activity, add the Intent as such:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;tagAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;{&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;//tagAnchor is identifier for showing info about anchor tag.&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;putString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;tagAnchor&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+    &lt;span class=&quot;cm&quot;&gt;/*tagAnchor is the identifier that represents that the Anchor tag button is pressed*/&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;startActivity&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Intent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Home&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;putExtras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;What we do here is, we are sending information from one activity to the other. In other words, the home activity says to the other activity:&lt;/p&gt;
+
+&lt;p&gt;Home Activity: “Hi There! The user is requesting content for: ‘X’ tag, please show it”
+Content Activity: “Oh, sure!”&lt;/p&gt;
+
+&lt;p&gt;That’s how the thing works in laymen’s terms. I hope you understood what’s going on, next we will be coding the Content activity to receive the information and display content accordingly.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Also read &lt;a href=&quot;/ways-to-open-a-new-activity-in-an-android-app&quot;&gt;Common ways to open a New Activity in Android&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Now I am going to give you the code of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content.java&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;activity_content.xml&lt;/code&gt; file and I will explain whatever is going on.&lt;/p&gt;
+
+&lt;h3 id=&quot;contentjava&quot;&gt;Content.java&lt;/h3&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;package&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;com.example&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//your package&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Content&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AppCompatActivity&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;final&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;savedInstanceState&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;TextView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;main_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;nc&quot;&gt;Intent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;getIntent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;Bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getExtras&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;requireNonNull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;from&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;switch&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;requireNonNull&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;tagAnchor&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+
+                &lt;span class=&quot;c1&quot;&gt;//You can also dynamically change ToolBar text to set title of the page here.&lt;/span&gt;
+
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;SDK_INT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VERSION_CODES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;main_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;fromHtml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tagAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FROM_HTML_MODE_COMPACT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;main_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;fromHtml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tagAnchor&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+            &lt;span class=&quot;k&quot;&gt;case&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;tag_heading&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VERSION&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;SDK_INT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Build&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VERSION_CODES&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;N&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;main_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;fromHtml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tag_heading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;FROM_HTML_MODE_COMPACT&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;main_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setText&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Html&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;fromHtml&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;tag_heading&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)));&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;activity_contentxml&quot;&gt;activity_content.xml&lt;/h3&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearLayout...&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ToolBar...&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;ScrollView&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;LinearLayout&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:orientation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;vertical&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:padding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10dp&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+            &lt;span class=&quot;nt&quot;&gt;&amp;lt;TextView&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/main_content&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:textColor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#000000&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:linksClickable=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:textColorLink=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@color/coloraccent&quot;&lt;/span&gt;
+                &lt;span class=&quot;na&quot;&gt;android:textSize=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;18dp&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/linearLayout&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/ScrollView&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/LinearLayout&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That’s it for the activity’s layout.&lt;/p&gt;
+
+&lt;h2 id=&quot;logic-of-code&quot;&gt;Logic of Code&lt;/h2&gt;
+
+&lt;p&gt;Now, I am going to analyze the code. In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;activity_content.xml&lt;/code&gt;, we define an element- TextView with id &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main_content&lt;/code&gt;, and also, I initialize this in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content.java&lt;/code&gt; file. When the intent to required content is triggered, I assign a bundle object, a string in the &lt;em&gt;key-value&lt;/em&gt; pair format.&lt;/p&gt;
+
+&lt;p&gt;For every button, we have the key named “from” which defines that a button has been clicked. It’s valued is the name of the button clicked.&lt;/p&gt;
+
+&lt;p&gt;In the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Content.java&lt;/code&gt; file, we retrieve what is the value of the “from” key. On the basis of the value retrieved, I set the value of the TextView accordingly to show the content which is actually needed.&lt;/p&gt;
+
+&lt;p&gt;This is pretty simple and not hard to understand.&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;In this article, you saw how you can dynamically show static content in an activity. Instead of making different activities for each type of content you want to show, you can make single activity and update its content as required.&lt;/p&gt;
+
+&lt;p&gt;This would significantly reduce the load on the system, the size of your app, and most importantly, your precious time :)&lt;/p&gt;
+
+&lt;p&gt;I hope you find this article helpful and you will share it to increase people’s efficiency in coding.&lt;/p&gt;
+
+&lt;p&gt;If you have any doubts or suggestions, please write to gouravkhunger18@gmail.com. Please do write a comment. It keeps me happy and motivated :)&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="app-development" /><summary type="html">This article explains an Android app-development use case in which an efficient approach could be used to deliver better results.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1612892448407/fOCn_s9fg.jpeg" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1612892448407/fOCn_s9fg.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to change the font of text in View Pager Tabs?</title><link href="https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs" rel="alternate" type="text/html" title="How to change the font of text in View Pager Tabs?" /><published>2021-02-08T00:00:00+00:00</published><updated>2021-02-08T00:00:00+00:00</updated><id>https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs</id><content type="html" xml:base="https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs">&lt;p&gt;Today, I am going to explain to you how can you change the text of View Pager tabs in the tabbed activity of your android app. Many times, we want to customize the minor details in our Android app, but things in Android get confusing at times. This is a very simple yet effective way. So without taking any more time, let’s dive into the codes.&lt;/p&gt;
+
+&lt;p&gt;First, you have to create an assets directory(please remember to keep that out of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;res&lt;/code&gt; folder) and put your font’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.ttf&lt;/code&gt; file there.&lt;/p&gt;
+
+&lt;p&gt;Then, create a method called &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setCustomFont()&lt;/code&gt; in the tabbed activity. Code it like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;setCustomFont&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vg&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabs&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getChildAt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabsCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getChildCount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabsCount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vgTab&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ViewGroup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vg&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getChildAt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;j&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+
+        &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabChildsCount&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vgTab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getChildCount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;();&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabChildsCount&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabViewChild&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;vgTab&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;getChildAt&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tabViewChild&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;instanceof&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;TextView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tabViewChild&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setTypeface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Typeface&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;createFromAsset&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;getAssets&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;font.ttf&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;));&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;This code has been adapted from &lt;a href=&quot;https://stackoverflow.com/a/31067431/9819031&quot;&gt;this answer&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Here, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;font.ttf&lt;/code&gt; is the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.tff&lt;/code&gt; file of the font you want to use and the ViewGroup variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;vg&lt;/code&gt; is the TabLayout in the XML with id: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;tabs&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Change the variables to suit your needs and then call the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setCustomFont()&lt;/code&gt; function inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onCreate()&lt;/code&gt; method.&lt;/p&gt;
+
+&lt;p&gt;With this, you will get your desired font face of the text in the tabs. If you have any problems, understanding this, please don’t hesitate to comment!&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="app-development" /><summary type="html">This article explains how to change the Font family of the text in View Pager tabs</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1612804759970/w2robLovl.jpeg" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1612804759970/w2robLovl.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
