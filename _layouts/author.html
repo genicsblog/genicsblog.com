@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% assign author = site.data.contributors[page.author] %}
 <head>
     {% include seo.html %}
+    <title>{{ author.name }} | {{ author.role }}</title>
 </head>
 
 <body>
@@ -11,7 +12,6 @@
         {% include nav.html %}
     </nav>
 
-    {% assign author = site.data.contributors[page.author] %}
     <header class="bg-background text-white p-6 sm:p-10" id="banner">
         <div class="flex flex-col items-center">
             <img src="{{ author.avatar }}" class="w-28 h-28 sm:w-36 sm:h-36 rounded-full" />

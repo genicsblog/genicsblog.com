@@ -14,7 +14,9 @@
     <div class="absolute mt-20 right-6 bottom-6 left-6">
         <div class="flex items-center justify-between mt-6">
             <div class="flex items-center">
-                <img src="{{ author.avatar }}" alt="{{ author.name }}'s Profile Picture" title="{{ author.name }}'s Profile Picture" class="rounded-full w-10 h-10" />
+                <img src="{{ author.avatar }}" alt="{{ author.name }}'s Profile Picture"
+                    title="{{ author.name }}'s Profile Picture" class="rounded-full w-10 h-10"
+                    width="40px" height="40px" />
                 <span class="ml-2">{{ author.name | split:' ' | first}}</span>
             </div>
             <span>{{ post.date | date:"%b %e, %Y" }}</span>
