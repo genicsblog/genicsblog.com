@@ -4,7 +4,7 @@ title:  "Introducing JekyllEx - The easiest way to manage a Jekyll blog from an 
 excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
 image: "https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png"
 category: android
-languages: ["javascript", "java"]
+languages: ["javascript", "kotlin"]
 tags: ["open-source", "apps", "jekyll"]
 author: gouravkhunger
 ---
@@ -68,7 +68,7 @@ Download and install the [latest release](https://github.com/jekyllex/jekyllex-a
 
 Check out the demo video to know how to use JekyllEx!
 
-%[https://www.youtube.com/watch?v=U92BmvFzmCc]
+{% include youtube.html id="U92BmvFzmCc" %}
 
 ---
 
@@ -80,17 +80,17 @@ Before the App tour, let me give you the links to different resources that revol
 
 Go smash a star on all of 'em 😆. If not all, do star the app's repository 😀
 
-- GitHub Organisation: https://github.com/jekyllex
-- JekyllEx Android App: https://github.com/jekyllex/jekyllex-android
-- Proxy API: https://github.com/jekyllex/jekyllex-api
-- Demo blog: https://github.com/gouravkhunger/demo-jekyll-blog
+- [GitHub Organisation](https://github.com/jekyllex)
+- [JekyllEx Android App](https://github.com/jekyllex/jekyllex-android)
+- [Proxy API](https://github.com/jekyllex/jekyllex-api)
+- [Demo Jekyll blog](https://github.com/gouravkhunger/demo-jekyll-blog)(to test the app)
 
 #### Others
 
-- Website: https://jekyllex.xyz
-- Documentation: https://docs.jekyllex.xyz (under construction)
-- API: https://api.jekyllex.xyz
-- Demo blog used for testing Jekyll app: https://demo.jekyllex.xyz
+- [Landing Page](https://jekyllex.xyz)
+- [Documentation](https://docs.jekyllex.xyz) (under construction)
+- [Hosted API](https://api.jekyllex.xyz)
+- [Demo blog's link](https://demo.jekyllex.xyz)
 
 ---
 

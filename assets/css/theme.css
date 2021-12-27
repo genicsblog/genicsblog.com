@@ -88,7 +88,7 @@
         @apply origin-bottom-left;
         transform: scaleX(1);
     }
-    article > p, li, blockquote, pre.highlight {
+    article > p:not(:last-child), li, blockquote, pre.highlight {
         @apply mb-6;
     }
     article a, aside a, .notice a {

@@ -10,7 +10,7 @@ notice: >-
     <br/><br/>
     Also, the code provided in this article may not run as-is, because project settings and structure vary from person to person and environment to environment. You may need to change certain things a bit...
     <br/><br/>
-    If you find any wrong content in this post, please mail that to gouravkhunger18@gmail.com or write in the comments below. Thank you :)
+    If you find something that doesn't work, please write in the comments below.
 languages: ["groovy", "xml", "java"]
 category: android
 tags: ["accordions", "app-development"]
