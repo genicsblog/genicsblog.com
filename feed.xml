@@ -1,110 +1,384 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-26T19:56:48+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Your awesome title</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="https://genicsblog.com/welcome-to-jekyll" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-11-25T00:00:00+00:00</published><updated>2021-11-25T00:00:00+00:00</updated><id>https://genicsblog.com/welcome-to-jekyll</id><content type="html" xml:base="https://genicsblog.com/welcome-to-jekyll">&lt;h1 id=&quot;quotesapp&quot;&gt;QuotesApp&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="https://genicsblog.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genicsblog.com/" rel="alternate" type="text/html" /><updated>2021-12-27T12:18:31+00:00</updated><id>https://genicsblog.com/feed.xml</id><title type="html">Genics Blog</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How to Add Swipe Animations to a CardView in an Android App</title><link href="https://genicsblog.com/swipe-animation-on-a-cardview-android" rel="alternate" type="text/html" title="How to Add Swipe Animations to a CardView in an Android App" /><published>2021-11-15T00:00:00+00:00</published><updated>2021-11-15T00:00:00+00:00</updated><id>https://genicsblog.com/swipe-animation-on-a-cardview-android</id><content type="html" xml:base="https://genicsblog.com/swipe-animation-on-a-cardview-android">&lt;p&gt;If you’re building an Android app, you should consider adding animations. They can improve your app’s user experience and increase retention.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt=&quot;QuotesApp Logo&quot; src=&quot;https://raw.githubusercontent.com/GouravKhunger/QuotesApp/main/images/logo.png&quot; height=&quot;150px&quot; width=&quot;150px&quot; align=&quot;right&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;These days, if you see an app that has no animation, it can feel odd and out-dated. And since interactive experiences are kind of the new norm, you’ll want to figure out ways to set your app apart.&lt;/p&gt;
 
-&lt;p&gt;A beautiful Quotes App where you can read and save quotes.&lt;/p&gt;
+&lt;h2 id=&quot;what-well-build-here&quot;&gt;What We’ll Build Here&lt;/h2&gt;
 
-&lt;p&gt;This repository contains source code of a Quotes app, which helps you stay motivated by providing best picked quotes
-stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes.io&quot;&gt;zen quotes&lt;/a&gt; api, for retrieving quotes :sweat: :innocent:&lt;/p&gt;
+&lt;p&gt;Now, it might seem difficult to make your app stand out if you just have something basic like a quote sharing app (which is what we are going to work on here). It can be hard to hook the user and keep them interested.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/GouravKhunger/QuotesApp/releases/latest&quot;&gt;Download&lt;/a&gt; the latest &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;apk&lt;/code&gt; file of this project and do provide feedback.&lt;/p&gt;
+&lt;p&gt;Of course, you could just add two simple buttons to load the next/previous quote and call it a day. But that’s pretty basic and any app could do that! Even if you’re just building a simple side-project, there’s no trade-off for good UX :)&lt;/p&gt;
 
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th&gt;Syntax&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-      &lt;th&gt;Syntax&lt;/th&gt;
-      &lt;th&gt;Description&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Header&lt;/td&gt;
-      &lt;td&gt;Title&lt;/td&gt;
-      &lt;td&gt;Header&lt;/td&gt;
-      &lt;td&gt;Title&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Paragraph&lt;/td&gt;
-      &lt;td&gt;Text&lt;/td&gt;
-      &lt;td&gt;Syntax&lt;/td&gt;
-      &lt;td&gt;Description&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Paragraph&lt;/td&gt;
-      &lt;td&gt;Text&lt;/td&gt;
-      &lt;td&gt;Paragraph&lt;/td&gt;
-      &lt;td&gt;Text&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;So what we’ll do in this tutorial is drop the buttons, and instead have logic where a user can swipe the card to the left. When they’ve swiped far enough, the app will load a new card with a new quote.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;By the end of this post, you will learn how to make a really smooth animated card which a user can swipe that can perform whatever action you choose. Here’s a demo of how it works:&lt;/p&gt;
 
-&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995092206/__FOPUD4R.gif&quot; alt=&quot;iHxFjvI4x.gif&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Hi&lt;/p&gt;
+&lt;p&gt;Amazing, right? Let’s get into it!&lt;/p&gt;
 
-&lt;h2 id=&quot;sub-heading&quot;&gt;Sub-heading&lt;/h2&gt;
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h2&gt;
 
-&lt;p&gt;ok&lt;/p&gt;
+&lt;p&gt;For this tutorial, we will use Kotlin as the programming language for our app – but you can easily translate the code to Java and it would work the same.&lt;/p&gt;
 
-&lt;h3 id=&quot;even-bigger-sub-heading&quot;&gt;Even bigger sub heading&lt;/h3&gt;
+&lt;p&gt;For reference, this is the quote card that we wish to enable the swipe feature on.&lt;/p&gt;
 
-&lt;p&gt;omk&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995144169/sl0mqK8IG.png&quot; alt=&quot;9CVHyoJfV.png&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;i-see&quot;&gt;I see&lt;/h4&gt;
+&lt;p&gt;It is an androidX &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;CardView&lt;/code&gt; with a bunch of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextView&lt;/code&gt;s and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ImageView&lt;/code&gt;. There’s also a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ProgressBar&lt;/code&gt; that gets shown while loading a new quote.&lt;/p&gt;
 
-&lt;p&gt;lol&lt;/p&gt;
+&lt;p&gt;We won’t be making the XML code for the user interface. You can get the layout I used here from the GitHub repository, or build your own.&lt;/p&gt;
 
-&lt;h5 id=&quot;nice&quot;&gt;Nice&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gouravkhunger/QuotesApp&quot; rel=&quot;dofollow&quot;&gt;Here’s the complete code&lt;/a&gt; for our Quotes app, if you wish to check it out. It uses the MVVM design pattern, but this article doesn’t rely on what pattern you use for the business logic of your app, as we’ll just be working on the UI part.&lt;/p&gt;
 
-&lt;p&gt;yeah!&lt;/p&gt;
+&lt;p&gt;Now, we’re ready to make that awesome swipe interface!&lt;/p&gt;
 
-&lt;h5 id=&quot;final&quot;&gt;final&lt;/h5&gt;
+&lt;h2 id=&quot;how-to-handle-swipes-in-our-app&quot;&gt;How to Handle Swipes in Our App&lt;/h2&gt;
 
-&lt;p&gt;The final one :)&lt;/p&gt;
+&lt;p&gt;To handle swipes, we first need to set a touch listener on the card. Each time an action is performed on the card, the touch listener is called. Within the listener, we will add the logic to do the math and perform the animations.&lt;/p&gt;
 
-&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;Here is the blueprint of the touch listener we will be using:&lt;/p&gt;
 
-&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setOnTouchListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;OnTouchListener&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_MOVE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            	&lt;span class=&quot;c1&quot;&gt;// TODO: Handle ACTION_MOVE&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_UP&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            	&lt;span class=&quot;c1&quot;&gt;// TODO: Handle ACTION_UP&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
-
-&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;HelloWorld&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-  &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;String&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[]){&lt;/span&gt;
-    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;nc&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;out&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Hello World this is long text to test the top right button ok tested maybe it should work i see idk fjskdjf sjdfkjs;klsj dfas fjdskl fjsal df&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;c1&quot;&gt;// required to by-pass lint warning&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;performClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@OnTouchListener&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;Hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;
+&lt;p&gt;Here, we are specifically listening for 2 actions on the card – the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt;.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event is called when a user starts swiping the card, that is, moving it.&lt;/li&gt;
+  &lt;li&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt; is called when a user lifts their finger from the card, basically, when they release it.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;There are many other action events that we can override, such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_DOWN&lt;/code&gt; that’s called when a person gets hold of the view, but we don’t need them for this feature.&lt;/p&gt;
+
+&lt;p&gt;The basic setup for the card is done, so let’s figure out the swiping logic.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-math-behind-the-swipe-action&quot;&gt;The math behind the swipe action&lt;/h2&gt;
+
+&lt;p&gt;First, let’s re-think what we want to achieve. Implementing functionality is easier when you know exactly what you wish to have. Your code will also make more sense when your requirements are clear.&lt;/p&gt;
+
+&lt;p&gt;Here, we have a quote card. We want users to be able to swipe it only to the left, and if the minimum threshold to load a new quote is reached, it should move back to its original position and load a new quote.&lt;/p&gt;
+
+&lt;p&gt;Now, to achieve this, let’s think of it in terms of the card. Let’s define the mean position as the center of the card.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995345595/1Y88cyjU7.png&quot; alt=&quot;dEnpWr7e4.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We want the card to swipe if and only if the user swipes it to the left of the mean position.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995363765/mQspVxd8R.gif&quot; alt=&quot;7epeWn53S.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So how can we make this happen?&lt;/p&gt;
+
+&lt;p&gt;You guessed it – we will calculate the mean position and on the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event, we will check if the user swiped to the left and move the card accordingly.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-implement-the-swipe-logic&quot;&gt;How to implement the swipe logic&lt;/h2&gt;
+
+&lt;p&gt;To implement the logic, we first need to have the starting position of the card, which is fairly easy to calculate. We will just make sure that it is calculated with respect to the full-screen width, not just the card’s width.&lt;/p&gt;
+
+&lt;p&gt;Place these lines of code before the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;when(event.action)&lt;/code&gt; statement:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setOnTouchListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;OnTouchListener&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+    
+        &lt;span class=&quot;c1&quot;&gt;// variables to store current configuration of quote card.&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;displayMetrics&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayMetrics&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;cardStart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayMetrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;widthPixels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toFloat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        	&lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;..&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="web" /><category term="quotes app" /><summary type="html">A demo post that comes along with the start template jjdsaklfjsadkl ksdjf kasdjf sdaklfj sdlkfj salkfj adklfj sdlkfj saldfk.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" /><media:content medium="image" url="https://images.unsplash.com/photo-1638232504909-8c35d24ae469?&amp;w=1740&amp;q=80" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Android Application Fundamentals - Understand the bits and bytes</title><link href="https://genicsblog.com/android-application-fundamentals" rel="alternate" type="text/html" title="Android Application Fundamentals - Understand the bits and bytes" /><published>2021-09-22T00:00:00+00:00</published><updated>2021-09-22T00:00:00+00:00</updated><id>https://genicsblog.com/android-application-fundamentals</id><content type="html" xml:base="https://genicsblog.com/android-application-fundamentals">&lt;h2 id=&quot;android-application-fundamentals---understand-the-bits-and-bytes&quot;&gt;Android Application Fundamentals - Understand the bits and bytes&lt;/h2&gt;
+&lt;p&gt;First we get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;displayMetrics&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;resources&lt;/code&gt;, which will give us the width of the screen using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;displayMetrics.widthPixels.toFloat()&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then we get the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardWidth&lt;/code&gt; using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;width&lt;/code&gt; property of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quoteCard&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Finally, we calculate the starting position of the card using the formula &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;(width of screen/2) - (cardWidth/2)&lt;/code&gt;. Essentially, this gives us the x-coordinate of this position of the card:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995431988/CH21jNCaQ.gif&quot; alt=&quot;NiH3lsseM.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Now, let’s implement the code for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-handle-the-action_move-event&quot;&gt;How to handle the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event&lt;/h2&gt;
+
+&lt;p&gt;Inside the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; block, we first initialise the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; variable that holds the new x-coordinate that the card has been swiped to.&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rawX&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;event.rawX&lt;/code&gt; gives us the absolute value of the new coordinate with respect to the screen width.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; will contain the x-coordinate where the user’s finger is, at any given moment. The value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0.0&lt;/code&gt; for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; means that the user swiped to the left-most part of the screen. And for my emulator, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1080.0&lt;/code&gt; represents the right-most edge of the screen.&lt;/p&gt;
+
+&lt;p&gt;Since, we want the card to swipe only if &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; is less than the mean position of the card, we will place an if-condition here to verify that this is the case.&lt;/p&gt;
+
+&lt;p&gt;Think of this with simple values. Let’s suppose that the mean position of the card is at x-coordinate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;540.0&lt;/code&gt; (small x-coordinate) and the user swipes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;710.0&lt;/code&gt; (bigger x-coordinate). But we don’t want them to be able to swipe to the right. And if the user swipes to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;320.0&lt;/code&gt; (smaller x-coordinate), then we need to carry out the swipe and move the card to the new position.&lt;/p&gt;
+
+&lt;p&gt;Here’s the code to implement the above logic:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// or newX &amp;lt; cardStart + cardWidth&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;().&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;nf&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We subtract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardWidth&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; is an absolute value which is not relative to the card. It has a higher value because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardStart&lt;/code&gt; is towards the start of the screen, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt; is initially somewhere in the middle (a user would generally swipe from the middle).&lt;/p&gt;
+
+&lt;p&gt;We want to compare the value of shift in the x-coordinate and median to the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardStart&lt;/code&gt;, not the value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX&lt;/code&gt;, so we take this into account by subtracting &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardWidth&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Then, we carry out the animation using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;quoteCard.animate()&lt;/code&gt; and we change its x coordinate using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;Now, why do we do &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min(cardStart, newX - (cardWidth/2))&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;This is very interesting and intuitive to understand. From the beginning, we are emphasizing that the card should move only to the left and not to the right.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;newX - (cardWidth/2))&lt;/code&gt; is nothing but the swiped distance towards the left (so subtraction is involved – for the right side, it should be added).&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min()&lt;/code&gt; function here returns the minimum of the two values provided. If the swiped distance is less than the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardStart&lt;/code&gt;, it is returned, otherwise &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardStart&lt;/code&gt; is used. This is the condition we want to meet and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;min()&lt;/code&gt; makes it really easy to handle.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;setDuration(0)&lt;/code&gt; ensures that the animation is carried instantaneously (which keeps swiping from feeling laggy). &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;start()&lt;/code&gt; actually starts the animation with the given properties.&lt;/p&gt;
+
+&lt;p&gt;This animation will clear any doubt your have on how this works:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1636995634763/Sk_XJiR5M.gif&quot; alt=&quot;other.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;(I don’t have expertise on making animations, this was the best I could come up with.)&lt;/p&gt;
+
+&lt;p&gt;Here is the final code for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_MOVE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// get the new coordinate of the event on X-axis&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rawX&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;// carry out swipe only if newX - cardWidth &amp;lt; cardStart, that is&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// the card is swiped to the left side, not to the right&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You can also include a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;TextView&lt;/code&gt; to the UI that reflects when the user should release the card. Place this code inside the above &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statement too:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;releaseCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIN_SWIPE_DISTANCE&lt;/code&gt; is &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-250&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// -250 produces best result, feel free to change to your liking&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;250&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// User should move alteast -250 from mean position to load new quote&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_MOVE&lt;/code&gt; event is handled properly. Let’s write the code to handle the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt; event, that is, when the card is released.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-to-handle-the-action_up-event&quot;&gt;How to handle the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt; event&lt;/h2&gt;
+
+&lt;p&gt;For the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt; event, we want the card to come back to its original position, wait for about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt; milliseconds, then load a new quote.&lt;/p&gt;
+
+&lt;p&gt;The logic to animate the card is similar, but this time we will make its animation duration about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;150&lt;/code&gt; millisecond to make it look smooth.&lt;/p&gt;
+
+&lt;p&gt;First, create a variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;currentX&lt;/code&gt; that holds the current value of the x coordinate of the quote card. We’ll use this variable later.&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Then, start the animation on the card. Pass the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cardStart&lt;/code&gt; variable to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;x()&lt;/code&gt; function to make it return to its original position and set the duration to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;150&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// continued below&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This time, we set a listener on the animation. A listener is something that keeps an eye on the animation. By using it, we can perform actions on various animation events such as start, end, resume, and more.&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// continuation&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;AnimatorListenerAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;viewLifecycleOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lifecycleScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;launch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Dispatchers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;nf&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// check if the swipe distance was more than&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// minimum swipe required to load a new quote&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;// Add logic to load a new quote if swiped adequately&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getRandomQuote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0f&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;We set a listener to look for the ending of the animation by overriding the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onAnimationEnd()&lt;/code&gt; function.&lt;/p&gt;
+
+&lt;p&gt;As soon as the animation ends, we launch a coroutine (similar to Threads in Java but much more efficient) with a delay of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt; milliseconds. It then checks if the user had swiped further than the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIN_SWIPE_DISTANCE&lt;/code&gt; needed to load a new quote. The variable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;currentX&lt;/code&gt; is used for the comparison here.&lt;/p&gt;
+
+&lt;p&gt;If the user actually swipes passing the minimum distance, the coroutine is delayed for &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;100&lt;/code&gt; milliseconds. Then the view model loads a new random quote from the API, also resetting the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;currentX&lt;/code&gt; variable to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0f&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;The final code for the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ACTION_UP&lt;/code&gt; event looks like this:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_UP&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;AnimatorListenerAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;viewLifecycleOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lifecycleScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;launch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Dispatchers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nf&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;// check if the swipe distance was more than&lt;/span&gt;
+                    &lt;span class=&quot;c1&quot;&gt;// minimum swipe required to load a new quote&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    	&lt;span class=&quot;c1&quot;&gt;// Add logic to load a new quote if swiped adequately&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getRandomQuote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0f&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;final-code&quot;&gt;Final Code&lt;/h2&gt;
+
+&lt;p&gt;This is the final code for the complete &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;onTouchListener()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-kotlin highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setOnTouchListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;OnTouchListener&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// variables to store current configuration of quote card.&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;displayMetrics&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;resources&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayMetrics&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;width&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;cardStart&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;displayMetrics&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;widthPixels&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;toFloat&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+        &lt;span class=&quot;k&quot;&gt;when&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_UP&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;150&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                        &lt;span class=&quot;kd&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;: &lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;AnimatorListenerAdapter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                            &lt;span class=&quot;k&quot;&gt;override&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;fun&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Animator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                &lt;span class=&quot;n&quot;&gt;viewLifecycleOwner&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lifecycleScope&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;launch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Dispatchers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Default&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                    &lt;span class=&quot;nf&quot;&gt;delay&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+                                    &lt;span class=&quot;c1&quot;&gt;// check if the swipe distance was more than&lt;/span&gt;
+                                    &lt;span class=&quot;c1&quot;&gt;// minimum swipe required to load a new quote&lt;/span&gt;
+                                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                                        &lt;span class=&quot;c1&quot;&gt;// Add logic to load a new quote if swiped adequately&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;viewModel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;getRandomQuote&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;currentX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0f&lt;/span&gt;
+                                    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;nc&quot;&gt;MotionEvent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;ACTION_MOVE&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// get the new co-ordinate of X-axis&lt;/span&gt;
+                &lt;span class=&quot;kd&quot;&gt;val&lt;/span&gt; &lt;span class=&quot;py&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rawX&lt;/span&gt;
+
+                &lt;span class=&quot;c1&quot;&gt;// carry out swipe only if newX &amp;lt; cardStart, that is,&lt;/span&gt;
+                &lt;span class=&quot;c1&quot;&gt;// the card is swiped to the left side, not to the right&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+                            &lt;span class=&quot;nf&quot;&gt;min&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardStart&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;newX&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;cardWidth&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                        &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;start&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;quoteCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MIN_SWIPE_DISTANCE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+                        &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;releaseCard&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;textView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;infoText&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+                &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+        &lt;span class=&quot;c1&quot;&gt;// required to by-pass lint warning&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;performClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;@OnTouchListener&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Congrats! In this tutorial, we’ve implemented animation that lets a user swipe a card containing a quote to get a new quote.&lt;/p&gt;
+
+&lt;p&gt;Don’t forget to download the app and test it out yourself. Stars and contributions on the &lt;a href=&quot;https://github.com/gouravkhunger/QuotesApp&quot; rel=&quot;dofollow&quot;&gt;GitHub repository&lt;/a&gt; are welcomed!&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Now you have learned how to animate a card and handle animation listeners on it. This helps create better UX that makes your app stand out.&lt;/p&gt;
+
+&lt;p&gt;Using the knowledge you gained in this post, you can now create most of the following animations for views in Android:&lt;/p&gt;
+
+&lt;h4 id=&quot;programmatically-create-sliding-animations-for-android-views&quot;&gt;Programmatically create sliding animations for Android views.&lt;/h4&gt;
+
+&lt;p&gt;Just as we did in this tutorial.&lt;/p&gt;
+
+&lt;h4 id=&quot;left-to-right-animation&quot;&gt;Left to right animation&lt;/h4&gt;
+
+&lt;p&gt;This is fairly simple, just turn the subtraction in the variables to addition and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;&lt;/code&gt; signs in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;if&lt;/code&gt; statements to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; signs. With these few tweaks here and there, the right to left animations in card view can be turned into left to right ones!&lt;/p&gt;
+
+&lt;h4 id=&quot;you-can-also-show-and-hide-views-using-animations&quot;&gt;You can also show and hide views using animations.&lt;/h4&gt;
+
+&lt;p&gt;For this, you have to keep track of the start position and end position then animate them with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;alpha()&lt;/code&gt; from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;. For an example, you can refer to my library &lt;a href=&quot;https://github.com/gouravkhunger/AccoLib&quot; rel=&quot;dofollow&quot;&gt;Accolib&lt;/a&gt; to create animated FAQ accordions.&lt;/p&gt;
+
+&lt;h4 id=&quot;basic-animated-layout-changes-can-be-achieved-with-view-animations&quot;&gt;Basic animated layout changes can be achieved with view animations.&lt;/h4&gt;
+
+&lt;p&gt;Thanks a lot for reading so far, I hope this post added some value. Subscribe to my newsletter(at the top of the article) to stay updated with latest Android content!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://genicsblog.com/contact&quot;&gt;Let’s Connect&lt;/a&gt;&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="accordions" /><category term="app-development" /><summary type="html">Learn how to add swipe animation to a card view. In this tutorial, we will add a sliding animation to a card view to simulate slide to refresh behaviour.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Android Application Fundamentals - Understand the bits and bytes</title><link href="https://genicsblog.com/android-application-fundamentals" rel="alternate" type="text/html" title="Android Application Fundamentals - Understand the bits and bytes" /><published>2021-09-22T00:00:00+00:00</published><updated>2021-09-22T00:00:00+00:00</updated><id>https://genicsblog.com/android-application-fundamentals</id><content type="html" xml:base="https://genicsblog.com/android-application-fundamentals">&lt;h2 id=&quot;android-application-fundamentals---understand-the-bits-and-bytes&quot;&gt;Android Application Fundamentals - Understand the bits and bytes&lt;/h2&gt;
 
 &lt;p&gt;Hello there!&lt;/p&gt;
 
-&lt;p&gt;In the last article at the &lt;a href=&quot;https://genicsblog.com/series/android-development&quot;&gt;Android app development series&lt;/a&gt;, we learned &lt;a href=&quot;https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio&quot;&gt;how to make a Hello World app&lt;/a&gt;. We made a new project in Android Studio and ran the app.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><summary type="html">A complete guide to understanding Android Studio basics and Android app structure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632128417570%2FzaxOSlbso.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" /><media:content medium="image" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632128417570%2FzaxOSlbso.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!</title><link href="https://genicsblog.com/introducing-jekyllex-android-app" rel="alternate" type="text/html" title="Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!" /><published>2021-08-31T00:00:00+00:00</published><updated>2021-08-31T00:00:00+00:00</updated><id>https://genicsblog.com/introducing-jekyllex-android-app</id><content type="html" xml:base="https://genicsblog.com/introducing-jekyllex-android-app">&lt;h2 id=&quot;introducing-jekyllex---the-easiest-way-to-manage-a-jekyll-blog-from-an-android-device&quot;&gt;Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!&lt;/h2&gt;
-
-&lt;p&gt;Hello, awesome people!&lt;/p&gt;
+&lt;p&gt;In the last article at the &lt;a href=&quot;https://genicsblog.com/series/android-development&quot;&gt;Android app development series&lt;/a&gt;, we learned &lt;a href=&quot;https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio&quot;&gt;how to make a Hello World app&lt;/a&gt;. We made a new project in Android Studio and ran the app.&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="other" /><summary type="html">A complete guide to understanding Android Studio basics and Android app structure.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632128417570%2FzaxOSlbso.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" /><media:content medium="image" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1632128417570%2FzaxOSlbso.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!</title><link href="https://genicsblog.com/introducing-jekyllex-android-app" rel="alternate" type="text/html" title="Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!" /><published>2021-08-31T00:00:00+00:00</published><updated>2021-08-31T00:00:00+00:00</updated><id>https://genicsblog.com/introducing-jekyllex-android-app</id><content type="html" xml:base="https://genicsblog.com/introducing-jekyllex-android-app">&lt;p&gt;Hello, awesome people!&lt;/p&gt;
 
 &lt;p&gt;Today I present to you my latest project - &lt;a href=&quot;https://jekyllex.xyz&quot;&gt;JekyllEx&lt;/a&gt;, which I have been working on for the &lt;a href=&quot;https://townhall.hashnode.com/auth0-hackathon&quot;&gt;Hashnode Auth0 August Hackathon&lt;/a&gt;!&lt;/p&gt;
 
 &lt;h2 id=&quot;-detailed-background&quot;&gt;🎊 Detailed Background&lt;/h2&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;&lt;strong&gt;TLDR&lt;/strong&gt;: I built JekyllEx because Jekyll(a static site generator) has a lot of potentials, but the learning curve for a non-tech-savvy person was high.&lt;/p&gt;
 
 &lt;p&gt;To bridge the gap, I am presenting JekyllEx which can intuitively manage a Jekyll blog’s posts with a much simpler UI and effective editor- using which you don’t need to mess with code and commits for any article you write!&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;A few months ago, I got to learn about &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, which is a static site generator. In short:&lt;/p&gt;
 
@@ -114,7 +388,7 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;This caught my attention in the first go as I am a blogging freak who has been &lt;a href=&quot;https://genicsblog.com/introductory-first-post&quot;&gt;testing different blogging solutions for a few years now&lt;/a&gt; 😆.&lt;/p&gt;
 
-&lt;p&gt;I used Jekyll in many places, testing things locally and then finally making &lt;a href=&quot;https://samdisha.me&quot;&gt;my sister’s blog&lt;/a&gt; with it, and helped someone(can’t mention) to make a &lt;a href=&quot;https://60wordsofwisdom.xyz&quot;&gt;small blog&lt;/a&gt; for him.&lt;/p&gt;
+&lt;p&gt;I used Jekyll in many places, testing things locally and then finally making &lt;a href=&quot;https://samdisha.me&quot; rel=&quot;dofollow&quot;&gt;my sister’s blog&lt;/a&gt; with it, and helped someone(can’t mention) to make a &lt;a href=&quot;https://60wordsofwisdom.xyz&quot;&gt;small blog&lt;/a&gt; for him.&lt;/p&gt;
 
 &lt;p&gt;It was just the fact that after initial setup, all we need to do for a new post is write markdown and let Jekyll do the further work… And, since it builds a static site, we can host it for free on Github Pages!&lt;/p&gt;
 
@@ -145,6 +419,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
   &lt;li&gt;Hashnode’s august hackathon in partnership with Auth0 provided the zeal required to start a new project!&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;-introducing-jekyllex&quot;&gt;🚀 Introducing JekyllEx&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1630347657127/VGBAZJ7zN.png&quot; alt=&quot;round_logo.png&quot; /&gt;&lt;/p&gt;
@@ -155,10 +431,9 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;Check out the demo video to know how to use JekyllEx!&lt;/p&gt;
 
-&lt;div class=&quot; mb-6 aspect-video&quot;&gt;
-    &lt;iframe src=&quot;https://www.youtube.com/embed/U92BmvFzmCc&quot; class=&quot;w-full h-full rounded-xl&quot; allowfullscreen=&quot;&quot;&gt;
-    &lt;/iframe&gt;
-&lt;/div&gt;
+&lt;p&gt;%[https://www.youtube.com/watch?v=U92BmvFzmCc]&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;-some-handy-links&quot;&gt;🔗 Some Handy Links:&lt;/h3&gt;
 
@@ -184,6 +459,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
   &lt;li&gt;Demo blog used for testing Jekyll app: https://demo.jekyllex.xyz&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;-app-tour&quot;&gt;🔎 App Tour&lt;/h2&gt;
 
 &lt;p&gt;This section showcases the UI of the JekyllEx app.&lt;/p&gt;
@@ -192,7 +469,7 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;This is the auth page where the user must connect his GitHub account with JekyllEx to authorize the App to manage the blog repository.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png&quot; alt=&quot;auth-page.png&quot; class=&quot;img&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1630351766117/Q5GSw4BdA.png&quot; alt=&quot;auth-page.png&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;home-page&quot;&gt;Home Page&lt;/h3&gt;
 
@@ -239,6 +516,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 &lt;p&gt;These are some of the things that were left in the above images, so included aside:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1630356234366/bxtpJ84ko.png&quot; alt=&quot;other.png&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;-technical-details&quot;&gt;🛠 Technical Details&lt;/h2&gt;
 
@@ -294,6 +573,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 &lt;h3 id=&quot;️-license&quot;&gt;🛡️ License&lt;/h3&gt;
 
 &lt;p&gt;This project is &lt;a href=&quot;https://github.com/jekyllex/jekyllex-android/blob/main/LICENSE&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MIT&lt;/code&gt;&lt;/a&gt; licensed.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;-development-journey&quot;&gt;👨🏻‍💻 Development Journey&lt;/h2&gt;
 
@@ -463,6 +744,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 
 &lt;p&gt;The same logic was used for text, as soon as text would be edited, it will be observed by the Preview Fragment and set the rendered markdown.&lt;/p&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;-roadmap&quot;&gt;🔥 Roadmap&lt;/h2&gt;
 
 &lt;p&gt;JekyllEx solves the major problem of managing posts. But there exists another problem, one can manage their blog from JekyllEx, but how could they make the Jekyll blog in the first place?&lt;/p&gt;
@@ -484,16 +767,20 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
   &lt;li&gt;&lt;strong&gt;If possible&lt;/strong&gt;, make a section to share your article with other JekyllEx users, like a community sort of thing.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h2 id=&quot;-real-usage&quot;&gt;💡 Real Usage&lt;/h2&gt;
 
 &lt;p&gt;JekyllEx is already being used to manage:&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;https://samdisha.me&quot;&gt;The personal blog of my sister&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://samdisha.me&quot; rel=&quot;dofollow&quot;&gt;The personal blog of my sister&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;https://60wordsofwisdom.xyz&quot;&gt;60 w.o.w blog&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;If you use JekyllEx &lt;s&gt;and want to get some backlinks and referral&lt;/s&gt;, you can get listed here by comment your experience with using JekyllEx and providing a link to your blog!&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;-final-words&quot;&gt;😊 Final Words&lt;/h2&gt;
 
@@ -502,6 +789,8 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
 &lt;p&gt;I would really appreciate it if you could take a moment and comment on your views on my project! Also, react to the post to spread some love :)&lt;/p&gt;
 
 &lt;p&gt;All kinds of feedbacks are welcome 😄&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;-connect-with-me&quot;&gt;🌏 Connect with me!&lt;/h2&gt;
 
@@ -512,4 +801,203 @@ stated by famous personalities. This app uses &lt;a href=&quot;https://zenquotes
   &lt;li&gt;Instagram: &lt;a href=&quot;https://instagram.com/&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@_gourav.khunger_&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Youtube: &lt;a href=&quot;https://www.youtube.com/channel/UCkv-J_D8jK2N02nBcyM92mQ&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Gourav Khunger&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;Discord: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;gourav#2215&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="android" /><category term="jekyll" /><category term="open-source" /><summary type="html">A project I made for the Hashnode x Auth0 August Hackathon.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" /><media:content medium="image" url="https://genicsblog.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1630321300344%2FJIzd0LhK2.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;w=3840&amp;q=75" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
+&lt;/ul&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="open-source" /><category term="apps" /><category term="jekyll" /><summary type="html">A project I made for the Hashnode x Auth0 August Hackathon.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png" /><media:content medium="image" url="https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png" xmlns:media="http://search.yahoo.com/mrss/" /></entry><entry><title type="html">How to Make Accordions in Android?</title><link href="https://genicsblog.com/how-to-make-accordions-in-android" rel="alternate" type="text/html" title="How to Make Accordions in Android?" /><published>2021-02-12T00:00:00+00:00</published><updated>2021-02-12T00:00:00+00:00</updated><id>https://genicsblog.com/how-to-make-accordions-in-android</id><content type="html" xml:base="https://genicsblog.com/how-to-make-accordions-in-android">&lt;p&gt;Accordions are great widgets for providing information to a user though it is for FAQs, KnowledgeBase, etc.&lt;/p&gt;
+
+&lt;p&gt;This is an example of an accordion on a webpage:&lt;/p&gt;
+
+&lt;details&gt;
+    &lt;summary&gt;Accordion&lt;/summary&gt;
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+&lt;/details&gt;
+
+&lt;p&gt;But when it comes to Android, it can get complex. But I am here to guide you through it! We’ll tackle the situation easily and make a simple yet beautiful accordion that looks charming!&lt;/p&gt;
+
+&lt;p&gt;So, without wasting any more time, let’s get started!&lt;/p&gt;
+
+&lt;h1 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h1&gt;
+
+&lt;p&gt;This project assumes that you have an android project set up and editable. There are no complex things needed to do for this project. Next, here are the steps to make the accordion.&lt;/p&gt;
+
+&lt;h1 id=&quot;adding-dependencies&quot;&gt;Adding dependencies&lt;/h1&gt;
+
+&lt;p&gt;To make our accordion beautiful, we’ll be using Material Card View to enhance its look. This makes it look gracious.&lt;/p&gt;
+
+&lt;p&gt;To do that, add this dependency to the build.gradle(module: app) file:&lt;/p&gt;
+
+&lt;div class=&quot;language-groovy highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;implementation&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'com.google.android.material:material:1.0.0'&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;add-necessary-layout-widgets&quot;&gt;Add necessary layout widgets&lt;/h1&gt;
+
+&lt;p&gt;First off to make the accordion, we’ll add the necessary layout widgets to our XML file of the activity. For that, add the following code to your activity’s XML file. I will show you how to make just one Accordion, but the implementations would be the same for more.&lt;/p&gt;
+
+&lt;p&gt;Also, this Accordion has a textview, a horizontal rule and a button to copy a piece of content. So check the code out.&lt;/p&gt;
+
+&lt;div class=&quot;language-xml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;com.google.android.material.card.MaterialCardView&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@android:color/darker_gray&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/uid&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_columnWeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_gravity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;center&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt; 
+    &lt;span class=&quot;na&quot;&gt;android:layout_margin=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;12dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_rowWeight=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;300dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;app:cardCornerRadius=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;app:cardElevation=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;3dp&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;com.google.android.material.card.MaterialCardView&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:foreground=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;?android:attr/selectableItemBackground&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_gravity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;center&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;card_view:cardBackgroundColor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@color/white&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;card_view:cardCornerRadius=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10dp&quot;&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;card_view:cardPreventCornerOverlap=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;RelativeLayout&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:foreground=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;?android:attr/selectableItemBackground&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:gravity=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;center&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+        &lt;span class=&quot;na&quot;&gt;android:padding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;16dp&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;androidx.appcompat.widget.AppCompatTextView&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:drawablePadding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:fontFamily=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@font/ubuntu&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/uidNo&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentStart=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginEnd=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;30dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:textColor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;#000000&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:textSize=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;22dp&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;ImageView&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/arrowUID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentEnd=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_centerVertical=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginStart=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;10dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@drawable/dropdown&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;androidx.appcompat.widget.AppCompatTextView&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:fontFamily=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@font/ubuntu&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/whatIsUID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentStart=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;60dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@string/whatsUID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:textColor=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@android:color/darker_gray&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:textSize=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;20dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:visibility=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;visible&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;View&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@android:color/darker_gray&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/line&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_below=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@id/whatIsUID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;1dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;2dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;match_parent&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:visibility=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gone&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;Button&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;style=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@style/Widget.AppCompat.Button.Colored&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:background=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@drawable/round&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:fontFamily=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@font/ubuntu&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@+id/copyUID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_alignParentEnd=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;true&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_below=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;@id/line&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;wrap_content&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_marginTop=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;5dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:layout_width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;150dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:padding=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;4dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:text=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Copy UID&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:textSize=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;18dp&quot;&lt;/span&gt;
+            &lt;span class=&quot;na&quot;&gt;android:visibility=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;gone&quot;&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;/&amp;gt;&lt;/span&gt;
+
+    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/RelativeLayout&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/com.google.android.material.card.MaterialCardView&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/com.google.android.material.card.MaterialCardView&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Please replace the content in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;RelativeLayout&lt;/code&gt; as per your needs. You might get errors while using the above code, these are because some variables have been initialized in my project but are pending at yours.&lt;/p&gt;
+
+&lt;p&gt;So I recommend that you do this if you know how to handle those cases. Anyways, you are free to edit the code as per your needs.&lt;/p&gt;
+
+&lt;p&gt;We have added material card layouts to make the accordion look perfect, since, with it, we can have rounded corners and shadow effects. Inside the material layout, you can have pretty much anything you want in your own way, but this is the implementation of how I have used it in my app(Demo output is given below).&lt;/p&gt;
+
+&lt;h1 id=&quot;java-part&quot;&gt;Java Part&lt;/h1&gt;
+
+&lt;p&gt;Here’s the java code to be included into the Activity for making the accordion work:&lt;/p&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MyActivity&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Fragment&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+
+    &lt;span class=&quot;nc&quot;&gt;MaterialCardView&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;click&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;;&lt;/span&gt;
+
+    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onCreate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;//....&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;findViewById&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setOnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;OnClickListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onClick&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                    &lt;span class=&quot;nc&quot;&gt;TransitionManager&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;beginDelayedTransition&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;whatIsUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnimatorListenerAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                                    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+                                    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Animator&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;whatIsUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VISIBLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VISIBLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;copyUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;VISIBLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;arrowUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setImageResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;drawable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dropup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;whatIsUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;animate&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setDuration&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;300&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setListener&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AnimatorListenerAdapter&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                                    &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+                                    &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;Animator&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;whatIsUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;n&quot;&gt;copyUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setVisibility&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;View&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;GONE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                        &lt;span class=&quot;kd&quot;&gt;super&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;onAnimationEnd&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;animation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                                &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;arrowUID&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;setImageResource&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;R&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;drawable&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;dropdown&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+                    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+                    &lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++;&lt;/span&gt;
+                &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;});&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;//....&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here, we have defined the logic to open or close the accordion, based on the value of an integer(defined at the creation of the class). It is animated to make the opening and closing more realistic.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;But&lt;/strong&gt;, if you want to add more accordions, please be sure not to use this method, since it can be heavy on the system as well as that the code will become a big mess, as each accordion is handled by its own particular set of JAVA codes.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;I am currently working on a fix that will be published soon!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h1&gt;
+
+&lt;p&gt;You’ve learned a way to add accordions to your app. Here’s a demo of what it will look like in your app.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1613128636162/OP9Cg1kSL.gif&quot; alt=&quot;accordion.gif&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I hope you enjoyed the article and it helped you!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What did you learn from this tutorial&lt;/em&gt;? Comment and let me know! 🙂&lt;/p&gt;</content><author><name>gouravkhunger</name></author><category term="android" /><category term="accordions" /><category term="app-development" /><summary type="html">Making accordions in Android can be hard, but here's an easy way to build them.</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" /><media:content medium="image" url="https://cdn.hashnode.com/res/hashnode/image/upload/v1613134421353/Wlmpz56ye.jpeg" xmlns:media="http://search.yahoo.com/mrss/" /></entry></feed>
