@@ -6,7 +6,7 @@ from textblob import TextBlob
 search_file = Path("_site/search.json")
 
 with open(search_file) as f:
-    data = json.load(f)
+    data = json.load(f, strict=False)
 
 for item in data:
     txt = item["content"]
