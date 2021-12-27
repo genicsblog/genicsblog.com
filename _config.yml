@@ -10,7 +10,7 @@ twitter_username: "jekyllrb"
 github_username: "genicsblog"
 github_repo: "genicsblog/genicsblog.github.io"
 permalink: /:title
-staticman_url: ""
+staticman_url: "http://comments.genicsblog.com"
 
 collections:
   authors:
