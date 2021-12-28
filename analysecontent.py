@@ -39,16 +39,21 @@ for item in data:
     text_maker.ignore_tables = True
     text_maker.ignore_images = True
     text = text_maker.handle(html)
+    text = re.sub('[^A-Za-z]+', " ", text)
 
-    text = ''.join('{}.\n'.format(item) if (item and item[-1] not in '!?.,-') else '{}\n'.format(item) for item in text.split('\n'))
-    final = re.sub('[!:;,*)@#%(&$_?^]', " ", text)
+    final = ''.join('{}.\n'.format(item) if (item and item[-1] not in '!?.,-') else '{}\n'.format(item) for item in text.split('\n'))
 
-    blob = TextBlob(final)
     noduplicates = set()
-    for x in blob.noun_phrases:
-        for y in x.split(" "):
-            noduplicates.add(y)
+
+    for i in final.split('\n'):
+        blob = TextBlob(i)
+        for x in blob.noun_phrases:
+            for y in x.split(" "):
+                if(len(y) > 2):
+                    noduplicates.add(y)
+
     item["content"] = ' '.join(noduplicates)
+    item["url"] = item["url"].replace("index.html", "")
     f.close()
 
 with open(search_file, "w") as f:
