@@ -43,6 +43,7 @@ layout: none
     {
       "title"    : "Posts by {{ authorData.name | escape }}",
       "url"      : "/author/{{ author.author }}",
+      "content"  : ""
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
