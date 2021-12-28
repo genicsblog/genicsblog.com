@@ -73,7 +73,7 @@ postcss:
 jekyll-minifier:
   exclude: 
     - "sitemap.xml"
-    - "feed.xml"
+    - "search.json"
     - "assets/css/theme.css"
   uglifier_args:
     harmony: true

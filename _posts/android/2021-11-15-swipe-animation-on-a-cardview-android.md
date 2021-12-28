@@ -3,7 +3,7 @@ layout: post
 title:  "How to Add Swipe Animations to a CardView in an Android App"
 excerpt: "Learn how to add swipe animation to a card view. In this tutorial, we will add a sliding animation to a card view to simulate slide to refresh behaviour."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif"
-original: "https://www.freecodecamp.org/news/add-swipe-animations-to-a-card-view-in-android-app"
+original: "https://freecodecamp.org/news/add-swipe-animations-to-a-card-view-in-android-app"
 languages: ["kotlin"]
 category: android
 tags: ["animation", "app-development"]
@@ -384,4 +384,4 @@ For this, you have to keep track of the start position and end position then ani
 
 Thanks a lot for reading so far, I hope this post added some value. Subscribe to my newsletter(at the top of the article) to stay updated with latest Android content!
 
-[Let's Connect](https://genicsblog.com/contact)
+[Let's Connect](/author/gouravkhunger)
