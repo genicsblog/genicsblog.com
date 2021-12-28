@@ -1,0 +1,180 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="icon" href="/assets/images/genicsblog.png" type="image/x-icon"> <link rel="stylesheet" href="/assets/css/theme.css"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Fira+Code&amp;family=Sen&amp;display=swap" rel="stylesheet"> <link rel="stylesheet" href="/assets/css/prism.css"> <title>Beautiful Patterns You Can Try Making With Code</title> </head> <body> <nav> <p class="bg-primary p-3 text-center text-white font-medium flex flex-col sm:block"> <span class="md:hidden px-1">Connect with us on discord to stay updated.</span> <span class="hidden md:inline px-1">Connect with us on discord to stay updated on the blog's development.</span> <a href="https://discord.gg/qQEsNkF7F6" target="_blank" class="font-bold underline header-anchor hover:text-slate-300" rel="nofollow noopener noreferrer"> Join &gt; </a> </p> <header class="w-screen top-0 z-10" id="navbar"> <div class="bg-background max-h-20 py-1 px-2 sm:px-8 lg:px-8 mx-auto"> <div class="flex justify-between h-16"> <div class="flex px-2 lg:px-0"> <a class="group flex-shrink-0 flex items-center logo-anchor" href="/" aria-label="Home Page Link"> <div class="flex items-center space-x-2 whitespace-nowrap flex-nowrap"> <div class="h-8 w-8 mx-2"> <svg class="h-8 w-8 fill-white group-hover:fill-slate-300" viewbox="0 0 79.784508 91.197495" version="1.1" id="svg5" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"> <defs id="defs2"></defs> <g id="layer1" transform="translate(-68.235445,-52.679805)"> <path id="path962" style="stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 408.73047,210.44336 -139.49414,80.59961 0.87109,162.49414 52.71289,-32.94922 85.34766,48.85938 87.42773,-48.85743 -0.63476,-53.22851 -84.8711,-0.88477 v 27.79297 h 56.02735 v 9.45508 l -58.31446,33.66797 -56.13085,-32.4082 0.63476,-66.94922 55.81836,-32.22461 57.25195,32.76172 82.41016,-47.75782 z m 0.43945,32.62695 83.28125,48.08203 -26.93555,15.55274 -57.21484,-33.0332 -84.18359,48.60351 v 66.39453 l -25.48047,14.71094 0.084,-96.54102 z" transform="scale(0.26458333)"></path> <path style="stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" d="m 81.889144,125.74786 26.204966,15.12944 36.92584,-21.31914 V 88.998204 l -7.22758,4.172845 V 115.03627 L 108.1902,132.12709 89.310794,121.22706 Z" id="path1416"></path> </g> </svg> </div> <span class="font-bold hidden sm:block text-xl tracking-tight text-white group-hover:text-slate-300"> Genics Blog</span> </div> </a> </div> <div class="flex items-center h-16"> <div class="hidden lg:block pr-5"> <a class="nav-item text-white" href="/topics">Topics</a> <a class="nav-item text-white" href="/about">About Us</a> <a class="nav-item text-white" href="/contact">Contact</a> <a class="nav-item text-white" href="/advertise">Advertise</a> </div> <button onclick="showSearch()" aria-label="Search for posts"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-white hover:stroke-slate-300" fill="none" viewbox="0 0 24 24"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> </button> <a class="ml-4 px-2.5 py-1.5 font-bold rounded-md text-black bg-white hover:bg-slate-300 hover:scale-110 transition underline-none" href="/contribute">Contribute</a> <div class="ml-4 lg:hidden cursor-pointer"> <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-white hover:stroke-slate-300" id="menu-open" viewbox="0 0 24 24" onclick="toggleNav()"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path> </svg> <svg xmlns="http://www.w3.org/2000/svg" class="menu-close h-8 w-8 hidden stroke-white hover:stroke-slate-300" id="menu-close" viewbox="0 0 24 24" onclick="toggleNav()"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </div> </div> </div> </div> <div class="top-0 bg-background hidden p-6 lg:hidden" id="mobile-nav"> <div class="grid grid-cols-2 gap-y-2 gap-x-4"> <a class="group mobile-nav-item " href="/topics"> <span class="group-hover:text-white">Topics</span> </a> <a class="group mobile-nav-item " href="/advertise"> <span class="group-hover:text-white">Advertise</span> </a> <a class="group mobile-nav-item " href="/about"> <span class="group-hover:text-white">About Us</span> </a> <a class="group mobile-nav-item " href="/contact"> <span class="group-hover:text-white">Contact Us</span> </a> </div> </div> </header> </nav> <header class="bg-background text-white p-6 sm:p-10" id="banner"> <div class="flex flex-col lg:flex-row p-2"> <div class="flex justify-center items-center lg:w-1/2 md:mb-0"> <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1614086705341/KvZHQQVpn.gif" class="w-full md:w-3/4 lg:w-full rounded-xl shadow-xl aspect-video m-8" loading="lazy"> </div> <div class="flex flex-col justify-center lg:items-start w-full lg:w-1/2 lg:ml-12"> <h1 class="text-4xl font-black tracking-tight">Beautiful Patterns You Can Try Making With Code</h1> <span class="mt-0.5 text-justify">Learning the syntax of a language with patterns can be fun!</span> <div class="flex items-center mt-8"> <img class="rounded-full w-14 h-14" src="https://user-images.githubusercontent.com/46792249/147417247-648b87a9-8216-4b49-a8af-a9d46658ddde.jpeg" loading="lazy"> <div class="ml-4 leading-3"> <a class="font-extrabold text-xl" href="/author/gouravkhunger"> Gourav Khunger </a><br> <span class="text-sm"> Posted on February 28, 2021 </span> </div> </div> <div class="mt-8"> <span>Category: </span> <a class="text-sm ml-2 hover:scale-110 category-name !bg-coding underline-none" href="/category/coding">#coding</a> </div> <div class="mt-4 sm:mt-1"> <span>Tags: </span> <a class="text-sm ml-2 my-0.5 hover:scale-110 tag-name !bg-beginners underline-none" href="/tag/beginners">#beginners</a> <a class="text-sm ml-2 my-0.5 hover:scale-110 tag-name !bg-design underline-none" href="/tag/design">#design</a> </div> </div> </div> </header> <main> <section class="block lg:flex"> <div class="bg-white rounded-2xl shadow-xl shadow-slate-200 md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]"> <article class="p-6 md:p-8"> <p>I feel that learning the basics and syntax of any kind of programming language can be boring if you don’t do it recreationally.</p> <p>The very basics of any language include variables, simple data types, loops, and general syntax of writing instructions. To learn those efficiently, I would recommend picking any language of your choice and have a look at how that stuff works.</p> <p>When you are comfortable with the general syntax, you can try out printing patterns with the language you chose. I know that figuring out how to make some patterns can be boring as hell! But chill, this article has some cool-looking patterns and how you can make them.</p> <p>This article has the pseudo-code of the patterns, and the difficulty level increases as you proceed with the post. The article also explains the logic needed to make the pattern.</p> <p>Converting the pseudo-code to a preferred language is left as an exercise for the readers, as this is meant to make beginners learn the syntax well!</p> <p>Doing this type of exercise will improve your implementation efficiency!</p> <p>Here’s the list of patterns given in this post:</p> <ul> <li><a href="#squares">Squares</a></li> <li><a href="#triangle">Right Angled Triangle</a></li> <li><a href="#snakes">Snakes</a></li> <li><a href="#checkerboard-pattern">CheckerBoard Pattern</a></li> <li><a href="#diamonds">Diamonds</a></li> <li><a href="#diamond-platform">Diamond Platform</a></li> </ul> <p>At the end of this post, there’s a bonus](#bonus) practice pattern for you!</p> <hr> <h1 id="squares">Squares</h1> <p>The task is to print a square of size <code class="language-plaintext highlighter-rouge">n*n</code> filled with <code class="language-plaintext highlighter-rouge">*</code>’s.</p> <p>This is a really basic and easy pattern. All you need is to print <code class="language-plaintext highlighter-rouge">*</code> for <code class="language-plaintext highlighter-rouge">n</code> times in a line and print the line <code class="language-plaintext highlighter-rouge">n</code> times.</p> <p>The pseudo-code for the same is as follows:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n
+for i=1 to n:
+    for j=1 to n:
+        print('*')
+    print('\n')  // new line
+</code></pre></div></div> <p>Example:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Input: 5
+
+Output:
+
+*****
+*****
+*****
+*****
+*****
+</code></pre></div></div> <hr> <h1 id="triangle">Triangle</h1> <p>For this task, you need to print a right-angled triangle with <code class="language-plaintext highlighter-rouge">*</code> symbols.</p> <p>Example:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input: 4
+output:
+
+*
+**
+***
+****
+</code></pre></div></div> <p>This is simple, the logic is just to print n <code class="language-plaintext highlighter-rouge">*</code>’s on the <code class="language-plaintext highlighter-rouge">n</code>th line. The pseudo-code for the same is:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n
+for i=1 to n:
+    for j=1 to i:
+        print('*')
+    print('\n')
+</code></pre></div></div> <p>Okay, these were some simple ones just for a warm-up, lets move to some real fun!</p> <hr> <h1 id="snakes">Snakes</h1> <p>This pattern is really nice. You need to print a visual pattern of a snake as if it was crawling alternatingly on a plane. The body of the snake is represented by <code class="language-plaintext highlighter-rouge">#</code>’s and the rest area must be filled with <code class="language-plaintext highlighter-rouge">.</code>’s.</p> <p>The plane has <code class="language-plaintext highlighter-rouge">n</code> rows and <code class="language-plaintext highlighter-rouge">m</code> columns. The input will have <code class="language-plaintext highlighter-rouge">n</code> followed by <code class="language-plaintext highlighter-rouge">m</code>.</p> <p>An example will clear out what the task is.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input: 3 4
+output:
+####
+...#
+####
+
+input: 5 3
+output:
+
+###
+..#
+###
+#..
+###
+</code></pre></div></div> <p>Okay so this example might have made the task clear, I had a pretty cool logic for this one.</p> <p>We can observe that alternating lines will be completely filled with <code class="language-plaintext highlighter-rouge">#</code>’s. Also, for other lines, the <code class="language-plaintext highlighter-rouge">#</code> appears either on the extreme right or on the extreme left.</p> <p>So I thought to print all <code class="language-plaintext highlighter-rouge">#</code>’s on each line whose number is odd(this will be more clear from the pseudo-code) and also have a boolean variable whose value will determine whether to print <code class="language-plaintext highlighter-rouge">#</code> on the extreme right or the extreme left!</p> <p>Here’s the pseudo-code for this logic:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n and m
+
+flag = true
+
+for i=1 to n:
+    if(i%2==1):  //if i is odd
+        for j=1 to m:
+            print('#')
+        print('\n')
+    else:
+        if(flag):
+            for j=1 to m-1:
+                print('.')
+            print('\n')
+            flag = false;
+        else:
+            print('#')
+            for j=1 to m-1:
+                print('.')
+            print('\n')
+            flag = true
+</code></pre></div></div> <hr> <h1 id="checkerboard-pattern">CheckerBoard Pattern</h1> <p>This is an advanced pattern that can’t be explained in the text, also visual representations are worth 1000 words!</p> <p>Here’s what this pattern is.</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>n = 4
+oxox
+xoxo
+oxox
+xoxo
+
+n = 5
+oxoxo
+xoxox
+oxoxo
+xoxox
+oxoxo
+</code></pre></div></div> <p>This might seem like a cakewalk at first, as our brain can understand patterns easily but to make the computer print such patterns can be a mess. I recommend you try doing this yourself first.</p> <p>Anyways, here’s the pseudo-code I used to make such a pattern:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n
+make a 2D array 'a' of size  n x n
+f = true
+o = 'o', x = 'x'
+for i=1 to n:
+    for j=1 to n:
+        if(f):
+            a[i][j] = o
+            f = false
+        else :
+            a[i][j] = x
+            f = true
+
+for i=1 to n:
+    for j=1 to n:
+        print(a[i][j])
+    print('\n') //new line
+</code></pre></div></div> <p>This was crazy, at first I had thought to print it without some arrays and stuff in the scene, but when I failed to do so, I had to use this alternative. I love this pattern! Do you? Let me know in the comments!</p> <hr> <h1 id="diamonds">Diamonds</h1> <p>This one is also an interesting pattern, the task is to make a diamond whose max radius is given.</p> <p>Example:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input: 5
+
+output: 
+
+    *
+   ***
+  *****
+ *******
+*********  // radius = 5
+ *******
+  *****
+   ***
+    *
+</code></pre></div></div> <p>Again, this is getting difficult at this point. We want to have the <code class="language-plaintext highlighter-rouge">*</code> at their correct position using spaces.</p> <p>For such cases, what I think is to break the pattern into simpler subparts, i.e., at first, I will make the pyramid type of thing at the top and handle the bottom in another case.</p> <p>Now, one can see that for any number <code class="language-plaintext highlighter-rouge">n</code>, the total height of the diamond will always be <code class="language-plaintext highlighter-rouge">n+(n-1)</code>, of which, the upper part is a pyramid with height <code class="language-plaintext highlighter-rouge">n</code> and lower is an inverted pyramid of height <code class="language-plaintext highlighter-rouge">n-1</code>.</p> <p>Here is the pseudo-code and the explanation follows below:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n
+start = n, cnt = 1 #start = position where * must start printing, cnt = number of * to print
+
+for i=1 to n:
+    temp = cnt
+    for j=1 to (n+(n-1)):
+        if(j&gt;=start and temp&gt;0):
+            print(*)
+            temp--
+        else:
+            print(' ')
+    start--
+    cnt+=2
+    print('\n')
+
+start = 2, cnt = (n+(n-3))
+
+for i=n+1 to (n+(n-2)):
+    temp = cnt
+    for j=1 to (n+(n-1)):
+        if(j&gt;=start and temp&gt;0):
+            print(*)
+            temp--
+        else:
+            print(' ')
+    start++
+    cnt-=2
+    print('\n')
+</code></pre></div></div> <p>What I did is to have two control variables <code class="language-plaintext highlighter-rouge">start</code> and <code class="language-plaintext highlighter-rouge">cnt</code>. They control where to print <code class="language-plaintext highlighter-rouge">*</code> and where to print whitespace. Overall I am pretty inspired by the logic of the code. I hope you loved this one as well!</p> <hr> <h1 id="diamond-platform">Diamond Platform</h1> <p>This is another extension of the above pattern but still, it looks nice. The task is to make a platform that is bounded by <code class="language-plaintext highlighter-rouge">/</code>’s and <code class="language-plaintext highlighter-rouge">\</code>’s and whose each side is <code class="language-plaintext highlighter-rouge">n</code> units long. The shape of the platform must be that of a diamond.</p> <p>This example will make it clear:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input: 3
+output:
+  /\
+ /  \
+/    \
+\    /
+ \  /
+  \/
+</code></pre></div></div> <p>The logic I followed for this was also pretty simple. Here’s the pseudo-code for it:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input n
+x=n
+for i=1 to n:
+    for j=1 to n:
+        if(j==x):
+            print('/')
+        else:
+            print(' ')
+    for j=n to 1:
+        if(j==x):
+            print('\')
+        else:
+            print(' ')
+    x--
+    print('\n')
+
+x=1
+
+for i=1 to n:
+    for j=1 to n:
+        if(j==x):
+            print('\')
+        else:
+            print(' ')
+    for j=n to 1:
+        if(j==x):
+            print('/')
+        else:
+            print(' ')
+    x--
+    print('\n')
+</code></pre></div></div> <hr> <h1 id="bonus">Bonus</h1> <p>Here’s an additional pattern task which is left as an exercise to you! If you did this, or even try it, let me know in the comments section below, you can share your pseudo-code there and I will look into it!</p> <h3 id="egyptian-pyramid">Egyptian Pyramid</h3> <p>You might be knowing about pyramids, they have their peak in the center and all the other points are symmetrically lower than it. The task is to form an asymmetric pyramid of height <code class="language-plaintext highlighter-rouge">n</code>.</p> <p>Here’s an example for it:</p> <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input: 4
+output:
+1 1 1 1 1 1 1
+1 2 2 2 2 2 1
+1 2 3 3 3 2 1
+1 2 3 4 3 2 1
+1 2 3 3 3 2 1
+1 2 2 2 2 2 1
+1 1 1 1 1 1 1
+</code></pre></div></div> <hr> <p>Writing this article was so much fun for me! But yeah it required a lot of effort figuring out things, get them working, and compiling them into this article, I hope you got to learn something new from it.</p> <p>If you have any kind of feedback, feel free to leave it in the comments section or find me on my social accounts. Happy Coding :)</p> </article> </div> <aside class="m-6 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]"> <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200"> <img class="w-24 h-24 rounded-full mx-auto" src="https://user-images.githubusercontent.com/46792249/147417247-648b87a9-8216-4b49-a8af-a9d46658ddde.jpeg" alt="" loading="lazy"> <div class="pt-4 space-y-4"> <figcaption class="font-medium text-center"> <div> <a href="/author/gouravkhunger" class="text-xl md:text-xl font-bold"> Gourav Khunger </a> </div> <div class="text-gray-700 text-sm"> Founder @ Genics Blog </div> </figcaption> <p class="leading-5 font-medium text-justify"> 16 year old passionate App developer. I have interests in web development too. </p> </div> </figure> <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-24 mt-8"> Advertisement here. </figure> </aside> </section> <h1 class="mx-8 md:mx-10 lg:mx-14 -mb-4 lg:-mb-8">Comments</h1> <section class="block lg:flex"> <div class="md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]"> <div class="comments"> <p class="md:text-lg p-6 md:p-8 text-center">No comments here, start the discussion below!</p> </div> <div id="respond"> <div class="bg-white rounded-2xl shadow-xl shadow-slate-200 p-8 mt-2 mb-12" id="form-parent"> <h5 id="form-title">Add a comment</h5> <form class="form" method="POST" action="http://comments.genicsblog.com/v2/entry/genicsblog/genicsblog.github.io/main/comment"> <input name="options[slug]" type="hidden" value="beautiful-patterns-you-can-try-making-with-code"> <input type="hidden" id="replying-to-id" name="fields[replying_to_id]" value=""> <div> <label for="commentbox-name">Name</label><br> <input name="fields[name]" type="text" id="commentbox-name" placeholder="John Doe" required class="mt-1 w-full rounded-lg px-2 py-1.5 border-2 focus:border-primary outline-none"> </div> <div class="mt-4"> <label for="commentbox-message">Message</label><br> <textarea type="text" name="fields[message]" id="commentbox-message" rows="5" placeholder="Enter your message here. Markdown is supported!" required class="mt-1 w-full rounded-lg px-2 py-1.5 border-2 focus:border-primary outline-none form-control"></textarea> </div> <div> <button class="submit-form px-2.5 py-0.5 mt-4 rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition"> Submit </button> <button class="hidden ml-2 px-2.5 py-0.5 mt-4 rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition" id="cancel-reply-btn"> Cancel Reply </button> </div> </form> </div> </div> <script src="/assets/js/comment.js"></script> </div> <aside class="m-8 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]"> <div class="p-6 md:p-8 space-y-4 lg:sticky lg:top-24 rounded-2xl bg-white shadow-xl shadow-slate-200"> <p class="leading-5 font-medium text-justify"> Please adhere to our Code of Conduct and other stuff because we don't want you to fight in our comments sections lmao </p> </div> </aside> </section> </main> <footer class="px-12 py-8 text-center"> © 2021 <a href="/">Genics Blog</a> <br> Built with <a href="https://jekyllrb.com" target="_blank" rel="nofollow noopener noreferrer">Jekyll</a>. Hosted on <a href="https://github.com" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>. <br><br> Developed by <a href="https://github.com/gouravkhunger" rel="nofollow noopener noreferrer" target="_blank"> Gourav Khunger </a>. Thanks to the <a href="https://github.com/genicsblog/genicsblog.github.io/graphs/contributors" rel="nofollow noopener noreferrer" target="_blank">contributors</a>! <br><br> <a class="nav-item text-white" href="/terms">T&amp;C</a> <a class="nav-item text-white" href="/privacy-policy">Privacy Policy</a> </footer> <div class="hidden fixed top-0 w-full h-full p-6 md:p-14 backdrop-blur-md cursor-pointer z-20" id="search-container"> <div class="p-4 bg-white mx-auto w-full max-h-full sm:w-3/4 lg:w-1/2 content-center rounded-lg shadow-md shadow-slate-200 cursor-auto overflow-auto" id="search-box"> <div class="flex items-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-slate-400" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path> </svg> <input type="text" class="w-full h-full pl-4 text-2xl outline-none" id="search-input" placeholder="Search..."> </div> <div id="results-container"> </div> </div> </div> <div class="hidden fixed top-0 left-0 flex justify-center items-center w-full h-full backdrop-blur-md shadow-md z-20" id="modal"> <div class="p-4 bg-white w-5/6 sm:w-3/4 lg:w-1/2 content-center rounded-lg shadow-lg shadow-slate-200 cursor-auto"> <div class="flex justify-between"> <span class="text-xl md:text-2xl" id="modal-title">Comment submitted!</span> <button id="close" aria-label="Close modal"> <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 sm:h-8 sm:w-8" fill="none" viewbox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path> </svg> </button> </div> <p class="mt-6" id="modal-message"></p> </div> </div> <script src="/assets/js/theme.js"></script> <script src="/assets/js/search.js"></script> <script src="/assets/js/prism.js"></script> </body> </html>
