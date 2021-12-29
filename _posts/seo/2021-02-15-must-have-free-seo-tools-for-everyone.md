@@ -7,6 +7,12 @@ notice: "*Thumbnail art credits: [macrovector - freepik.com](https://www.freepik
 category: seo
 tags: ["free-stuff", "tools", "software"]
 author: gouravkhunger
+contributors:
+    - name: test
+      role: Editor
+    - name: Test 2
+      role: Proof-reader
+
 ---
 
 Hi everyone! In this post, I am going to put forward some simple free SEO tools that will help you gain an analysis of your website's traffic and reviews on your SEO.

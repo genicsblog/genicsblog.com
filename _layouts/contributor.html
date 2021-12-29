@@ -1,32 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-{% assign author = site.data.contributors[page.author] %}
+{% assign contributor = site.data.contributors[page.name] %}
 
 <head>
-    {% include seo.html %}
-    <title>{{ author.name }} | {{ author.role }}</title>
+    {% include headtags.html %}
+    <title>{{ contributor.name }} | {{ contributor.role }}</title>
 </head>
 
 <body>
 
-    <nav>
-        {% include nav.html %}
-    </nav>
+    {% include nav.html %}
 
     <header class="bg-background text-white p-6 sm:p-10" id="banner">
         <div class="flex flex-col items-center">
-            <img src="{{ author.avatar }}" class="w-28 h-28 sm:w-36 sm:h-36 rounded-full" />
+            <img src="{{ contributor.avatar }}" class="w-28 h-28 sm:w-36 sm:h-36 rounded-full" />
             <span
                 class="mt-4 mb-1 font-black text-4xl sm:text-5xl tracking-tight text-white group-hover:text-slate-300">
-                {{ author.name }}
+                {{ contributor.name }}
             </span>
             <h4>
-                {{ author.role }}
+                {{ contributor.role }}
             </h4>
             <p class="mt-2">
-                {{ author.bio }}
+                {{ contributor.bio }}
             </p>
-            {% assign links = author.links %}
+            {% assign links = contributor.links %}
             <div class="grid grid-flow-col justify-center gap-6 items-center mt-6">
                 {% if links.stackoverflow != blank %}
                 <a class="underline-none hover:scale-125 transition" rel="nofollow noopener noreferrer"
@@ -70,12 +68,19 @@
 
     <main>
         <section class="p-6 sm:p-10">
+            {% assign posts = site.posts | where_exp:"item", "item.contributor == page.contributor"%}
+            {% assign arrSize = posts | size %}
+            {% if arrSize > 0 %}
             <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">
-                {% assign posts = site.posts | where_exp:"item", "item.author == page.author"%}
                 {% for post in posts %}
                 {% include postbox.html %}
                 {% endfor %}
             </div>
+            {% else %}
+            <div class="text-center text-xl">
+                No posts yet.
+            </div>
+            {% endif %}
         </section>
     </main>
 

@@ -1,91 +1,94 @@
-{% assign announcement = site.data.announcement %}
-{% if announcement.visible and page.url != announcement.link.url %}
-<p class="bg-primary p-3 text-center text-white font-medium flex flex-col sm:block">
-    <span class="md:hidden px-1">{{ announcement.small }}</span>
-    <span class="hidden md:inline px-1">{{ announcement.large }}</span>
-    {% if announcement.link.visible %}
-    <a href="{{ site.data.announcement.link.url }}" target="{{ site.data.announcement.link.target }}"
-        class="font-bold underline header-anchor hover:text-slate-300" {% if announcement.link.rel
-        %}rel="{{ announcement.link.rel }}" {% endif %}>
-        {{ announcement.link.text }}
-    </a>
+<nav>
+    {% assign announcement = site.data.announcement %}
+    {% if announcement.visible and page.url != announcement.link.url %}
+    <p class="bg-primary p-3 text-center text-white font-medium flex flex-col sm:block">
+        <span class="md:hidden px-1">{{ announcement.small }}</span>
+        <span class="hidden md:inline px-1">{{ announcement.large }}</span>
+        {% if announcement.link.visible %}
+        <a href="{{ site.data.announcement.link.url }}" target="{{ site.data.announcement.link.target }}"
+            class="font-bold underline header-anchor hover:text-slate-300" {% if announcement.link.rel
+            %}rel="{{ announcement.link.rel }}" {% endif %}>
+            {{ announcement.link.text }}
+        </a>
+        {% endif %}
+    </p>
     {% endif %}
-</p>
-{% endif %}
-<header class="w-screen top-0 z-10" id="navbar">
-    <div class="bg-background max-h-20 py-1 px-2 sm:px-8 lg:px-8 mx-auto">
-        <div class="flex justify-between h-16">
-            <div class="flex px-2 lg:px-0">
-                <a class="group flex-shrink-0 flex items-center logo-anchor" href="/" aria-label="Home Page Link">
-                    <div class="flex items-center space-x-2 whitespace-nowrap flex-nowrap">
-                        <div class="h-8 w-8 mx-2">
-                            {% include logo.html %}
+    <header class="w-screen top-0 z-10" id="navbar">
+        <div class="bg-background max-h-20 py-1 px-2 sm:px-8 lg:px-8 mx-auto">
+            <div class="flex justify-between h-16">
+                <div class="flex px-2 lg:px-0">
+                    <a class="group flex-shrink-0 flex items-center logo-anchor" href="/" aria-label="Home Page Link">
+                        <div class="flex items-center space-x-2 whitespace-nowrap flex-nowrap">
+                            <div class="h-8 w-8 mx-2">
+                                {% include logo.html %}
+                            </div>
+                            <span
+                                class="font-bold hidden sm:block text-xl tracking-tight text-white group-hover:text-slate-300">
+                                {{ site.title }}</span>
                         </div>
-                        <span
-                            class="font-bold hidden sm:block text-xl tracking-tight text-white group-hover:text-slate-300">
-                            {{ site.title }}</span>
+                    </a>
+                </div>
+                <div class="flex items-center h-16">
+                    <div class="hidden lg:block pr-5">
+                        <a class="nav-item {% if page.url contains '/topics' %}text-slate-400{% else %}text-white{% endif %}"
+                            href="/topics">Topics</a>
+                        <a class="nav-item {% if page.url contains '/about' %}text-slate-400{% else %}text-white{% endif %}"
+                            href="/about">About Us</a>
+                        <a class="nav-item {% if page.url contains '/contact' %}text-slate-400{% else %}text-white{% endif %}"
+                            href="/contact">Contact</a>
+                        <a class="nav-item {% if page.url contains '/advertise' %}text-slate-400{% else %}text-white{% endif %}"
+                            href="/advertise">Advertise</a>
+                        <!-- Docs coming soon -->
+                        <!--<a class="nav-item {% if page.url contains '/terms' %}text-slate-400{% else %}text-white{% endif %}"
+                    href="/terms">T&C</a>-->
                     </div>
+
+                    <button onclick="showSearch()" aria-label="Search for posts">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-white hover:stroke-slate-300"
+                            fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+
+                    <a class="ml-4 px-2.5 py-1.5 font-bold rounded-md text-black bg-white hover:bg-slate-300 hover:scale-110 transition underline-none"
+                        href="/contribute">Contribute</a>
+
+                    <div class="ml-4 lg:hidden cursor-pointer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-white hover:stroke-slate-300"
+                            id="menu-open" viewBox="0 0 24 24" onclick="toggleNav()">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
+                        </svg>
+
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            class="menu-close h-8 w-8 hidden stroke-white hover:stroke-slate-300" id="menu-close"
+                            viewBox="0 0 24 24" onclick="toggleNav()">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-0 bg-background hidden p-6 lg:hidden" id="mobile-nav">
+            <div class="grid grid-cols-2 gap-y-2 gap-x-4">
+                <a class="group mobile-nav-item {% if page.url contains '/categories' %}bg-gray-700{% endif %}"
+                    href="/topics">
+                    <span class="group-hover:text-white">Topics</span>
+                </a>
+                <a class="group mobile-nav-item {% if page.url contains '/advertise' %}bg-gray-700{% endif %}"
+                    href="/advertise">
+                    <span class="group-hover:text-white">Advertise</span>
+                </a>
+                <a class="group mobile-nav-item {% if page.url contains '/about' %}bg-gray-700{% endif %}"
+                    href="/about">
+                    <span class="group-hover:text-white">About Us</span>
+                </a>
+                <a class="group mobile-nav-item {% if page.url contains '/contact' %}bg-gray-700{% endif %}"
+                    href="/contact">
+                    <span class="group-hover:text-white">Contact Us</span>
                 </a>
             </div>
-            <div class="flex items-center h-16">
-                <div class="hidden lg:block pr-5">
-                    <a class="nav-item {% if page.url contains '/topics' %}text-slate-400{% else %}text-white{% endif %}"
-                        href="/topics">Topics</a>
-                    <a class="nav-item {% if page.url contains '/about' %}text-slate-400{% else %}text-white{% endif %}"
-                        href="/about">About Us</a>
-                    <a class="nav-item {% if page.url contains '/contact' %}text-slate-400{% else %}text-white{% endif %}"
-                        href="/contact">Contact</a>
-                    <a class="nav-item {% if page.url contains '/advertise' %}text-slate-400{% else %}text-white{% endif %}"
-                        href="/advertise">Advertise</a>
-                    <!-- Docs coming soon -->
-                    <!--<a class="nav-item {% if page.url contains '/terms' %}text-slate-400{% else %}text-white{% endif %}"
-                    href="/terms">T&C</a>-->
-                </div>
-
-                <button onclick="showSearch()" aria-label="Search for posts">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-white hover:stroke-slate-300"
-                        fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
-
-                <a class="ml-4 px-2.5 py-1.5 font-bold rounded-md text-black bg-white hover:bg-slate-300 hover:scale-110 transition underline-none"
-                    href="/contribute">Contribute</a>
-
-                <div class="ml-4 lg:hidden cursor-pointer">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-white hover:stroke-slate-300"
-                        id="menu-open" viewBox="0 0 24 24" onclick="toggleNav()">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" />
-                    </svg>
-
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="menu-close h-8 w-8 hidden stroke-white hover:stroke-slate-300" id="menu-close"
-                        viewBox="0 0 24 24" onclick="toggleNav()">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="top-0 bg-background hidden p-6 lg:hidden" id="mobile-nav">
-        <div class="grid grid-cols-2 gap-y-2 gap-x-4">
-            <a class="group mobile-nav-item {% if page.url contains '/categories' %}bg-gray-700{% endif %}"
-                href="/topics">
-                <span class="group-hover:text-white">Topics</span>
-            </a>
-            <a class="group mobile-nav-item {% if page.url contains '/advertise' %}bg-gray-700{% endif %}"
-                href="/advertise">
-                <span class="group-hover:text-white">Advertise</span>
-            </a>
-            <a class="group mobile-nav-item {% if page.url contains '/about' %}bg-gray-700{% endif %}" href="/about">
-                <span class="group-hover:text-white">About Us</span>
-            </a>
-            <a class="group mobile-nav-item {% if page.url contains '/contact' %}bg-gray-700{% endif %}"
-                href="/contact">
-                <span class="group-hover:text-white">Contact Us</span>
-            </a>
-        </div>
-    </div>
-</header>
+    </header>
+</nav>

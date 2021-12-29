@@ -6,6 +6,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632128417570/zaxOSl
 category: android
 tags: ["app-development"]
 author: gouravkhunger
+series: "android-development"
 ---
 
 Hello there!

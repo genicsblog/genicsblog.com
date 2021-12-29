@@ -11,9 +11,22 @@ github_username: "genicsblog"
 github_repo: "genicsblog/genicsblog.github.io"
 staticman_url: "http://comments.genicsblog.com"
 
+defaults:
+  -
+    scope:
+      path: "_drafts/*.md"
+    values:
+      sitemap: false
+
 collections:
-  authors:
-    permalink: /author/:name
+  series:
+    permalink: /series/:name
+    output: true
+  contributors:
+    permalink: /contributor/:name
+    output: true
+  drafts:
+    permalink: /draft/:name
     output: true
 
 extlinks:
@@ -34,7 +47,7 @@ plugins:
 
 pagination:
   enabled: true
-  per_page: 9
+  per_page: 12
   permalink: '/page/:num/'
   title: ':title - page :num'
   sort_field: 'date'

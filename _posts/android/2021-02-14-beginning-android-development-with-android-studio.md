@@ -6,6 +6,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613325726634/hqjW-B
 category: android
 tags: ["beginners", "app-development"]
 author: gouravkhunger
+series: "android-development"
 ---
 
 Hi everyone! This is the beginning of my new series on Android Development! 

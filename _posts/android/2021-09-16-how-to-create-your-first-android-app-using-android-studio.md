@@ -6,6 +6,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1631777577034/9OA5pi
 category: android
 tags: ["auth0", "authentication", "app-development"]
 author: gouravkhunger
+series: "android-development"
 ---
 
 Hello there!
