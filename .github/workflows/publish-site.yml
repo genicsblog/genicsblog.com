@@ -39,7 +39,8 @@ jobs:
       run: JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build
 
     - name: Fix search.json
-      run: python analysecontent.py
+      run: |
+        python _scripts/analysecontent.py
 
     - name: Deploy to gh-pages
       uses: s0/git-publish-subdir-action@develop
