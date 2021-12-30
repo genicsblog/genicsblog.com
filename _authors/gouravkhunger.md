@@ -1,4 +1,0 @@
----
-layout: author
-author: gouravkhunger
----

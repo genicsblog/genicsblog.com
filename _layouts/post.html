@@ -2,22 +2,27 @@
 layout: default
 ---
 
-<section class="block lg:flex">
+<section class="lg:flex">
 
   <div
     class="bg-white rounded-2xl shadow-xl shadow-slate-200 md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]">
-    {% if page.notice != blank or page.original != blank %}
-    <div class="notice w-full px-4 py-2 rounded-tl-2xl rounded-tr-2xl bg-slate-200">
+    {% if page.notice != blank or page.original != blank or page.series != blank %}
+    <div class="notice w-full px-4 py-2 rounded-tl-2xl rounded-tr-2xl bg-slate-200 space-y-4">
       {% if page.original != blank %}
       {% assign host = page.original | hostname %}
-      <span class="text-base italic">
+      <span class="text-base italic leading-8">
         Originally published at
-        <a href="{{ page.original }}" target="_blank" rel="nofollow noopener noreferrer">{{ host }}</a>
+        <a href="{{ page.original }}" target="_blank" rel="nofollow noopener noreferrer">{{ host }}</a>.
       </span>
       {% endif %}
-      {% if page.notice != blank and page.original != blank %}<div class="my-2"></div>{% endif %}
+      {% if page.series %}
+      <span class="text-base leading-8">
+        This post is a part of the series <a href="/series/{{ page.series }}" target="_blank">{{ page.series | split:"-" | join:" " | capitalize_all }}</a>
+      </span>
+      {% endif %}
       {% if page.notice != blank %}
-      <span class="text-base">
+      {% if page.series != blank %}<br />{% endif %}
+      <span class="text-base leading-8">
         {{ page.notice | markdownify }}
       </span>
       {% endif %}
@@ -34,7 +39,7 @@ layout: default
       <div class="pt-4 space-y-4">
         <figcaption class="font-medium text-center">
           <div>
-            <a href="/author/{{ page.author }}" class="text-xl md:text-xl font-bold">
+            <a href="/contributor/{{ page.author }}" class="text-xl font-bold">
               {{ author.name }}
             </a>
           </div>
@@ -47,6 +52,25 @@ layout: default
         </p>
       </div>
     </figure>
+    {% if page.contributors %}
+    <figure class="bg-white rounded-2xl p-4 shadow-xl shadow-slate-200 mt-8">
+      <div class="space-y-4">
+        <figcaption class="font-medium">
+          <div class="text-center">
+            <span class="text-xl font-bold">
+              Contributors
+            </span>
+          </div>
+          <div class="mt-4 text-base">
+            {% for person in page.contributors %}
+            {% assign contributor = site.data.contributors[person.name] %}
+            <a href="/contributor/{{ person.name }}">{{ contributor.name }}</a> ({{ person.role }})<br />
+            {% endfor %}
+          </div>
+        </figcaption>
+      </div>
+    </figure>
+    {% endif %}
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-24 mt-8">
       Advertisement here.
     </figure>

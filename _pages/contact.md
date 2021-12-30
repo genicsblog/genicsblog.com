@@ -1,12 +1,10 @@
 ---
 layout: page
 title: "Contact"
-excerpt: "This text will be replaced."
+excerpt: "Contact the Genics Blog team."
 permalink: /contact
 ---
 
-<div class="flex h-screen items-center">
-    <span class="mx-auto">
-        Send your mails to genicsblog@gmail.com for now :)
-    </span>
-</div>
+The fastest way to get in touch with the Genics team would be to [join our Discord Server](https://discord.gg/qQEsNkF7F6).
+
+If you have any business queries, send them to [genicsblog@gmail.com](mailto:genicsblog@gmail.com)

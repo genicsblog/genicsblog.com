@@ -7,6 +7,7 @@ languages: ["groovy", "java", "xml"]
 category: libraries
 tags: ["android"]
 author: gouravkhunger
+series: "android-library-testing"
 ---
 
 Here I am with my new Library testing series. I am starting this off with a very simple and basic Library- [Toasty](https://github.com/GrenderG/Toasty). It is a simple way to customize Android Toast Notifications. 

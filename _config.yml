@@ -1,20 +1,32 @@
 title: Genics Blog
-email: gouravkhunger18@gmail.com
+email: genicsblog@gmail.com
 description: >-
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  An open source developer publication aimed at sharing well explained 
+  tutorials on various topics for the developer community
 baseurl: ""
 url: "https://genicsblog.com"
+permalink: /:title
 twitter_username: "jekyllrb"
 github_username: "genicsblog"
 github_repo: "genicsblog/genicsblog.github.io"
-permalink: /:title
 staticman_url: "http://comments.genicsblog.com"
 
+defaults:
+  -
+    scope:
+      path: "_drafts/*.md"
+    values:
+      sitemap: false
+
 collections:
-  authors:
-    permalink: /author/:name
+  series:
+    permalink: /series/:name
+    output: true
+  contributors:
+    permalink: /contributor/:name
+    output: true
+  drafts:
+    permalink: /draft/:name
     output: true
 
 extlinks:
@@ -91,6 +103,7 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
+  - staticman.yml
   - postcss.config.js
   - tailwind.config.js
   - package.json

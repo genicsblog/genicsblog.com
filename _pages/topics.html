@@ -9,9 +9,9 @@ permalink: /topics
     <h1>Categories</h1>
 </div>
 
-<div class="grid gap-6 grid-cols-2">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {% for category in site.categories %}
-    <div class="flex justify-center">
+    <div class="mx-auto">
         <a class="text-xl category-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
             #{{ category[0] }}
         </a>
@@ -23,10 +23,10 @@ permalink: /topics
     <h1>Tags</h1>
 </div>
 
-<div class="grid gap-6 grid-cols-2 sm:grid-cols-3 md:grid-cols-4">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
     {% for tag in site.tags %}
-    <div class="flex justify-center">
-        <a class="text-xl category-name !bg-{{ tag[0] }} underline-none" href="/category/{{ tag[0] }}">
+    <div class="mx-auto">
+        <a class="text-xl category-name !bg-{{ tag[0] }} underline-none" href="/tag/{{ tag[0] }}">
             #{{ tag[0] }}
         </a>
     </div>

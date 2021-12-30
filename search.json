@@ -28,11 +28,19 @@ layout: none
      {% endunless %}
   {% endfor %}
   ,
-  {% for author in site.authors %}
-  {% assign authorData = site.data.contributors[author.author] %}
+  {% for contributor in site.contributors %}
+  {% assign contributorData = site.data.contributors[contributor.name] %}
     {
-      "title"    : "Posts by {{ authorData.name | escape }}",
-      "url"      : "/author/{{ author.author }}",
+      "title"    : "{{ contributorData.name }}'s profile",
+      "url"      : "/contributor/{{ contributor.name }}",
+      "content"  : ""
+    } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
+  ,
+  {% for series in site.series %}
+    {
+      "title"    : "Posts in series {{ series.title | escape }}",
+      "url"      : "/series/{{ series.slug }}",
       "content"  : ""
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
