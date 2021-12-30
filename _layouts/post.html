@@ -72,10 +72,13 @@ layout: default
     </figure>
     {% endif %}
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-24 mt-8">
-      Advertisement here.
+      {% include display-ad.html %}
     </figure>
   </aside>
 </section>
+<br />
+{% include infeed-ad.html %}
+<br />
 {% if page.comments != false %}
 <h1 class="mx-8 md:mx-10 lg:mx-14 -mb-4 lg:-mb-8">Comments</h1>
 
@@ -86,10 +89,14 @@ layout: default
   <aside class="m-8 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]">
     <div class="p-6 md:p-8  space-y-4 lg:sticky lg:top-24 rounded-2xl bg-white shadow-xl shadow-slate-200">
       <p class="leading-5 font-medium text-justify">
-        Please adhere to our Code of Conduct and other stuff because we don't want you to fight in our comments
-        sections lmao
+        Please adhere to our <a href="/code-of-conduct">Code of Conduct</a> while adding a comment. Respect other's opinion.
+        <br /><br />
+        Comments are be moderated before being published.
       </p>
     </div>
   </aside>
 </section>
 {% endif %}
+<br />
+{% include infeed-ad.html %}
+<br />
