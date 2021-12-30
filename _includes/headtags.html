@@ -56,17 +56,18 @@
 <link rel="stylesheet" href="/assets/css/prism.css">
 {% endif %}
 
-<!-- {% if jekyll.environment == 'production' %}
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{site.google_analytics}}"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+{% if jekyll.environment == 'production' %}
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-        gtag('config', '{{site.google_analytics}}');
-    </script>
+    gtag('config', '{{ site.google_analytics }}');
+</script>
 
-    <script async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense-data-ad-client }}"
-        crossorigin="anonymous"></script>
-    {% endif %} -->
+<script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense-data-ad-client }}"
+    crossorigin="anonymous"></script>
+{% endif %}
