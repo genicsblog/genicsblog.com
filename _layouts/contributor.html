@@ -68,7 +68,7 @@
 
     <main>
         <section class="p-6 sm:p-10">
-            {% assign posts = site.posts | where_exp:"item", "item.author == page.contributor" %}
+            {% assign posts = site.posts | where_exp:"item", "item.author == page.name" %}
             {% assign arrSize = posts | size %}
             {% if arrSize > 0 %}
             <div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">

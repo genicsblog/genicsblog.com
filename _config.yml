@@ -9,7 +9,7 @@ permalink: /:title
 twitter_username: "genicsblog"
 github_username: "genicsblog"
 github_repo: "genicsblog/genicsblog.github.io"
-staticman_url: "http://comments.genicsblog.com"
+staticman_url: "https://comments.genicsblog.com"
 google_analytics: "UA-145769474-1"
 adsense-data-ad-client: "ca-pub-8114751086331659"
 adsense-data-display-ad-slot: "8698895132"
