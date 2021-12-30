@@ -1,3 +1,10 @@
+---
+layout: page
+title: "Code of Conduct"
+excerpt: "Please adhere to this code of conduct while contributing to the Genics Blog."
+permalink: /code-of-conduct
+---
+
 # Contributor Covenant Code of Conduct
 
 ## Our Pledge
@@ -115,14 +122,11 @@ the community.
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.0, available at
-https://www.contributor-covenant.org/version/2/0/code_of_conduct.html.
+version 2.0, available at [contributor-covenant.org](https://www.contributor-covenant.org/version/2/0/code_of_conduct.html).
 
 Community Impact Guidelines were inspired by [Mozilla's code of conduct
 enforcement ladder](https://github.com/mozilla/diversity).
 
 [homepage]: https://www.contributor-covenant.org
 
-For answers to common questions about this code of conduct, see the FAQ at
-https://www.contributor-covenant.org/faq. Translations are available at
-https://www.contributor-covenant.org/translations.
+For answers to common questions about this code of conduct, see read the [FAQs](https://www.contributor-covenant.org/faq). Translations are available [here](https://www.contributor-covenant.org/translations).
