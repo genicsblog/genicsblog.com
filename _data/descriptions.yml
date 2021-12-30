@@ -1,5 +1,2 @@
-android:
-  description: "Android is the most beloved topic on Genics Blog because that's what this blog was all about in the beginning!"
-
-jekyll:
-  description: "Jekyll is a static-site generator which also happens to power this site."
+android: "Android is the most beloved topic on Genics Blog because that's what this blog was all about in the beginning!"
+jekyll: "Jekyll is a static-site generator which also happens to power this site."
