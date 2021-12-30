@@ -29,7 +29,6 @@ git clone https://github.com/<your-github-username>/genicsblog.github.io
 
 ```bash
 git remote add upstream https://github.com/genicsblog/genicsblog.github.io
-git
 ```
 
 **4.** Navigate to the new project directory:
