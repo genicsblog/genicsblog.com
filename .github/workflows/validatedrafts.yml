@@ -60,7 +60,7 @@ jobs:
       - name: Validate draft author
         run: |
           echo "${{ needs.changedfiles.outputs.md }}" >> temp.txt
-          python _scripts/script.py ${{ github.event.pull_request.user.login }}
+          python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
           rm temp.txt
 
       - name: Automerge if no errors
