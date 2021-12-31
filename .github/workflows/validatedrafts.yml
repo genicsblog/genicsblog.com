@@ -68,6 +68,6 @@ jobs:
       - name: Automerge if no errors
         uses: juliangruber/merge-pull-request-action@v1
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.COMMIT_TOKEN }}
           number: ${{ github.event.pull_request.number }}
           method: squash
