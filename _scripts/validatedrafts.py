@@ -1,4 +1,5 @@
 import sys
+import yaml
 import frontmatter
 from pathlib import Path
 
@@ -14,8 +15,11 @@ if total_files != 0:
 
         post = frontmatter.load(file)
 
-        if post['author'] != sys.argv[1]:
-            raise AssertionError(f'Author of {file.strip()} ({post["author"]}) is not {sys.argv[1]}')
+        with open("_data/contributors.yml", "r") as contributors:
+            author = yaml.safe_load(contributors)[post['author']]['links']['github']
+
+        if author != sys.argv[1]:
+            raise AssertionError(f"Errors in {file}: File author ({post['author']}), committer ({sys.argv[1]}) and github account of contributor({author}) have conflicts.")
         else:
             print(f'{file} is ok')
 

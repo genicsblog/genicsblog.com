@@ -55,7 +55,9 @@ jobs:
           python-version: '3.x'
 
       - name: Install python dependencies
-        run: pip install python-frontmatter
+        run: |
+          pip install PyYAML
+          pip install python-frontmatter
 
       - name: Validate draft author
         run: |
