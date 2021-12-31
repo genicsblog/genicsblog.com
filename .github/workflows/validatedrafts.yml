@@ -1,0 +1,71 @@
+name: Publish site
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  are-drafts-changed:
+    runs-on: ubuntu-latest
+
+    outputs:
+      changed: ${{ steps.filter.outputs.drafts }}
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          drafts:
+            - '_drafts/**'
+
+  changedfiles:
+    needs: are-drafts-changed
+    if: ${{ needs.are-drafts-changed.outputs.changed == 'true' }}
+
+    runs-on: ubuntu-latest
+    outputs:
+      md: ${{ steps.changes.outputs.md }}
+      
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Get changed files
+        id: changes
+        run: |
+          echo "::set-output name=md::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md$ | xargs)"
+
+  validate-draft-authors:
+    runs-on: ubuntu-latest
+    needs: changedfiles
+
+    if: ${{ needs.changedfiles.outputs.md }}
+    steps:
+      - uses: actions/checkout@v2
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install python dependencies
+        run: pip install python-frontmatter
+
+      - name: Validate draft author
+        run: |
+          echo "${{ needs.changedfiles.outputs.md }}" >> temp.txt
+          python _scripts/script.py ${{ github.event.pull_request.user.login }}
+          rm temp.txt
+
+      - name: Automerge if no errors
+        uses: juliangruber/merge-pull-request-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          number: ${{ github.event.pull_request.number }}
+          method: squash
