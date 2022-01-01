@@ -1,4 +1,4 @@
-name: Validate changed drafts
+name: Publish site
 
 on:
   pull_request_target:
@@ -6,12 +6,8 @@ on:
       - main
 
 jobs:
-
-  are-drafts-changed:
+  validate-drafts-authors:
     runs-on: ubuntu-latest
-
-    outputs:
-      changed: ${{ steps.filter.outputs.drafts }}
 
     steps:
     - uses: actions/checkout@v2
@@ -23,52 +19,32 @@ jobs:
           drafts:
             - '_drafts/**'
 
-  changedfiles:
-    needs: are-drafts-changed
-    if: ${{ needs.are-drafts-changed.outputs.changed == 'true' }}
+    - name: Get all changed files
+      if: steps.filter.outputs.drafts == 'true'
+      id: files
+      uses: Ana06/get-changed-files@v2.1.0
 
-    runs-on: ubuntu-latest
-    outputs:
-      files: ${{ steps.changes.outputs.files }}
-      
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      - name: Get changed files
-        id: changes
-        run: |
-          echo "::set-output name=files::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
+    - name: Install python dependencies
+      run: |
+        pip install PyYAML
+        pip install python-frontmatter
 
-  validate-draft-authors:
-    runs-on: ubuntu-latest
-    needs: changedfiles
+    - name: Validate draft author
+      if: steps.filter.outputs.drafts == 'true'
+      run: |
+        echo "${{ steps.files.outputs.all }}" >> temp.txt
+        python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
+        rm temp.txt
 
-    if: ${{ needs.changedfiles.outputs.files }}
-    steps:
-      - uses: actions/checkout@v2
-
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-
-      - name: Install python dependencies
-        run: |
-          pip install PyYAML
-          pip install python-frontmatter
-
-      - name: Validate draft author
-        run: |
-          echo "${{ needs.changedfiles.outputs.files }}" >> temp.txt
-          python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
-          rm temp.txt
-
-      - name: Auto-merge if no errors
-        uses: "pascalgn/automerge-action@v0.14.3"
-        env:
-          GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
-          MERGE_LABELS: ""
-          MERGE_METHOD: "squash"
-          MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
+    - name: Auto-merge if no errors
+      if: steps.filter.outputs.drafts == 'true'
+      uses: "pascalgn/automerge-action@v0.14.3"
+      env:
+        GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
+        MERGE_LABELS: ""
+        MERGE_METHOD: "squash"
+        MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
