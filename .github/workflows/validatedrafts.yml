@@ -65,9 +65,10 @@ jobs:
           python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
           rm temp.txt
 
-      - name: Automerge if no errors
-        uses: juliangruber/merge-pull-request-action@v1
-        with:
-          github-token: ${{ secrets.COMMIT_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
-          method: squash
+      - name: Auto-merge if no errors
+        uses: "pascalgn/automerge-action@v0.14.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
+          MERGE_LABELS: ""
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
