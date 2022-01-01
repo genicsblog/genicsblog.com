@@ -10,10 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+      id: extract_branch
+
     - uses: actions/checkout@v2
       with:
         repository: "${{ github.event.pull_request.user.login }}/genicsblog.github.io"
-        ref: "${{GITHUB_REF##*/}}"
+        ref: "${{ steps.extract_branch.outputs.branch }}"
 
     - uses: dorny/paths-filter@v2
       id: filter
