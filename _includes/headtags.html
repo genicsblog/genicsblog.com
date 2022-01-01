@@ -2,16 +2,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{% if page.layout == "default" %}
-    {% assign description = site.description %}
-{% else if page.layout == "post" %}
+{% if page.layout == "post" %}
     {% if page.description != blank %}
         {% assign description = page.description %}
     {% else %}
         {% assign description = page.excerpt %}
     {% endif %}
-{% else if page.layout == "contributor" %}
-    {% assign description = site.data.contributors[page.name].bio %}
+{% else if page.layout == "page" %}
+    {% assign description = page.excerpt %}
 {% else %}
     {% assign description = site.description %}
 {% endif %}
