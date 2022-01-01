@@ -1,4 +1,4 @@
-name: Publish site
+name: Validate draft authors
 
 on:
   pull_request_target:
