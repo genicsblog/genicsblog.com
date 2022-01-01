@@ -10,6 +10,7 @@ total_files = len(files)
 
 if total_files != 0:
     for file in files:
+        file = file.strip()
         if(file.split('/')[0] != "_drafts"):
             raise Exception('File is outside the _drafts folder')
 

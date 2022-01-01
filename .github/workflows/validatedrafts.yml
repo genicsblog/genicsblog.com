@@ -1,4 +1,4 @@
-name: Publish site
+name: Validate changed drafts
 
 on:
   pull_request:
@@ -29,7 +29,7 @@ jobs:
 
     runs-on: ubuntu-latest
     outputs:
-      md: ${{ steps.changes.outputs.md }}
+      files: ${{ steps.changes.outputs.files }}
       
     steps:
       - name: Checkout repository
@@ -40,13 +40,13 @@ jobs:
       - name: Get changed files
         id: changes
         run: |
-          echo "::set-output name=md::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | grep .md$ | xargs)"
+          echo "::set-output name=files::$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.sha }} | xargs)"
 
   validate-draft-authors:
     runs-on: ubuntu-latest
     needs: changedfiles
 
-    if: ${{ needs.changedfiles.outputs.md }}
+    if: ${{ needs.changedfiles.outputs.files }}
     steps:
       - uses: actions/checkout@v2
 
@@ -61,13 +61,14 @@ jobs:
 
       - name: Validate draft author
         run: |
-          echo "${{ needs.changedfiles.outputs.md }}" >> temp.txt
+          echo "${{ needs.changedfiles.outputs.files }}" >> temp.txt
           python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
           rm temp.txt
 
-      - name: Automerge if no errors
-        uses: juliangruber/merge-pull-request-action@v1
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          number: ${{ github.event.pull_request.number }}
-          method: squash
+      - name: Auto-merge if no errors
+        uses: "pascalgn/automerge-action@v0.14.3"
+        env:
+          GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
+          MERGE_LABELS: ""
+          MERGE_METHOD: "squash"
+          MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
