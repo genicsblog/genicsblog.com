@@ -148,4 +148,4 @@ You are advised to review this Privacy Policy periodically for any changes. Chan
 If you have any questions about this Privacy Policy, You can contact us:
 
 - Discord: [our Discord server](https://discord.gg/qQEsNkF7F6)
-- By email: [genicsblog@gmail.com](mailto:genicsblog@gmail.com)
+- By email: [contact@genicsblog.com](mailto:contact@genicsblog.com)
