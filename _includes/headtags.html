@@ -5,11 +5,17 @@
 {% if page.layout == "post" %}
     {% if page.description != blank %}
         {% assign description = page.description %}
-    {% else %}
+    {% else if page.excerpt != blank %}
         {% assign description = page.excerpt %}
+    {% else %}
+        {% assign description = site.description %}
     {% endif %}
 {% else if page.layout == "page" %}
-    {% assign description = page.excerpt %}
+    {% if page.excerpt != blank %}
+        {% assign description = page.excerpt %}
+    {% else %}
+        {% assign description = site.description %}
+    {% endif %}
 {% else %}
     {% assign description = site.description %}
 {% endif %}
