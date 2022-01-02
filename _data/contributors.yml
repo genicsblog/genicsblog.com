@@ -28,3 +28,14 @@ kushagra:
   links: 
     github: "Kushagra-Jain99"
     linkedin: "in/kushagra-jain-921ba1213/"
+
+avneesh:
+  name: "Avneesh Agarwal"
+  role: "Fullstack web dev"
+  avatar: "https://avatars.githubusercontent.com/u/76690419"
+  bio: "A fullstack web developer, designer, content creator and student."
+  links:
+    github: "avneesh0612"
+    linkedin: "in/avneesh0612/"
+    twitter: "avneesh0612"
+    instagram: "avneesh.codes"
