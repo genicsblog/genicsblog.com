@@ -29,7 +29,7 @@
                     </a>
                 </div>
                 <div class="flex items-center h-16">
-                    <div class="hidden lg:block pr-5">
+                    <div class="hidden lg:block pr-4">
                         <a class="nav-item {% if page.url contains '/topics' %}text-slate-400{% else %}text-white{% endif %}"
                             href="/topics">Topics</a>
                         <a class="nav-item {% if page.url contains '/about' %}text-slate-400{% else %}text-white{% endif %}"
@@ -38,9 +38,8 @@
                             href="/contact">Contact</a>
                         <a class="nav-item {% if page.url contains '/advertise' %}text-slate-400{% else %}text-white{% endif %}"
                             href="/advertise">Advertise</a>
-                        <!-- Docs coming soon -->
-                        <!--<a class="nav-item {% if page.url contains '/terms' %}text-slate-400{% else %}text-white{% endif %}"
-                    href="/terms">T&C</a>-->
+                        <a class="nav-item text-white" target="_blank"
+                            href="https://docs.genicsblog.com">Docs</a>
                     </div>
 
                     <button onclick="showSearch()" aria-label="Search for posts">
@@ -86,7 +85,10 @@
                 </a>
                 <a class="group mobile-nav-item {% if page.url contains '/contact' %}bg-gray-700{% endif %}"
                     href="/contact">
-                    <span class="group-hover:text-white">Contact Us</span>
+                    <span class="group-hover:text-white">Contact</span>
+                </a>
+                <a class="group mobile-nav-item" href="https://docs.genicsblog.com" target="_blank">
+                    <span class="group-hover:text-white">Documentation</span>
                 </a>
             </div>
         </div>
