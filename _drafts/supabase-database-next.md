@@ -31,7 +31,8 @@ In case you don't know about Supabase Database, here are a few points to catch u
 So, let's jump right in!
 
 ## What we're building today:
-[Demo](https://www.loom.com/share/d39e39db3c634b3d8ed2df61b554de69)
+
+{% include loom.html id="d39e39db3c634b3d8ed2df61b554de69" %}
 
 First, you need to set up a project in [Supabase](https://supabase.io/), you can go to their official website and create a free project! In case you don't have an account there, you need to make an account there.
 
