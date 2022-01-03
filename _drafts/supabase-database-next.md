@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Get Started with Supabase Database in Next.JS!"
+title:  "Get Started with Supabase Database in Next.JS"
 excerpt: "All you need to setup a supabase database and work with it in Next.JS!"
+original: "https://blog.anurag.tech/get-started-with-supabase-database-in-nextjs"
 image: "https://raw.githubusercontent.com/kr-anurag/kr-anurag/main/q4bZT4PyR.jpg"
 category: web
 tags: ["web-development", "next-js", "supabase"]
@@ -58,7 +59,7 @@ Now, we're gonna make a simple form!
 
 First, make the main div and align its children to the center using flexbox
 
-```javascript
+```jsx
 <div className="min-h-screen min-w-screen bg-purple-500 flex justify-center items-center">
 </div>
 ``` 
@@ -66,7 +67,7 @@ First, make the main div and align its children to the center using flexbox
 Now, we can add input fields and a submit button:
 
 
-```javascript
+```jsx
 <div className="min-h-screen min-w-screen bg-purple-500 flex justify-center items-center">
   <form className="p-8 bg-white shadow rounded flex flex-col justify-center items-center">
     <input
@@ -92,14 +93,14 @@ Now, we are gonna use hooks to get the input values:
 
 First, let's make two variables using the *useState* hook
 
-```javascript
+```jsx
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
 ``` 
 
 Now, we will assign these values to the input fields and update them if the value changes. We can do this using the onChange event.
 
-```javascript
+```jsx
   <input
     type="text"
     className="m-2 outline-none py-2 px-4 border-2 border-black-200 rounded focus:border-blue-400 text-black-300 text-xl"
@@ -131,7 +132,7 @@ yarn add @supabase/supabase-js     # for yarn
 
 Now, we need to initialize supabase, go to the project dashboard on supabase, and get your keys from there. Then, follow along:
 
-```javascript
+```jsx
 import { createClient } from "@supabase/supabase-js";
 
 const supabase = createClient(
@@ -145,7 +146,7 @@ Now, let's make a function to handle form submit.
 We are gonna structure the form data in a new variable:
 
 
-```javascript
+```jsx
 const handleSubmit = async () => {
   const form = {
     name: name,
@@ -159,7 +160,7 @@ Now, we're going to upload the form data to Supabase Database!
 Here's how we're gonna do it:
 
 
-```javascript
+```jsx
 const handleSubmit = async () => {
   const form = {
     name: name,
