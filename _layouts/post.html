@@ -73,6 +73,19 @@ layout: default
     {% endif %}
     <figure class="bg-white rounded-2xl p-6 md:p-8 shadow-xl shadow-slate-200 lg:sticky lg:top-24 mt-8">
       {% include display-ad.html %}
+      {% if page.sitemap == false%}
+      <h4>This is a draft preview!</h4>
+      Anyone with the link can read this draft but not search engines :)
+      <br /><br />
+      Wanna become publish content at Genics Blog?
+      <div class="flex justify-center">
+        <a
+          class="px-3 py-1 mt-4 rounded-md bg-black text-white hover:shadow-lg hover:scale-110 transition underline-none text-center"
+          href="https://docs.genicsblog.com/author">
+          Become an Author >
+        </a>
+      </div>
+      {% endif %}
     </figure>
   </aside>
 </section>
