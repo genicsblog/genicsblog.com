@@ -1,0 +1,57 @@
+name: Validate contributors
+
+on:
+  pull_request_target:
+    branches:
+      - validate-contributors
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Extract branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${{github.head_ref}})"
+      id: extract_branch
+
+    - uses: actions/checkout@v2
+      with:
+        repository: "${{ github.event.pull_request.user.login }}/genicsblog.github.io"
+        ref: "${{ steps.extract_branch.outputs.branch }}"
+
+    - uses: dorny/paths-filter@v2
+      id: filter
+      with:
+        filters: |
+          contributors:
+            - '_data/contributors.yml'
+
+    - name: Get all changed files
+      if: steps.filter.outputs.contributors == 'true'
+      id: files
+      uses: Ana06/get-changed-files@v2.1.0
+
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install python dependencies
+      run: |
+        pip install PyYAML python-frontmatter
+
+    - name: Validate contributors
+      if: steps.filter.outputs.contributors == 'true'
+      run: |
+        echo "${{ steps.files.outputs.all }}" >> temp.txt
+        python _scripts/validatecontributors.py ${{ github.event.pull_request.user.login }}
+        rm temp.txt
+
+    - name: Auto-merge if no errors
+      if: steps.filter.outputs.contributors == 'true'
+      uses: "pascalgn/automerge-action@v0.14.3"
+      env:
+        GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
+        MERGE_LABELS: ""
+        MERGE_METHOD: "squash"
+        MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
