@@ -38,7 +38,7 @@ jobs:
 
     - name: Install python dependencies
       run: |
-        pip install PyYAML python-frontmatter
+        pip install PyYAML python-frontmatter requests
 
     - name: Validate contributors
       if: steps.filter.outputs.contributors == 'true'
