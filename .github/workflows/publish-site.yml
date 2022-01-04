@@ -40,7 +40,7 @@ jobs:
 
     - name: Fix search.json
       run: |
-        python _scripts/analysecontent.py
+        python _scripts/analyse-content.py
 
     - name: Deploy to gh-pages
       uses: s0/git-publish-subdir-action@develop

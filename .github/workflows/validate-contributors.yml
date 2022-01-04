@@ -44,7 +44,7 @@ jobs:
       if: steps.filter.outputs.contributors == 'true'
       run: |
         echo "${{ steps.files.outputs.all }}" >> temp.txt
-        python _scripts/validatecontributors.py ${{ github.event.pull_request.user.login }}
+        python _scripts/validate-contributors.py ${{ github.event.pull_request.user.login }}
         rm temp.txt
 
     - name: Auto-merge if no errors
