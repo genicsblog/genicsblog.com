@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  validate-drafts-authors:
+  validate:
     runs-on: ubuntu-latest
 
     steps:
@@ -45,7 +45,7 @@ jobs:
       if: steps.filter.outputs.drafts == 'true'
       run: |
         echo "${{ steps.files.outputs.all }}" >> temp.txt
-        python _scripts/validatedrafts.py ${{ github.event.pull_request.user.login }}
+        python _scripts/validate-drafts.py ${{ github.event.pull_request.user.login }}
         rm temp.txt
 
     - name: Auto-merge if no errors
