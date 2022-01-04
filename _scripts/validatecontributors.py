@@ -5,20 +5,17 @@ import requests
 import frontmatter
 from pathlib import Path
 
+file = "_data/contributors.yml"
 temp = open("temp.txt", "r")
-files = temp.readlines()[0].split(" ")
 
-total_files = len(files)
+# TODO: FIX!
+if file in temp.readlines()[0]:
+    post = frontmatter.load("_data/contributors.yml")
 
-if total_files == 1 and files[0] == "_data/contributors.yml":
-    file = files[0].strip()
-
-    post = frontmatter.load(file)
-
-    with open("_data/contributors.yml", "r") as contributorData:
+    with open(file, "r") as contributorData:
         newData = yaml.safe_load(contributorData)
 
-    url = "https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_data/contributors.yml"
+    url = f"https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/{file}"
 
     try:
         response = requests.get(url)
@@ -51,7 +48,7 @@ if total_files == 1 and files[0] == "_data/contributors.yml":
 
             for contributor in changed:
                 if contributor != sys.argv[1]:
-                    raise Exception(f"Committer {sys.argv[1]} tried to change  {contributor}!")
+                    raise Exception(f"Committer {sys.argv[1]} tried to change {contributor}!")
                 else:
                     print(f"{sys.argv[1]} is allowed to change {contributor}")
                     
@@ -74,4 +71,4 @@ name: {contributor}
     print(f"{file} is ok")
 
 else:
-    raise Exception("File other than _data/contributors.yml was changed.")
+    raise Exception(f"File other than {file} was changed.")
