@@ -70,4 +70,4 @@ name: {contributor}
     print(f"{file} is ok.")
 
 else:
-    raise Exception(f"File other than {file} was changed.")
+    raise Exception(f"Files other than {file} was changed too!")
