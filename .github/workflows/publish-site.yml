@@ -45,9 +45,11 @@ jobs:
         python-version: '3.x'
 
     - name: Install npm dependencies
+      if: steps.changes.outputs.files == 'true'
       run: npm install
 
     - name: Install python dependencies
+      if: steps.changes.outputs.files == 'true'
       run: |
         pip install nltk textblob html2text beautifulsoup4
         python -m nltk.downloader brown punkt
