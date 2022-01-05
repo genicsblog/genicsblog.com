@@ -8,66 +8,58 @@ from pathlib import Path
 file = "_data/contributors.yml"
 temp = open("temp.txt", "r")
 
-if temp.readlines()[0].strip() == file:
-    post = frontmatter.load("_data/contributors.yml")
 
-    with open(file, "r") as contributorData:
-        newData = yaml.safe_load(contributorData)
+post = frontmatter.load("_data/contributors.yml")
 
-    url = f"https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/{file}"
+with open(file, "r") as contributorData:
+    newData = yaml.safe_load(contributorData)
 
-    try:
-        response = requests.get(url)
+url = f"https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/{file}"
 
-        if response.status_code == 200:
-            tempYml = open("temp.yml", "w")
-            tempYml.write(response.text)
+try:
+    response = requests.get(url)
 
-            tempYml = open("temp.yml")
+    if response.status_code == 200:
+        tempYml = open("temp.yml", "w")
+        tempYml.write(response.text)
 
-            existingData = yaml.safe_load(tempYml)
-            changed = set()
+        tempYml = open("temp.yml")
 
-            if newData != existingData:
-                for key in newData:
-                    if key not in existingData:
-                        changed.add(str(key))
-                    else:
-                        for subKey in newData[key]:
-                            if newData[key][subKey] != existingData[key][subKey]:
-                                changed.add(str(key))
+        existingData = yaml.safe_load(tempYml)
+        changed = set()
 
-                for key in existingData:
-                    if key not in newData:
-                        changed.add(str(key))
-                    else:
-                        for subKey in existingData[key]:
-                            if existingData[key][subKey] != newData[key][subKey]:
-                                changed.add(str(key))
-
-            for contributor in changed:
-                if contributor != sys.argv[1]:
-                    raise Exception(f"Committer {sys.argv[1]} tried to change {contributor}!")
+        if newData != existingData:
+            for key in newData:
+                if key not in existingData:
+                    changed.add(str(key))
                 else:
-                    print(f"{sys.argv[1]} is allowed to change {contributor}.")
-                    
-                    contributorFile = open(f"_contributors/{contributor}.md", "w")
-                    contributorFile.write(f'''---
+                    for subKey in newData[key]:
+                        if newData[key][subKey] != existingData[key][subKey]:
+                            changed.add(str(key))
+
+            for key in existingData:
+                if key not in newData:
+                    changed.add(str(key))
+                else:
+                    for subKey in existingData[key]:
+                        if existingData[key][subKey] != newData[key][subKey]:
+                            changed.add(str(key))
+
+        for contributor in changed:
+            contributorFile = open(f"_contributors/{contributor}.md", "w")
+            contributorFile.write(f'''---
 layout: contributor
 name: {contributor}
 ---''')
 
-            print("Contributors are valid!")
+        print("Contributors are valid!")
 
-            os.remove("temp.yml")
+        os.remove("temp.yml")
         
-        else:
-            raise Exception(f"Encountered error code {response.status_code} while reaching {url}.")
+    else:
+        raise Exception(f"Encountered error code {response.status_code} while reaching {url}.")
 
-    except:
-        raise Exception(f"Exception occured while reaching {url}.")
+except:
+    raise Exception(f"Exception occured while reaching {url}.")
 
-    print(f"{file} is ok.")
-
-else:
-    raise Exception(f"Files other than {file} was changed too!")
+print(f"{file} is ok.")
