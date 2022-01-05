@@ -54,4 +54,4 @@ jobs:
         GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
         MERGE_LABELS: ""
         MERGE_METHOD: "squash"
-        MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
+        MERGE_COMMIT_MESSAGE: "Auto merge changes to contributors #{pullRequest.number}"
