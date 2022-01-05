@@ -70,3 +70,4 @@ jobs:
         MERGE_LABELS: ""
         MERGE_METHOD: "squash"
         MERGE_COMMIT_MESSAGE: "Auto merge changes to contributors #{pullRequest.number}"
+        MERGE_RETRY_SLEEP: "60000"
