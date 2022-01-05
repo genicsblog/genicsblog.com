@@ -9,14 +9,22 @@
 
     {% assign description = site.data.contributors[page.name].bio %}
     {% assign avatar = site.data.contributors[page.name].avatar %}
-    
-    <meta name="description" content="{{ description }}">
-    <meta property="og:description" content="{{ description }}" />
-    <meta property="og:title" content="{{ contributor.name }} | {{ contributor.role }}" />
-    <meta property="og:image" content="{{ avatar }}" />
 
-    <meta property="og:type" content="profile" />
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+    <meta name="description" content="{{ description }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:title" content="{{ contributor.name }} | {{ contributor.role }}">
+    <meta property="og:image" content="{{ avatar }}">
+    <meta property="og:type" content="profile">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@genicsblog">
+    <meta name="twitter:image" content="{{ avatar }}">
+    {% if site.data.contributors[page.name].links.twitter != blank %}
+    <meta name="twitter:creator" content="@{{ site.data.contributors[page.name].links.twitter }}">
+    {% endif %}
+
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
     <link rel="icon" href="/assets/images/genicsblog.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/css/theme.css">

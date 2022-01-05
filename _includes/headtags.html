@@ -21,7 +21,8 @@
 {% endif %}
 
 <meta name="description" content="{{ description }}">
-<meta property="og:description" content="{{ description }}" />
+<meta name="twitter:description" content="{{ description }}">
+<meta property="og:description" content="{{ description }}">
 
 <meta property="og:type" content="article" />
 
@@ -30,21 +31,29 @@
 {% endif %}
 
 <!-- Open grah tags -->
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:image" content="{{ page.image }}" />
-{% if page.layout == 'post' %}
-<meta property="og:type" content="article" />
-{% else if page.layout == 'author' %}
-<meta property="og:type" content="profile" />
-{% else %}
-<meta property="og:type" content="website" />
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:image" content="{{ page.image }}">
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@genicsblog">
+<meta name="twitter:image" content="{{ page.image }}">
+{% if site.data.contributors[page.author].links.twitter != blank %}
+<meta name="twitter:creator" content="@{{ site.data.contributors[page.author].links.twitter }}" />
 {% endif %}
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+
+{% if page.layout == 'post' %}
+<meta property="og:type" content="article">
+{% else if page.layout == 'author' %}
+<meta property="og:type" content="profile">
+{% else %}
+<meta property="og:type" content="website">
+{% endif %}
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
 {% if page.original != blank %}
-<link rel="canonical" href="{{ page.original }}" />
+<link rel="canonical" href="{{ page.original }}">
 {% else %}
-<link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
 {% endif %}
 
 <link rel="icon" href="/assets/images/genicsblog.png" type="image/x-icon">
