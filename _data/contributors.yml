@@ -10,6 +10,14 @@ gouravkhunger:
     twitter: "gourav_khunger"
     instagram: "_gourav.khunger_"
     youtube: "channel/UCkv-J_D8jK2N02nBcyM92mQ"
+    
+test:
+  name: "test"
+  role: "test account"
+  avatar: "https://avatars.githubusercontent.com/u/46792249"
+  bio: "test bio"
+  links:
+    github: "test"
 
 anurag:
   name: "anuragkr"
