@@ -8,7 +8,7 @@ from pathlib import Path
 file = "_data/contributors.yml"
 temp = open("temp.txt", "r")
 
-if temp.readlines()[0] == file:
+if temp.readlines()[0].strip() == file:
     post = frontmatter.load("_data/contributors.yml")
 
     with open(file, "r") as contributorData:
