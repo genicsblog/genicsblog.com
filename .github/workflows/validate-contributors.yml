@@ -40,6 +40,11 @@ jobs:
       run: |
         pip install PyYAML python-frontmatter requests
 
+    - name: Get validation script from main branch
+      run: |
+        rm -rf _scripts
+        wget https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_scripts/validate-contributors.py -P _scripts
+
     - name: Validate contributors
       if: steps.filter.outputs.contributors == 'true'
       run: |
