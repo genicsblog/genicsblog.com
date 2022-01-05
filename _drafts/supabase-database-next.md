@@ -23,10 +23,10 @@ One of the coolest things about Supabase is its database and since we all love N
 
 In case you don't know about Supabase Database, here are a few points to catch up on it!
 
-- It's free to use and follows the *pay as you go* model.
+- It is free to use and follows the *pay as you go* model.
 - The free version provides unlimited read and write requests!
 - The free version contains 500 MB of space.
-- It's a SQL Based database.
+- It is a SQL based database.
 - It is one of the easiest databases to get started with!
 
 So, let's jump right in!
@@ -37,32 +37,32 @@ So, let's jump right in!
 
 First, you need to set up a project in [Supabase](https://supabase.io/), you can go to their official website and create a free project! In case you don't have an account there, you need to make an account.
 
-Go to Supabase, and click on create a new Project, choose a name and a password, and you're good to go!
+Go to Supabase, and click on create a new project, choose a name and a password, and you're good to go!
 
 ![Create a new project at Supabase](https://cdn.hashnode.com/res/hashnode/image/upload/v1638968211764/oCcXRuJLU.png)
 
 Next, create a new table in the database named **responses**:
 
-![Table editor in the supabase database dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1638970345348/cit4t6yG2.png)
+![Table editor in the Supabase database dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1638970345348/cit4t6yG2.png)
 
-![Create a new table in the supabase database dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1638970419288/_mdgg2ZU6.png)
+![Create a new table in the Supabase database dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1638970419288/_mdgg2ZU6.png)
 
-Now, let's jump to the coding part! We're using NextJS for this demo, and I'm using Tailwind as my UI preference. But you can use your preferred UI Framework as your preference!
+Let's jump to the coding part! We will be using NextJS for this demo and Tailwind CSS to style our UI. But you can use your preferred UI Framework as your preference.
 
 ```shell
 npx create-next-app -e with-tailwindcss supabase-demo
 ``` 
 
-Now, we're gonna make a simple form. For this demo, you can just use the `index.js` file. Clear up the boilerplate code before proceeding further.
+Now, we're going to make a simple form. For this demo, you can just use the `index.js` file. Clear up the boilerplate code before proceeding further.
 
-First, make the main `div` element and align its children to the center using flexbox.
+For the form, make the main `div` element and align its children to the center using flexbox.
 
 ```jsx
 <div className="min-h-screen min-w-screen bg-purple-500 flex justify-center items-center">
 </div>
 ``` 
 
-Now, we can add `input` fields and a submit `button`:
+Inside the `div` element, we can add `input` fields and a submit `button`:
 
 
 ```jsx
@@ -87,7 +87,7 @@ Now, we can add `input` fields and a submit `button`:
 </div>;
 ``` 
 
-Now, we are gonna use hooks to get the input values:
+We are going to use hooks to get the input values.
 
 First, let's make two variables using the `useState()` hook
 
@@ -96,7 +96,7 @@ First, let's make two variables using the `useState()` hook
   const [email, setEmail] = useState('')
 ``` 
 
-Now, we will assign these values to the input fields and update them if the value changes. We can do this using the `onChange` event.
+We will assign these values to the input fields and update them if the values change. We can do this using the `onChange` event.
 
 ```jsx
   <input
@@ -116,19 +116,18 @@ Now, we will assign these values to the input fields and update them if the valu
   />
 ``` 
 
-So now, you should have a simple form that looks like this:
+At this point, you should have a simple form that looks like this:
 
 ![Screenshot (304).png](https://cdn.hashnode.com/res/hashnode/image/upload/v1639054552792/fcufKw4gE.png)
 
 Now, we will work on the database part. First, we will install *supabase-js* 
-
 
 ```shell
 npm install @supabase/supabase-js  # for npm
 yarn add @supabase/supabase-js     # for yarn
 ``` 
 
-Now, we need to initialize supabase. Go to the project dashboard on supabase, and get your keys from there. Then, follow along:
+Before we can use the Supabase in our project, we have to initialise it. Go to the project dashboard, get your keys from there and follow along:
 
 ```jsx
 import { createClient } from "@supabase/supabase-js";
@@ -140,7 +139,7 @@ const supabase = createClient(
 
 ``` 
 
-Now, let's make a function to handle form submit. We are gonna structure the form data in a new variable:
+Let's make a function to handle the form submission. We are going to structure the form data in a new variable:
 
 ```jsx
 const handleSubmit = async () => {
@@ -152,7 +151,7 @@ const handleSubmit = async () => {
 
 ``` 
 
-Now, we're going to upload the form data to Supabase Database! Here's how we're gonna do it:
+Now, we're going to upload the form data to Supabase Database! Here's how to do it:
 
 ```jsx
 const handleSubmit = async () => {
@@ -170,8 +169,8 @@ const handleSubmit = async () => {
 
 ``` 
 
-And, That's it!!
+And, that's it!
 
-**Now, you can fill the form and submit it to see the data update in the database!**
+**Now, you can fill the form and submit it to see the data update in the Supabase database!**
 
 ![well-done!](https://media.giphy.com/media/11F0d3IVhQbreE/giphy.gif)
