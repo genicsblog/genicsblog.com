@@ -1,9 +1,9 @@
 ---
 layout: post
 title:  "Get Started with Supabase Database in Next.JS"
-excerpt: "All you need to setup a supabase database and work with it in Next.JS!"
+excerpt: "All you need to setup a supabase database and use it in Next.JS!"
 original: "https://blog.anurag.tech/get-started-with-supabase-database-in-nextjs"
-image: "https://raw.githubusercontent.com/kr-anurag/kr-anurag/main/q4bZT4PyR.jpg"
+image: "https://user-images.githubusercontent.com/46792249/148196773-c30b7519-481d-445c-b778-cfb413ce32bf.png"
 category: web
 tags: ["web-development", "next-js", "supabase"]
 languages: ["shell", "javascript"]
