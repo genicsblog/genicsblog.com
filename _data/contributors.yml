@@ -1,6 +1,6 @@
 gouravkhunger:
   name: "Gourav Khunger"
-  role: "Founder @ Genics Blog"
+  role: "Founder @ Genics Blog test"
   avatar: "https://avatars.githubusercontent.com/u/46792249"
   bio: "16 year old passionate App developer. I have interests in web development too."
   links:
@@ -13,7 +13,7 @@ gouravkhunger:
 
 anurag:
   name: "anuragkr"
-  role: "Frontend Developer"
+  role: "Frontend Developer This change should make it fail."
   avatar: "https://avatars.githubusercontent.com/u/77309809?v=4"
   bio: "I'm a 15 year old Frontend Developer, Blogger."
   links: 
