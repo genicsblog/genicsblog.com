@@ -29,11 +29,8 @@ jobs:
 
     - name: Install python dependencies
       run: |
-        pip install nltk
+        pip install nltk textblob html2text beautifulsoup4
         python -m nltk.downloader brown punkt
-        pip install textblob
-        pip install html2text
-        pip install beautifulsoup4
 
     - name: Build production jekyll site
       run: JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build
