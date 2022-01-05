@@ -8,6 +8,7 @@ category: web
 tags: ["web-development", "next-js", "supabase"]
 languages: ["shell", "javascript"]
 author: anurag
+permalink: /anurag/supabase-database-nextjs
 ---
 
 
