@@ -57,20 +57,10 @@ jobs:
     - name: Add contributor pages to PR
       if: steps.filter.outputs.contributors == 'true'
       run: |
-        git config user.name "GitHub Actions Bot"
-        git config user.email "<>"
+        git config user.name "Gourav Khunger"
+        git config user.email "46792249+gouravkhunger@users.noreply.github.com"
         git add _contributors
         git commit -m "Add contributor pages"
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Auto-merge if no errors
-      if: steps.filter.outputs.contributors == 'true'
-      uses: "pascalgn/automerge-action@v0.14.3"
-      env:
-        GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
-        MERGE_LABELS: ""
-        MERGE_METHOD: "squash"
-        MERGE_COMMIT_MESSAGE: "Auto merge changes to contributors #{pullRequest.number}"
-        MERGE_RETRY_SLEEP: "60000"
