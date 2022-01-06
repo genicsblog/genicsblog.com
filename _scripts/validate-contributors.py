@@ -46,7 +46,12 @@ if temp.readlines()[0].strip() == file:
                                 changed.add(str(key))
 
             for contributor in changed:
-                if contributor != sys.argv[1]:
+                if contributor in existingData:
+                    githubAccount = existingData[contributor]["links"]["github"]
+                else:
+                    githubAccount = newData[contributor]["links"]["github"]
+
+                if githubAccount != sys.argv[1]:
                     raise Exception(f"Committer {sys.argv[1]} tried to change {contributor}!")
                 else:
                     print(f"{sys.argv[1]} is allowed to change {contributor}.")
