@@ -37,11 +37,13 @@ jobs:
         python-version: '3.x'
 
     - name: Install python dependencies
+      if: steps.filter.outputs.drafts == 'true'
       run: |
         pip install PyYAML
         pip install python-frontmatter
     
     - name: Get validation script from main branch
+      if: steps.filter.outputs.drafts == 'true'
       run: |
         rm -rf _scripts
         wget https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_scripts/validate-drafts.py -P _scripts
