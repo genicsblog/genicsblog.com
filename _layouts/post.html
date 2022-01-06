@@ -33,13 +33,22 @@ layout: default
     </article>
     <hr />
     <div class="px-6 pb-6 md:px-8 md:pb-8 flex flex-col items-center rounded-bl-2xl rounded-br-2xl">
-      <p class="text-center mb-4">Did you learn something new?<br />Comment down below and spread the word!</p>
-      <div class="grid grid-flow-col gap-4">
-        <a class="underline-none hover:scale-125 transition" rel="nofollow noopener noreferrer" href="https://stackoverflow.com/users/{{ links.stackoverflow }}" target="_blank">
-          <img src="/assets/images/social/linkedin.svg" class="social-image w-8 h-8" />
+      <p class="text-center mb-4">Did you learn something new?<br />Comment it down and spread the word!</p>
+      <div class="grid grid-flow-col gap-6">
+        <a class="underline-none hover:scale-125 transition flex items-center" rel="nofollow noopener noreferrer" href="https://facebook.com/sharer.php?u=Check out this amazing article at Genics Blog '{{ page.title }}': {{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;" target="_blank">
+          <img src="/assets/images/social/facebook.svg" class="social-image w-8 h-8" />
         </a>
-        <a class="underline-none hover:scale-125 transition" rel="nofollow noopener noreferrer" href="https://stackoverflow.com/users/{{ links.stackoverflow }}" target="_blank">
+        <a class="underline-none hover:scale-125 transition flex items-center" rel="nofollow noopener noreferrer" href="https://api.whatsapp.com/send?text=Checkout this amazing article at Genics Blog '{{ page.title }}': {{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'whatsapp-share', 'width=550,height=435');return false;" target="_blank">
+        <img src="/assets/images/social/whatsapp.svg" class="social-image w-10 h-10" />
+        </a>
+        <a class="underline-none hover:scale-125 transition flex items-center" rel="nofollow noopener noreferrer" href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'linkedin-share', 'width=550,height=435');return false;" target="_blank">
+          <img src="/assets/images/social/linkedin.svg" class="social-image w-7 h-7" />
+        </a>
+        <a class="underline-none hover:scale-125 transition flex items-center" rel="nofollow noopener noreferrer" href="https://twitter.com/intent/tweet?text=Check out this amazing article by @{{ site.data.contributors[page.author].links.twitter }} at @genicsblog: {{ page.title }}&url={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
           <img src="/assets/images/social/twitter.svg" class="social-image w-8 h-8" />
+        </a>
+        <a class="underline-none hover:scale-125 transition flex items-center" rel="nofollow noopener noreferrer" href="https://www.snapchat.com/scan?attachmentUrl={{ site.url }}{{ page.url }}" onclick="window.open(this.href, 'snapchat-share', 'width=550,height=435');return false;">
+          <img src="/assets/images/social/snapchat.svg" class="social-image w-14 h-14 -m-2" />
         </a>
       </div>
     </div>
