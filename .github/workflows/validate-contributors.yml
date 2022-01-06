@@ -37,10 +37,12 @@ jobs:
         python-version: '3.x'
 
     - name: Install python dependencies
+      if: steps.filter.outputs.contributors == 'true'
       run: |
         pip install PyYAML python-frontmatter requests
 
     - name: Get validation script from main branch
+      if: steps.filter.outputs.contributors == 'true'
       run: |
         rm -rf _scripts
         wget https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_scripts/validate-contributors.py -P _scripts
@@ -53,14 +55,15 @@ jobs:
         rm temp.txt
 
     - name: Add contributor pages to PR
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: steps.filter.outputs.contributors == 'true'
       run: |
         git config user.name "GitHub Actions Bot"
         git config user.email "<>"
         git add _contributors
         git commit -m "Add contributor pages"
         git push
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Auto-merge if no errors
       if: steps.filter.outputs.contributors == 'true'
