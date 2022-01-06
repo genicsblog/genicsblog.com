@@ -9,7 +9,7 @@ Genics blog is an open source community of developers and we exist with help fro
 
 We are actively seeking from the community to help us improve the blog and to make it more useful for everyone. We are inclusive to both technical and non-technical contributions.
 
-If you are interested in the contributions, start by joining our [Discod server](https://discord.gg/qQEsNkF7F6) where you can get familiar with the project.
+If you are interested in the contributions, start by joining our [Discod server](https://discord.genicsblog.com) where you can get familiar with the project.
 
 Here's a list of open roles we are actively seeking volunteers for:
 

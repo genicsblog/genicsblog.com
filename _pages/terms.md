@@ -111,5 +111,5 @@ By continuing to access or use Our Service after those revisions become effectiv
 
 If you have any questions about these Terms and Conditions, You can contact us:
 
-- Discord: [our Discord server](https://discord.gg/qQEsNkF7F6)
+- Discord: [our Discord server](https://discord.genicsblog.com)
 - By email: [contact@genicsblog.com](mailto:contact@genicsblog.com)
