@@ -31,6 +31,18 @@ layout: default
     <article class="p-6 md:p-8">
       {{ content | extlinks }}
     </article>
+    <hr />
+    <div class="px-6 pb-6 md:px-8 md:pb-8 flex flex-col items-center rounded-bl-2xl rounded-br-2xl">
+      <p class="text-center mb-4">Did you learn something new?<br />Comment down below and spread the word!</p>
+      <div class="grid grid-flow-col gap-4">
+        <a class="underline-none hover:scale-125 transition" rel="nofollow noopener noreferrer" href="https://stackoverflow.com/users/{{ links.stackoverflow }}" target="_blank">
+          <img src="/assets/images/social/linkedin.svg" class="social-image w-8 h-8" />
+        </a>
+        <a class="underline-none hover:scale-125 transition" rel="nofollow noopener noreferrer" href="https://stackoverflow.com/users/{{ links.stackoverflow }}" target="_blank">
+          <img src="/assets/images/social/twitter.svg" class="social-image w-8 h-8" />
+        </a>
+      </div>
+    </div>
   </div>
   {% assign author = site.data.contributors[page.author] %}
   <aside class="m-6 md:m-10 lg:my-14 lg:mr-10 lg:-ml-4 md:mr-8 lg:max-w-[25%] xl:max-w-[20%]">
