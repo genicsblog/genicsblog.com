@@ -6,7 +6,7 @@ labels: ''
 assignees: ''
 ---
 
-**Note**: Please read [this article](author/create-a-submission-request) before continuing further.
+**Note**: Please read [this article](https://docs.genicsblog.com/author/create-a-submission-request) before continuing further.
 
 ### Idea
 
