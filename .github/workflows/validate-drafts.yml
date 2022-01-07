@@ -39,9 +39,8 @@ jobs:
     - name: Install python dependencies
       if: steps.filter.outputs.drafts == 'true'
       run: |
-        pip install PyYAML
-        pip install python-frontmatter
-    
+        pip install python-frontmatter PyYAML requests
+
     - name: Get validation script from main branch
       if: steps.filter.outputs.drafts == 'true'
       run: |
