@@ -1,23 +1,26 @@
 ---
 layout: post
-title: "Make a toast with HTML, CSS, and JS"
-excerpt: "A guide to making toast notification with HTML, CSS, and JavaScript."
+title: "Making a toast notification with HTML, CSS, and JS"
+excerpt: "A guide to making toast notifications for your webpage with HTML, CSS, and JavaScript."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1638697970037/zAYKG5UvP.png"
 languages: ["html", "css", "javascript"]
 category: web
 tags: ["web-development", "beginners"]
 author: anishde12020
+permalink: /anishde12020/making-a-toast-notification-with-html-css-and-js
 ---
 
 ## Introduction
 
-Toasts are very useful for showing users some information. It has a wide variety of uses from displaying success messages for successful actions, showing error messages in case something goes wrong, and much more. Today we are going to build a simple toast with HTML and CSS. We are going to be using some javascript to add some interactivity.
+Toasts are very useful for showing users some information. It has a wide variety of uses from displaying success messages for successful actions, showing error messages in case something goes wrong, and much more.
+
+Today we are going to build a simple toast with HTML and CSS. We are going to be using some javascript to add some interactivity.
 
 ### What we are making -
 
 We are going to be making a toast that shows up when a button is clicked. It can also be closed, which is hidden away, by clicking a close button.
 
-CodePen - https://codepen.io/anishde12020/pen/JjrYMrW
+{% include codepen.html userName="anishde12020" penId="JjrYMrW" %}
 
 ## Basic CSS to make a toast
 
@@ -305,8 +308,8 @@ If you had any issues, feel free to comment down below or reach out to me via [T
 
 ## Links
 
-Codepen for this project - https://codepen.io/anishde12020/pen/JjrYMrW
+[Codepen for this project](https://codepen.io/anishde12020/pen/JjrYMrW)
 
-HeroIcons - https://heroicons.com/
+[HeroIcons](https://heroicons.com)
 
-My Twitter - https://twitter.com/AnishDe12020
+[My Twitter](https://twitter.com/AnishDe12020)
