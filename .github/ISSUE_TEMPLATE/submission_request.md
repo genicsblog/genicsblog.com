@@ -6,7 +6,7 @@ labels: ''
 assignees: ''
 ---
 
-<!-- **Note**: Please read https://docs.genicsblog.com/author/create-a-submission-request before continuing further. -->
+<!-- Note: Please read https://docs.genicsblog.com/author/create-a-submission-request before continuing further. -->
 
 ### Idea
 <!-- In this space, explain what your article is about. -->
@@ -29,4 +29,4 @@ You must be the original author of that article to re-post at Genics Blog. -->
 
 <!-- Please add anything you would like to share. -->
 
-<!-- **Note:** Please remove all the unnecessary lines and comments before submitting the issue. -->
+<!-- Note: Please remove all the unnecessary lines and comments before submitting the issue. -->
