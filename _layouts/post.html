@@ -111,10 +111,12 @@ layout: default
   </aside>
 </section>
 
+{% include cta.html %}
+
 {% include infeed-ad.html %}
 
 {% if page.comments != false and page.sitemap != false %}
-<h1 class="mx-8 md:mx-10 lg:mx-14 -mb-4 lg:-mb-8">Comments</h1>
+<h1 class="mx-8 mt-12 md:mx-10 lg:mx-14 -mb-4 lg:-mb-8">Comments</h1>
 
 <section class="block lg:flex">
   <div class="md:text-lg m-6 md:m-10 lg:m-14 lg:w-full lg:max-w-[65%] xl:max-w-[70%]">
@@ -131,5 +133,6 @@ layout: default
   </aside>
 </section>
 {% endif %}
+
 
 {% include infeed-ad.html %}
