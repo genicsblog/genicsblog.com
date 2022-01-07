@@ -44,7 +44,7 @@ if total_files != 0:
 
                 os.remove("temp.md")
 
-            else if response.status_code == 404:
+            elif response.status_code == 404:
                 print(f"File not present on main branch, skipping...")
 
             else:
