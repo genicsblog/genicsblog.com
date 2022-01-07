@@ -1,13 +1,14 @@
 ---
 layout: post
 title:  "Building a CRUD API with Node.js and MongoDB"
-excerpt: "The complete guide you'll need to refer to create mind blowing drafts."
+excerpt: "The ultimate guide to building a CRUD API with Node.js and MongoDB from scratch."
 image: "https://user-images.githubusercontent.com/76690419/148522889-a8618d72-4e52-4a78-b452-7690e9135709.png"
+original: "https://blog.avneesh.tech/building-a-crud-api-with-nodejs-and-mongodb"
 languages: ["shell", "javascript", "json"]
 category: backend
 tags: ["node-js", "mongodb", "api"]
 author: avneesh
-original: "https://blog.avneesh.tech/building-a-crud-api-with-nodejs-and-mongodb"
+permalink: /avneesh/building-a-crud-api-with-node-js-and-mongodb
 ---
 
 Howdy everyone, in this article we are going to build a CRUD (Create, Read, Update, Delete) API with  [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/). This API will be able to add, get, edit and delete todos!
@@ -60,7 +61,7 @@ app.listen(PORT, async () => {
 });
 ```
 
-Inside `package.json` and inside of `scripts` add this new script-
+Open `package.json` and inside `scripts` block add this new script-
 
 ```json
 "start": "nodemon index.js"
@@ -244,7 +245,7 @@ Create a new POST todos route in `router.js`-
 router.post("/todos", createTodo);
 ```
 
-Import createTodo from the controller-
+Import `createTodo` from the controller-
 
 ```javascript
 const { getTodos, createTodo } = require("./controllers/Todo");
@@ -275,7 +276,7 @@ This is going to take the `title`, `description`, and `completed` from the body 
 const Todo = require("../model/Todo");
 ```
 
-We also need to export createTodo-
+We also need to export `createTodo`-
 
 ```javascript
 module.exports = {
@@ -309,7 +310,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 ```
 
-We also need to import cors-
+We also need to import `cors`-
 
 ```javascript
 const cors = require("cors");
@@ -335,7 +336,9 @@ const getTodos = (req, res) => {
 };
 ```
 
-This is going to show all the todos in the collection of "Todos", now if we make a GET request to  [http://localhost:8000/todos](http://localhost:8000/todos) then it will show us all the todos! Currently, we have only one.
+This is going to show all the todos in the collection of "Todos", now if we make a `GET` request to  [http://localhost:8000/todos](http://localhost:8000/todos) then it will show us all the todos!
+
+Currently, we only have one todo.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641538593222/J52-Pqe-S.png)
 
@@ -345,7 +348,7 @@ We can also test this by adding another todo and it will then show us both the t
 
 ### Edit functionality
 
-Create a new PUT route in `router.js`-
+Create a new `PUT` route in `router.js`-
 
 ```javascript
 router.put("/todos/:todoID", updateTodo);
@@ -380,7 +383,7 @@ const updateTodo = (req, res) => {
 };
 ```
 
-This will take a new `title`, `description`, and `completed` from the request body and update it according to the id in the URL. So, in postman create a new PUT request to  [http://localhost:8000/todos/todo_id](http://localhost:8000/todos/todo_id). You also need to provide data in the body-
+This will take a new `title`, `description`, and `completed` field from the request body and update it according to the id in the URL. So, in postman create a new PUT request to  [http://localhost:8000/todos/todo_id](http://localhost:8000/todos/todo_id). You also need to provide data in the body-
 
 ```json
 {
@@ -471,7 +474,7 @@ git add .
 git commit -m "your commit message"
 ```
 
-Go on GitHub and create a  [New Repo](https://github.com/new). You can give it any name you like!
+Go to GitHub and create a  [New Repo](https://github.com/new). You can give it any name you like!
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641540984748/ODEVW_8Oh.png)
 
@@ -497,7 +500,7 @@ We also need to add the env variables, so go to the settings tab, scroll down to
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641541717089/Ffo01DZdp.png)
 
-You are going to see an error in your app, so head back to the code! Inside package.json change the start script to-
+You are going to see an error in your app, so head back to the code! Inside `package.json` change the start script to-
 
 ```shell
 node index.js
@@ -525,7 +528,9 @@ git commit -m "fix: deploy errors"
 git push
 ```
 
-If you enabled automatic deploys then it will deploy automatically, else manually deploy the branch. Now our API successfully works!  [Here is the API](https://crud-api-demo.herokuapp.com/) if you want to try it out.
+If you enabled automatic deploys then it will deploy automatically, else manually deploy the branch. Now our API successfully works!
+
+[Here is the API](https://crud-api-demo.herokuapp.com/) if you want to try it out.
 
 ## Conclusion
 Hope you were able to build an amazing CRUD API for your next project. Feel free to drop your questions below 😉. See ya in the next one ✌️
