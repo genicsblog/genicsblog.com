@@ -8,6 +8,7 @@ category: backend
 tags: ["node", "javascript", "mongodb", "api", "crud"]
 author: avneesh
 original: "https://blog.avneesh.tech/building-a-crud-api-with-nodejs-and-mongodb"
+---
 
 Howdy everyone, in this article we are going to build a CRUD (Create, Read, Update, Delete) API with  [Node.js](https://nodejs.org/) and [MongoDB](https://www.mongodb.com/). This API will be able to add, get, edit and delete todos!
 
