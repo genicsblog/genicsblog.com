@@ -484,10 +484,8 @@ If you now refresh the page, you will be able to see your code!
 
 Now, go to [heroku](https://heroku.com/), sign in/sign up. Then, create a new app
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641541300730/YDdXF33GtL.png)
 
 Give your app a name and hit "Create app"
-
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641541408361/svlAnPnpX.png)
 
