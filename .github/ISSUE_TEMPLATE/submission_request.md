@@ -6,14 +6,14 @@ labels: ''
 assignees: ''
 ---
 
-<!-- **Note**: Please read [this article](https://docs.genicsblog.com/author/create-a-submission-request) before continuing further. -->
+<!-- **Note**: Please read https://docs.genicsblog.com/author/create-a-submission-request before continuing further. -->
 
 ### Idea
 <!-- In this space, explain what your article is about. -->
 
 ### Topics
 
-<!-- Checkout the [existing topics](https://genicsblog.com/topics). -->
+<!-- Checkout the https://genicsblog.com/topics. -->
 
 **Category**: <!-- The category that your article belongs to (maximum 1). -->
 
