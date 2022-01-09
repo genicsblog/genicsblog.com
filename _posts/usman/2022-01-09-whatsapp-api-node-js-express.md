@@ -1,13 +1,14 @@
 ---
 layout: post
-title:  "Building a WhatsApp API using Node & Express"
+title:  "Building a WhatsApp API using Node.js & Express"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1641723506307/rnT9FncaZ.png"
 excerpt: "The complete guide to building a WhatsApp API using Node.js, Express and whatsapp-web.js"
+original: "https://blog.usman-s.me/whatsapp-api-node-express"
 languages: ["javascript", "json", "shell"]
 category: backend
 tags: ["node-js", "api"]
 author: usman
-original: "https://blog.usman-s.me/whatsapp-api-node-express"
+permalink: /usman/whatsapp-api-with-node-js-and-express
 ---
 
 ![hey.gif](https://c.tenor.com/8GDoVtr9mvQAAAAC/hey-everyone-spider-man.gif)
@@ -31,11 +32,11 @@ exp .
 
 ### Install Whatsapp Web library
 
-> **Caution**: Installing this package will also download Chromium because of Puppeteer. To disable Chromium download, follow the steps on  [this post](https://blog.usman-s.me/how-to-skip-chromium-download-in-puppeteer)  
+> **Caution**: Installing this package will also download Chromium because of Puppeteer. To disable Chromium download, follow the steps on  [this post](https://blog.usman-s.me/how-to-skip-chromium-download-in-puppeteer).
 
 There's an awesome [open-source Whatsapp client](https://github.com/pedroslopez/whatsapp-web.js) that connects through the Whatsapp Web browser app made by [Pedro S. Lopez](https://twitter.com/pedroslopez).
 
-First, we'll install it through NPM *or yarn*.
+First, we'll install it through **npm** (or **yarn**).
 
 ```shell
 npm i whatsapp-web.js
@@ -43,7 +44,7 @@ npm i whatsapp-web.js
 
 After we're done with that, we can set it up in our `app.js` file by following the given  [example](https://github.com/pedroslopez/whatsapp-web.js/blob/main/example.js).
 
-We can alter the file as follows,
+We can alter the file as follows:
 
 ```javascript
 const express = require('express');
@@ -199,6 +200,7 @@ Now in VS Code itself, we'll use an extension called **Thunder Client**, which w
 Create a **New Request** in Thunder Client, and then add the following details. In the `number` field, add the mobile number followed by the country code of the number.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641645569198/ysdOUnwwE.png)
+
 > Look at the image carefully
 
 And then hit **Send**.
@@ -211,7 +213,7 @@ If the message is sent successfully, the number you entered will receive it and 
 
 ## Conclusion
 
-You can read more about the library here
+You can read more about the library here:
 
 [https://wwebjs.dev](https://wwebjs.dev)
 
