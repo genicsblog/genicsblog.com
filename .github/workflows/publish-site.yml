@@ -17,6 +17,11 @@ jobs:
         repository: genicsblog/theme-files
         path: theme
 
+    - name: Move theme files to main folder
+      run: |
+        mv theme/* .
+        rm -rf theme/
+
     - uses: dorny/paths-filter@v2
       id: changes
       with:
@@ -42,11 +47,6 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-
-    - name: Move theme files to main folder
-      run: |
-        mv theme/* .
-        rm -rf theme/
 
     - name: Install npm dependencies
       if: steps.changes.outputs.files == 'true'
