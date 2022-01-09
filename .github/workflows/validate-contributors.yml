@@ -45,7 +45,7 @@ jobs:
       if: steps.filter.outputs.contributors == 'true'
       run: |
         rm -rf _scripts
-        wget https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_scripts/validate-contributors.py -P _scripts
+        wget https://raw.githubusercontent.com/genicsblog/theme-files/main/_scripts/validate-contributors.py -P _scripts
 
     - name: Validate contributors
       if: steps.filter.outputs.contributors == 'true'

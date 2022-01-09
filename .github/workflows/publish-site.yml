@@ -11,6 +11,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
+    - name: Checkout theme-files repo
+      uses: actions/checkout@v2
+      with:
+        repository: genicsblog/theme-files
+        path: theme
+
     - uses: dorny/paths-filter@v2
       id: changes
       with:
@@ -19,17 +25,10 @@ jobs:
             - '_contributors/**'
             - '_data/**'
             - '_drafts/**'
-            - '_includes/**'
-            - '_layouts/**'
             - '_pages/**'
-            - '_plugins/**'
             - '_posts/**'
             - '_series/**'
-            - 'assets/**'
             - '_config.yml'
-            - 'search.json'
-            - 'tailwind.config.js'
-            - 'postcss.config.js'
 
     - uses: ruby/setup-ruby@v1
       with:
@@ -43,6 +42,11 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+
+    - name: Move theme files to main folder
+      run: |
+        mv theme/* .
+        rm -rf theme/
 
     - name: Install npm dependencies
       if: steps.changes.outputs.files == 'true'
