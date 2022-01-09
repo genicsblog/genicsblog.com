@@ -80,4 +80,17 @@ MaheshtheDev:
       github: "MaheshtheDev"
       twitter: "MaheshtheDev"
       instagram: "MaheshtheDev" 
+      
+usman:
+  name: "Usman Sabuwala" 
+  role: "Content creator & Full stack dev"
+  avatar: "https://i.ibb.co/Fs6Kww8/PFP.jpg"
+  bio: "I like to create content and teach people about web development. I like reading books and helping people!"
+  links: 
+      github: "max-programming"
+      stackoverflow: "11727541"
+      linkedin: "/in/usman-sabuwala/"
+      twitter: "MaxProgramming1" 
+      instagram: "usmansabuwaka7" 
+      youtube: "MaxProgramming"
 
