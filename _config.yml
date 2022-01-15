@@ -48,6 +48,7 @@ plugins:
   - jekyll-hostname
   - jekyll-paginate-v2
   - jekyll-loading-lazy
+  - jekyll-redirect-from
 
 pagination:
   enabled: true

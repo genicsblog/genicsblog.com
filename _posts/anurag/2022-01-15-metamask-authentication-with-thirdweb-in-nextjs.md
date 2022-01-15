@@ -8,6 +8,8 @@ category: web3
 tags: ["blockchain", "crypto", "next-js"]
 author: anurag
 original: "https://blog.anurag.tech/metamask-authentication-in-nextjs-with-third-web"
+permalink: /anurag/metamask-authentication-with-thirdweb-in-nextjs
+redirect_from: /metamask-authentication-with-thirdweb-in-nextjs
 ---
 
 Hey There! What's up!

@@ -8,6 +8,8 @@ category: web3
 tags: ["blockchain", "crypto"]
 author: avneesh
 original: "https://blog.avneesh.tech/make-your-first-crypto-with-thirdweb"
+permalink: /avneesh/make-your-first-crypto-with-thirdweb
+redirect_from: /make-your-first-crypto-with-thirdweb
 ---
 
 Have you ever wondered how amazing it would be to create your crypto? So, in this article let's build our very first crypto!
