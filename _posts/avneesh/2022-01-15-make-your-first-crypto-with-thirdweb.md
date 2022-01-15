@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Make your first Crypto with ThirdWeb 🤯"
-image: "![image](https://user-images.githubusercontent.com/76690419/149300558-70052677-940d-49d1-b243-e4e0ba437c01.png)"
-languages: ["javascript"]
+excerpt: "With all this web3 hype going on, are you keen to learn how you can jump right in and build your own crypto?"
+image: "https://user-images.githubusercontent.com/76690419/149300558-70052677-940d-49d1-b243-e4e0ba437c01.png"
+languages: ["javascript", "shell", "json"]
 category: web3
-tags: ["web3", "javascript", "blockchain", "crypto"]
+tags: ["blockchain", "crypto"]
 author: avneesh
 original: "https://blog.avneesh.tech/make-your-first-crypto-with-thirdweb"
 ---
@@ -14,28 +15,27 @@ Have you ever wondered how amazing it would be to create your crypto? So, in thi
 ## Setup
 Create a new folder-
 
-```
+```shell
  mkdir thirdweb-crypto
 ```
 
 Initialize Node.js-
 
-```
+```shell
 npm init -y
 ```
-
 
 Change type to `module`
 
 we are going to use modular imports so change the type to `module` in `package.json`-
 
-```
+```json
 "type": "module",
 ```
 
 Install the packages needed-
 
-```
+```shell
 npm i @3rdweb/sdk dotenv ethers
 ```
 
@@ -43,7 +43,7 @@ npm i @3rdweb/sdk dotenv ethers
 
 To keep stuff clean, create a new folder `scripts`. Inside of it create a file a file `initialize-sdk.js`. Now, paste in the following-
 
-```
+```javascript
 import { ThirdwebSDK } from "@3rdweb/sdk";
 import ethers from "ethers";
 import dotenv from "dotenv";
@@ -114,11 +114,9 @@ In your metamask wallet, click on account details
 
 Click on the export private key button, enter the password and copy the key that you get. This is your `PRIVATE_KEY`.
 
-
-
 Let's now run the initializing script-
 
-```
+```shell
 node scripts/initialize-sdk.js
 ```
 
@@ -130,7 +128,7 @@ You will now see your app address-
 
 Create a new file `deploy-token.js` and paste in the following-
 
-```
+```javascript
 import sdk from "./initialize-sdk.js";
 const app = sdk.getAppModule("YOUR_APP_ADDRESS");
 (async () => {
@@ -150,19 +148,17 @@ const app = sdk.getAppModule("YOUR_APP_ADDRESS");
 ```
 You need to replace the app address with the address that came in the console. You also need to change the name and symbol of the token to what you want it to be called. Let's now run it-
 
-```
+```shell
 node scripts/deploy-token.js
 ```
 
 It works and the token has been deployed 🥳
-
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641988251933/cS1Or4sUP.png)
 
 You can also view the contract on  [Etherscan](https://rinkeby.etherscan.io/) 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641988321364/9nju9LAo8.png)
-
 
 ## Import the token to your metamask wallet
 
@@ -171,7 +167,6 @@ We can also see how many tokens we have through the metamask wallet, so open Met
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641988462000/-PlYIVzMO.png)
 
 Paste in the address of your token and click **add**.
-
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641988496990/KPFJzu_FG.png)
 
@@ -185,7 +180,7 @@ But it is 0 in quantity so let's mint some tokens.
 
 Create a new file `mint-token.js` and add the following-
 
-```
+```javascript
 import { ethers } from "ethers";
 import sdk from "./initialize-sdk.js";
 const tokenModule = sdk.getTokenModule("YOUR_TOKEN_ADDRESS");
@@ -209,7 +204,7 @@ Replace `YOUR_TOKEN_ADDRESS` with the address you got. You can also change the n
 
 Run the script-
 
-```
+```shell
 node scripts/mint-token.js
 ```
 
@@ -225,8 +220,7 @@ You can also send these tokens to your friends or anyone you like :D
 
 ## Conclusion
 
-@[thirdweb](@thirdweb) is a great way to build web3 stuff, hope you found this article useful and made your first crypto. See ya in the next one ✌️
-
+[thirdweb](https://thirdweb.com) is a great way to build web3 stuff, hope you found this article useful and made your first crypto. See ya in the next one ✌️
 
 ### Useful links
 

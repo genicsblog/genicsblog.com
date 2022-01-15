@@ -1,10 +1,11 @@
 ---
 layout: post
 title:  "Metamask authentication with ThirdWeb in Next.JS"
-image: "![image](https://user-images.githubusercontent.com/77309809/149489789-db55b033-3196-45e7-9f72-cb49c3630c2f.png)"
-languages: ["javascript"]
+excerpt: "Let's learn how authentication works in the web3 world!"
+image: "https://user-images.githubusercontent.com/77309809/149489789-db55b033-3196-45e7-9f72-cb49c3630c2f.png"
+languages: ["js", "jsx", "shell"]
 category: web3
-tags: ["web3", "javascript", "blockchain", "crypto"]
+tags: ["blockchain", "crypto", "next-js"]
 author: anurag
 original: "https://blog.anurag.tech/metamask-authentication-in-nextjs-with-third-web"
 ---
@@ -28,7 +29,7 @@ So, in this article, I'm going to show how you can integrate Metamask auth with 
 First, create a NextJS app. I'm also using Tailwind CSS as my UI preference. You can use anything that you like.
 
 
-```js
+```shell
 npx create-next-app -e with-tailwindcss metamask-auth
 ``` 
 
@@ -48,7 +49,7 @@ export default function Home() {
 Now, we will install the only required dependency for this app, `@3rdweb/hooks`. Go ahead and install `@3rdweb/hooks` in your project directory.
 
 
-```
+```shell
 # for npm
 npm i @3rdweb/hooks
 
@@ -146,7 +147,7 @@ import { useWeb3 } from "@3rdweb/hooks"
 Now, inside the `Home` component:
 
 
-```
+```jsx
 const { connectWallet, address, error } = useWeb3();
 ``` 
 
@@ -196,7 +197,7 @@ Sometimes, the app may not work cause of errors, so in that case, we can use the
 
 Below our `useWeb3` hook:
 
-```js
+```jsx
 const { connectWallet, address, error } = useWeb3();
 
 error ? console.log(error) : null;
