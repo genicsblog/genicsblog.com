@@ -4,29 +4,13 @@ Static site for genicsblog.com
 
 ## Local setup
 
-### Prerequisites
+Install [docker](https://docs.docker.com/get-docker).
 
-Should have installed [ruby](https://www.ruby-lang.org) and [Node.js](https://nodejs.org) before proceeding. Install `jekyll` and `bundler` with:
+Run these commands in order to build and run the container:
 
+```shell
+docker build -t genicsblog .
+docker run -p 4000:4000 genicsblog
 ```
-gem install bundler jekyll
-```
 
-### Steps
-
-- Clone the repository and cd
-    ```shell
-    git clone https://github.com/genicsblog/genicsblog.github.io.git
-    cd genicsblog
-    ```
-
-- Install dependencies
-    ```shell
-    bundle install
-    npm install
-    ```
-
-- Run the static site on localhost
-    ```shell
-    bundle exec jekyll serve
-    ```
+The first build would take a few minutes, once done go to [localhost:4000](http://localhost:4000) to preview the site.

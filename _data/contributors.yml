@@ -70,3 +70,36 @@ karthikpariti:
       github: "Kardev07"
       twitter: "MrPkar"
       instagram: "_karthik.codes_" 
+ 
+MaheshtheDev:
+  name: "Mahesh Reddy Sv"
+  role: "Full Stack Developer at Keka HR"
+  avatar: "https://avatars.githubusercontent.com/u/38828053?v=4"
+  bio: "Full Stack Developer. I love to be a Dev"
+  links:
+      github: "MaheshtheDev"
+      twitter: "MaheshtheDev"
+      instagram: "MaheshtheDev" 
+      
+usman:
+  name: "Usman Sabuwala" 
+  role: "Content creator & Full stack dev"
+  avatar: "https://i.ibb.co/Fs6Kww8/PFP.jpg"
+  bio: "I like to create content and teach people about web development. I like reading books and helping people!"
+  links: 
+      github: "max-programming"
+      stackoverflow: "11727541"
+      linkedin: "/in/usman-sabuwala/"
+      twitter: "MaxProgramming1" 
+      instagram: "usmansabuwala7" 
+      youtube: "MaxProgramming"
+
+abhiraj: 
+  name: "Abhiraj Bhowmick" 
+  role: "Web developer and tech blogger" 
+  avatar: "https://avatars.githubusercontent.com/u/87644009?v=4"
+  bio: "I make stuff on the web and write blogs about it. Daily Twitter threads to make web dev easy for you." 
+  links: 
+      github: "rainboestrykr" 
+      linkedin: "in/abhiraj-bhowmick-857670218/" 
+      twitter: "rainboestrykr" 

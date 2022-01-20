@@ -39,14 +39,13 @@ jobs:
     - name: Install python dependencies
       if: steps.filter.outputs.drafts == 'true'
       run: |
-        pip install PyYAML
-        pip install python-frontmatter
-    
+        pip install python-frontmatter PyYAML requests
+
     - name: Get validation script from main branch
       if: steps.filter.outputs.drafts == 'true'
       run: |
         rm -rf _scripts
-        wget https://raw.githubusercontent.com/genicsblog/genicsblog.github.io/main/_scripts/validate-drafts.py -P _scripts
+        wget https://raw.githubusercontent.com/genicsblog/theme-files/main/_scripts/validate-drafts.py -P _scripts
 
     - name: Validate draft author
       if: steps.filter.outputs.drafts == 'true'

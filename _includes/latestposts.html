@@ -1,6 +1,0 @@
-<span class="text-xl font-bold">Latest Posts</span>
-<div class="flex flex-col sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-4 md:gap-4 lg:gap-6 text-center">
-    {% for post in site.posts | limit: 3 %}
-    {% include postbox.html %}
-    {% endfor %}
-</div>
