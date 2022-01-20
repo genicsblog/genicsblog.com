@@ -5,7 +5,7 @@ excerpt: "In this IT world, securing the data transfer is tough. But securing th
 image: "https://www.techfunnel.com/wp-content/uploads/2021/07/application-programming-interface.png"
 category: Web
 tags: ["API", "Backend-Security", "Web-Development"]
-author: maheshthedev
+author: MaheshtheDev
 original: "https://maheshthedev.hashnode.dev/how-to-secure-api-token"
 ---
 
