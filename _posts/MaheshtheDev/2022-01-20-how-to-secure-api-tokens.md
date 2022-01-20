@@ -8,7 +8,7 @@ tags: ["API", "security", "web-development"]
 author: MaheshtheDev
 original: "https://maheshthedev.hashnode.dev/how-to-secure-api-token"
 notice: "Thumbnail art credits: [techfunnel.com](https://www.techfunnel.com)"
-permalink: /MaheshtheDev/how-to-secure-api-token
+permalink: /MaheshtheDev/how-to-secure-api-tokens
 ---
 
 If you are into the tech world for a while, I’m sure you heard about the word `API`. It stands for Application Program Interface. For example, Google has API which gives user details access to third party software.
