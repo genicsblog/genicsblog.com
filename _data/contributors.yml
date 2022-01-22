@@ -102,4 +102,13 @@ abhiraj:
   links: 
       github: "rainboestrykr" 
       linkedin: "in/abhiraj-bhowmick-857670218/" 
-      twitter: "rainboestrykr" 
+      twitter: "rainboestrykr"
+
+Kira:
+  name: "Kira"
+  role: "Full stack web developer, open-source enthusiast and tech blogger",
+  avatar: "https://avatars.githubusercontent.com/u/90365542?v=4"
+  bio: "Hey 👋, I am Kira, a full stack web developer, open-source enthusiast and tech blogger"
+  links:
+    github: "kira272921"
+    twitter: "kira_272921"
