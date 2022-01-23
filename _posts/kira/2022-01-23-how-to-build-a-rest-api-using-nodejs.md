@@ -1,17 +1,17 @@
 ---
 layout: post
 title:  "How to build a REST API using NodeJS"
-excerpt: "The guide to teach you how to build a REST API from beginning till deployment"
+excerpt: "The guide to teach you how to build a REST API from beginning till deployment."
 image: "https://user-images.githubusercontent.com/90365542/150640432-993a9fd8-4472-457c-9074-9e6fbd273743.png"
 original: "https://kirablog.hashnode.dev/rest-api-using-nodejs"
 languages: ["javascript", "json"]
 category: backend
-tags: ["node-js", "mongodb", "api", "database"]
-author: Kira
+tags: ["node-js", "mongodb", "api"]
+author: kira
 permalink: /kira/how-to-build-a-rest-api-using-nodejs
 ---
 
-👋 Hey everyone, I know it's been a long since I posted a new blog 😅. 👀 So in this blog post we are doing to build a REST API that would serve as a source of motivation for developers using NodeJS and MongoDB. So let's get started 🏄‍♂️
+👋 Hey everyone, in this blog post we are doing to build a REST API that would serve as a source of motivation for developers using NodeJS and MongoDB. So let's get started 🏄‍♂️
 
 ![](https://c.tenor.com/r3XdvPsAV3kAAAAS/despicable-me-minions.gif)
 
@@ -21,14 +21,14 @@ API stands for "Application Programming Interface" which is a tool that allows t
 
 So you have built an amazing e-store application and you wanted other developers to build applications on it. Now you have to build some sort of software that communicates between your web service and the developer's application and that's where API comes in.
 
-![](https://res.cloudinary.com/practicaldev/image/fetch/s--5mJq34Yb--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/26124625/104198884-ca1bcf80-544c-11eb-94d1-22548426ad4d.png)
+![](https://user-images.githubusercontent.com/26124625/104198884-ca1bcf80-544c-11eb-94d1-22548426ad4d.png)
 
 ## What's a REST API? 🤔
 
 Now as you have let's talk something about "REST APIs". REST stands for **Representational State Transfer**, it's one of the most popularly known type of API architecture. These types of APIs follow the client-server model, where one program sends a request and the other response with some data.
 The requests are HTTP methods such as POST, GET, PUT, DELETE...
 
-![](https://res.cloudinary.com/practicaldev/image/fetch/s--8sH5rrSh--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/26124625/104204412-431e2580-5453-11eb-9827-29a65aa6ff82.png)
+![](https://user-images.githubusercontent.com/26124625/104204412-431e2580-5453-11eb-9827-29a65aa6ff82.png)
 
 You would have a more clear understanding of APIs and REST APIs when we build a project 👀. So what are we waiting for, let's dive started into coding 👨‍💻.
 
@@ -38,25 +38,25 @@ Let's set up our project so that we can start coding 👨‍💻.
 
 1. Creating a separate folder for our project
 
-   ```bash
+   ```shell
    $ mkdir dev-credits-api
    ```
 
 2. Navigate into the folder
 
-   ```bash
+   ```shell
    $ cd dev-credits-api
    ```
 
 3. Initializing the project
 
-   ```bash
+   ```shell
    $ npm init
    ```
 
 4. Installing the required packages
 
-   ```bash
+   ```shell
    $ npm install mongoose express dotenv cors
 
    # or
@@ -69,7 +69,7 @@ Let's set up our project so that we can start coding 👨‍💻.
 
      4.1. Installing nodemon as a dev dependency
 
-     ```bash
+     ```shell
      $ npm install nodemon -D
 
      # or
@@ -89,7 +89,7 @@ Here is the boilerplate code for a basic express app
 
 `index.js`
 
-```js
+```javascript
 const express = require('express');
 
 const app = express();
@@ -103,13 +103,15 @@ app.listen(port, async () => {
 
 Let's breakdown it into and understand each part:
 
-- We are requiring the express package into our file so that we can use it
-- We are assigning some value to the variable port, the port where our server would be running. You might be thinking why is there a `process.env.PORT`? 🤔. It's because during deployment on services such as Heroku the port number might vary, it may not be 3000 so we are telling that if there is a PORT environment variable then use that else use 3000
-- The last piece of code is telling to which port the server should listen, in our case it's the `PORT` variable
+- We are requiring the express package into our file so that we can use it.
+
+- We are assigning some value to the variable port, the port where our server would be running. You might be thinking why is there a `process.env.PORT`? 🤔. It's because during deployment on services such as Heroku the port number might vary, it may not be 3000 so we are telling that if there is a PORT environment variable then use that else use `3000`.
+
+- The last piece of code is telling to which port the server should listen, in our case it's the `PORT` variable.
 
 Let's add a new script named `start` to the `package.json` file which uses nodemon to automatically restart the server on file changes detected. So after the changes our scripts in `package.json` would look something like this:
 
-```JSON
+```json
 "scripts": {
    "start": "nodemon index.js"
 }
@@ -169,7 +171,7 @@ Add the below piece of code above the line where we declared the `port` variable
 
 `index.js`
 
-```js
+```javascript
 app.get('/', function (req, res) {
   res.send('Hello, World!');
 });
@@ -207,8 +209,6 @@ Let's go ahead and choose the free plan 👀
 
 You would be shown some more options about the cloud provider and the location
 
-
-
 Let's choose the nearest region and move forward.
 
 You would be asked to create a user. This is required as you would need the username and password to generate a connection URL which is then used to connect MongoDB with your NodeJS app.
@@ -229,7 +229,7 @@ Copy the connection URL
 
 Create a `.env` file and replace `<password>` with the password of the user which you have replaced previously
 
-```text
+```
 MONGODB_URL="mongodb+srv://kira272921:<password>@dev-credits-api.t5tkf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 ```
 
@@ -239,20 +239,20 @@ Let's head back to the good old `index.js` file
 
 Let's start by requiring `mongoose` and `dotenv`
 
-```js
+```javascript
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 ```
 
 Let's configure dotenv as well
 
-```js
+```javascript
 dotenv.config();
 ```
 
 Let's finally add the piece of code which connects our express application to MongoDB
 
-```js
+```javascript
 mongoose
   .connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
@@ -270,7 +270,7 @@ The `index.js` file show looks something like this now
 
 `index.js`
 
-```js
+```javascript
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
@@ -314,7 +314,7 @@ Let's create a new folder named `model` and inside it let's create a `model.js` 
 
 `model/model.js`
 
-```js
+```javascript
 const mongoose = require('mongoose');
 
 const devCredits = new mongoose.Schema({
@@ -345,13 +345,13 @@ Let's add more routes to our REST API. Let's add routes where we can get the tot
 
 Let's import our model which we have just created into the `index.js` file.
 
-```js
+```javascript
 const devCredits = require('./model/model.js');
 ```
 
 Let's add a new POST route in the `index.js` file
 
-```js
+```javascript
 app.post('/post', function (req, res) {
   const credit = new devCredits({
     id: req.body.id,
@@ -412,9 +412,9 @@ Click on `New Request`. You would be prompted to screen something like this
 
 ![](https://imgur.com/8Df3YZO.png)
 
-Let's test out our `/post` route now 🥳. Change the URL in the input box from `https://www.thunderclient.com/welcome` to `HTTP:localhost:3000/post`
+Let's test out our `/post` route now 🥳. Change the URL in the input box from to `localhost:3000/post`
 
-Change the HTTP method from `GET` to `POST`
+Change the request method from `GET` to `POST`
 
 ![](https://imgur.com/ID9Ieie.png)
 
@@ -434,7 +434,7 @@ This happened because we didn't have any middleware so let's them quickly
 
 `index.js`
 
-```js
+```javascript
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -452,13 +452,13 @@ Let's try again now so that it works now 🤞
 
 Let's import our model which we have just created into the `index.js` file.
 
-```js
+```javascript
 const devCredits = require('./model/model.js');
 ```
 
 Let's add a new route in the `index.js` file
 
-```js
+```javascript
 app.get('/get/:id', function (req, res) {
   devCredits.find({ id: req.params.id }, { _id: 0, __v: 0 }, (err, data) => {
     if (err) {
@@ -488,7 +488,7 @@ Let's create a new folder called `routes` and inside it let's create a new file 
 
 `routes/router.js`
 
-```js
+```javascript
 const router = require('express').Router();
 const devCredits = require('../model/model.js');
 
@@ -541,7 +541,7 @@ We have imported the `routes/router.js` file into the `index.js` file and used i
 
 `index.js`
 
-```js
+```javascript
 const express = require('express');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
@@ -596,7 +596,7 @@ Let's get started by creating a new file in the `controllers` folder named `getC
 
 `controllers/getCredits.js`
 
-```js
+```javascript
 const devCredits = require('../model/model.js');
 
 const getCredits = (req, res) => {
@@ -613,7 +613,7 @@ module.exports = getCredits;
 
 `controllers/postCredits.js`
 
-```js
+```javascript
 const devCredits = require('../model/model.js');
 
 const postCredits = (req, res) => {
@@ -654,7 +654,7 @@ module.exports = postCredits;
 
 `routes/router.js`
 
-```js
+```javascript
 const router = require('express').Router();
 
 const devCredits = require('../model/model.js');
@@ -676,7 +676,7 @@ You don't want some random guy to just spam your entire database 😆. So let's 
 
 Let's install [express-rate-limit](https://www.npmjs.com/package/express-rate-limit) package
 
-```bash
+```shell
 $ npm install express-rate-limit
 
 # or
@@ -688,7 +688,7 @@ Let's create a `middleware` folder that contains all the middlewares of our API.
 
 `middleware/rateLimiter.js`
 
-```js
+```javascript
 const rateLimit = require('express-rate-limit');
 
 const rateLimiter = rateLimit({
@@ -711,7 +711,7 @@ So let's import into the `index.js` file and test it out
 
 `index.js`
 
-```js
+```javascript
 const rateLimiter = require('./middleware/rateLimiter.js');
 
 app.use(rateLimiter);
@@ -754,10 +754,8 @@ Head back to the deploy tab and connect the GitHub repository which you have cre
 
 Click the `Deploy branch` button. **TADA** 🚀 You have successfully created a REST API and deployed it as well :D
 
-The entire source code for this tutorial will be available on my GitHub https://github.com/Kira272921/dev-credits-api
+The entire source code for this tutorial will be available on [my GitHub](https://github.com/Kira272921/dev-credits-api).
 
-Check out the API which we built today:
-
-https://devcredits-api.herokuapp.com/
+[Check out the API](https://devcredits-api.herokuapp.com) which we built today.
 
 That's it for this blog folks 🤞. Meet y'all in the next blog post
