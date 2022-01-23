@@ -1,4 +1,4 @@
 ---
 layout: contributor
-name: Kira
+name: kira
 ---
