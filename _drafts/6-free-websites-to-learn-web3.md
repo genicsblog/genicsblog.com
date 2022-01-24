@@ -2,7 +2,7 @@
 layout: post
 title:  "6 Free websites to learn web3.0"
 excerpt: "Awesome list of 6 free websites to learn web3.0"
-image: ""
+image: "https://user-images.githubusercontent.com/76763565/150772429-26427178-63e9-4d2b-a464-1f5a044d8836.png"
 category: web3
 tags: ["beginners", "blockchain"]
 author: adityasingh
