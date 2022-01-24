@@ -1,16 +1,17 @@
 ---
 layout: post
 title:  "Add google analytics to your Next.js app ✨"
-image: "![image](https://user-images.githubusercontent.com/76690419/150725716-dfca7d8b-9966-48a2-aac5-e62ecf7aa585.png)"
-languages: ["javascript"]
+excerpt: "Learn how to add Google Analytics script to your Next.js app."
+image: "https://user-images.githubusercontent.com/46792249/150820378-8ba79cd6-b0e9-484b-93b7-6445b0680cd1.png"
+languages: ["jsx"]
 category: web
-tags: ["analytics", "javascript", "next.js", "webdev"]
+tags: ["analytics", "next-js"]
 author: avneesh
 original: "https://blog.avneesh.tech/add-google-analytics-to-your-nextjs-app"
+permalink: /avneesh/add-google-analytics-to-your-next-js-app
 ---
 
 Wassup everyone, let's see how to add google analytics to your Next.js site. Google Analytics will help you to see the performance of each page, how well the site is doing in countries, different devices, etc.
-
 
 ## Setup Google Analytics
 Go to  [Google Analytics](https://analytics.google.com/analytics/web/#/report-home/a215528627w297101680p257398486) and click on admin in the sidebar.
@@ -45,7 +46,7 @@ Copy the ID that you see and copy it as we are going to need it!
 
 Go inside `pages/_app.tsx` and these two Next.js Scripts-
 
-```Javascript
+```jsx
   <Script
     strategy="lazyOnload"
     src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -65,7 +66,7 @@ Go inside `pages/_app.tsx` and these two Next.js Scripts-
 
 This is going to load google analytics via this script. As you can see we are using env variables for the google-analytics tag because it must remain a secret 🤫, so if you don't already have a `.env.local` file create one and add the following-
 
-```.env
+```
 NEXT_PUBLIC_GOOGLE_ANALYTICS=YOUR_GOOGLE_ANALYTICS_ID
 ```
 
@@ -73,15 +74,13 @@ Paste in the ID that we copied in the last step! Since we are changing the env v
 
 As we are using the Next.js script we also need to import it-
 
-```
+```jsx
 import Script from "next/script";
 ```
 
 Open your localhost app in one tab and google analytics in another. If you click on Real-time inside of Reports you will see that you have 1 user!
 
-
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1642350505812/oMFfF0elgj.png)
-
 
 ## Conclusion
 
@@ -91,6 +90,6 @@ Adding google analytics to your Next.js app was this easy! Hope you found it use
 
 [Google Analytics](https://analytics.google.com/analytics/web/#/report-home/a215528627w297101680p257398486) 
 
- [Next.js](https://nextjs.org/)
+[Next.js](https://nextjs.org/)
 
- [Connect with me](https://links.avneesh.tech/)  
+[Connect with me](https://links.avneesh.tech/)  
