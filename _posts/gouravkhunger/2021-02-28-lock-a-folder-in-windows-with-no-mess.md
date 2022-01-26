@@ -5,7 +5,7 @@ excerpt: "Learn how to lock a folder on your computer to safeguard it from unaut
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1614498876551/PoGi9qzEM.png"
 languages: ["bash"]
 category: windows
-tags: ["security", "apps"]
+tags: ["security"]
 author: gouravkhunger
 ---
 

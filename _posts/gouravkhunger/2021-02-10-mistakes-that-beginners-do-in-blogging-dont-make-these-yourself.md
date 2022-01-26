@@ -5,7 +5,7 @@ excerpt: "I list down the mistakes I made as a beginner so that you don't make t
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612979006801/z-fw63Jkk.jpeg"
 notice: "*Thumbnail art by [pch.vector - freepik.com](https://www.freepik.com/vectors/technology)*"
 category: blogging
-tags: ["beginners"]
+tags: ["beginners", "tips"]
 author: gouravkhunger
 ---
 

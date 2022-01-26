@@ -29,9 +29,7 @@ The [Hashnode Bootcamp](https://hashnode.com/bootcamp)'s Day 5 task was a perfec
 
 **[Check it out](https://hbdwish.ml){:rel="dofollow"}**
 
-GitHub Repo: 
-
-%[https://github.com/gouravkhunger/nextjs-birthday-wish]
+[GitHub Repo](https://github.com/gouravkhunger/nextjs-birthday-wish)
 
 One of my friend's birthdays is near and I wanted to do something special for them. And looking at the Next.js, I quickly thought to make a simple page with some confetti popping in the background, and their name on the front.
 
@@ -55,21 +53,17 @@ I quickly created two pages, along with their CSS modules. Here are the screensh
 
 ![two.jpeg](https://cdn.hashnode.com/res/hashnode/image/upload/v1632675120489/1uZ_YLvsn.jpeg)
 
-I completed the project in 3 hours, took so long because I had to test 7 different confetti libraries that work with Next.js 😂. Finally used `[confetti-js](https://www.npmjs.com/package/confetti-js)`.
+I completed the project in 3 hours, took so long because I had to test 7 different confetti libraries that work with Next.js 😂. Finally used [confetti-js](https://www.npmjs.com/package/confetti-js).
 
 I also spent some time on CSS and the routing stuff- because I don't know CSS that well, but I am improving day by day. The CSS design of this blog is done by me!
 
 But I think I did a pretty decent job. And it was fun trying next js for the first time, it's a great framework on top of React, so if you are learning Next.js you are learning concepts of React too. So it is a win-win case.
 
-## S̶t̶r̶i̶k̶e̶d̶ ̶T̶e̶x̶t̶ ̶G̶e̶n̶e̶r̶a̶t̶o̶r̶
-
-(The title for this section is generated with this tool 😂)
+## <s>Striked Text Generator</s>
 
 **[Check it out](https://strikeit.ml/){:rel="dofollow"}**
 
-GitHub repo:
-
-%[https://github.com/gouravkhunger/nextjs-strikeit]
+[GitHub repo](https://github.com/gouravkhunger/nextjs-strikeit)
 
 Here are the images:
 

@@ -4,7 +4,7 @@ title:  "How to create your first Android app using Android Studio?"
 excerpt: "The complete guide to learn how to create an app using Android Studio IDE."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1631777577034/9OA5pi8ph.png"
 category: android
-tags: ["auth0", "authentication", "app-development"]
+tags: ["app-development", "beginners"]
 author: gouravkhunger
 series: "android-development"
 ---

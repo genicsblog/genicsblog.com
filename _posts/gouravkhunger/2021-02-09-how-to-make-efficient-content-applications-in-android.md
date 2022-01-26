@@ -6,7 +6,7 @@ image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612892448407/fOCn_s
 notice: "*Thumbnail art by [pikisuperstar - freepik.com](https://www.freepik.com/vectors/technology)*"
 languages: ["xml", "java"]
 category: android
-tags: ["app-development"]
+tags: ["app-development", "beginners"]
 author: gouravkhunger
 ---
 

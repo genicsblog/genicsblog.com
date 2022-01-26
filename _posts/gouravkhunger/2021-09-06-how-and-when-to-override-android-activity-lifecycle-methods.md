@@ -5,7 +5,7 @@ excerpt: "Explanation of a StackOverflow question regarding an Android Activity'
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1630916159630/gZuyRfFaz.png"
 languages: ["java"]
 category: android
-tags: ["app-development", "lifecycle"]
+tags: ["app-development", "beginners", "tips"]
 author: gouravkhunger
 ---
 
