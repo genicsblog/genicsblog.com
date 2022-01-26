@@ -60,7 +60,7 @@ Currently, they offer 4 learning paths — **Solidity, Advance Solidity, Chainli
 
 With the help of these paths, you will be able to develop your own smart contracts, launch NFTs, and build NFT games on your own!
 
-### 4. [CryptoDevHub](cryptodevhub.io)
+### 4. [CryptoDevHub](https://cryptodevhub.io)
 
 ![CryptoDevHub.io website](https://user-images.githubusercontent.com/46792249/150972763-e7b87a32-4ac3-4759-ad54-43c3e0ba46f3.png)
 
@@ -68,7 +68,7 @@ If you like the wiki-style of learning about web3 then this is the right place f
 
 CryptoDevHub is a **wiki-type website** where you can find tons of information about web3. It also offers guides for you to get started with web3 development. There is a community around it where web3 learners, developers hang out by helping each other to build web3 apps. 
 
-### 5. [NFT School](nftschool.dev)
+### 5. [NFT School](https://nftschool.dev)
 
 ![NFTSchool.dev website](https://user-images.githubusercontent.com/46792249/150972831-fae80e24-b787-4007-80c3-2fe6b10900ca.png)
 
@@ -78,7 +78,7 @@ Wait, what is NFT? Well, **NFT stands for [Non-Fungible Tokens](https://nftschoo
 
 To keep it simple, NFTs are just like a ticket to a concert where you can buy it and keep it forever. You might also sell it to collectors in the future since it retains value, which holds the same idea with paintings and artworks.
 
-### 6. [UseWeb3](useweb3.xyz)
+### 6. [UseWeb3](https://useweb3.xyz)
 
 ![UseWeb3.xyz](https://user-images.githubusercontent.com/46792249/150972909-6a8c9012-aab9-4031-b773-63056158c662.png)
 
@@ -100,7 +100,7 @@ Aside from being a no-code platform itself, you can actually use the programming
 
 Check out [this guide](https://thirdweb.com/portal/guides/release-an-nft-drop-with-no-code) to get started!
 
-In addition, **Hashnode is currently hosting a [web3 hackathon event](https://townhall.hashnode.com/thirdweb-hackathon) together with [thirdweb](https://thirdweb.com)** (at the time of writing this article). So it is better to check that out and win some cool prizes.
+In addition, **Hashnode is currently hosting a [web3 hackathon event](https://townhall.hashnode.com/thirdweb-hackathon) together with thirdweb** (at the time of writing this article). So it is better to check that out and win some cool prizes.
 
 **Are there any web3 resources that we forgot too add? Let us know in the comments below!**
 
