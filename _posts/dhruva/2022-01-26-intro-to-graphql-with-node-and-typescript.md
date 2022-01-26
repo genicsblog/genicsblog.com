@@ -79,7 +79,7 @@ yarn add -D @types/node
 Also we need to make a `tsconfig.json` file to configure the TypeScript compiler, so to do that we’ll use a library called `tsconfig.json`
 
 ```shell
-$ npx tsconfig.json
+npx tsconfig.json
 ```
 
 Select `node` from the options
@@ -302,13 +302,13 @@ We’ll install these libraries:
 - `type-graphql`
 
 ```shell
-$ yarn add express apollo-server-express graphql type-graphql 
+yarn add express apollo-server-express graphql type-graphql 
 ```
 
 Let’s also install the type definitions for express:
 
 ```shell
-$ yarn add -D @types/express
+yarn add -D @types/express
 ```
 
 Cool!
@@ -538,7 +538,7 @@ UH OH! We have an error! But it’s pretty obvious what we have to do to fix it.
 Now let’s reinstall all of our dependencies:
 
 ```shell
-$ yarn
+yarn
 ```
 
 Now if we run our code, we shouldn’t get any errors!
