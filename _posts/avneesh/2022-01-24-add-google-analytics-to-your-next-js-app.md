@@ -5,7 +5,7 @@ excerpt: "Learn how to add Google Analytics script to your Next.js app."
 image: "https://user-images.githubusercontent.com/46792249/150820378-8ba79cd6-b0e9-484b-93b7-6445b0680cd1.png"
 languages: ["jsx"]
 category: web
-tags: ["analytics", "next-js"]
+tags: ["beginners", "next-js"]
 author: avneesh
 original: "https://blog.avneesh.tech/add-google-analytics-to-your-nextjs-app"
 permalink: /avneesh/add-google-analytics-to-your-next-js-app

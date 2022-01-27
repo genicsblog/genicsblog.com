@@ -5,7 +5,7 @@ excerpt: "The complete guide to integrating auth0 authentication in your Android
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632651818188/OlwaCV_aL.png"
 languages: ["groovy", "xml", "kotlin"]
 category: android
-tags: ["auth0", "authentication", "app-development"]
+tags: ["authentication", "app-development"]
 author: gouravkhunger
 ---
 

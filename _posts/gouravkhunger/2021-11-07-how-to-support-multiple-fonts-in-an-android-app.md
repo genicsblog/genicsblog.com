@@ -5,7 +5,7 @@ excerpt: "This article explains how to increase an android app's accessibility b
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png"
 category: android
 languages: ["kotlin"]
-tags: ["app-development", "android-libraries", "a11y"]
+tags: ["app-development", "libraries", "a11y"]
 author: gouravkhunger
 ---
 

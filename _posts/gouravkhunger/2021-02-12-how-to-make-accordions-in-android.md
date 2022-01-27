@@ -13,7 +13,7 @@ notice: >-
     If you find something that doesn't work, please write in the comments below.
 languages: ["groovy", "xml", "java"]
 category: android
-tags: ["accordions", "app-development"]
+tags: ["beginners", "app-development"]
 author: gouravkhunger
 ---
 

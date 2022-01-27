@@ -4,7 +4,7 @@ title:  "How to Secure API tokens"
 excerpt: "Securing API tokens is important to avoid their misuse. This post will show you how to secure your API tokens!"
 image: "https://www.techfunnel.com/wp-content/uploads/2021/07/application-programming-interface.png"
 category: web
-tags: ["API", "security", "web-development"]
+tags: ["api", "security", "web-development"]
 author: MaheshtheDev
 original: "https://maheshthedev.hashnode.dev/how-to-secure-api-token"
 notice: "Thumbnail art credits: [techfunnel.com](https://www.techfunnel.com)"

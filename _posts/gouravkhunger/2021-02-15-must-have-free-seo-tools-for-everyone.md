@@ -5,7 +5,7 @@ excerpt: "A list of seo tools that will enhance your search engine rankings and 
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613412946931/y4vqG1-EH.jpeg"
 notice: "*Thumbnail art credits: [macrovector - freepik.com](https://www.freepik.com/vectors/computer)*"
 category: seo
-tags: ["free-stuff", "tools", "software"]
+tags: ["tools", "free-stuff"]
 author: gouravkhunger
 ---
 
