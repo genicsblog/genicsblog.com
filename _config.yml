@@ -1,8 +1,8 @@
 title: Genics Blog
 email: contact@genicsblog.com
 description: >-
-  An open source developer publication aimed at sharing well explained 
-  tutorials on various topics for the developer community
+  An open source developer publication aimed at sharing well explained
+  tutorials on various topics for the developer community.
 baseurl: ""
 url: "https://genicsblog.com"
 permalink: /:title
