@@ -17,7 +17,7 @@ jobs:
 
     - uses: actions/checkout@v2
       with:
-        repository: "${{ github.event.pull_request.user.login }}/genicsblog.github.io"
+        repository: "${{ github.event.pull_request.user.login }}/genicsblog.com"
         ref: "${{ steps.extract_branch.outputs.branch }}"
 
     - uses: dorny/paths-filter@v2

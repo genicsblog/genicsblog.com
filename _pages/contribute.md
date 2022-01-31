@@ -13,7 +13,6 @@ If you are interested in the contributions, start by joining our [Discord server
 
 Here's a list of open roles we are actively seeking volunteers for:
 
-
 # Article Contributions
 
 This website is primarily a publication and we are looking for developers to contribute their content. Here's a list of benefits of writing at Genics Blog:
@@ -41,7 +40,7 @@ Currently, we have plans for building a discord bot (any tech stack is fine) tha
 
 This website is built with primarily with Jekyll but has some custom stack. Read the [developer documentation](https://docs.genicsblog.com/developer) to know more.
 
-We are actively seeking developers to help us improve the blog. If you are interested, start by checking out the [open issues](https://github.com/genicsblog/genicsblog.github.io/issues) at the [blog's repository](https://github.com/genicsblog/genicsblog.github.io). All kind of contributions are welcome!
+We are actively seeking developers to help us improve the blog. If you are interested, start by checking out the [open issues](https://github.com/genicsblog/genicsblog.com/issues) at the [blog's repository](https://github.com/genicsblog/genicsblog.com). All kind of contributions are welcome!
 
 > If you think you are fit for any of the role, personal message a Core Team members at our server and we'll get back to you as soon as possible.
 

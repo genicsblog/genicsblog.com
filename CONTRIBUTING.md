@@ -7,34 +7,34 @@ permalink: /contribution-guide
 
 # 💥 How to Contribute
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/genicsblog/genicsblog.github.io/pulls){: .underline-none}
-[![Open Source Love](https://raw.githubusercontent.com/ellerbrock/open-source-badges/master/badges/open-source-v1/open-source.png)](https://github.com/genicsblog/genicsblog.github.io){: .underline-none}
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/genicsblog/genicsblog.com/pulls){: .underline-none}
+[![Open Source Love](https://raw.githubusercontent.com/ellerbrock/open-source-badges/master/badges/open-source-v1/open-source.png)](https://github.com/genicsblog/genicsblog.com){: .underline-none}
 
-- Take a look at the existing [Issues](https://github.com/genicsblog/genicsblog.github.io/issues) or [create a new issue](https://github.com/genicsblog/genicsblog.github.io/issues/new/choose)!
-- [Fork the Repo](https://github.com/genicsblog/genicsblog.github.io/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
-- Create a **[Pull Request](https://github.com/genicsblog/genicsblog.github.io/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
+- Take a look at the existing [Issues](https://github.com/genicsblog/genicsblog.com/issues) or [create a new issue](https://github.com/genicsblog/genicsblog.com/issues/new/choose)!
+- [Fork the Repo](https://github.com/genicsblog/genicsblog.com/fork). Then, create a branch for any issue that you are working on. Finally, commit your work.
+- Create a **[Pull Request](https://github.com/genicsblog/genicsblog.com/compare)** (_PR_), which will be promptly reviewed and given suggestions for improvements by the community.
 - Add screenshots or screen captures to your Pull Request to help us understand the effects of the changes proposed in your PR.
 
 ## ⭐ HOW TO MAKE A PULL REQUEST:
 
-**1.** Start by making a fork of the [**Genics Blog**](https://github.com/genicsblog/genicsblog.github.io) repository. 
+**1.** Start by making a fork of the [**Genics Blog**](https://github.com/genicsblog/genicsblog.com) repository. 
 
 **2.** Clone your new fork of the repository:
 
 ```bash
-git clone https://github.com/<your-github-username>/genicsblog.github.io
+git clone https://github.com/<your-github-username>/genicsblog.com
 ```
 
 **3.** Set upstream command:
 
 ```bash
-git remote add upstream https://github.com/genicsblog/genicsblog.github.io
+git remote add upstream https://github.com/genicsblog/genicsblog.com
 ```
 
 **4.** Navigate to the new project directory:
 
 ```bash
-cd genicsblog.github.io
+cd genicsblog.com
 ```
 
 **5.** Create a new branch:
@@ -80,7 +80,7 @@ git push origin YourBranchName
 
 **10.** Create a [Pull Request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request)!
 
-**11.** **Congratulations!** You've made your first contribution to [**Genics Blog**](https://github.com/genicsblog/genicsblog.github.io/graphs/contributors)! 🙌🏼
+**11.** **Congratulations!** You've made your first contribution to [**Genics Blog**](https://github.com/genicsblog/genicsblog.com/graphs/contributors)! 🙌🏼
 
 **_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the Genics Blog forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
@@ -96,12 +96,12 @@ git push origin YourBranchName
 - Do not end the subject line with a period.
 - Wrap the body at _72 characters_.
 - Use the body to explain the _what_, _why_, _vs_, and _how_.
-- Reference [Issues](https://github.com/genicsblog/genicsblog.github.io/issues) and [Pull Requests](https://github.com/genicsblog/genicsblog.github.io/pulls) liberally after the first line.
+- Reference [Issues](https://github.com/genicsblog/genicsblog.com/issues) and [Pull Requests](https://github.com/genicsblog/genicsblog.com/pulls) liberally after the first line.
 
 ## 💥 Issues
 
-In order to discuss changes, you are welcome to [open an issue](https://github.com/genicsblog/genicsblog.github.io/issues/new/choose) about what you would like to contribute. Enhancements are always encouraged and appreciated.
+In order to discuss changes, you are welcome to [open an issue](https://github.com/genicsblog/genicsblog.com/issues/new/choose) about what you would like to contribute. Enhancements are always encouraged and appreciated.
 
 ## All the best! 🥇
 
-[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/genicsblog/genicsblog.github.io){: .underline-none}
+[![built with love](https://forthebadge.com/images/badges/built-with-love.svg)](https://github.com/genicsblog/genicsblog.com){: .underline-none}
