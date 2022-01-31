@@ -91,7 +91,7 @@ public class NextGenHelloWorld {
 
 These variables will help us to keep track of the state of the program:
 
-- `time` : This variable stores the time delay entered by the user for **Hello World!** to appear on console.
+- `time` : This variable stores the time delay entered by the user for **Hello World!** to appear on the console.
 - `input` : This variable stores the input by the user to the console. Later, it would be used to check if what the user has entered is the letter "**s**".
 - `outputThread` and `inputThread` : These variables store the thread instances for the output and input threads respectively.
 - `scanner` : This variable stores the `Scanner` object that handles console inputs.
@@ -126,9 +126,11 @@ static void init() {
 }
 ```
 
-Here, we initialize the `scanner` variable and create a loop to ask for user input. The loop will keep asking for the input until the user enters a valid integer value for the `time` delay. The code for asking for user input is wrapped inside a `try`-`catch` block, to handle the case where user enters an invalid input.
+Here, we initialize the `scanner` variable and create a loop to ask for user input.
 
-After the valid input is received, we `break` the loop and print some general information for the user on how to close the program.
+The loop will keep asking for the input until the user enters a valid integer value for the `time` delay. The code for asking for user input is wrapped inside a `try`-`catch` block, to handle the case where the user enters an invalid input.
+
+When a valid input is received, we `break` the loop and print some general information for the user on how to close the program.
 
 Don't forget to call the `init()` function inside the `main()` function!
 
@@ -147,7 +149,7 @@ public static void main(String[] args) {
 
 #### The sleep function
 
-Before creating the threads, we need to create a function that would simulate 1 second delay. We will use this function to add 1 second delays whever we need to.
+Before creating the threads, we need to create a function that would simulate 1 second delay. We will use this function to add 1 second delays whenever we need to.
 
 ```java
 public static void sleep() {
