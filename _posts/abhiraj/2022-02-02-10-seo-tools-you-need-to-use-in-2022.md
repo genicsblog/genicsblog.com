@@ -127,4 +127,4 @@ Here's another list of 4 other [Must-Have Free SEO Tools For Everyone](/must-hav
 ## Thank you for reading
 
 If you liked this post, subscribe to my [newsletter](https://abhirajbhowmick.substack.com){:rel="dofollow"}
-to never miss out on [my articles](https://abhiraj.co){:rel="dofollow"}, product launches, and tech news. Follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources.`
+to never miss out on [my articles](https://abhiraj.co){:rel="dofollow"}, product launches, and tech news. Follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources.
