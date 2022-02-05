@@ -47,7 +47,7 @@ Companies nowadays use survey forms to gather information from their target audi
 
 ## 5. Coinflip
 
-This is the most unexpected item on the list but it can prove to be very helpful in the long run. You can learn about using the random method to derive a random result from an array of options.
+This is the most unexpected item on the list but it can teach concepts that can be very helpful in the long run. You can learn about using the `Math.random()` method to simulate a random result from an array of options.
 
 {% include codepen.html userName="rainboestrykr" penId="ExbxyvR" %}
 
