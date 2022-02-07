@@ -4,7 +4,7 @@ title:  "How to Support Multiple Fonts in an Android App"
 excerpt: "This article explains how to increase an android app's accessibility by providing users the option to choose from a variety of fonts that suite their need."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png"
 category: android
-languages: ["kotlin"]
+hasCode: true
 tags: ["app-development", "libraries", "a11y"]
 author: gouravkhunger
 ---

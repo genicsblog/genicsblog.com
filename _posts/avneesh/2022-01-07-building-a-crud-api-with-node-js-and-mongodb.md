@@ -4,7 +4,7 @@ title:  "Building a CRUD API with Node.js and MongoDB"
 excerpt: "The ultimate guide to building a CRUD API with Node.js and MongoDB from scratch."
 image: "https://user-images.githubusercontent.com/76690419/148522889-a8618d72-4e52-4a78-b452-7690e9135709.png"
 original: "https://blog.avneesh.tech/building-a-crud-api-with-nodejs-and-mongodb"
-languages: ["shell", "javascript", "json"]
+hasCode: true
 category: backend
 tags: ["node-js", "mongodb", "api"]
 author: avneesh

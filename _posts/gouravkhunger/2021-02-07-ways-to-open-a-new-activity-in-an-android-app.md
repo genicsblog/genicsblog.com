@@ -4,7 +4,7 @@ title:  "Common ways to open a new Activity in an Android app"
 excerpt: "This article explains the basics of linking two activities in Android using Intents."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612701204335/IlBdysPPI.png"
 notice: "*Thumbnail art by: [rawpixel.com - freepik.com](https://www.freepik.com/psd/background)*"
-languages: ["java", "xml"]
+hasCode: true
 category: android
 tags: ["beginners", "app-development"]
 author: gouravkhunger

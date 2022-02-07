@@ -3,7 +3,7 @@ layout: post
 title:  "Integrate Authentication to your Android App with Auth0"
 excerpt: "The complete guide to integrating auth0 authentication in your Android app."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632651818188/OlwaCV_aL.png"
-languages: ["groovy", "xml", "kotlin"]
+hasCode: true
 category: android
 tags: ["authentication", "app-development"]
 author: gouravkhunger

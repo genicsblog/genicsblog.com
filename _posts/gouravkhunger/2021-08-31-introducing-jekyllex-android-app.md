@@ -4,7 +4,7 @@ title:  "Introducing JekyllEx - The easiest way to manage a Jekyll blog from an 
 excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
 image: "https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png"
 category: android
-languages: ["javascript", "kotlin"]
+hasCode: true
 tags: ["open-source", "apps", "jekyll"]
 author: gouravkhunger
 ---

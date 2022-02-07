@@ -3,7 +3,7 @@ layout: post
 title:  "Add google analytics to your Next.js app ✨"
 excerpt: "Learn how to add Google Analytics script to your Next.js app."
 image: "https://user-images.githubusercontent.com/46792249/150820378-8ba79cd6-b0e9-484b-93b7-6445b0680cd1.png"
-languages: ["jsx"]
+hasCode: true
 category: web
 tags: ["beginners", "next-js"]
 author: avneesh

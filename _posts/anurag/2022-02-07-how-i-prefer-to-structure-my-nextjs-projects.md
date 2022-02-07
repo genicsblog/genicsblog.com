@@ -3,12 +3,13 @@ layout: post
 title:  "How I prefer to structure my Next.js projects"
 excerpt: "A look into how Anurag prefers to maintain and scale his projects built with Next.js + some tips!"
 image: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1644217454/Frame_2_rbhlxk.png"
-languages: ["jsx"]
+hasCode: true
 category: web
 tags: ["next-js", "web-development", "tips"]
 author: anurag
 original: "https://blog.anurag.tech/how-i-structure-my-next-js-projects"
-permalink: /anurag/how-i-structure-my-next-js-projects
+permalink: /anurag/how-i-prefer-to-structure-my-next-js-projects
+redirect_from: /anurag/how-i-structure-my-next-js-projects
 ---
 
 Hello folks! Today I'm going to explain how I structure my Next.js projects.

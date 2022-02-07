@@ -4,7 +4,7 @@ title:  "How to Create City Boundaries in Google Maps"
 excerpt: "The complete guide you need to refer to, to create a city's boundaries in Google Maps for your Android app."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613048192142/TqXgdVVnV.png"
 notice: "*Thumbnail art background credits: [freepik - www.freepik.com](https://www.freepik.com/photos/background)*"
-languages: ["json", "java"]
+hasCode: true
 category: android
 tags: ["geocoding", "google-maps", "app-development"]
 author: gouravkhunger

@@ -3,7 +3,7 @@ layout: post
 title:  "Toasty Library Demo"
 excerpt: "This post explains how to use Toasty library for Android to customize toast notifications."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613229759273/8Dre4FBM9.gif"
-languages: ["groovy", "java", "xml"]
+hasCode: true
 category: android
 tags: ["libraries"]
 author: gouravkhunger

@@ -3,7 +3,7 @@ layout: post
 title:  "Metamask authentication in Next.js with Clerk 🔒"
 excerpt: "Learn how to use add Metamask authentication to your Next.js app using Clerk."
 image: "https://user-images.githubusercontent.com/76690419/150726058-5520a79a-8f2a-4cac-8ceb-48a8ae2ac501.png"
-languages: ["shell", "jsx"]
+hasCode: true
 category: web3
 tags: ["authentication", "next-js"]
 author: avneesh

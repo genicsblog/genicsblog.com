@@ -6,7 +6,7 @@ original: "https://blog.anurag.tech/get-started-with-supabase-database-in-nextjs
 image: "https://user-images.githubusercontent.com/46792249/148196773-c30b7519-481d-445c-b778-cfb413ce32bf.png"
 category: web
 tags: ["web-development", "next-js", "supabase"]
-languages: ["shell", "javascript"]
+hasCode: true
 author: anurag
 permalink: /anurag/supabase-database-nextjs
 ---
