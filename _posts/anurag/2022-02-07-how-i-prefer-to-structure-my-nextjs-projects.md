@@ -30,9 +30,9 @@ For example, the React component inside the `pages/dashboard.jsx` will be routed
 
 For single pages, you can just create a single file that will export a React component:
 
-```jsx
-- pages/index.js
+`pages/index.js`
 
+```jsx
 function Home() {
   return <div>Hello world</div>;
 }
@@ -115,9 +115,9 @@ First, make a file inside the `components` directory named `index.js` or `index.
 
 Then, inside the file, export all the components at once.
 
-```
-- components/index.js
+`components/index.js`
 
+```jsx
 export * from "./Header.jsx";
 export * from "./Hero.jsx";
 export * from "./Footer";
