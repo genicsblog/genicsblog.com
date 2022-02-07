@@ -1,0 +1,7 @@
+- name: "BeyondWords"
+  site: "https://beyondwords.io?utm_source=genicsblog.com&utm_medium=cpc&utm_campaign=advertisement"
+  sponsored: true
+  description: "BeyondWords is an AI voice and audio publishing platform that brings frictionless audio to writers, newsrooms, and businesses!"
+  logo:
+    light: "https://dash.beyondwords.io/logo.svg"
+    dark: "https://dash.beyondwords.io/logo-dark.svg"
