@@ -3,6 +3,7 @@ layout: post
 title:  "Integrate Authentication to your Android App with Auth0"
 excerpt: "The complete guide to integrating auth0 authentication in your Android app."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632651818188/OlwaCV_aL.png"
+audioId: 3463098
 hasCode: true
 category: android
 tags: ["authentication", "app-development"]
@@ -23,9 +24,9 @@ The code for this basic app that we are going to build is present [here on GitHu
 
 ## Initialize the project
 
-First, create a new Android Studio Project.  If you are just checking out Auth0, you can follow the steps mentioned in [my previous article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio) on how to make a basic project using Android Studio:
+First, create a new Android Studio Project.  If you are just checking out Auth0, you can follow the steps mentioned in [my previous article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio) on how to make a basic project using Android Studio.
 
-You can also use any existing project!
+You can also use an existing project!
 
 ## Set up view binding
 
@@ -96,7 +97,7 @@ This creates an `intent-filter` which is used by the library to open your app ba
 
 Don't worry if you don't have a domain like this yet, scroll below to find the auth0 dashboard setup, or you can skip this for now and come back to it later!
 
-**Press Sync Now on the notification bar to complete the finalize the above things**.
+**Press Sync Now on the notification bar to complete and finalise the above things**.
 
 ![Android Studio Gradle sync notification](https://cdn.hashnode.com/res/hashnode/image/upload/v1632597868902/ZQFHTYOs_.png)
 
@@ -278,7 +279,7 @@ class MainActivity : AppCompatActivity() {
 
 Now, once a user presses this button, the login process will start and they'll be asked to log in with their E-mail id. 
 
-You can use any scheme name, here I used `demo`. But I recommend not to use `https` because it might conflict with the intent-filters internally. I got this error while building [JekyllEx](https://genicsblog.com/introducing-jekyllex-android-app).
+You can use any scheme name, here I used `demo`. I recommend not to use `https` because it might conflict with the intent-filters internally. I got this error while building [JekyllEx](https://genicsblog.com/introducing-jekyllex-android-app).
 
 Once the login is successful, we can get the access token which can be used to retrieve the user profile. Let's make a function to get the user profile from the token:
 
@@ -360,7 +361,7 @@ Go to the official [Auth0](https://auth0.com/) site and press signup on the navi
 
 ## Set up the tenant
 
-Create a new tenant. You can choose any domain name for your tenant, here I am choosing `auth0-demo-android`. For now, this will be a subdomain, but you can customize it to your custom domain by upgrading your free plan.
+Create a new tenant. You can choose any domain name for your tenant, here I am choosing `auth0-demo-android`. For now, this will be a subdomain, but you can customise it to your custom domain by upgrading your free plan.
 
 ![Creating a new tenant in Auth0 dashboard](https://cdn.hashnode.com/res/hashnode/image/upload/v1632595285718/pzRUUPZSOX.png)
 
@@ -376,7 +377,7 @@ After creating your app, go to the app settings
 
 ![Settings tab of an app in Auth0](https://cdn.hashnode.com/res/hashnode/image/upload/v1632648478901/D6LpFj98V.png)
 
-Scroll down to the Application URIs section, there add callback URLs for login and logout. These are required to let Auth0 know what apps are authorized to perform these actions as these strings contain identifiers for our app.
+Scroll down to the Application URIs section. There add callback URLs for login and logout. These are required to let Auth0 know what apps are authorised to perform these actions as these strings contain identifiers for our app.
 
 ```
 demo://<tenant-domain>.us.auth0.com/android/PACKAGE_NAME/callback

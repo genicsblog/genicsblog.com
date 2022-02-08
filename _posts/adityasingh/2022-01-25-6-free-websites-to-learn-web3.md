@@ -3,6 +3,7 @@ layout: post
 title:  "6 Free websites to learn Web 3.0"
 excerpt: "An awesome list of 6 free websites to learn Web 3.0 development."
 image: "https://user-images.githubusercontent.com/76763565/150826259-e68d86cd-1164-4d6c-98d7-0e2251874f3e.png"
+audioId: 3463681
 category: web3
 tags: ["blockchain", "beginners"]
 author: adityasingh
@@ -38,7 +39,7 @@ With every project you complete, you'll gain the required experience that can ge
 
 ![OdysseyDAO.com website](https://user-images.githubusercontent.com/46792249/150972450-295b1999-a9e4-44fa-bbde-5210b685a918.png)
 
-Another personal favorite! This is a good alternative to BuildSpace. The only difference is that this is a learning DAO community. **DAO means a decentralized autonomous organization** and Odyssey is a pretty good definition of this.
+Another personal favourite! This is a good alternative to BuildSpace. The only difference is that this is a learning DAO community. **DAO means a decentralised autonomous organisation** and Odyssey is a pretty good definition of this.
 
 > A DAO is a community that’s owned and managed by its members.
 >
@@ -82,7 +83,7 @@ To keep it simple, NFTs are just like a ticket to a concert where you can buy it
 
 ![UseWeb3.xyz](https://user-images.githubusercontent.com/46792249/150972909-6a8c9012-aab9-4031-b773-63056158c662.png)
 
-UseWeb3 is a great opensource community-contributed resource for web3 enthusiasts like you. Better to check this out and bookmark it to your favorite browser because you're gonna use it on your entire web3 journey!
+UseWeb3 is a great opensource community-contributed resource for web3 enthusiasts like you. Better to check this out and bookmark it to your favourite browser because you're gonna use it on your entire web3 journey!
 
 It is a simple website that has a list of very useful information related to web3 space. 
 
@@ -96,13 +97,13 @@ That's actually possible with the help of [thirdweb](https://thirdweb.com)!
 
 It enables no-code developers to participate in web3 space without knowing Solidity or Rust to interact with smart contracts.
 
-Aside from being a no-code platform itself, you can actually use the programming language you already know such as JavaScript, Python, and many more... just to build some web3 cool stuff! 
+Aside from being a no-code platform itself, you can actually use the programming language you already know such as JavaScript, Python, and many more... just to build some cool web3 stuff! 
 
 Check out [this guide](https://thirdweb.com/portal/guides/release-an-nft-drop-with-no-code) to get started!
 
 In addition, **Hashnode is currently hosting a [web3 hackathon event](https://townhall.hashnode.com/thirdweb-hackathon) together with thirdweb** (at the time of writing this article). So it is better to check that out and win some cool prizes.
 
-**Are there any web3 resources that we forgot too add? Let us know in the comments below!**
+**Are there any web3 resources that we forgot to add? Let us know in the comments below!**
 
 Thanks for reading, good luck with your web3 journey! 💖
 

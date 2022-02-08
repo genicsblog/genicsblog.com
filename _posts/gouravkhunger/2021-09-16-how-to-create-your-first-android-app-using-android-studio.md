@@ -3,6 +3,7 @@ layout: post
 title:  "How to create your first Android app using Android Studio?"
 excerpt: "The complete guide to learn how to create an app using Android Studio IDE."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1631777577034/9OA5pi8ph.png"
+audioId: 3463422
 category: android
 tags: ["app-development", "beginners"]
 author: gouravkhunger
@@ -113,8 +114,8 @@ It's instant, so you can opt in to choose that way too if you wish to feel an em
 
 You have successfully built your first Hello World project and installed it on your device 😀.
 
-I hope you learned something new today! Make sure to subscribe to my newsletter (email field at the starting of this article) to never miss any article I post. New articles coming soon to this series!
+I hope you learned something new today! Make sure to subscribe to my newsletter (email field at the starting of this article) to never miss any article I post. New articles coming soon to this series.
 
-I would really appreciate it to know your views on this article. All kinds of feedback are welcome!
+I would really appreciate it to know your views on this article. All kinds of feedback are welcome.
 
-Happy coding :)
+Happy coding!
