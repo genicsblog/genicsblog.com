@@ -39,7 +39,6 @@ extlinks:
           
 # Build settings
 plugins:
-  - jemoji
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-postcss

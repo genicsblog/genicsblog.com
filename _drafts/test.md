@@ -11,7 +11,7 @@ author: gouravkhunger
 
 This draft is available at [https://genicsblog.com/draft/test](https://genicsblog.com/draft/test).
 
-This is a test page to demonstrate how drafts work at [Genics Blog](https://genicsblog.com). Draft articles do not show up at the main website and neither is their link shown publicly(unless someone digs into the drafts folder at github :eyes:). Drafts at Genics Blog are set to not be indexed by search engines.
+This is a test page to demonstrate how drafts work at [Genics Blog](https://genicsblog.com). Draft articles do not show up at the main website and neither is their link shown publicly(unless someone digs into the drafts folder at github 👀). Drafts at Genics Blog are set to not be indexed by search engines.
 
 To make a draft, all you need to do is to fork the repository. Inside the `_drafts` folder, you can copy this `test.md` file and change it's name and content to start writing your draft. Once you create a pull request for the `_drafts` folder, it is automatically merged if you just changed a draft file and not anything else.
 

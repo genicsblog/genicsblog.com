@@ -91,7 +91,7 @@ No more to say, they are very useful web3 resource!
 
 ###  Bonus Content
 
-Imagine if you could build web3 applications without coding :eyes:
+Imagine if you could build web3 applications without coding 👀
 
 That's actually possible with the help of [thirdweb](https://thirdweb.com)! 
 
@@ -106,4 +106,3 @@ In addition, **Hashnode is currently hosting a [web3 hackathon event](https://to
 **Are there any web3 resources that we forgot to add? Let us know in the comments below!**
 
 Thanks for reading, good luck with your web3 journey! 💖
-
