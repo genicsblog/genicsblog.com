@@ -3,6 +3,7 @@ layout: post
 title:  "5 projects you can make to become a better web developer"
 excerpt: "If you are interested in web development, the best way to create experience in this field is to work on web development projects."
 image: "https://user-images.githubusercontent.com/46792249/151173908-5358883e-7e44-41d3-bc5c-c7cea7086795.png"
+audioId: 3467260
 category: web
 tags: ["web-development", "tips", "beginners"]
 author: abhiraj

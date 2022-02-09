@@ -3,6 +3,7 @@ layout: post
 title:  "Mistakes that beginners do in blogging, DON’T make these yourself!"
 excerpt: "I list down the mistakes I made as a beginner so that you don't make them too :)"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612979006801/z-fw63Jkk.jpeg"
+audioId: 3467418
 notice: "*Thumbnail art by [pch.vector - freepik.com](https://www.freepik.com/vectors/technology)*"
 category: blogging
 tags: ["beginners", "tips"]

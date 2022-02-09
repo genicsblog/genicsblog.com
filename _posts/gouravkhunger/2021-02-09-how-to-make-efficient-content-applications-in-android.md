@@ -4,6 +4,7 @@ title:  "How to Make Efficient Content Applications in Android?"
 excerpt: "This article explains an Android app-development use case in which an efficient approach could be used to deliver better results."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612892448407/fOCn_s9fg.jpeg"
 notice: "*Thumbnail art by [pikisuperstar - freepik.com](https://www.freepik.com/vectors/technology)*"
+audioId: 3467885
 hasCode: true
 category: android
 tags: ["app-development", "beginners"]
@@ -190,4 +191,4 @@ This would significantly reduce the load on the system, the size of your app, an
 
 I hope you find this article helpful and you will share it to increase people’s efficiency in coding.
 
-If you have any doubts or suggestions, please write to gouravkhunger18@gmail.com. Please do write a comment. It keeps me happy and motivated :)
+If you have any doubts or suggestions, please do write a comment. It keeps me happy and motivated :)

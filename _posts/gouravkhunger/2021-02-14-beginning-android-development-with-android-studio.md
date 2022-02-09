@@ -3,6 +3,7 @@ layout: post
 title:  "Beginning Android Development with Android Studio"
 excerpt: "The beginner's guide to setup Android studio to start developing Android apps."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613325726634/hqjW-Brr-.png"
+audioId: 3467816
 category: android
 tags: ["beginners", "app-development"]
 author: gouravkhunger
@@ -36,7 +37,7 @@ Android apps can be developed on any system running Windows, Linux, or Mac. The 
 
 Next, what you need is Android Studio, the official IDE supported by Google for android app development. It is based on IntelliJ IDEA IDE for Java by JetBrains, so it looks and works pretty much the same. People who have used any of Jetbrains IDE will not have issues understanding Android Studio!
 
-You can install Android Studio from the official [Andorid Studio site](https://developer.android.com/studio). This step will not be very difficult.
+You can install Android Studio from the official [Android Studio site](https://developer.android.com/studio). This step will not be very difficult.
 
 Though Android Studio is pre-bundled with a JRE, so you may not need to install any additional kit for Java, though, if you wish, you can install your needed JDK [here](https://www.oracle.com/java/technologies/javase-downloads.html).
 

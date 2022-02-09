@@ -3,6 +3,7 @@ layout: post
 title:  "3 years of blogging - Here's how it all started!"
 excerpt: "I share my background in blogging, how it started 3 years ago, and some tips for you at the end :)"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1631596605889/xCcnwfFVk.png"
+audioId: 3467462
 category: blogging
 tags: ["motivation", "tips"]
 author: gouravkhunger

@@ -3,6 +3,7 @@ layout: post
 title:  "How to Support Multiple Fonts in an Android App"
 excerpt: "This article explains how to increase an android app's accessibility by providing users the option to choose from a variety of fonts that suite their need."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png"
+audioId: 3467729
 category: android
 hasCode: true
 tags: ["app-development", "libraries", "a11y"]
@@ -60,7 +61,7 @@ I would store the resource id, an integer identifier that is given to all types 
 
 This was the most efficient way I could come up with, because `SharedPreference` is really optimised. The values are cached and retrieving multiple values within a short time doesn't affect performance much.
 
-There exists another way, by changing the `themes.xml` values at runtime and applying font directly from the styles itself, but it requires minimum API level 23 (Android 6.0). So it wouldn''t be backward compatible and make the app crash on lower Android versions. I didn't want to do so.
+There exists another way, by changing the `themes.xml` values at runtime and applying font directly from the styles itself, but it requires minimum API level 23 (Android 6.0). So it wouldn't be backward compatible and make the app crash on lower Android versions. I didn't want to do so.
 
 ## The Result
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Introducing JekyllEx - The easiest way to manage a Jekyll blog from an Android device!"
 excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
 image: "https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png"
+audioId: 3467849
 category: android
 hasCode: true
 tags: ["open-source", "apps", "jekyll"]
@@ -417,7 +418,7 @@ On an ending note, I would say making JekyllEx for this hackathon was extremely 
 
 I would really appreciate it if you could take a moment and comment on your views on my project! Also, react to the post to spread some love :)
 
-All kinds of feedbacks are welcome 😄
+All feedbacks are welcome 😄
 
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title:  "Android Application Fundamentals - Understand the bits and bytes"
 excerpt: "A complete guide to understanding Android Studio basics and Android app structure."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632128417570/zaxOSlbso.png"
+audioId: 3467737
 category: android
 tags: ["app-development"]
 author: gouravkhunger
