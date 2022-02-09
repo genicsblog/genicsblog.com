@@ -5,6 +5,7 @@ excerpt: "The complete guide to working with GraphQL using TypeGraphQL and build
 image: "https://user-images.githubusercontent.com/46792249/151178959-781d2ea4-a4dc-4f89-90d9-b98d62821944.png"
 original: "https://thecatblog.hashnode.dev/intro-to-graphql-with-nodejs-and-typescript"
 hasCode: true
+audioId: 3468789
 category: backend
 tags: ["api", "node-js", "web-development"]
 author: dhruva
@@ -210,7 +211,7 @@ To keep it simple, we’re going to have 2 columns for our `Task` table:
 - The **title** of the task
 - The **description** of the task
 
-We’ll also have an `id` , a `created` , and an `updated` column.
+We’ll also have an `id`, a `created`, and an `updated` column.
 
 We won’t really use the created and updated column, but its kind of a best practice 😉
 
@@ -728,7 +729,7 @@ The array is empty because we haven’t created any tasks yet.
 
 ## Creating a task
 
-Now I’d like to ask you a question, if we use a `Query` to fetch data, will we be able to use the same `Query` to change (create, update, delete) data? No, we can’t. We will use something called a `**Mutation`** to achieve our task.
+Now I’d like to ask you a question, if we use a `Query` to fetch data, will we be able to use the same `Query` to change (create, update, delete) data? No, we can’t. We will use something called a **`Mutation`** to achieve our task.
 
 One more thing you might be thinking is how exactly do we take inputs because when we create a task, we’ll need to provide the title and description of the task, right? Guess what, TypeGraphQL has a decorator for it!
 

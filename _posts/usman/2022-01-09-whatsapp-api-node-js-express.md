@@ -4,6 +4,7 @@ title:  "Building a WhatsApp API using Node.js & Express"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1641723506307/rnT9FncaZ.png"
 excerpt: "The complete guide to building a WhatsApp API using Node.js, Express and whatsapp-web.js"
 original: "https://blog.usman-s.me/whatsapp-api-node-express"
+audioId: 3468270
 hasCode: true
 category: backend
 tags: ["node-js", "api"]

@@ -3,6 +3,7 @@ layout: post
 title:  "Beautiful Patterns You Can Try Making With Code"
 excerpt: "Learning the syntax of a language with patterns can be fun!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1614086705341/KvZHQQVpn.gif"
+audioId: 3468105
 hasCode: true
 category: coding
 tags: ["beginners", "design"]
@@ -30,7 +31,7 @@ Here's the list of patterns given in this post:
 - [Diamonds](#diamonds)
 - [Diamond Platform](#diamond-platform)
 
-At the end of this post, there's a bonus](#bonus) practice pattern for you!
+At the end of this post, there's a [bonus](#bonus) practice pattern for you!
 
 ---
 

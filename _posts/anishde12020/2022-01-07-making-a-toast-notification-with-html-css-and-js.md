@@ -3,6 +3,7 @@ layout: post
 title: "Making a toast notification with HTML, CSS, and JS"
 excerpt: "A guide to making toast notifications for your webpage with HTML, CSS, and JavaScript."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1638697970037/zAYKG5UvP.png"
+audioId: 3468367
 hasCode: true
 category: web
 tags: ["web-development", "beginners"]
@@ -164,7 +165,7 @@ Let us also add a button that will trigger the animation, that is, show the toas
 <button id="show-toast" class="show-toast">Show Toast</button>
 ```
 
-Let us also style this button as it looks quite ugly now
+Let us also style this button as it looks quite ugly now -
 
 ```css
 .show-toast {
@@ -302,7 +303,7 @@ Now, clicking the cross symbol (close button) in the toast should take it away f
 
 ## Conclusion
 
-If everything has worked out well so far, give yourself a pat on the back because you have just built a toast with nothing but HTML, CSS, and JS!!!
+If everything has worked out well so far, give yourself a pat on the back because you have just built a toast with nothing but HTML, CSS, and JS!
 
 If you had any issues, feel free to comment down below or reach out to me via [Twitter](https://twitter.com/AnishDe12020).
 

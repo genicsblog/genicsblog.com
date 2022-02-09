@@ -4,6 +4,7 @@ title:  "Common ways to open a new Activity in an Android app"
 excerpt: "This article explains the basics of linking two activities in Android using Intents."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612701204335/IlBdysPPI.png"
 notice: "*Thumbnail art by: [rawpixel.com - freepik.com](https://www.freepik.com/psd/background)*"
+audioId: 3467986
 hasCode: true
 category: android
 tags: ["beginners", "app-development"]
@@ -12,7 +13,7 @@ author: gouravkhunger
 
 The idea that comes to my mind to write this post was to help some beginners in Android app development, to let them know how to link two or more activities in Android. I am going to mention 2 ways in which you can do this.
 
-This post is gonna be a very basic one but my main motive in it was that beginners sometimes don’t know about this and they ask dumb questions on StackOverflow. So here I am getting started with it. 
+This post is gonna be a very basic one but my main motive in it was that beginners sometimes don’t know about this and they ask silly questions on StackOverflow. So here I am getting started with it. 
 
 But first, you need to have at least two activities in your project. Suppose there is an `Activity1` and an `Activity2`. The java files associated with them are `Activity1.java` and `Activity2.java`. Here I am assuming that you want to navigate from `Activity1` to the `Activity2`.
 

@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Metamask authentication with ThirdWeb in Next.JS"
+title:  "Metamask authentication with ThirdWeb in Next.js"
 excerpt: "Let's learn how authentication works in the web3 world!"
 image: "https://user-images.githubusercontent.com/77309809/149489789-db55b033-3196-45e7-9f72-cb49c3630c2f.png"
+audioId: 3468564
 hasCode: true
 category: web3
 tags: ["blockchain", "crypto", "next-js"]
@@ -101,7 +102,7 @@ import "regenerator-runtime/runtime";
 
 Next, in the main function, we are specifying the `supportedChainIds` and `connectors`. You might be wondering what are these.
 
-`supportedChainIds` contains a list of networks that are supported by our app. Here, `80001` is for `Mumbai Testnet Network` and `4` is for `Rinkeby Testnet Network`. You can check the list of all networks and their Chain Ids  [here](Link) .
+`supportedChainIds` contains a list of networks that are supported by our app. Here, `80001` is for `Mumbai Testnet Network` and `4` is for `Rinkeby Testnet Network`.
 
 `connectors` is basically all the wallet providers we want to support. Here, `injected` is for Metamask wallet. This will be used when we are actually making the function to connect wallet.
 
@@ -164,7 +165,7 @@ onClick={()=>connectWallet("injected")}
 </button>
 ``` 
 
-Here, we are passing `injected` as a param to the `connectWallet` function. If your remember from the above steps, this is used to specify that we are going to use Metamask to authenticate user.
+Here, we are passing `injected` as a param to the `connectWallet` function. If you remember from the above steps, this is used to specify that we are going to use Metamask to authenticate user.
 
 Now, at this point, you will have a working connect wallet button.
 

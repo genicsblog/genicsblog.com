@@ -5,6 +5,7 @@ excerpt: "The guide to teach you how to build a REST API from beginning till dep
 image: "https://user-images.githubusercontent.com/90365542/150640432-993a9fd8-4472-457c-9074-9e6fbd273743.png"
 original: "https://kirablog.hashnode.dev/rest-api-using-nodejs"
 hasCode: true
+audioId: 3468413
 category: backend
 tags: ["node-js", "mongodb", "api"]
 author: kira
@@ -105,7 +106,7 @@ Let's breakdown it into and understand each part:
 
 - We are requiring the express package into our file so that we can use it.
 
-- We are assigning some value to the variable port, the port where our server would be running. You might be thinking why is there a `process.env.PORT`? 🤔. It's because during deployment on services such as Heroku the port number might vary, it may not be 3000 so we are telling that if there is a PORT environment variable then use that else use `3000`.
+- We are assigning some value to the variable port, the port where our server would be running. You might be thinking why is there a `process.env.PORT`? It's because during deployment on services such as Heroku the port number might vary, it may not be 3000 so we are telling that if there is a PORT environment variable then use that else use `3000`.
 
 - The last piece of code is telling to which port the server should listen, in our case it's the `PORT` variable.
 

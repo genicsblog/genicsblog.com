@@ -3,6 +3,7 @@ layout: post
 title:  "Lock a Folder in Windows with no mess"
 excerpt: "Learn how to lock a folder on your computer to safeguard it from unauthorized access."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1614498876551/PoGi9qzEM.png"
+audioId: 3468133
 hasCode: true
 category: windows
 tags: ["security"]
@@ -61,7 +62,7 @@ goto End
 ```
 
 # Add your desired password
-This can be tricky but is really easy, just find `<ENTER_YOUR_REQUIRED_PASSWORD>` in the file(with `Ctrl+F` key combination) and replace this whole thing with what you want as your password. For example, if you change that line to:
+This can be tricky but is really easy, just find `<ENTER_YOUR_REQUIRED_PASSWORD>` in the file (with `Ctrl+F` key combination) and replace this whole thing with what you want as your password. For example, if you change that line to:
 
 ```bash
 if NOT %pass%==1234 goto FAIL

@@ -3,6 +3,7 @@ layout: post
 title:  "Must-Have Free SEO Tools For Everyone!"
 excerpt: "A list of seo tools that will enhance your search engine rankings and help you with SEO best practices."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613412946931/y4vqG1-EH.jpeg"
+audioId: 3468076
 notice: "*Thumbnail art credits: [macrovector - freepik.com](https://www.freepik.com/vectors/computer)*"
 category: seo
 tags: ["tools", "free-stuff"]

@@ -214,7 +214,7 @@ We successfully minted the tokens! 🥳
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641989192684/gg9oPg9xv.png)
 
-In metamask also it shows the tokens!
+It shows the token in metamask too!
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1641989215876/D8gN8Nm59.png)
 

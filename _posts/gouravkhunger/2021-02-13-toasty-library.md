@@ -4,6 +4,7 @@ title:  "Toasty Library Demo"
 excerpt: "This post explains how to use Toasty library for Android to customize toast notifications."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1613229759273/8Dre4FBM9.gif"
 hasCode: true
+audioId: 3468051
 category: android
 tags: ["libraries"]
 author: gouravkhunger
@@ -228,7 +229,7 @@ You can also create your custom Toasts with the `custom()` method:
 Toasty.custom(this, "Custom Toast", ContextCompat.getDrawable(this, yourIconDrawable), tintColor, Toasty.LENGTH_SHORT, withIcon,  shouldTint).show();
 ```
 
-Also, Toasty allows custom formatted text, like Bold and Italic texts to be passed as the text value in the toast, so be sure to check it out. Here is the code you may use for preformatting the text. You can edit this as per your needs.
+Also, Toasty allows custom formatted text, like Bold and Italic texts to be passed as the text value in the toast, so be sure to check it out. Here is the code you may use for pre-formatting the text. You can edit this as per your needs.
 
 ```java
 private CharSequence getFormattedMessage() {

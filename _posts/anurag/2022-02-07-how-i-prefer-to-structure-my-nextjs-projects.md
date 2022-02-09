@@ -3,6 +3,7 @@ layout: post
 title:  "How I prefer to structure my Next.js projects"
 excerpt: "A look into how Anurag prefers to maintain and scale his projects built with Next.js + some tips!"
 image: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1644217454/Frame_2_rbhlxk.png"
+audioId: 3468610
 hasCode: true
 category: web
 tags: ["next-js", "web-development", "tips"]
