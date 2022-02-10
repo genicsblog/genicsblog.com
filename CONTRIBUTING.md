@@ -82,9 +82,9 @@ git push origin YourBranchName
 
 **11.** **Congratulations!** You've made your first contribution to [**Genics Blog**](https://github.com/genicsblog/genicsblog.com/graphs/contributors)! 🙌🏼
 
-**_:trophy: After this, the maintainers will review the PR and will merge it if it helps move the Genics Blog forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
+**_🏆 After this, the maintainers will review the PR and will merge it if it helps move the Genics Blog forward. Otherwise, it will be given constructive feedback and suggestions for the changes needed to add the PR to the codebase._**
 
-## Style Guide for Git Commit Messages :memo:
+## Style Guide for Git Commit Messages 📝
 
 **How you can add more value to your contribution logs:**
 
