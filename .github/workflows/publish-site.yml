@@ -26,8 +26,8 @@ jobs:
     - name: Setup theme and necessary files
       run: |
         mv theme/* .
-        rm -rf theme/
-        mv comments _data
+        mv comments/comments _data
+        rm -rf theme comments
         touch .nojekyll
         echo "google.com, pub-8114751086331659, DIRECT, f08c47fec0942fa0" >> ads.txt
 
