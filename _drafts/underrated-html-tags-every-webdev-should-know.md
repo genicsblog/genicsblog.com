@@ -1,30 +1,32 @@
 ---
 layout: post
-title:  "15 less-known and underrated HTML tags for web developers"
-excerpt: "There are a few lesser-known HTML attributes that are easy to learn and can help you to achieve common tasks, which would otherwise be fulfilled using some external libraries."
-image: "https://abhiraj-is.super-cool.xyz/unknown-html-tags.png"
+title:  "15 lesser-known underrated HTML tags for web developers"
+excerpt: "There are a few lesser known HTML attributes that are easy to learn and can help you to achieve common tasks, which would otherwise be fulfilled using some external libraries."
+image: "https://user-images.githubusercontent.com/46792249/153610234-7ccb56af-2e75-44b1-9367-cccef03c3cb4.png"
 hasCode: true
 category: web
 tags: ["web-development", "tips", "beginners"]
 author: abhiraj
 ---
 
-HTML may not be a programming language per se, but there's no doubt in the power it possesses. We often depend on external libraries for many tasks but that ends today.
+HTML may not be a programming language per se, but there's no doubt in the power it possesses. We often depend on external javascript libraries for some basic tasks, but need for some of them might end today!
 
-Today, we'll discuss about 15 HTML tags you probably did not know but you need to know for sure.
+In this article, we'll discuss about **15 HTML tags** you probably did not know, but need to know for sure.
 
 ## 1️. Autofocus
 
 This tag specifies whether the browser is allowed to aid in the filling out of form fields such as email, phone numbers, nationality, and so on.
+
 ```html
 <input name="credit-card-number" id="credit-card-number" autocomplete="off">
 ```
-You can check out all the autocomplete values from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
 
+You can check out all the autocomplete values from [MDN docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes/autocomplete)
 
 ## 2️.  Download
 
 This tag specifies that the file/object will be downloaded when the user clicks on the hyperlink.
+
 ```html
 <a href="document.pdf" download>Download PDF</a>
 ```
@@ -32,9 +34,10 @@ This tag specifies that the file/object will be downloaded when the user clicks 
 ## 3. Contenteditable
 
 This tags allows the user to edit the content of an element.
+
 ```html
 <div contenteditable="true">
-  Edit this text
+  You can now edit this text!
 </div>
 ```
 
@@ -56,26 +59,30 @@ This tag states which input file types are allowed.
 <input type="file" accept=".jpg, .png">
 ```
 
-Only used with file type of the <input> tag. To allow all files of specific media type, use accept="image/*".
+Only used with file type of the `<input>` tag. To allow all files of specific media type, use `accept="image/*"`.
 
 ## 6. Autofocus
 
 This tag indicates that the particular element should be focused on page load.
+
 ```html
 <input type="text" autofocus>
 ```
-Only one element in the document or dialog may have the autofocus attribute. If applied to multiple elements only the first one will receive focus.
+
+**Note**: Only one element in the HTML document or a dialog may have the autofocus attribute. If applied to multiple elements only the first one will receive focus.
 
 ## 7. Hidden
 
 This tag specifies whether or not the element is visible.
+
 ```html
-<p hidden>This text is hidden</p>
+<p hidden>I am invincible 💪</p>
 ```
 
 ## 8. Spellcheck
 
 This tag defines whether the element is checked for spelling errors.
+
 ```html
 <p contenteditable="true" spellcheck="true">Cehck mai spellnig</p>
 ```
@@ -93,6 +100,7 @@ This tag specifies whether or not the audio/video controls should be displayed o
 ## 10. Autoplay
 
 This tag ensures that the audio/video will automatically start playing as soon as it is loaded.
+
 ```html
 <video autoplay
 src="https://cdn.mysite.com/media/myvideo.mp4"
@@ -116,7 +124,7 @@ This tag specifies the date and time when the text was deleted/inserted.
 
 ```html
 <p>
-  My plans for 2023 include joining Google,
+  My plans for 2023 include joining Google as a SDE,
   <del datetime="2021-01-01T18:21">creating 6 courses,</del> 
   <ins datetime="2021-02-02T14:07">writing 12 articles.</ins>
 </p>
@@ -128,21 +136,23 @@ This tag specifies the date and time when the text was deleted/inserted.
 This tag ensures the script is executed asynchronously with the rest of the page.
 
 ```html
-<script src="script.js" async></script>
+<script src="heckingScript.js" async></script>
 ```
-The async attribute has an effect on external scripts only.
+
+The `async` attribute has an effect on external scripts only.
 
 ## 14. Defer
 
 This tag ensures the script is executed when the page has finished parsing.
-  
+
 ```html
 <script src="script.js" defer></script>
 ```
-  
+
 ## 15. Inputmode
 
 This tag hints at the type of data that might be entered by the user while editing the element or its contents.
+
 ```html
 <input type="text" inputmode="url" />
 <input type="text" inputmode="email" />
@@ -151,7 +161,7 @@ This tag hints at the type of data that might be entered by the user while editi
 
 ### Thanks for reading!
 
-Hope I was able to help you learn about HTML more and shared some knowledge with you.
+Hope this article was able to help you learn about HTML more and shared some knowledge with you.
 
-If you liked this post, subscribe to my [newsletter](https://abhirajbhowmick.substack.com) to never miss out on [my blogs](https://abhiraj.co), product launches, and tech news, and follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources.
+If you liked this post, subscribe to my [newsletter](https://abhirajbhowmick.substack.com) to never miss out on [my blogs](https://abhiraj.co){:rel="dofollow"}, product launches, and tech news. Follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources.
 
