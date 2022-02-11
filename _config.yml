@@ -106,7 +106,6 @@ exclude:
   - Gemfile.lock
   - node_modules/
   - vendor/
-  - staticman.yml
   - postcss.config.js
   - tailwind.config.js
   - package.json
