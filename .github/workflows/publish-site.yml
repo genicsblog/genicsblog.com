@@ -17,7 +17,7 @@ jobs:
         repository: genicsblog/theme-files
         path: theme
 
-    - name: Checkout theme-files repo
+    - name: Checkout comments repo
       uses: actions/checkout@v2
       with:
         repository: genicsblog/comments
