@@ -9,7 +9,7 @@ audioId: 3468413
 category: frontend
 tags: ["react", "remix", "mdx"]
 author: kira
-permalink: /kira/build-a-blog-using-remix-and-mdx
+permalink: /kira/how-to-build-a-blog-using-remix-and-mdx
 ---
 
 Hey, folks 👋. Today we are going to build a new blog from starch using [Remix](https://remix.run/), [MDX](https://mdxjs.com/) and [TailwindCSS](https://tailwindcss.com/)
