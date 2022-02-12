@@ -1,4 +1,4 @@
-----
+---
 layout: post
 title:  "How to build a blog using Remix and MDX"
 excerpt: "The guide to teach you how to build a blog using the latest javascript framework, Remix 🚀."
