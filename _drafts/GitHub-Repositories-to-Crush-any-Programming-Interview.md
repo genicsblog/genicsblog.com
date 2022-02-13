@@ -2,16 +2,17 @@
 layout: post
 title:  "GitHub Repositories to Crush any Programming Interview"
 excerpt: "This repository helps students prepare for companies like Amazon, Microsoft, Apple, etc."
-image: "https://i.imgur.com/RDh4fDH.png"
-hasCode: false
+image: "https://user-images.githubusercontent.com/46792249/153745097-024d43ec-e7fa-4143-9b64-258b100f7da2.png"
 category: programming-interviews
 tags: ["web-development", "tips", "beginners"]
 author: arindol
 ---
-Programming Interviews maybe frustrating and tough. If you have any phobia regarding programming interviews, have no fear, because this articles' for you. Today I'll be disclosing some repositories, you can visit to ace in any programming interviews. These were rated based on popularity, usability and reliability.
-1. [Coding Interview University](https://github.com/jwasham/coding-interview-university):
-![](https://i.imgur.com/UtbdPhu.png)
 
+Programming Interviews may be frustrating and tough. If you have any phobia regarding programming interviews, have no fear, because this articles' for you. Today I'll be disclosing some repositories, you can visit to ace in any programming interviews. These were rated based on popularity, usability and reliability.
+
+## 1. Coding Interview University
+
+![](https://i.imgur.com/UtbdPhu.png)
 
 This repository helps students prepare for companies like Amazon, Microsoft, Apple, etc. Some of the key features are : 
 
@@ -21,7 +22,13 @@ This repository helps students prepare for companies like Amazon, Microsoft, App
 * The repository carefully differentiate between the topics, into Planning, Topic, and optional topics to cover to get a edge over others.
 * It's a long plan. It may take you months. However, if you are familiar with a lot of this already it will take you a lot less time.
 
-2. [Tech Interview Handbook](https://github.com/yangshun/tech-interview-handbook) : ![](https://i.imgur.com/OySmku6.png)
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/jwasham/coding-interview-university" %}
+</div>
+
+## 2. Tech Interview Handbook
+
+![](https://i.imgur.com/OySmku6.png)
 
 It has curated interview preparation materials for busy engineers. Some of the key elements are : 
 
@@ -31,7 +38,12 @@ It has curated interview preparation materials for busy engineers. Some of the k
 * The key to succeeding in technical interviews is consistent practice. It doesn't bore you with too many words, and keeps everything to the point.
 * The difference between this repository and others is that many existing interview repositories contain mainly links to external resources whereas this repository contains top-quality curated content directly for your consumption.
 
-3. [Javascript Interview Questions](https://github.com/sudheerj/javascript-interview-questions):
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/yangshun/tech-interview-handbook" %}
+</div>
+
+## 3. Javascript Interview Questions
+
 ![](https://i.imgur.com/7WL4M2b.png)
 
 This repo contains a huge list of 1000 JavaScripts Interview Questions. Some of the main features are : 
@@ -41,8 +53,13 @@ This repo contains a huge list of 1000 JavaScripts Interview Questions. Some of 
 * Take this Advanced JavaScript Course to learn advanced JS concepts and become a top JS developer.
 * You can download the PDF and Epub version of this repository. 
 
-4. [JavaScript Algorithms](https://github.com/trekhleb/javascript-algorithms) : 
-![](https://i.imgur.com/YDMQUNo.png)
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/sudheerj/javascript-interview-questions" %}
+</div>
+
+## 4. JavaScript Algorithms
+
+![](https://i.imgur.com/YDMQUNo.png
 
 It has JavaScript based examples of many popular algorithms and data structures explained. Some of the key features are : 
 
@@ -50,7 +67,12 @@ It has JavaScript based examples of many popular algorithms and data structures 
 * The beginners and advanced are seperated by using symbols `B` and `A` respectively.
 * This repository has a seperate content for each topic in a systematic way.
 
-5. [How Web Works](https://github.com/vasanthk/how-web-works) : 
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/trekhleb/javascript-algorithms" %}
+</div>
+
+## 5. How Web Works
+
 ![](https://i.imgur.com/QI8EVky.png)
 
 
@@ -61,17 +83,27 @@ It helps to learn What happens behind the scenes when we type a URL in a browser
 * This repositories covers stuffs like DNS lookup, Opening of a socket + TLS handshake, HTTP Server Request Handle, The browser's high level structure, and many more.
 * This repositories doesn't waste much time and directly dives into the topic.
 
-6. [Interview](https://github.com/Olshansk/interview) : 
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/vasanthk/how-web-works" %}
+</div>
+
+## 6. Interview
+
 ![](https://i.imgur.com/nTjuurt.png)
+
 This repo contains everything you need to prepare for your technical interview. Some features include : 
 
-    * Lists of books to learn algorithms.
-    * List of websites to practice coding.
-    * Guides you may need.
+* Lists of books to learn algorithms.
+* List of websites to practice coding.
+* Guides you may need.
 * It also contains list of book specifically for job interviews and needs of industries.
 
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/Olshansk/interview" %}
+</div>
 
-7. [System Design Primer](https://github.com/donnemartin/system-design-primer) : 
+## 7. System Design Primer
+
 ![](https://i.imgur.com/92JYYEj.png)
 
 It helps to learn how to design large-scale systems. Preparation for the system design interview. Some features like:
@@ -82,7 +114,12 @@ It helps to learn how to design large-scale systems. Preparation for the system 
 * In addition to coding interviews, system design is a required component of the technical interview process at many tech companies. Practice common system design interview questions and compare your results with sample solutions: discussions, code, and diagrams.
 * Also contains additional for interview preparation.
 
-8. [How to secure anything](https://github.com/veeral-patel/how-to-secure-anything) : 
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/donnemartin/system-design-primer" %}
+</div>
+
+## 8. How to secure anything
+
 ![](https://i.imgur.com/bgspVPq.png)
 
 This repo contains everything you need to learn on security engineering. Like : 
@@ -91,16 +128,25 @@ This repo contains everything you need to learn on security engineering. Like :
 * This repository aims to document a process for securing anything, whether it's a medieval castle, an art museum, or a computer network.
 * Even you can contribute for this article.
 
-9. [Ganqqwerty](https://github.com/ganqqwerty/123-Essential-JavaScript-Interview-Questions) : 
-![](https://i.imgur.com/DWg2bPc.png)
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/veeral-patel/how-to-secure-anything" %}
+</div>
 
+## 9. Ganqqwerty
+
+![](https://i.imgur.com/DWg2bPc.png)
 
 This repo has 123 essential JavaScript Questions to prepare for interview. Some features include : 
 
 * This book's goal is to help javascript frontend developers prepare for technical job interviews through a collection of carefully compiled questions.
 * You can even get this in paperback format. This repository is still getting updated, so for early access you can visit this repository.
 
-10. [JavaScript Question](https://github.com/lydiahallie/javascript-questions) : 
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/ganqqwerty/123-Essential-JavaScript-Interview-Questions" %}
+</div>
+
+## 10. JavaScript Question
+
 ![](https://i.imgur.com/alD4VBP.png)
 
 It is a long list of advance JavaScript questions, and their explanations. Some of the key features are:
@@ -110,7 +156,12 @@ It is a long list of advance JavaScript questions, and their explanations. Some 
 * The questions also come with explanation along with answers.
 * The repository covers almost every single type of question, one can expect in an interview.
 
-### Thank you for reading!
+<div class="text-center mb-6">
+{% include linkbtn.html text="Check it out >" href="https://github.com/lydiahallie/javascript-questions" %}
+</div>
+
+## Thank you for reading!
+
 I write blogs on programming, web development, and current technology trend. If you find this article interesting, do share it with others, and comment your thoughts. Follow me on [twitter](https://twitter.com/gh_x_st07).
 
 Until We Meet Again,
