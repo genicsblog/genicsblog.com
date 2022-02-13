@@ -1,22 +1,25 @@
 ---
 layout: post
 title:  "GitHub Repositories to Crush any Programming Interview"
-excerpt: "This repository helps students prepare for companies like Amazon, Microsoft, Apple, etc."
+excerpt: "These repositories help students to prepare for coding interviews at companies like Amazon, Microsoft, Apple, etc."
 image: "https://user-images.githubusercontent.com/46792249/153745097-024d43ec-e7fa-4143-9b64-258b100f7da2.png"
-category: programming-interviews
-tags: ["web-development", "tips", "beginners"]
+audioId: 3490226
+category: web
+tags: ["web-development", "beginners"]
 author: arindol
 ---
 
-Programming Interviews may be frustrating and tough. If you have any phobia regarding programming interviews, have no fear, because this articles' for you. Today I'll be disclosing some repositories, you can visit to ace in any programming interviews. These were rated based on popularity, usability and reliability.
+Programming Interviews may be frustrating and tough. If you have any phobia regarding programming interviews, have no fear, because this articles is for you.
+
+Today I'll be disclosing some repositories, you can visit to ace in any programming interviews. These were rated based on popularity, usability and reliability.
 
 ## 1. Coding Interview University
 
-![](https://i.imgur.com/UtbdPhu.png)
+![Coding Interview University](https://i.imgur.com/UtbdPhu.png)
 
 This repository helps students prepare for companies like Amazon, Microsoft, Apple, etc. Some of the key features are : 
 
-* This is my multi-month study plan for becoming a software engineer for a large company.
+* This is my multi-month study plan to become a software engineer for a large company.
 * If you missed out on getting a degree in computer science, this will catch you up and save four years of your life.
 * Note this is a study plan for software engineering, not web development. Large software companies like Google, Amazon, Facebook and Microsoft view software engineering as different from web development.
 * The repository carefully differentiate between the topics, into Planning, Topic, and optional topics to cover to get a edge over others.
@@ -28,11 +31,11 @@ This repository helps students prepare for companies like Amazon, Microsoft, App
 
 ## 2. Tech Interview Handbook
 
-![](https://i.imgur.com/OySmku6.png)
+![Tech Interview Handbook](https://i.imgur.com/OySmku6.png)
 
 It has curated interview preparation materials for busy engineers. Some of the key elements are : 
 
-* Here are free and curated technical interview preparation materials for busy engineers, brought to you by the author of the Blind 75 list.
+* There are free and curated technical interview preparation materials for busy engineers, brought to you by the author of the Blind 75 list.
 * Besides the usual algorithm questions, it includes "Best practice questions for coding interviews", "How to prepare for coding interviews", "Straight-to-the-point Do's and Don'ts", "Algorithm tips categorized by topic", and many more.
 * This repository has practical content that covers all phases of a technical interview, from applying for a job to passing the interviews to offer negotiation. Technically competent candidates might still find the non-technical content helpful.
 * The key to succeeding in technical interviews is consistent practice. It doesn't bore you with too many words, and keeps everything to the point.
@@ -44,7 +47,7 @@ It has curated interview preparation materials for busy engineers. Some of the k
 
 ## 3. Javascript Interview Questions
 
-![](https://i.imgur.com/7WL4M2b.png)
+![Javascript Interview Questions](https://i.imgur.com/7WL4M2b.png)
 
 This repo contains a huge list of 1000 JavaScripts Interview Questions. Some of the main features are : 
 
@@ -59,12 +62,12 @@ This repo contains a huge list of 1000 JavaScripts Interview Questions. Some of 
 
 ## 4. JavaScript Algorithms
 
-![](https://i.imgur.com/YDMQUNo.png
+![JavaScript Algorithms](https://i.imgur.com/YDMQUNo.png)
 
 It has JavaScript based examples of many popular algorithms and data structures explained. Some of the key features are : 
 
 * Each algorithm and data structure has its own separate README with related explanations and links for further reading (including ones to YouTube videos).
-* The beginners and advanced are seperated by using symbols `B` and `A` respectively.
+* The beginners and advanced are separated by using symbols `B` and `A` respectively.
 * This repository has a seperate content for each topic in a systematic way.
 
 <div class="text-center mb-6">
@@ -73,15 +76,14 @@ It has JavaScript based examples of many popular algorithms and data structures 
 
 ## 5. How Web Works
 
-![](https://i.imgur.com/QI8EVky.png)
-
+![How Web Works](https://i.imgur.com/QI8EVky.png){:width="50%"}
 
 It helps to learn What happens behind the scenes when we type a URL in a browser. Let's look at some of the features : 
 
 * If you wonder what happens behind the scenes when we type google.com in a browser, then you definitely need to check this out.
-* This repositories goes through a lot of minute details.
-* This repositories covers stuffs like DNS lookup, Opening of a socket + TLS handshake, HTTP Server Request Handle, The browser's high level structure, and many more.
-* This repositories doesn't waste much time and directly dives into the topic.
+* This repository goes through a lot of minute details.
+* This repository covers stuffs like DNS lookup, Opening of a socket + TLS handshake, HTTP Server Request Handle, The browser's high level structure, and many more.
+* This repository doesn't waste much time and directly dives into the topic.
 
 <div class="text-center mb-6">
 {% include linkbtn.html text="Check it out >" href="https://github.com/vasanthk/how-web-works" %}
@@ -89,7 +91,7 @@ It helps to learn What happens behind the scenes when we type a URL in a browser
 
 ## 6. Interview
 
-![](https://i.imgur.com/nTjuurt.png)
+![Interview](https://i.imgur.com/nTjuurt.png){:width="50%"}
 
 This repo contains everything you need to prepare for your technical interview. Some features include : 
 
@@ -104,7 +106,7 @@ This repo contains everything you need to prepare for your technical interview. 
 
 ## 7. System Design Primer
 
-![](https://i.imgur.com/92JYYEj.png)
+![System Design Primer](https://i.imgur.com/92JYYEj.png){:width="50%"}
 
 It helps to learn how to design large-scale systems. Preparation for the system design interview. Some features like:
 
@@ -120,7 +122,7 @@ It helps to learn how to design large-scale systems. Preparation for the system 
 
 ## 8. How to secure anything
 
-![](https://i.imgur.com/bgspVPq.png)
+![How to secure anything](https://i.imgur.com/bgspVPq.png)
 
 This repo contains everything you need to learn on security engineering. Like : 
 
@@ -134,7 +136,7 @@ This repo contains everything you need to learn on security engineering. Like :
 
 ## 9. Ganqqwerty
 
-![](https://i.imgur.com/DWg2bPc.png)
+![Ganqqwerty](https://i.imgur.com/DWg2bPc.png){:width="40%"}
 
 This repo has 123 essential JavaScript Questions to prepare for interview. Some features include : 
 
@@ -147,7 +149,7 @@ This repo has 123 essential JavaScript Questions to prepare for interview. Some 
 
 ## 10. JavaScript Question
 
-![](https://i.imgur.com/alD4VBP.png)
+![JavaScript Question](https://i.imgur.com/alD4VBP.png)
 
 It is a long list of advance JavaScript questions, and their explanations. Some of the key features are:
 
@@ -164,5 +166,4 @@ It is a long list of advance JavaScript questions, and their explanations. Some 
 
 I write blogs on programming, web development, and current technology trend. If you find this article interesting, do share it with others, and comment your thoughts. Follow me on [twitter](https://twitter.com/gh_x_st07).
 
-Until We Meet Again,
-Arindol Sarkar.
+Until We Meet Again, Arindol Sarkar.
