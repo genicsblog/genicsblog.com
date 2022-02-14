@@ -5,14 +5,14 @@ excerpt: "The guide to teach you how to build a blog using the latest javascript
 image: "https://user-images.githubusercontent.com/90365542/153700424-ffc22df1-7d4d-4530-983d-01eb5348807a.png"
 original: "https://kirablog.hashnode.dev/build-a-blog-using-remix-and-mdx"
 hasCode: true
-audioId: 3468413
+audioId: 3497697
 category: frontend
-tags: ["react", "remix", "mdx"]
+tags: ["react", "remix"]
 author: kira
 permalink: /kira/how-to-build-a-blog-using-remix-and-mdx
 ---
 
-Hey, folks 👋. Today we are going to build a new blog from starch using [Remix](https://remix.run/), [MDX](https://mdxjs.com/) and [TailwindCSS](https://tailwindcss.com/)
+Hey, folks 👋. Today we are going to build a new blog from scratch using [Remix](https://remix.run/), [MDX](https://mdxjs.com/) and [TailwindCSS](https://tailwindcss.com/)
 
 # 🤔 What's Remix? Yet another JavaScript framework
 
@@ -34,25 +34,25 @@ Let's set up our project before getting started to code.
 
 1. Create a new folder for our remix blog
 
-   ```bash
+   ```shell
    mkdir remix-blog
    ```
 
 1. Navigate into that folder
 
-   ```bash
+   ```shell
    cd remix-blog
    ```
 
 1. Open that folder in VSCode
 
-   ```bash
+   ```shell
    code .
    ```
 
 1. Initialize remix project in that folder
 
-   ```bash
+   ```shell
    npx create-remix@latest
    ```
 
@@ -62,7 +62,7 @@ Let's set up our project before getting started to code.
 
 1. Starting a local development server
 
-   ```bash
+   ```shell
    npm run dev
    ```
 
@@ -86,7 +86,7 @@ Let's start building the blog now. Let's first clean up the `app/routes/index.js
 ```jsx
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
+    <div style={‎{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
       <h1>Welcome to my blog</h1>
     </div>
   );
@@ -99,7 +99,7 @@ Let's create a new directory inside the `routes` directory called `posts` and in
 
 `app/routes/posts/first-blog-post.mdx`
 
-```jsx
+```
 Hey, welcome to my first blog post 👋
 ```
 
@@ -111,13 +111,13 @@ To check out your first blog post, visit [localhost:3000/posts/first-blog-post](
 
 ## 🙌 Adding frontmatter
 
-> The lines in the document above between the `---` are called "frontmatter"
+The lines in the document above between the `---` are called "frontmatter"
 
 Let's add some front matter to your first blog post page. You can think frontmatter as the metadata of that page.
 
 You can reference your frontmatter fields through the global attributes variable in your MDX.
 
-```mdx
+```
 ---
 title: First Blog Post
 ---
@@ -127,7 +127,7 @@ Hey, welcome to {attributes.title} 👋
 
 Let's now add metadata to our blog post's page using frontmatter.
 
-```mdx
+```
 ---
 title: First Blog Post
 meta:
@@ -168,7 +168,7 @@ Generally, there are two types of plugins
 
 For our remix blog, we are going to be using a rehype plugin called [rehype-highlight](https://www.npmjs.com/package/rehype-highlight). To install the package using the following command:
 
-```bash
+```shell
 npm install rehype-highlight
 ```
 
@@ -260,7 +260,7 @@ Those dependencies are:
 
 Let's install all of them:
 
-```bash
+```shell
 npm install -D tailwindcss concurrently @tailwindcss/typography
 ```
 
@@ -431,7 +431,7 @@ As our application let's deploy it on vercel 🚀.
 
 1. Initialize an empty git repository
 
-   ```bash
+   ```shell
    git init
    ```
 
@@ -439,13 +439,13 @@ As our application let's deploy it on vercel 🚀.
 
 1. Push your changes to that repository
 
-```bash
-git remote add origin git@github.com:Kira272921/remix-blog.git # change URL to your repo's link
-git add .
-git commit -m "feat: initial commit"
-git branch -M main
-git push -u origin main
-```
+  ```shell
+  git remote add origin git@github.com:Kira272921/remix-blog.git # change URL to your repo's link
+  git add .
+  git commit -m "feat: initial commit"
+  git branch -M main
+  git push -u origin main
+  ```
 
 1. If you don't have an account on vercel, create one
 
@@ -463,20 +463,19 @@ git push -u origin main
 
    - If you are getting an error something like this, add a new script to `package.json`
 
-     ```
+     ```json
      "postinstall": "remix setup node"
      ```
 
      ![](https://imgur.com/PAG3nla.png)
 
-The entire code for this tutorial is present on my GitHub: https://github.com/kira272921/remix-blog
+The entire code for this tutorial is present on [my GitHub](https://github.com/kira272921/remix-blog).
 
-Here is what we have built today 🚀: https://remix-blog-orcin.vercel.app/
+[Here](https://remix-blog-orcin.vercel.app/) is what we have built today 🚀
 
 ### 🧑 About the author
 
-- [Github](https://github.com/kira272921)
-- [Twitter](https://twitter.com/kira_272921)
 - [Portfolio](https://kiradev.co)
+- [Github](https://github.com/kira272921)
 
-So that's it for this blog post folks 🤞. Meet y'all in the next blog
+So that's it for this blog post folks 🤞. Meet y'all in the next blog.
