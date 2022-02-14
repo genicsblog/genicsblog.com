@@ -1,13 +1,13 @@
 visible: true
 
 # For mobile devices
-small: "Connect with us on discord to stay updated."
+small: "Comments api is under maintainence, would be up by tomorrow."
 
 # For tablets and higher screen resolution
-large: "Connect with us on discord to stay updated on the blog's development."
+large: "Comments api is under maintainence, would be up by tomorrow."
 
 link:
-  visible: true
+  visible: false
   text: "Join >"
   url: "https://discord.genicsblog.com"
   target: "_blank"
