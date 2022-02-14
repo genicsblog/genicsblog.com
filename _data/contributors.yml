@@ -16,16 +16,16 @@ anurag:
   role: "Frontend Developer"
   avatar: "https://avatars.githubusercontent.com/u/77309809?v=4"
   bio: "I'm a 15 year old Frontend Developer, Blogger."
-  links: 
+  links:
     github: "kr-anurag"
     twitter: "kr_anurag_"
-    
+
 kushagra:
   name: "Kushagra Jain"
   role: "Marketing Head @ Genics Blog"
   avatar: "https://avatars.githubusercontent.com/u/76843766"
   bio: "Hi there! I'm a 15 year old blogger and competetive programmer."
-  links: 
+  links:
     github: "Kushagra-Jain99"
     linkedin: "in/kushagra-jain-921ba1213/"
 
@@ -39,16 +39,16 @@ avneesh:
     linkedin: "in/avneesh0612/"
     twitter: "avneesh0612"
     instagram: "avneesh.codes"
-    
+
 anishde12020:
   name: "Anish De"
   role: "Web Developer ● Blogger ● YouTuber ● Tech Enthusiast"
   avatar: "https://avatars.githubusercontent.com/u/63192115?v=4"
   bio: "14 • Tech Enthusiast • Tech YouTuber • Blogs about Development • Developer"
   links:
-      github: "AnishDe12020"
-      twitter: "AnishDe12020"
-      youtube: "channel/UCY-rVWTIsN-G7s81C89SzkA"
+    github: "AnishDe12020"
+    twitter: "AnishDe12020"
+    youtube: "channel/UCY-rVWTIsN-G7s81C89SzkA"
 
 sahilpabale:
   name: "Sahil Pabale"
@@ -56,53 +56,53 @@ sahilpabale:
   avatar: "https://avatars.githubusercontent.com/u/57981014?v=4"
   bio: "Backend Developer | Blockchain Enthusiast."
   links:
-      github: "sahilpabale"
-      linkedin: "in/sahil-pabale/"
-      twitter: "SahilPabale"
-      instagram: "sahilpabale"
- 
+    github: "sahilpabale"
+    linkedin: "in/sahil-pabale/"
+    twitter: "SahilPabale"
+    instagram: "sahilpabale"
+
 karthikpariti:
   name: "Karthik Pariti"
   role: "Community Manager @ Genics Blog"
   avatar: "https://avatars.githubusercontent.com/u/77888951?v=4"
   bio: "Young enthusiastic developer and a community manager on discord and twitter"
   links:
-      github: "Kardev07"
-      twitter: "MrPkar"
-      instagram: "_karthik.codes_" 
- 
+    github: "Kardev07"
+    twitter: "MrPkar"
+    instagram: "_karthik.codes_"
+
 MaheshtheDev:
   name: "Mahesh Reddy Sv"
   role: "Full Stack Developer at Keka HR"
   avatar: "https://avatars.githubusercontent.com/u/38828053?v=4"
   bio: "Full Stack Developer. I love to be a Dev"
   links:
-      github: "MaheshtheDev"
-      twitter: "MaheshtheDev"
-      instagram: "MaheshtheDev" 
-      
+    github: "MaheshtheDev"
+    twitter: "MaheshtheDev"
+    instagram: "MaheshtheDev"
+
 usman:
-  name: "Usman Sabuwala" 
+  name: "Usman Sabuwala"
   role: "Content creator & Full stack dev"
   avatar: "https://i.ibb.co/Fs6Kww8/PFP.jpg"
   bio: "I like to create content and teach people about web development. I like reading books and helping people!"
-  links: 
-      github: "max-programming"
-      stackoverflow: "11727541"
-      linkedin: "/in/usman-sabuwala/"
-      twitter: "MaxProgramming1" 
-      instagram: "usmansabuwala7" 
-      youtube: "MaxProgramming"
+  links:
+    github: "max-programming"
+    stackoverflow: "11727541"
+    linkedin: "/in/usman-sabuwala/"
+    twitter: "MaxProgramming1"
+    instagram: "usmansabuwala7"
+    youtube: "MaxProgramming"
 
-abhiraj: 
-  name: "Abhiraj Bhowmick" 
-  role: "Web developer and tech blogger" 
+abhiraj:
+  name: "Abhiraj Bhowmick"
+  role: "Web developer and tech blogger"
   avatar: "https://avatars.githubusercontent.com/u/87644009?v=4"
-  bio: "I make stuff on the web and write blogs about it. Daily Twitter threads to make web dev easy for you." 
-  links: 
-      github: "rainboestrykr" 
-      linkedin: "in/abhiraj-bhowmick-857670218/" 
-      twitter: "rainboestrykr"
+  bio: "I make stuff on the web and write blogs about it. Daily Twitter threads to make web dev easy for you."
+  links:
+    github: "rainboestrykr"
+    linkedin: "in/abhiraj-bhowmick-857670218/"
+    twitter: "rainboestrykr"
 
 kira:
   name: "Kira"
@@ -123,7 +123,7 @@ adityasingh:
     linkedin: "in/aditya-singh9/"
     twitter: "singh_aditya91"
     instagram: "singh_aditya91"
-    
+
 dhruva:
   name: "Dhruva Srinivas"
   role: "Fullstack web dev & student"
@@ -132,14 +132,14 @@ dhruva:
   links:
     github: "carrotfarmer"
     youtube: "c/iqube"
-    
+
 arindol:
   name: "Arindol Sarkar"
   role: "Developer and Blogger"
   avatar: "https://avatars.githubusercontent.com/u/64733974"
   bio: "16 year old passionate app, web app, and bot developer. Also a tech blogger"
-  links: 
-      github: "Ghxst07"
-      linkedin: "in/arindol-sarkar-2b920422a/"
-      twitter: "gh_x_st07" 
-     
+  links:
+    github: "Ghxst07"
+    linkedin: "in/arindol-sarkar-2b920422a/"
+    twitter: "gh_x_st07"
+
