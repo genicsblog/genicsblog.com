@@ -15,6 +15,10 @@ adsense-data-ad-client: "ca-pub-8114751086331659"
 adsense-data-display-ad-slot: "8698895132"
 adsense-data-infeed-ad-slot: "3535897708"
 
+reCaptcha:
+  siteKey: "6LemuH0eAAAAANb3cN7s11zu_zgtTYBx1l1Ur_Vr"
+  secret: "gPDQUxksOHFoByDRvj9pjcKRoYMT74yB85Tpzod5m6y/4v8VeYa612FZZt78uAEVVw7cnTUU+c5beEhYyAHjUYWJnrwAYiHa5YnlmSsXCAv7irCxMTQ9y7f76RSC/c7n4EB6Wfj4KALt4tBbWNtrZsw9IArHpPZEdHR/tfwB9ahcW6KgcoIGOBNza8DN3+KUwb/YBbU1nvb5Bvh2v/0Wu8XMg+DfDM5m8Y7yRySHdbNRgyN+1ry7VeVB6YRC/JDgX6Ygu8rpWunEV5f3UjHHCV5MUcyIaGcLSv/nJ/a4dRXk3QIv3xcuzsH8FerQx9+lsGT2XelYXtnxjNE5FlKV6bzMOcHbomj/WKcaLGHPLlF7yQhbff/VdN1suQx5TphaQEy9EOGrZeKCSHC0cne+0S8JFY0pWDh4w0JPB7jY5/7r9ISQG87SjvLtLypkz9ubwvYm4cgW3MfH3bkgM1L/cohrLH2Jy+6Wc6oNTliAnVgdO9Mq8yrztraujCdwNal8fKizOZtinzAfPf3ZFhkjgns+wVzjFz1kunSEMyxtOpvC7HchUjL5JqED9Su++mo5f5r7rUsyQyuioqLzq7Pc3yVUgcBzFg9G1lI1DPYJ/qQX2A2t9CMjQO+qXwdMzj9LZs/kT8/DzLoeBYtOaAjsYYHYTEM5D5Y8bgVmIPjCatk="
+
 defaults:
   -
     scope:
