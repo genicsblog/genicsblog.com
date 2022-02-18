@@ -48,21 +48,21 @@ Copy the ID that you see and copy it as we are going to need it!
 Go inside `pages/_app.tsx` and these two Next.js Scripts-
 
 ```jsx
-  <Script
-    strategy="lazyOnload"
-    src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-  />
+<Script
+  strategy="lazyOnload"
+  src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+/>
 
-  <Script id="google-analytics" strategy="lazyOnload">
-    {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-              page_path: window.location.pathname,
-            });
-                `}
-  </Script>
+<Script id="google-analytics" strategy="lazyOnload">
+  {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+    page_path: window.location.pathname,
+  });
+  `}
+</Script>
 ```
 
 This is going to load google analytics via this script. As you can see we are using env variables for the google-analytics tag because it must remain a secret 🤫, so if you don't already have a `.env.local` file create one and add the following-
