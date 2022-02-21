@@ -96,7 +96,7 @@ Cannot be reassigned and are not accessible before they appear within the code.
 
 3️⃣ let
 
-Similar to const but let variable can be re-assigned but not re-declared
+Similar to const but let variable can be re-assigned but not re-declared.
 
 ## Operators
 
@@ -104,42 +104,42 @@ Similar to const but let variable can be re-assigned but not re-declared
 
 && - logical and
 
-|| - logical or
+\|\| - logical or
 
 ! - logical not
 
 2️⃣ Arithmetic Operators
 
-+ - Addition
-(-) - Subtraction
-* - Multiplication
-** - Exponentiation (ES2016)
-/ - Division
-% - Modulus (Division Remainder)
-++ - Increment
+\+ - Addition\
+(-) - Subtraction\
+\* - Multiplication\
+** - Exponentiation (ES2016)\
+/ - Division\
+% - Modulus (Division Remainder)\
+++ - Increment\
 (--) - Decrement
 
 3️⃣ Comparison Operators
 
-== - equal to
-=== - equal value and equal type
-!= - not equal
-!== - not equal value or not equal type
-> - greater than
-< - less than
->= - greater than or equal to
-<= - less than or equal to
+== - equal to\
+=== - equal value and equal type\
+!= - not equal\
+!== - not equal value or not equal type\
+\> - greater than\
+< - less than\
+\>= - greater than or equal to\
+<= - less than or equal to\
 ? - ternary operator
 
 4️⃣ Bitwise Operators
 
-& - AND	
-| - OR
-~ - NOT	
-^ - XOR	
-<< - left shift
->> - right shift	
->>> - unsigned right shift
+& - AND\
+| - OR\
+~ - NOT\
+^ - XOR\
+<< - left shift\
+\>\> - right shift	
+\>\>\> - unsigned right shift
 
 ## Arrays
 
