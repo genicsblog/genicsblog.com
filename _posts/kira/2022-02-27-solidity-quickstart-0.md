@@ -1,17 +1,24 @@
 ---
 layout: post
-title:  ":rocket: Solidity Quickstart [0]"
-excerpt: "Get started with your web3 journey today! 🚀"
-image: "https://imgur.com/IzATzf6.png"
+title:  "Solidity Quickstart [0]"
+excerpt: "Get started with your web3 journey by learning the solidity language, used to create smart contracts on the blockchain 🚀"
+image: "https://user-images.githubusercontent.com/46792249/156168666-85804b30-d9db-4d0e-9433-4a668d42f65c.png"
+original: "https://blog.kiradev.co/solidity-quickstart-0"
 hasCode: true
-category: web
-tags: ["web3", "solidity", "beginners", "blockchain"]
+audioId: 3722842
+category: web3
+tags: ["beginners", "blockchain"]
 author: kira
+permalink: /kira/solidity-quickstart-0
 ---
 
-Hey folks 👀. Hope y'all are doing great. You might have heard about web3 and its hype on Twitter and maybe you wanna explore it as well. Well, so today I am here to give all a quick tour of solidity 🚀. So let's get started.
+Hey folks 👀. Hope y'all are doing great. You might have heard about web3 and its hype on Twitter and maybe you wanna explore it as well.
 
-**NOTE**: This blog post isn't a complete tutorial of solidity. You can take this blog post as a quickstart for the journey with solidity and web3. If you are in search of resources, checkout the resources notion page of X Days of Solidity: https://links.kiradev.co/misc/solidity-resources
+Well, so today I am here to give all a quick tour of solidity 🚀. So let's get started.
+
+**NOTE**: This blog post isn't a complete tutorial of solidity. You can take this blog post as a quickstart for the journey with solidity and web3.
+
+If you are in search of resources, checkout the resources notion page of [X Days of Solidity](https://links.kiradev.co/misc/solidity-resources).
 
 ![](https://c.tenor.com/Q8VheZPaZM4AAAAM/stocks-amc.gif)
 
@@ -19,7 +26,11 @@ Hey folks 👀. Hope y'all are doing great. You might have heard about web3 and 
 
 Solidity is a programming language for implementing smart contracts.
 
-Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met. An advantage of these programs is that you can verify they are what they are and do what they claim they are doing. This allows for a permission-less autonomous ecosystem between untrusted and anonymous stakeholders.
+Smart contracts are simply programs stored on a blockchain that run when predetermined conditions are met.
+
+An advantage of these programs is that you can verify they are what they are and do what they claim they are doing.
+
+This allows for a permission-less autonomous ecosystem between untrusted and anonymous stakeholders.
 
 Solidity is a curly-bracket language with the influence of C++, Python, and JavaScript being visible.
 
@@ -31,7 +42,9 @@ Before working with Solidity, we would have to set up our development environmen
 
 ## 👀 Magical powers of Hardhat
 
-We would be using a tool called [Hardhat](https://hardhat.org/). This would create a local Ethereum network and give us fake test ETH and fake test accounts to work with. Sounds interesting right? So what are you waiting for so let’s set up Hardhat 🚀.
+We would be using a tool called [Hardhat](https://hardhat.org/). This would create a local Ethereum network and give us fake test ETH and fake test accounts to work with. Sounds interesting right?
+
+So what are you waiting for? let’s set up Hardhat 🚀.
 
 - Create a new folder for the project
   ```bash
@@ -45,7 +58,7 @@ We would be using a tool called [Hardhat](https://hardhat.org/). This would crea
   ```bash
   npm init -y
   ```
-   - If you get an error saying `npm command not found` then go ahead and install NodeJS from https://nodejs.org. Install the LTS version
+   - If you get an error saying `npm command not found` then go ahead and install [NodeJS](https://nodejs.org). Install the LTS version
 - Installing Hardhat
 
   ```bash
@@ -92,7 +105,9 @@ Let's get started by creating a smart contract using solidity that prints "Hello
 
 First of all let's clean up the default hardhat contract, script, and test files. Let's create a new file called `HelloWorld.sol` inside the `contracts` folder.
 
-Let's get started by adding a ✨SPDX License Identifier✨. It's just a fancy comment, which tells the license of your smart contract. In my case, I am going to be using the [MIT](https://opensource.org/licenses/MIT) license.
+Let's get started by adding a ✨SPDX License Identifier✨. It's just a fancy comment, which tells the license of your smart contract.
+
+In my case, I am going to be using the [MIT](https://opensource.org/licenses/MIT) license.
 
 ```solidity
 // SPDX-License-Identifier: MIT
@@ -156,19 +171,19 @@ Let's first get our smart contract, compile it, and generate all the necessary f
 
 > `artifact` folder is similar to a `build` folder
 
-```js
+```javascript
 const helloWorldFactory = await hre.ethers.getContractFactory('HelloWorld');
 ```
 
 Let's now deploy our compiled smart contract to the local blockchain
 
-```js
+```javascript
 const helloWorld = await waveContractFactory.deploy();
 ```
 
 We will wait until our smart contract has been officially deployed on the local blockchain.
 
-```js
+```javascript
 await waveContract.deployed();
 ```
 
@@ -176,13 +191,13 @@ We would only see the "Hello, World!" console log only after the smart contract 
 
 Let's add a console log to the run script which tells the address of the account where our smart contract has been deployed.
 
-```js
+```javascript
 console.log('Contract deployed to:', helloWorld.address);
 ```
 
 Finally, our `run.js` script would look something like this
 
-```js
+```javascript
 const main = async () => {
   const helloWorldFactory = await hre.ethers.getContractFactory('HelloWorld');
   const helloWorld = await helloWorldFactory.deploy();
@@ -219,7 +234,9 @@ Let's talk more about solidity now 🤔.
 
 ## 🔢 Integers
 
-In solidity, there are two types of integers unsigned integers (`uint`) and signed integers (`int`). Unsigned integers are non-negative integers whereas signed integers are negative integers (PS: `**` means to the "to the power of" or "exponent operator" aka `^` )
+In solidity, there are two types of integers unsigned integers (`uint`) and signed integers (`int`).
+
+Unsigned integers are non-negative integers whereas signed integers are negative integers (PS: `**` means to the "to the power of" or "exponent operator" aka `^` )
 
 - `uint8` ranges from 0 to 2 \*\* 8 - 1
 - `uint16` ranges from 0 to 2 \*\* 16 - 1
@@ -427,10 +444,4 @@ There are 2 variable modifiers for `state` variables
 
 That's the end folks 👋. I would be releasing another part on "Solidity Quickstart" on "Functions in Solidity" and "How to deploy the smart contract to a test net", such as [Rinkeby](https://www.rinkeby.io/)
 
-The code for this entire "Solidity Quickstart" series would be available on my GitHub:
-
-https://github.com/kira272921/solidity-quickstart
-
-Checkout the notion board for "X Days of Solidity" 
-
-https://links.kiradev.co/project/x-days-of-solidity
+The code for this entire "Solidity Quickstart" series would be available on [my GitHub](https://github.com/kira272921/solidity-quickstart).
