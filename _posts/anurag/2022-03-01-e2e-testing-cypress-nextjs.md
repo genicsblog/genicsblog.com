@@ -1,12 +1,15 @@
 ---
 layout: post
 title:  "Basics of E2E Tesing & Quickstart Cypress with Next.js"
-image: "https://res.cloudinary.com/ddum5vpp3/image/upload/v1645974340/Frame_3_bxfqks.png"
+excerpt: "Learn the basics of E2E Tesing using Cypress in your Next.js app from this start guide!"
+image: "https://user-images.githubusercontent.com/46792249/156170962-605f6ce9-2924-411b-8d39-888c351d0ada.png"
 original: "https://blog.anurag.tech/basics-of-e2e-testing-and-integrating-cypress-with-nextjs"
 hasCode: true
+audioId: 3723090
 category: web
-tags: ["testing", "e2e-testing", "next.js", "cypress"]
+tags: ["next-js", "testing"]
 author: anurag
+permalink: /anurag/basics-of-e2e-testing-and-integrating-cypress-with-next-js
 ---
 
 ## Basics of E2E Testing and Integrating Cypress with Next.js
@@ -78,13 +81,13 @@ Cypress is a test runner for E2E Testing for the web.
 
 You can use `create next-app` with the `cypress` example to get started quickly.
 
-```
+```shell
 npx create-next-app@latest --example with-cypress with-cypress-app 
 ```
 
 For existing projects, you can start off by installing the `cypress` package.
 
-```
+```shell
 npm install --save-dev cypress
 ```
 
@@ -101,7 +104,7 @@ Then, add Cypress to the `scripts` section in the `package.json` file.
 
 Next, run cypress to generate examples that use their recommended folder structure.
 
-```
+```shell
 npm run cypress
 ```
 
@@ -157,7 +160,7 @@ describe('Navigation', () => {
 })
 ```
 
-**Tip**: Instead of doing `cy.visit('http://localhost:3000/')`, you can just do `cy.visit('/')` if you set the `baseUrl` to `http://localhost:3000` in the `cypress.json` config file.
+**Tip**: Instead of using `cy.visit('http://localhost:3000/')`, you can just use `cy.visit('/')` if you set the `baseUrl` to `http://localhost:3000` in the `cypress.json` config file.
 
 ```json
 // cypress.json 
@@ -190,11 +193,9 @@ In the `package.json` file:
 }
 ```
 
-That's it for this article! You can show your support by dropping some reactions here!
+That's it for this article! You can show your support by dropping some comments here!
 
 **About the Author**
 
-- [Github](https://github.com/kr-anurag)
-- [Twitter](https://twitter.com/kr_anurag_)
 - [Portfolio](https://anurag.tech)
 - [Blog](https://blog.anurag.tech)
