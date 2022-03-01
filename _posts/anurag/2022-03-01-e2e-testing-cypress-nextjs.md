@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Basics of E2E Tesing & Quickstart Cypress with Next.js"
-excerpt: "Learn the basics of E2E Tesing using Cypress in your Next.js app from this start guide!"
+title:  "Basics of E2E Testing & Quickstart Cypress with Next.js"
+excerpt: "Learn the basics of E2E Testing using Cypress in your Next.js app from this start guide!"
 image: "https://user-images.githubusercontent.com/46792249/156170962-605f6ce9-2924-411b-8d39-888c351d0ada.png"
 original: "https://blog.anurag.tech/basics-of-e2e-testing-and-integrating-cypress-with-nextjs"
 hasCode: true
