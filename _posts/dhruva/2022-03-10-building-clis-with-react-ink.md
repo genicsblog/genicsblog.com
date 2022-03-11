@@ -4,9 +4,11 @@ title: "How to build CLIs with React Ink"
 excerpt: "Learn how to build CLI apps with React using React Ink 🧑‍💻"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1646482447361/58i2tPOdE.png"
 hasCode: true
+audioId: 3787029
 category: coding
 tags: ["react", "tools"]
 author: dhruva
+permalink: /dhruva/building-clis-with-react-ink
 ---
 
 Yes, dear reader, you read that right! You can build beautiful CLIs with React using an awesome library called [React Ink](https://github.com/vadimdemedes/ink)!
