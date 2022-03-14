@@ -1,19 +1,23 @@
 ---
 layout: post
 title:  "A newbie's cheatsheet for Javascript"
-excerpt: "The go-to super guide for beginner coders learing Javascript"
-image: "https://abhiraj-is.super-cool.xyz/javascript-cheatsheet.png"
+excerpt: "This is the go-to super guide/cheatsheet for beginner coders learing Javascript"
+image: "https://user-images.githubusercontent.com/46792249/158066053-34b1c462-70cb-4054-be5a-02a56d9df49c.png"
+audioId: 3803231
 hasCode: true
 category: web
-tags: ["javascript", "web-development", "beginners"]
+tags: ["web-development", "beginners"]
 author: abhiraj
+permalink: /abhiraj/the-javascript-cheatsheet-for-new-coders
 ---
 
-JavaScript forms the foundation of almost everything you see on the web. So, with web development on the rise in 2022 and it being the base of thousands of popular frameworks, it's a good one to learn.
+JavaScript forms the foundation of almost everything you see on the web. So, with web development on the rise in 2022 and it being the base of thousands of popular frameworks, it's a good language to learn!
+
+This is the ultimate beginner cheatsheet for Javascript. It's a collection of useful snippets and tips to help you get started with Javascript.
 
 ## Basics
 
-1️⃣ Include JS code in a HTML page
+### 1. Include JS code in a HTML page
 
 ```html
 <script type="text/javascript">
@@ -23,20 +27,20 @@ JavaScript forms the foundation of almost everything you see on the web. So, wit
 </script>
 ```
 
-2️⃣ Call an external JS file
+### 2. Call an external JS file
 
 ```html
 <script src="thematrix.js">
 </script> 
 ```
 
-3️⃣ Include comments
+### 3. Include comments
 
-```js
-// Single line comment //
+```javascript
+// Single line comment
 ```
 
-```js
+```javascript
 /*
 Multi line comment
 */
@@ -44,133 +48,158 @@ Multi line comment
 
 ## Data types
 
-1️⃣ Numbers
+### 1. Numbers
 
-```js
+```javascript
 var age = 23
 ```
-2️⃣ Variables
+### 2. Variables
 
-```js
+```javascript
 var x
 ```
-3️⃣ Text strings
 
-```js
+### 3. Text strings
+
+```javascript
 var x = "Hacker"
 ```
-4️⃣ Operations
 
-```js
+### 4. Operations
+
+```javascript
 var sum = 1+9
 ```
 
-5️⃣ True/False (Boolean)
+### 5. True/False (Boolean)
 
-```js
+```javascript
 var x = true
 ```
 
-6️⃣ Constant Values
+### 6. Constant Values
 
-```js
+```javascript
 const x = 420
 ```
 
-7️⃣ Objects
+### 7. Objects
 
-```js
+```javascript
 var name = {firstname:"Abhiraj" , lastname:"Bhowmick"}
 ```
 
-## Variables
+## Storing data
 
-1️⃣ var
+### 1. `var`
 
-The most common variable. Can be reassigned but can only be accessed inside a function.
-Variables defined with var move to top when code is executed.
+This is the most common way to store data. `var`s can be reassigned but can only be accessed inside a function.
 
-2️⃣ const
+Variables defined with `var` move to top when code is executed.
 
-Cannot be reassigned and are not accessible before they appear within the code.
+### 2. `const`
 
-3️⃣ let
+`const` values cannot be reassigned and are not accessible before they appear within the code.
 
-Similar to const but let variable can be re-assigned but not re-declared
+### 3. `let`
+
+`let` is similar to `const` but let variable can be re-assigned but not re-declared
 
 ## Operators
 
-1️⃣ Logical Operators
+### 1. Logical Operators
 
-&& - logical and
+`&&` : logical and
 
-|| - logical or
+`||` : logical or
 
-! - logical not
+`!` : logical not
 
-2️⃣ Arithmetic Operators
+### 2. Arithmetic Operators
 
-+ - Addition
-(-) - Subtraction
-* - Multiplication
-** - Exponentiation (ES2016)
-/ - Division
-% - Modulus (Division Remainder)
-++ - Increment
-(--) - Decrement
+`+` : Addition
 
-3️⃣ Comparison Operators
+`-` : Subtraction
 
-== - equal to
-=== - equal value and equal type
-!= - not equal
-!== - not equal value or not equal type
-> - greater than
-< - less than
->= - greater than or equal to
-<= - less than or equal to
-? - ternary operator
+`*` : Multiplication
 
-4️⃣ Bitwise Operators
+`**` : Exponentiation (ES2016)
 
-& - AND	
-| - OR
-~ - NOT	
-^ - XOR	
-<< - left shift
->> - right shift	
->>> - unsigned right shift
+`/` : Division
 
-## Arrays
+`%` : Modulus (Division Remainder)
 
-```js
+`++` : Increment
+
+`--` : Decrement
+
+### 3. Comparison Operators
+
+`==` : equal to
+
+`===` : equal value and equal type
+
+`!=` : not equal
+
+`!==` : not equal value or not equal type
+
+`>` : greater than
+
+`<` : less than
+
+`>=` : greater than or equal to
+
+`<=` : less than or equal to
+
+`?` : ternary operator
+
+### 4️. Bitwise Operators
+
+`&` : AND
+
+`|` : OR
+
+`~` : NOT
+
+`^` : XOR
+
+`<<` : Left shift
+
+`>>` : Right shift
+
+`>>>` : Unsigned right shift
+
+## Array Functions
+
+```javascript
 var fruit = ["Apple", "Berries"]
 ```
-1️⃣ concat() - Join several arrays into one
 
-2️⃣ indexof() - Returns the first position at which a given element appears in an array
+1. `concat()` : Join several arrays into one
 
-3️⃣ join() - Combine elements of an array into a single string and return the string
+2. `indexof()` : Returns the first position at which a given element appears in an array
 
-4️⃣ lastindexof() - Gives the last position at which a given element appears in an array
+3. `join()` : Combine elements of an array into a single string and return the string
 
-5️⃣ pop() - Removes the last element of an array
+4. `lastindexof()` : Gives the last position at which a given element appears in an array
 
-6️⃣ push() - Add a new element at the end
+5. `pop()` : Removes the last element of an array
 
-7️⃣ reverse() - This method reverses the order of the array elements.
+6. `push()` : Add a new element at the end
 
-8️⃣ sort() - Sorts the array elements in a specified manner.
+7. `reverse()` : This method reverses the order of the array elements.
 
-9️⃣toString() - Converts the array elements to a string.
+8. `sort()` : Sorts the array elements in a specified manner.
 
-🔟 valueOf() - returns the relevant Number Object holding the value of the argument passed
+9. `toString()` : Converts the array elements to a string.
+
+10. `valueOf()` : returns the relevant Number Object holding the value of the argument passed
 
 ## Dates
 
 Date object is used to get the year, month and day. It has methods to get and set day, month, year, hour, minute, and seconds.
 
-```js
+```javascript
 getDate() // Returns the date from the date object
 
 getDay() // Returns the day from the date object
@@ -189,64 +218,71 @@ getTime() // Returns the time from the date object
 ### Mouse Events
 Any change in the state of an object is referred to as an Event. With the help of JS, you can handle events, i.e., how any specific HTML tag will work when the user does something.
 
-click
-```js
-element.addEventListener('click', ()=>{
+`click`
+```javascript
+element.addEventListener('click', () => {
 // Fired when an element is clicked
 });
 ```
-oncontextmenu
-```js
-element.addEventListener('contextmenu', ()=>{
+
+`oncontextmenu`
+```javascript
+element.addEventListener('contextmenu', () => {
 // Fired when an element is right-clicked
 });
 ```
-dblclick
-```js
-element.addEventListener('dblclick', ()=>{
+
+`dblclick`
+```javascript
+element.addEventListener('dblclick', () => {
 // Fired when an element is double-clicked
 });
 ```
-mouseenter
-```js
-element.addEventListener('mouseenter', ()=>{
+
+`mouseenter`
+```javascript
+element.addEventListener('mouseenter', () => {
 // Fired when an element is entered by the mouse arrow
 });
 ```
-mouseleave
-```js
-element.addEventListener('mouseleave', ()=>{
+
+`mouseleave`
+```javascript
+element.addEventListener('mouseleave', () => {
 // Fired when an element is exited by the mouse arrow
 });
 ```
-mousemove
-```js
-element.addEventListener('mousemove', ()=>{
+
+`mousemove`
+```javascript
+element.addEventListener('mousemove', () => {
 // Fired when the mouse is moved inside the element
 });
 ```
+
 ### Keyboard Events
 
-keydown
-```js
-element.addEventListener('keydown', ()=>{
+`keydown`
+```javascript
+element.addEventListener('keydown', () => {
 // Fired when the user is pressing a key on the keyboard
 });
 ```
-keypress
-```js
-element.addEventListener('keypress', ()=>{
+
+`keypress`
+```javascript
+element.addEventListener('keypress', () => {
 // Fired when the user presses the key on the keyboard
 });
 ```
-keyup
-```js
-element.addEventListener('keyup', ()=>{
+
+`keyup`
+```javascript
+element.addEventListener('keyup', () => {
 // Fired when the user releases a key on the keyboard
 });
 ```
 
 ### Thank you for reading
 
-If you liked this post, subscribe to my [newsletter](https://abhirajbhowmick.substack.com) to never miss out on my blogs, product launches, and tech news, and follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources.
-
+If you liked this post, subscribe to my [newsletter](https://abhirajbhowmick.substack.com){:rel="dofollow"} to never miss out on my blogs, product launches, and tech news, and follow me on [Twitter](https://twitter.com/rainboestrykr) for daily threads on web dev resources!
