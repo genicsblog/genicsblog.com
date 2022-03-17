@@ -1,21 +1,22 @@
 ---
 layout: post
 title:  "8 No Brainer Ways to Keep Your Heroku App Awake"
-excerpt: "A demo draft that you can refer to, for creating draft posts at Genics Blog."
+excerpt: "Compilation of the easiest ways to keep your free Heroku dyno running 24/7."
 image: "https://user-images.githubusercontent.com/46792249/158544648-96aac1a5-d4dc-4f55-adff-d0479f6f447f.png"
 hasCode: true
 category: web
 tags: ["web-development", "tools"]
 author: gouravkhunger
+permalink: /gouravkhunger/8-ways-to-keep-your-heroku-app-awake
 ---
 
 Heroku is one of the easiest ways to quicly get your applications up and running on the web!
 
-And what's so good in it? heroku's free plan is pretty generous too. Although it gives you just 550 hours of free hosting a month, it can be extended to a solid 1000 by verifying yourself by adding a credit card.
+And what's so good about it? heroku's free plan is pretty generous. Although it gives you just 550 hours of free hosting a month, it can be extended to a solid 1000 by verifying yourself by adding a credit card.
 
-The only major issues with its free plan is: if your web app has not received any traffic for 30 minutes, it will auto shut your app :(
+The only major issue with its free plan is: if your web app has not received any traffic for 30 minutes, it will auto shut your app :(
 
-The next requests that your app receives would re-run the application, but it takes 7-8 seconds to restart the server which the app is hosted on. This means that if you app went to sleep, the user would have to wait for the app to wake up again, which is sure not a good UX.
+The next requests that your app receives would restart the application, but it takes 7-8 seconds to restart the server which the app is hosted on. This means that if you app went to sleep, the user would have to wait for the app to wake up again, which surely does not provide a good UX.
 
 If you are struggling to keep your app awake, don't worry. I've got you!
 
@@ -43,7 +44,7 @@ const http = require('http');
 
 setInterval(() => {
   http.get("http://example.herokuapp.com");
-}, 25*60*1000); // every 25 minutes
+}, 25 * 60 * 1000); // every 25 minutes
 ```
 
 Place this code inside your main `index.js` file, which is responsible to start your server/app. This will make sure to ping the application with a `GET` request every 25 minutes, which will simulate traffic to your application before 30 minutes of inactivity and thus keep your application awake!
@@ -59,7 +60,7 @@ const axios = require('axios');
 const cron = require('node-cron');
 
 cron.schedule('*/25 * * * *', () => {
-	axios.get('example.herokuapp.com');
+  axios.get('example.herokuapp.com');
 })
 ```
 
@@ -69,7 +70,7 @@ The expression `*/25 * * * *` means every 25 minutes of any hour/day/month. This
 
 I am pretty sure you have heard of [Kaffeine](https://kaffeine.herokuapp.com) a lot. It is one of the most popular tool to ping your Heroku app.
 
-![Screenshot of Kaffeine tool that pings your heroku app every 30 minutes](https://user-images.githubusercontent.com/46792249/158734348-13cb4a84-34a6-4ab1-add7-9a581b76b636.png)
+![Screenshot of Kaffeine tool that pings your heroku app every 30 minutes](https://user-images.githubusercontent.com/46792249/158734348-13cb4a84-34a6-4ab1-add7-9a581b76b636.png){:class="aspect-video w-full"}
 
 Basically, it is a tool with a database of heroku apps. Every 30 minutes, it goes through the list of stored apps and pings them. This is an easy way to ping your app without any manual work involved.
 
