@@ -75,7 +75,7 @@ I am pretty sure you have heard of [Kaffeine](https://kaffeine.herokuapp.com) a 
 
 Basically, it is a tool with a database of Heroku apps. Every 30 minutes, it goes through the list of stored apps and pings them. This is an easy way to ping your app without any manual work involved.
 
-But a major problem with Kaffeine is it has a big database of sites to ping (79406 as of now). This essentially means that it can be slow to iterate through the list. Even being some seconds late than 30 minutes can make your Heroku app go to sleep mode.
+But a major problem with Kaffeine is it has a big database of sites to ping (79406 as of now). This essentially means that it can be slow to iterate through the list. Even being some seconds later than 30 minutes can make your Heroku app go to sleep mode.
 
 With some testing I have found that you can expect to see your app restart about 7-8 times a day, even while using Kaffeine, but this basically defies the purpose of keep the app awake 24/7. It is recommended to use the manual ping methods listed above.
 
@@ -123,11 +123,11 @@ Heroku supports a wide set of addons, one of which is [New Relic](https://elemen
 - Monitoring critical transactions across your website.
 - Ensure the backend server apps are never the bottleneck for server issues.
 - Dashboard to track everything.
-- Analyse front-end and back-end applications to identify the root cause of performance issues.
+- Analyze front-end and back-end applications to identify the root cause of performance issues.
 
 and a lot more.
 
-You can set up it's free version to monitor your application. In the process of monitoring your application, it will ping your application which will keep it alive!
+You can set up a free version to monitor your application. In the process of monitoring your application, it will ping your application which will keep it alive!
 
 ## 7. Uptime Robot
 
@@ -139,7 +139,7 @@ It does it in the same way, by pinging the site to get the details. When it ping
 
 If you actually like Heroku as a service I'll recommend you to actually upgrade your dyno plan to Hobby, which is just $7/month. That gives you the option to keep your app awake 24/7 out of the box.
 
-Not only keeping it awake 24/7, it gives you more features like:
+Not only does it awake 24/7, it gives you more features like:
 
 - Free SSL certificates for your sites.
 - Automatic certificate management.
