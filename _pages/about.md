@@ -4,7 +4,7 @@ title: "About us"
 permalink: /about
 ---
 
-Genics Blog is an [open source platform](https://github.com/genicsblog) for developers to share technical knowledge. You would generally find us posting high quality relevant content in the niche of software development or programming in general.
+Genics Blog is an [open source platform](https://github.com/genicsblog) for developers to share technical knowledge. You will generally find us posting high quality relevant content in the niche of software development or programming in general.
 
 We post two types of content:
 
