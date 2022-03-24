@@ -36,7 +36,6 @@ jobs:
       with:
         filters: |
           files:
-            - '_contributors/**'
             - '_data/**'
             - '_drafts/**'
             - '_pages/**'

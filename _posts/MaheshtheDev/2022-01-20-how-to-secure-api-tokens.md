@@ -6,7 +6,7 @@ image: "https://www.techfunnel.com/wp-content/uploads/2021/07/application-progra
 audioId: 3468197
 category: web
 tags: ["api", "security", "web-development"]
-author: MaheshtheDev
+author: maheshthedev
 original: "https://maheshthedev.hashnode.dev/how-to-secure-api-token"
 notice: "Thumbnail art credits: [techfunnel.com](https://www.techfunnel.com)"
 permalink: /MaheshtheDev/how-to-secure-api-tokens

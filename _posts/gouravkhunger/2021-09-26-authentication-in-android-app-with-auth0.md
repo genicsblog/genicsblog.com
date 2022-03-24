@@ -401,4 +401,4 @@ You have successfully added Auth0 to your Android app. Trust me, though this pos
 
 If you stayed along till this far, I am really thankful to you! Please comment on your experience with Auth0 and this article.
 
-[Let's connect](/contributor/gouravkhunger) with each other :)
+[Let's connect](/author/gouravkhunger/) with each other :)

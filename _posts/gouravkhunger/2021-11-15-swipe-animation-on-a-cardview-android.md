@@ -385,4 +385,4 @@ For this, you have to keep track of the start position and end position then ani
 
 Thanks a lot for reading so far, I hope this post added some value. Subscribe to my newsletter to stay updated with latest Android content!
 
-[Let's Connect](/contributor/gouravkhunger)
+[Let's Connect](/author/gouravkhunger/)

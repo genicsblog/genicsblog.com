@@ -345,7 +345,7 @@ You can find all the code for this tutorial in [this repository](https://github.
 
 In this article, we got to learn how to use the **Multi-Threading** approach to solve this unique **Next-gen Hello World program Challenge**.
 
-I would like to thank [Kushagra](/contributor/kushagra) for providing the idea for the problem. He came up with it some months ago and we spent time solving it together. I find this concept very intuitive and enjoyed writing this article.
+I would like to thank [Kushagra](/author/kushagra/) for providing the idea for the problem. He came up with it some months ago and we spent time solving it together. I find this concept very intuitive and enjoyed writing this article.
 
 I hope you find this article useful. I would love to hear your feedback and suggestions on how to improve this tutorial in the comments section below!
 
