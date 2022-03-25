@@ -1,4 +1,4 @@
-name: Validate contributors
+name: Validate authors
 
 on:
   pull_request_target:
@@ -24,11 +24,11 @@ jobs:
       id: filter
       with:
         filters: |
-          contributors:
-            - '_data/contributors.yml'
+          authors:
+            - '_data/authors.yml'
 
     - name: Get all changed files
-      if: steps.filter.outputs.contributors == 'true'
+      if: steps.filter.outputs.authors == 'true'
       id: files
       uses: Ana06/get-changed-files@v2.1.0
 
@@ -37,30 +37,19 @@ jobs:
         python-version: '3.x'
 
     - name: Install python dependencies
-      if: steps.filter.outputs.contributors == 'true'
+      if: steps.filter.outputs.authors == 'true'
       run: |
         pip install PyYAML python-frontmatter requests
 
     - name: Get validation script from main branch
-      if: steps.filter.outputs.contributors == 'true'
+      if: steps.filter.outputs.authors == 'true'
       run: |
         rm -rf _scripts
-        wget https://raw.githubusercontent.com/genicsblog/theme-files/main/_scripts/validate-contributors.py -P _scripts
+        wget https://raw.githubusercontent.com/genicsblog/theme-files/main/_scripts/validate-authors.py -P _scripts
 
-    - name: Validate contributors
-      if: steps.filter.outputs.contributors == 'true'
+    - name: Validate authors
+      if: steps.filter.outputs.authors == 'true'
       run: |
         echo "${{ steps.files.outputs.all }}" >> temp.txt
-        python _scripts/validate-contributors.py ${{ github.event.pull_request.user.login }}
+        python _scripts/validate-authors.py ${{ github.event.pull_request.user.login }}
         rm temp.txt
-
-    - name: Add contributor pages to PR
-      if: steps.filter.outputs.contributors == 'true'
-      run: |
-        git config user.name "Gourav Khunger"
-        git config user.email "46792249+gouravkhunger@users.noreply.github.com"
-        git add _contributors
-        git commit -m "Add contributor pages"
-        git push
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
