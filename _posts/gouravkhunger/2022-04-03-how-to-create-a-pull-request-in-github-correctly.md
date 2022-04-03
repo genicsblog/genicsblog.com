@@ -1,15 +1,17 @@
 ---
 layout: post
-title:  "How to Create Pull Request in GitHub *Correctly*"
+title:  "How to Create a Pull Request in GitHub *Correctly*"
 excerpt: "Guide that teaches you how to fork a GitHub repository, make changes and create pull requests in the correct way."
-image: "https://cdn.pixabay.com/photo/2021/12/23/16/38/animal-6889575_1280.jpg"
+image: "https://user-images.githubusercontent.com/46792249/161420369-eb87073e-b49c-462e-84bf-57c442839eb3.png"
 hasCode: true
+audioId: 3922814
 category: "coding"
 tags: ["open-source", "beginners", "tips"]
 author: gouravkhunger
+permalink: /gouravkhunger/how-to-create-a-pull-request-in-github-correctly
 ---
 
-A major aspect of open source is the ability to create and maintain a community of developers who collaborate on building software together. Collaboration is a key component of open source development.
+A major aspect of open source is the ability to create and maintain a community of developers who collaborate on building software together. Collaboration is a key component of open source development!
 
 [Git](https://git-scm.com) and [GitHub](https://github.com) are popular open source collaboration tools. Git helps you keep track of changes to your code, and GitHub helps you share your code with others. In this article we will teach you how to create a pull request in GitHub in the correct way.
 
@@ -138,7 +140,7 @@ Here we are asking git to `push` our changes to the branch `learning-about-prs` 
 
 `-u` sets the upstream for current branch so that you don't have to type `origin learning-about-prs` everytime. From the next time, even if you type `git push` it will push to `learning-about-prs` branch on GitHub.
 
-> ### Useful Info:
+> ### Additional Note:
 > Here, `origin` is linked to your fork. You can verify it by running this command in your terminal:
 > <br/><br/>
 > ```shell
@@ -197,6 +199,12 @@ Also, this could pollute the new PRs with old commits if the main branch of fork
 ### What is a good place to start with open source?
 
 Genics Blog is an [open source](https://github.com/genicsblog) developer publication where we do a lot of open source work. We are a high school student run organisation. Join our [community on Discord](https://discord.genicsblog.com) to learn about opportunities from experienced developers and get involved!
+
+## Further Resources
+
+Check out this video where I use the steps taught here to create a PR to the [`theme-files`](https://github.com/genicsblog/theme-files) repository for [Genics Blog](/) on GitHub:
+
+{% include youtube.html id="wHxlA0p1AbM" %}
 
 ## Conclusion
 
