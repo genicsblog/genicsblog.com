@@ -80,7 +80,7 @@ The `*` verifies that you are currently on that branch.
 
 ## 4. Make changes
 
-Now you can make Changes to the files in the project. Here, we just have a `README.md` file. You can edit it and add this sentence to the end of the file:
+Now you can make changes to the files in the project. Here, we just have a `README.md` file. You can edit it and add this sentence to the end of the file:
 
 ```markdown
 - This line was added by [<Your Name Here>](https://github.com/<your-username>).
@@ -178,7 +178,7 @@ Just add as many commits you want, to the branch and use `git push`. That will s
 
 ### Why do we create a new branch in the first place?
 
-There are quite a few reasons to it. The main one being it maintains a separation of concerns. One can work on a differnt number of features at the same time without affecting existing working code.
+There are quite a few reasons to it. The main one being it maintains a separation of concerns. One can work on different features at the same time without affecting existing working code.
 
 This also helps teams to assign different features to different people and collaborate on different parts of projects in realtime.
 
