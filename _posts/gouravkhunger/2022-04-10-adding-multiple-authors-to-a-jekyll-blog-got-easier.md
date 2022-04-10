@@ -135,7 +135,7 @@ I had set up an automated process using GitHub Actions that would add the markdo
 
 So I spent some time building up a solution for this. Let's look at how it works!
 
-# 2. Using my plguin jekyll-auto-authors
+# 2. Using my plugin jekyll-auto-authors
 
 There's a major issue of pagination with the above approach. For example, let's take [my profile](/author/gouravkhunger/) at Genics Blog. I've got tons of posts. Along with Each post has a thumbnail image associated with it.
 
@@ -144,6 +144,10 @@ The above method doesn't have pagination support. Now if all the posts are liste
 I've already setup [`jekyll-paginate-v2`](https://github.com/sverrirs/jekyll-paginate-v2) for paginating category and tag pages. But it doesn't work with authors. Also, it has got an amazing autopages feature for auto-generating category and tag pages that I use extensively for Genics.
 
 I wished to integrate autopages for authors functionality to it, but the paginate-v2 plugin isn't being actively maintained. So I decided to build [`jekyll-auto-authors`](https://github.com/gouravkhunger/jekyll-auto-authors){:rel="dofollow"} that works in sync with it. Drop a star at GitHub to show support!
+
+Let's look at how to start using the plugin. If you prefer a video tutorial, watch this:
+
+{% include youtube.html id="V5Ly6T_bWwU" %}
 
 ## Setup
 
