@@ -206,11 +206,11 @@
 </url>
 <url>
 <loc>https://genicsblog.com/series/android-development</loc>
-<lastmod>2022-04-08T12:08:44+00:00</lastmod>
+<lastmod>2022-04-10T12:22:01+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/series/android-library-testing</loc>
-<lastmod>2022-04-08T12:08:44+00:00</lastmod>
+<lastmod>2022-04-10T12:22:01+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/404</loc>
@@ -409,6 +409,9 @@
 </url>
 <url>
 <loc>https://genicsblog.com/category/frontend/</loc>
+</url>
+<url>
+<loc>https://genicsblog.com/category/jekyll/</loc>
 </url>
 <url>
 <loc>https://genicsblog.com/category/drafts/</loc>
