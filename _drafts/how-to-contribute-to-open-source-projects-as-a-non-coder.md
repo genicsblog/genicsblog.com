@@ -83,7 +83,7 @@ While there are usually no direct monetary benefits to contributing, there are o
 
 Today, there are a lot of open-source projects you can contribute to and it is up to you to choose the ones that interest you. Below are a few open-source projects you can choose from; take your time to go through each resource and see which one appeals to you.
 
-- [AWS](https://aws.amazon.com/blogs/aws/aws-documentation-is-now-open-source-and-on-github/?utm_source=feedburner&utm_medium=email&utm_campaign=Feed%3A+AmazonWebServicesBlog+%28Amazon+Web+Services+Blog%29)
+- [AWS](https://aws.amazon.com/blogs/aws/aws-documentation-is-now-open-source-and-on-github/)
 - [Uber](https://uber.github.io/#/)
 - [XWiki](https://www.xwiki.org/xwiki/bin/view/Main/WebHome)
 - [Netlify](https://www.netlify.com/open-source/)
