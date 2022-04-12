@@ -5,7 +5,7 @@ excerpt: "In this article, I will share what I have discovered and include some 
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1634905825976/pjc7Kwv_F.png"
 category: getting-started
 tags: ["beginners", "open-source", "tips"]
-author: benny
+author: Benny
 original: "https://benny.hashnode.dev/how-to-contribute-to-open-source-projects-as-a-non-coder"
 ---
 
