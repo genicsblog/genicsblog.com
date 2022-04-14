@@ -149,20 +149,20 @@ siddharth_sable:
   avatar: "https://avatars.githubusercontent.com/u/66620788"
   bio: "19 year old - Making my way through technology" 
   links: 
-      github: "siddharth-sable"
-      stackoverflow: "12863239" 
-      linkedin: "in/siddharth-sable/"
-      twitter: "sidsabale" 
-      instagram: "siddo.exe"
-      youtube: "channel/UCf-RytOIE5VugpaPDZdhobA" 
+    github: "siddharth-sable"
+    stackoverflow: "12863239" 
+    linkedin: "in/siddharth-sable/"
+    twitter: "sidsabale" 
+    instagram: "siddo.exe"
+    youtube: "channel/UCf-RytOIE5VugpaPDZdhobA" 
       
-Benny: 
+benny:
   name: "Benny Ifeanyi Iheagwara"
   role: "Data analyst, technical writer, and speaker" 
   avatar: "https://raw.githubusercontent.com/Bennykillua/Project/main/Random/Picone.jpg"
   bio: " Data analyst • Technical writer • Community manager • OSS contributor • Blockchain Enthusiast."
   links:
-      github: "Bennykillua"
-      linkedin: "in/ifeanyi-iheagwara/" 
-      twitter: "bennykillua" 
-     
+    github: "Bennykillua"
+    linkedin: "in/ifeanyi-iheagwara/" 
+    twitter: "bennykillua" 
+
