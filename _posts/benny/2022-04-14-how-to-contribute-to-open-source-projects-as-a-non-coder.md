@@ -4,6 +4,7 @@ title: "No-Code Ways to Contribute to Open Source Projects"
 excerpt: "In this article, I share what I have discovered about open-source and include some non-technical ways you can contribute to open-source projects along with helpful resources!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1634905825976/pjc7Kwv_F.png"
 notice: "Image by [Stories](https://www.freepik.com/stories) and [Alzea Arafat](https://dribbble.com/alzea)."
+audioId: 3996039
 category: open-source
 tags: ["beginners", "open-source", "tips"]
 author: benny
@@ -144,6 +145,6 @@ For a start, you should check out this repo
 
 If you have read this far, I really appreciate it!
 
-You can connect with me at [Twitter](https://twitter.com/Bennykillua) [LinkedIn](https://www.linkedin.com/in/ifeanyi-iheagwara/) [Github](https://github.com/Bennykillua) 
+You can connect with me at [Twitter](https://twitter.com/Bennykillua), [LinkedIn](https://www.linkedin.com/in/ifeanyi-iheagwara/) or [Github](https://github.com/Bennykillua).
 
 ![can anyone contribute to open source projects](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907816659/aeKfblKCv.png)
