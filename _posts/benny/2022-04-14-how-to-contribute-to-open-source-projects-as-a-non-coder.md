@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "How to Contribute to Open Source Projects as a Non-Coder?"
-excerpt: "In this article, I will share what I have discovered and include some non-code ways you can contribute, open-source projects you can help with, and helpful resources."
+title: "No-Code Ways to Contribute to Open Source Projects"
+excerpt: "In this article, I share what I have discovered about open-source and include some non-technical ways you can contribute to open-source projects along with helpful resources!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1634905825976/pjc7Kwv_F.png"
-category: getting-started
+notice: "Image by [Stories](https://www.freepik.com/stories) and [Alzea Arafat](https://dribbble.com/alzea)."
+category: open-source
 tags: ["beginners", "open-source", "tips"]
-author: Benny
+author: benny
 original: "https://benny.hashnode.dev/how-to-contribute-to-open-source-projects-as-a-non-coder"
+permalink: /benny/no-code-ways-to-contribute-to-open-source-projects
 ---
 
-A few weeks ago, I came across Edidiong Asikpo's [article](https://edidiongasikpo.com/the-technical-writers-guide-to-contributing-to-open-source-projects)  about contributing to open-source projects. 
-The article piqued my interest and I set out to learn how to contribute to open-source projects without possibly writing any code.
+A few weeks ago, I came across Edidiong Asikpo's [article](https://edidiongasikpo.com/the-technical-writers-guide-to-contributing-to-open-source-projects) about contributing to open-source projects. The article piqued my interest and I set out to learn how to contribute to open-source projects without possibly writing any code.
 
 ![get started with open source](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907925426/tBnszIUMD.png)
 
@@ -32,7 +33,7 @@ Open Source embodies a spirit of collaboration, transparency, and community-orie
 
 # How can technical writers and non-code individuals contribute to open source projects?
 
-![How can technical writer, designer and non coders contribute to open source](https://cdn.hashnode.com/res/hashnode/image/upload/v1634906360847/aibto3F98.png)
+![How can technical writer, designer and non coders contribute to open source](https://cdn.hashnode.com/res/hashnode/image/upload/v1634906360847/aibto3F98.png){:width="70%"}
 
 Like many people, I used to think it was impossible to contribute to open source projects without having any coding skills but reading various articles written by [Kesi Parker](https://twitter.com/ParkerKesi) and [Edidiong Asikpo](https://twitter.com/Didicodes) helped debunk this notion.
 
@@ -48,7 +49,7 @@ As a designer, you can contribute to open source projects by restructuring the p
 You can suggest issues labels and close open issues to keep the repository clean. 
 
 4. **Do you enjoy assisting others?**
-Moderate discussion boards and respond to questions on forums like Microsoft Tech Community,  Reddit, and Stack Overflow.
+Moderate discussion boards and respond to questions on forums like Microsoft Tech Community, Reddit, and Stack Overflow.
 
 5. **Teaching?**
 Write how-to and educational tutorials, as well as supporting materials. You can also create YouTube videos about the software.
@@ -62,7 +63,7 @@ So no, you don't have to code to contribute. While this is by no means an exhaus
 
 # Benefits of contributing to open-source projects
 
-![Benefits of contributing to open source projects](https://cdn.hashnode.com/res/hashnode/image/upload/v1634906376850/1b1HfYy7-.png)
+![Benefits of contributing to open source projects](https://cdn.hashnode.com/res/hashnode/image/upload/v1634906376850/1b1HfYy7-.png){:width="70%"}
 
 While there are usually no direct monetary benefits to contributing, there are other ways you as a contributor can benefit:
 
@@ -75,7 +76,7 @@ While there are usually no direct monetary benefits to contributing, there are o
 - Recommendation, referral, and increased job opportunities. Here is a [testimony](https://www.freecodecamp.org/news/cracking-google-season-of-docs-2020/)
 - Mentorship and knowledge sharing.
 - Community building.
-- **Compensation:** There are rarely any direct monetary incentives, however, programs such as [Google Season of Docs](https://developers.google.com/season-of-docs), [Google Summer of Code](https://summerofcode.withgoogle.com/), [Hyperledger Mentorship Program](https://wiki.hyperledger.org/display/INTERN), [Outreachy](https://www.outreachy.org/), and the [Open Collective bounty program](https://docs.opencollective.com/help/contributing/development/bounties) pay you to contribute.
+- **Compensation:** There are rarely any direct monetary incentives. However, programs such as [Google Season of Docs](https://developers.google.com/season-of-docs), [Google Summer of Code](https://summerofcode.withgoogle.com/), [Hyperledger Mentorship Program](https://wiki.hyperledger.org/display/INTERN), [Outreachy](https://www.outreachy.org/), and the [Open Collective bounty program](https://docs.opencollective.com/help/contributing/development/bounties) pay you to contribute.
 
 # Open Source Projects
 
@@ -101,14 +102,14 @@ Today, there are a lot of open-source projects you can contribute to and it is u
 - [BeWelcome](https://www.bewelcome.org/)
 - [Microsoft Docs](https://github.com/MicrosoftDocs)
 - [WordPress IOS](https://www.opensourceagenda.com/projects/wordpress-ios)
-- [GeeksforGeeks](https://awesomeopensource.com/projects/geeksforgeeks?categoryPage=33)
+- [GeeksforGeeks](https://awesomeopensource.com/projects/geeksforgeeks)
 - [FreeCodeCamp](https://www.opensourceagenda.com/projects/freecodecamp)
-- [Microsoft PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/community/contributing/overview?view=powershell-7.1)
+- [Microsoft PowerShell](https://docs.microsoft.com/en-us/powershell/scripting/community/contributing/overview)
 - [Redox OS Summer of Code](https://www.redox-os.org/rsoc/)
 - [Linux Kernel Mentorship Program](https://wiki.linuxfoundation.org/lkmp)
 - [Open Mainframe Project Mentorship Program](https://www.openmainframeproject.org/projects/mentorship-program)
 
-![oen source projects to contribute for beginners](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907052703/LjEoL70YX.png)
+![oen source projects to contribute for beginners](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907052703/LjEoL70YX.png){:width="70%"}
 
 You can also use [GitHub Explore](https://github.com/explore/), [Awesome Open-Source](https://awesomeopensource.com/projects/movies/tv-shows), and [Open-Source Agenda](https://www.opensourceagenda.com/) to find more open-source projects.
 If you're only interested in documentation, [Amruta's article](https://amrutaranade.com/2018/03/21/list-of-open-source-projects-that-accept-docs-contributions/) can help, and [WorkHub](https://www.works-hub.com/issues/) is a great place to start if you're looking for job opportunities.
@@ -122,7 +123,7 @@ For a start, you should check out this repo
 - [Hello Open Source by Irfan Maulana](https://github.com/mazipan/hello-open-source) 
 - [Awesome for non-programmers](https://github.com/szabgab/awesome-for-non-programmers) and make your first contribution right away. 
 
-![how can you contribute to open source without coding](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907775967/xtpNV3-xc.png)
+![how can you contribute to open source without coding](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907775967/xtpNV3-xc.png){:width="70%"}
 
 # Helpful resources.
 - **Hacktoberfest 2021:** [Beginner-friendly projects](https://vinitshahdeo.dev/beginner-friendly-issues-for-hacktoberfest-2021)
@@ -143,8 +144,6 @@ For a start, you should check out this repo
 
 If you have read this far, I really appreciate it!
 
-You can connect with me at [Twitter](https://twitter.com/Bennykillua)  | [LinkedIn](https://www.linkedin.com/in/ifeanyi-iheagwara/)  | [Github](https://github.com/Bennykillua) 
-
-Image by [Stories](https://www.freepik.com/stories) and [Alzea Arafat](https://dribbble.com/alzea?ref=uistore.design)
+You can connect with me at [Twitter](https://twitter.com/Bennykillua) [LinkedIn](https://www.linkedin.com/in/ifeanyi-iheagwara/) [Github](https://github.com/Bennykillua) 
 
 ![can anyone contribute to open source projects](https://cdn.hashnode.com/res/hashnode/image/upload/v1634907816659/aeKfblKCv.png)
