@@ -1,16 +1,18 @@
 ---
 layout: post
-title:  "🗃️ How to use Mongoose with Next.js for MongoDB?"
-excerpt: "Explained with a simple project"
+title:  "How to use Mongoose with Next.js for MongoDB?"
+excerpt: "Learn using Mongoose for MongoDB by building a hands-on project!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1650187197534/EONUGmGt8.png"
+audioId: 4008578
 hasCode: true
-category: coding
-tags: ["mongodb", "nextjs", "reactjs"]
+category: web
+tags: ["mongodb", "next-js"]
 author: usman
 original: "https://blog.usman-s.me/how-to-use-mongoose-with-nextjs-for-mongodb"
+permalink: /usman/how-to-use-mongoose-with-next-js-for-mongodb
 ---
 
-# Hey all 👋!
+# Hey all! 👋
 
 Next.js is an amazing full-stack framework and MongoDB is a great NoSQL database. Using them together will make an app super fast and awesome! In this post, we'll go ahead and set up the Mongoose ODM inside our Next.js app to make use of MongoDB!
 
@@ -20,7 +22,7 @@ So let's see how you can set up Mongoose in a Next.js app to connect and interac
 
 In your Next.js project, to set up mongoose you simply have to install it as a dependency just as you do with Node.js.
 
-```
+```shell
 npm i mongoose
 ```
 
@@ -30,7 +32,7 @@ In this file, we will export a function that connects us to MongoDB.
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650178314792/H0ZTJa7ma.png)
 
-```js
+```javascript
 import mongoose from 'mongoose';
 
 const connectMongo = async () => mongoose.connect(process.env.MONGO_URI);
@@ -53,7 +55,7 @@ Now that `mongoose` is set up successfully in our Next.js project, the rest of t
 
 So now we'll create a file named `testModel.js` in our `models` folder where we'll create our mongoose model.
 
-```js
+```javascript
 import { Schema, model, models } from 'mongoose';
 
 const testSchema = new Schema({
@@ -84,7 +86,7 @@ In the `pages/api` folder, we can create a file or folder that will ultimately c
 
 For this demo, I created a folder `test` and a file `add.js` inside of it which gives the path `/api/test/add`.
 
-```js
+```javascript
 import connectMongo from '../../../utils/connectMongo';
 import Test from '../../../models/testModel';
 
@@ -116,9 +118,7 @@ Finally, the code is simple and straightforward, you can use the normal `mongoos
 
 You can test it from the [Thunder Client](https://www.thunderclient.com/) extension in VS Code, [Postman](https://www.postman.com/) or [Insomnia](https://insomnia.rest/download). Whatever you wish! I like to use Thunder Client.
 
-
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1650183454458/zEdrw_Mvy.png)
-
 
 ## Create new document from front-end
 
@@ -188,11 +188,11 @@ export default function Home() {
 
 ## Fetch and display documents
 
-Now it's time to use Next.js's biggest feature! Server-Side Rendering. We can use SSR in Next.js to easily run back-end Node.js code as we want and the data can be easily accessible through the `props` to the page.
+Now it's time to use Next.js's best feature! Server-Side Rendering. We can use SSR in Next.js to easily run back-end Node.js code as we want and the data can be easily accessible through the `props` to the page.
 
 In the `index.js` file itself, we'll import the `connectMongo` and `Test` again and use them inside the `getServerSideProps` function that we have to export like this 👇
 
-```js
+```javascript
 import connectMongo from '../utils/connectMongo';
 import Test from '../models/testModel';
 
