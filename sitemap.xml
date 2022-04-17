@@ -214,11 +214,11 @@
 </url>
 <url>
 <loc>https://genicsblog.com/series/android-development</loc>
-<lastmod>2022-04-16T21:06:04+00:00</lastmod>
+<lastmod>2022-04-17T09:25:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/series/android-library-testing</loc>
-<lastmod>2022-04-16T21:06:04+00:00</lastmod>
+<lastmod>2022-04-17T09:25:18+00:00</lastmod>
 </url>
 <url>
 <loc>https://genicsblog.com/404</loc>
@@ -372,6 +372,12 @@
 </url>
 <url>
 <loc>https://genicsblog.com/tag/productivity/</loc>
+</url>
+<url>
+<loc>https://genicsblog.com/tag/nextjs/</loc>
+</url>
+<url>
+<loc>https://genicsblog.com/tag/reactjs/</loc>
 </url>
 <url>
 <loc>https://genicsblog.com/tag/tag-1/</loc>
