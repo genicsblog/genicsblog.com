@@ -26,7 +26,7 @@ We have an active community of developers and content writes on our [Discord ser
 
 We are a team of high school developers and bloggers who are building a community of technical writers. For an individual writer it's hard to get their content a wider reach but we believe together we can make a difference.
 
-We believe in the power of open source so everything on Genics Blog ranging from from the [website](https://github.com/genicsblog/genicsblog.com) to the [comments](https://github.com/genicsblog/comments), and from the [API](https://github.com/eduardoboucas/staticman) we use, to the [discord bot](https://github.com/genicsblog/genics-bot) for our community is open source!
+We believe in the power of open source so everything on Genics Blog ranging from the [website](https://github.com/genicsblog/genicsblog.com) to the [comments](https://github.com/genicsblog/comments), and from the [API](https://github.com/eduardoboucas/staticman) we use, to the [discord bot](https://github.com/genicsblog/genics-bot) for our community is open source!
 
 ## Getting started with technical writing / programming?
 
