@@ -17,17 +17,10 @@ jobs:
         repository: genicsblog/theme-files
         path: theme
 
-    - name: Checkout comments repo
-      uses: actions/checkout@v2
-      with:
-        repository: genicsblog/comments
-        path: comments
-
     - name: Setup theme and necessary files
       run: |
         mv theme/* .
-        mv comments/comments _data
-        rm -rf theme comments
+        rm -rf theme
         touch .nojekyll
         echo "google.com, pub-8114751086331659, DIRECT, f08c47fec0942fa0" >> ads.txt
 

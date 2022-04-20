@@ -8,10 +8,8 @@ RUN curl -sL https://deb.nodesource.com/setup_17.x | bash -
 RUN apt-get install -y nodejs
 RUN gem install jekyll bundler
 RUN git clone https://github.com/genicsblog/theme-files
-RUN git clone https://github.com/genicsblog/comments
 RUN mv theme-files/* .
 RUN rm -rf theme-files
-RUN mv comments _data
 RUN npm install
 RUN bundle install
 COPY . .
