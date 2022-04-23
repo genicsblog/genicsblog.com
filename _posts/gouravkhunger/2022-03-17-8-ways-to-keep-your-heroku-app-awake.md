@@ -139,7 +139,7 @@ It does it in the same way, by pinging the site to get the details. When it ping
 
 If you actually like Heroku as a service I'll recommend you to actually upgrade your dyno plan to Hobby, which is just $7/month. That gives you the option to keep your app awake 24/7 out of the box.
 
-Not only does it awake 24/7, it gives you more features like:
+Not only does it keep the dyno awake 24/7, it gives you more features like:
 
 - Free SSL certificates for your sites.
 - Automatic certificate management.

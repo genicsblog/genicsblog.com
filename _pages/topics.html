@@ -12,7 +12,7 @@ permalink: /topics
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
     {% for category in site.categories %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl category-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
+        <a class="dark:text-black text-xl archive-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
             #{{ category[0] }}
         </a>
     </div>
@@ -26,7 +26,7 @@ permalink: /topics
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
     {% for tag in site.tags %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl category-name !bg-{{ tag[0] }} underline-none" href="/tag/{{ tag[0] }}">
+        <a class="dark:text-black text-xl archive-name !bg-{{ tag[0] }} underline-none" href="/tag/{{ tag[0] }}">
             #{{ tag[0] }}
         </a>
     </div>
