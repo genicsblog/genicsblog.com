@@ -3,7 +3,7 @@ layout: post
 title: "How to build a faucet CLI using NodeJS 🚀"
 image: "https://imgur.com/0qQxUt3.png"
 tags: ["web3", "blockchain", "cli", "nodejs"]
-author: Kira
+author: kira
 ---
 
 Hey everyone 👋! I guess I took a long break from blogging but I am back with some interesting web3 stuff. Today we are doing to be BUIDLing a command-line interface that would act as a faucet and we would be also adding metamask authentication to it 🚀!
