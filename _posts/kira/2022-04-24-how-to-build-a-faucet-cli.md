@@ -1,9 +1,15 @@
 ---
 layout: post
 title: "How to build a faucet CLI using NodeJS 🚀"
+excerpt: "The complete guide to building a faucet CLI using NodeJS."
+original: "https://blog.kiradev.co/how-to-build-a-faucet-cli-using-nodejs"
 image: "https://imgur.com/0qQxUt3.png"
-tags: ["web3", "blockchain", "cli", "nodejs"]
+audioId: 4050344
+hasCode: true
+category: web3
+tags: ["blockchain", "node-js", "cli"]
 author: kira
+permalink: /kira/how-to-build-a-faucet-cli-using-node-js
 ---
 
 Hey everyone 👋! I guess I took a long break from blogging but I am back with some interesting web3 stuff. Today we are doing to be BUIDLing a command-line interface that would act as a faucet and we would be also adding metamask authentication to it 🚀!
@@ -48,7 +54,7 @@ The tech stack which we are going to be using to build this CLI:
 
 Let’s create a new Next.js project by using the following command:
 
-```bash
+```shell
 npx create-next-app -e=with-tailwindcss thw-faucet-cli
 ```
 
@@ -62,7 +68,7 @@ This should generate a folder structure similar to this:
 
 We would have to install a few packages so that we can build the metamask authentication using thirdweb.
 
-```bash
+```shell
 yarn add @thirdweb-dev/react @thirdweb-dev/sdk ethers
 ```
 
@@ -70,7 +76,7 @@ After you have installed it, go ahead and open the `pages/_app.tsx` file. We wou
 
 To set up the `ThirdwebProvider` you need to just wrap your app with the following setup:
 
-```ts
+```tsx
 import type { AppProps } from "next/app";
 import { ThirdwebProvider, ChainId } from "@thirdweb-dev/react";
 
@@ -93,7 +99,7 @@ Let’s now add the feature where the user can click a button and can connect th
 
 Head over to the `pages/index.tsx` file and add the following code:
 
-```ts
+```tsx
 import type { NextPage } from "next";
 
 import {
@@ -166,7 +172,7 @@ We are using the React hooks provided by the `@thirdweb-dev/react` package which
 
 Let’s now test it out by running `yarn dev` command.
 
-%[https://youtu.be/Kk5WpFlbC4Y]
+{% include youtube.html id="Kk5WpFlbC4Y" %}
 
 🎉 Woohoo!! It’s working
 
@@ -176,7 +182,7 @@ Let’s now build the done page. We are going to keep it simple as of this tutor
 
 Create a new file named `done.tsx` under the `pages` folder and add the following code:
 
-```ts
+```tsx
 import type { NextPage } from "next";
 
 const Done: NextPage = () => {
@@ -197,7 +203,7 @@ export default Done;
 
 Let's create a new CLI project using the following command:
 
-```bash
+```shell
 npx oclif generate cli
 ```
 
@@ -219,7 +225,7 @@ Oclif CLI has pretty useful generator commands which can be used to generate com
 
 Let's create a new command named `login` which would be used to authenticate the user via metamask.
 
-```bash
+```shell
 npx oclif generate command login
 ```
 
@@ -234,7 +240,7 @@ Head over to the `src/commands/login.ts` file. You would see that there is a lot
 
 Let's clean it up and add a console log to run the `run` function by which we can verify that our Oclif CLI setup doesn't have any issues.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 
 export default class Login extends Command {
@@ -264,25 +270,25 @@ Create a new folder named `lib` and then create a new file under it named `conne
 
 Let's install a package called [`inquirer`](https://www.npmjs.com/package/inquirer) which is used to prompt the user for input. We would be using this package to prompt the user to open the browser or not.
 
-```bash
+```shell
 yarn add inquirer
 ```
 
 As we are using TypeScript, we need also to install [`@types/inquirer`](https://npmjs.com/package/@types/inquirer) as a dev dependency. The `@types/inquirer` package includes the type declarations for the `inquirer` package.
 
-```bash
+```shell
 yarn add -D @types/inquirer
 ```
 
 Let's import the `inquirer` package into our `src/lib/connectWallet.ts` file.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 ```
 
 Let's now programmatically create a prompt that asks the user whether to open the browser or not using inquirer.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 
 const connectWallet = () => {
@@ -307,7 +313,7 @@ I have wrapped the entire code which is responsible for connecting the user's wa
 
 Let's import the `connectWallet` function into our `src/commands/login.ts` file and call it inside the `run` function.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 
 import connectWallet from "../lib/connectWallet";
@@ -331,7 +337,7 @@ As you can see the inquirer package returns an object with the key as the name o
 
 Let's add a console log that says that the user won't be able to use the request command if they don't connect their wallet.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 
 const connectWallet = () => {
@@ -367,7 +373,7 @@ We need to first need a few packages:
 
 To install all of the above packages, run the following command:
 
-```bash
+```shell
 yarn add express open chalk@4.1.2
 ```
 
@@ -375,13 +381,13 @@ We are using the [v4.1.2](https://github.com/chalk/chalk/releases/tag/v4.1.2) of
 
 As we are using Typescript, we need also to install the TypeScript declarations for the above packages. `chalk` and `open` come with in-built TypeScript declarations. So we need to just install the TypeScript declarations for the `express` package.
 
-```bash
+```shell
 yarn add -D @types/express
 ```
 
 Let's start a local express application when the user chooses `Yes` for the prompt.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 import * as express from "express";
 import * as open from "open";
@@ -428,7 +434,7 @@ export default connectWallet;
 
 👀 We have to change some code in the website. So let's head back to the `web` folder and open the `pages/index.tsx` file. Let's replace the code where we were showing the user's wallet address after they have connected theirs to redirecting the user to the local express's `/callback` with the address query parameter.
 
-```ts
+```tsx
 import type { NextPage } from "next";
 
 import {
@@ -481,7 +487,7 @@ export default Home;
 
 Let's now try to open the `http://localhost:3000` in the browser and console log the user's wallet address when he successfully connected his wallet.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 import * as express from "express";
 import * as open from "open";
@@ -556,7 +562,7 @@ Let's also compile the TypeScript code of the CLI into JavaScript by using the `
 
 Let's now finally test the login command by running the `./bin/run login` command while being there in the `cli` directory.
 
-%[https://youtu.be/w-aUXaZueLE]
+{% include youtube.html id="w-aUXaZueLE" %}
 
 👀 We are missing out on something...
 
@@ -570,7 +576,7 @@ We don't want the user to connect their wallet every single time they use our CL
 
 Create a new folder named `utils` and create a new file under it named `saveAddress.ts`. This file would contain the logic for creating a new file and then writing the user's wallet address to it.
 
-```ts
+```tsx
 import * as fs from "fs";
 import * as os from "os";
 
@@ -593,7 +599,7 @@ I have created a new file named `constants/constants.ts` which contains the path
 
 Let's import the `saveAddress` function into the `lib/connectWallet.ts` file and call it along with the user's wallet address as the parameter.
 
-```ts
+```tsx
 import * as inquirer from "inquirer";
 import * as express from "express";
 import * as open from "open";
@@ -676,7 +682,7 @@ If the user has logged in once and the address has been saved then if the user t
 
 Let's create a new file named `utils/getToken.ts` which contains the logic for getting the token which is been stored in the local file (`config.json`).
 
-```ts
+```tsx
 import * as fs from "fs";
 
 import { configFilePath } from "../constants/constants";
@@ -697,7 +703,7 @@ We are returning `null` if the `address` key in the `config.json` file doesn't e
 
 Let's import the `getToken` function into the `src/commands/login.ts` file and call it.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 import * as chalk from "chalk";
 
@@ -746,7 +752,7 @@ Let's understand the workflow of the request command:
 
 Let's use Oclif's CLI to generate a new command:
 
-```bash
+```shell
 npx oclif generate command request
 ```
 
@@ -754,7 +760,7 @@ As I have mentioned before, we would not be writing any kinds of test in this tu
 
 Go ahead and open the `src/commands/request.ts` file and let's clean the boilerplate code.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 
 export default class Request extends Command {
@@ -770,7 +776,7 @@ Let's create a file named `src/data/questions.ts` which would contain an array w
 
 `src/data/networks.ts`
 
-```ts
+```tsx
 const networks = ["mumbai", "rinkeby"];
 
 export default networks;
@@ -778,7 +784,7 @@ export default networks;
 
 `src/data/questions.ts`
 
-```ts
+```tsx
 import networks from "./networks";
 
 const questions = [
@@ -796,7 +802,7 @@ export default questions;
 
 Let's import the `questions` array in the `src/commands/request.ts` file and use the inquirer package to create a prompt out of it.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 import * as inquirer from "inquirer";
 
@@ -813,7 +819,7 @@ export default class Request extends Command {
 
 👀 Oh wait... We forgot to check whether the user is logged in or not firstly. Let's import the `getToken` function into the `src/commands/request.ts` file and call it.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 import * as inquirer from "inquirer";
 import * as chalk from "chalk";
@@ -867,7 +873,7 @@ Let's now add the packages which we would need to build the backend:
 
 To install the above packages, run the following command:
 
-```bash
+```shell
 yarn add express web3 ethers dotenv
 ```
 
@@ -878,13 +884,13 @@ As we are using TypeScript, we would also need to install a few more packages as
 - `ts-node`, to run the TypeScript code
 - `nodemon`, to run the reload the server on file changes
 
-```bash
+```shell
 yarn add -D @types/express typescript ts-node nodemon
 ```
 
 After the package has been installed, let's create a new `tsconfig.json` where we defined the configuration to be followed by the TypeScript compiler.
 
-```
+```json
 {
   "compilerOptions": {
     "target": "es2017",
@@ -917,7 +923,7 @@ After the package has been installed, let's create a new `tsconfig.json` where w
 
 Let's create a new file named `src/index.ts` and add the following code:
 
-```ts
+```tsx
 import express, { Express, Request, Response } from "express";
 
 const app: Express = express();
@@ -995,7 +1001,7 @@ It's the time to interact with the blockchain using `ethers` and `web3.js` libra
 
 Let's add the following code to the `src/controllers/request.ts` file, don't worry we would be explaining the code:
 
-```ts
+```tsx
 import { Request, Response } from "express";
 import { ethers } from "ethers";
 import dotenv from "dotenv";
@@ -1077,7 +1083,7 @@ Damn! That's a lot of code. Let's break it down:
 - We are importing the `express` (along with the `Request` and `Response` types), `ethers`, `web3.js`, and `dotenv` libraries.
 - We are importing the `chainId` (Chain ID of the supported networks), `txUrl` (The URL of the blockchain explorer along with the `tx` route), `apiUrls` (URL of Alchemy project), `amount` (The amount of tokens to be sent on each network). Wait what's this `data/network.ts` file now? What does it contain? The `data/networks.ts` basically contains a quite few hashmaps to map the network name with the properties mentioned above.
 
-  ```ts
+  ```tsx
   import dotenv from "dotenv";
 
   dotenv.config();
@@ -1110,7 +1116,7 @@ Damn! That's a lot of code. Let's break it down:
 
   > If you have metamask then you can skip to step 5.
 
-  - To install the metamask extension, go ahead to https://metamask.io and install the extension.
+  - To install the metamask extension, go ahead to [Metamask](https://metamask.io) and install the extension.
   - After you have installed the extension, you would see a page something like this. Click get started.
 
     ![](https://imgur.com/CriKrTv.png)
@@ -1156,8 +1162,8 @@ Damn! That's a lot of code. Let's break it down:
 
 - We have then grabbed the API URL from the hashmaps of the `src/data/networks.ts` file. Wait what are these API URLs? These are the API URLs of our Alchemy project.
 
-  - If you don't know have an account at Alchemy, you can create one at https://www.alchemy.com.
-  - After you have created the account head over to https://dashboard.alchemyapi.io and create a new project. We would be creating two apps one for Rinkeby and one for Polygon Mumbai.
+  - If you don't know have an account at Alchemy, you can create one at [Alchemy](https://www.alchemy.com).
+  - After you have created the account head over to [the dashboard](https://dashboard.alchemyapi.io) and create a new project. We would be creating two apps one for Rinkeby and one for Polygon Mumbai.
 
     ![](https://imgur.com/77AIeaY.png)
 
@@ -1177,7 +1183,7 @@ Damn! That's a lot of code. Let's break it down:
 
 - We are checking whether the given wallet address is valid or not using the `web3.js` library.
 
-  ```ts
+  ```tsx
   if (web3.utils.isAddress(String(req.query.address!)) === false) {
     res.json({
       error: "Invalid receiver address",
@@ -1188,7 +1194,7 @@ Damn! That's a lot of code. Let's break it down:
 
 - We are also checking whether we have a sufficient amount of balance in the wallet or not.
 
-  ```ts
+  ```tsx
   if (balance < amount?.get(req.query.network)!) {
     res.json({
       error: "Insufficient funds",
@@ -1199,7 +1205,7 @@ Damn! That's a lot of code. Let's break it down:
 
 - We are then using the `ethers` library to send the tokens to the receiver.
 
-```ts
+```tsx
 const tx = {
   type: 2,
   nonce: nonce,
@@ -1226,7 +1232,7 @@ res.json({
 
 Create a new file called `router.ts` under the `server` folder and add the following text in that file.
 
-```ts
+```tsx
 import { Router } from "express";
 
 import request from "./controllers/request";
@@ -1242,22 +1248,22 @@ Here we are importing the `request` controller from the `controllers` folder and
 
 Let's now import `router` into the `src/index.ts` file and use the `app.use` method on `router`
 
-```ts
+```tsx
 import router from "./router";
 ```
 
-```ts
+```tsx
 app.use("/api", router);
 ```
 
 Let's test the `/api/request` route but before testing, we need to get some testnet tokens into the account of the faucet CLI. Recently I have made a CLI get testnet tokens right away from the terminal so maybe it can help y'all 👀.
 
-GitHub repo: https://github.com/Kira272921/faucetli
+[GitHub repo](https://github.com/Kira272921/faucetli)
 
 If you don't want to get the testnets tokens from the CLI, then you can get the testnet tokens from these faucets:
 
-- Polygon Mumbai faucet: https://faucet.polygon.technology/
-- Rinkeby faucet: https://faucets.chain.link/rinkeby
+- [Polygon Mumbai faucet](https://faucet.polygon.technology/)
+- [Rinkeby faucet](https://faucets.chain.link/rinkeby)
 
 After you have got a sufficient amount of testnet tokens, we can now test the `/api/request` route. Go ahead and open Thunder Client and change the API link to `http://localhost:3000/api/request` and change the HTTP request method to `POST`.
 
@@ -1284,7 +1290,7 @@ Let's now integrate the backend and the cli using the [`axios`](https://npmjs.co
 
 Let's create a new file called `src/lib/sendTokens.ts` under the `cli` folder. This file would be containing the core logic for calling the backend and error handling.
 
-```ts
+```tsx
 import * as ora from "ora";
 var axios = require("axios").default;
 import * as chalk from "chalk";
@@ -1337,13 +1343,13 @@ Woah! That's a lot of code. Let's break it down:
 
 - We are importing the `axios` package and the `chalk` package. We have already installed the `chalk` package previously. So to install `axios` package run the following command:
 
-  ```bash
+  ```shell
   yarn add axios
   ```
 
 - You might notice we are importing a variable called `apiUrl` from the `constants/constants.ts` file. The `apiUrl` variable is the base URL of the backend. As we didn't deploy the backend till now so we would be using localhost.
 
-  ```ts
+  ```tsx
   import * as os from "os";
 
   const configFilePath = `${os.homedir()}/.thw-faucet-cli/config.json`;
@@ -1354,13 +1360,13 @@ Woah! That's a lot of code. Let's break it down:
 
 - We are starting a spinner by calling the `ora` function and passing the message as `🦄 sending tokens to ${wallet} on ${network}`.
 
-  ```ts
+  ```tsx
   const spinner = ora(`🦄 sending tokens to ${wallet} on ${network}`).start();
   ```
 
 - We are calling the backend with the `address` and `network` query parameters. We are then returning the transaction link which is sent along with the response when we call the backend.
 
-```ts
+```tsx
 await axios
   .post(`${apiUrl}/request?address=${wallet}&network=${network}`)
   .then((res: any) => {
@@ -1389,7 +1395,7 @@ await axios
 
 Let's now import the `sendTokens` function into the `src/commands/request.ts` and call with along with the wallet address and the network parameters.
 
-```ts
+```tsx
 import { Command } from "@oclif/core";
 import * as inquirer from "inquirer";
 import * as chalk from "chalk";
@@ -1428,7 +1434,7 @@ Let's first build the code of the cli by using the `yarn build` command. Open an
 
 😱 Oh no! We have just found an issue the `login` command redirects to `localhost:3000` which we thought to be the port where the frontend would run but we have given that port to the backend so let's do a quick fix in the backend code and change the port from `3000` to `8080`. We would also have to change the `apiUrl` variable in the `cli/src/constants/constants.ts` folder.
 
-```ts
+```tsx
 import * as os from "os";
 
 const configFilePath = `${os.homedir()}/.thw-faucet-cli/config.json`;
@@ -1455,13 +1461,13 @@ Let's deploy the frontend on [Vercel](https://vercel.com/). If you are building 
 
 Let's first create a initialize a git repository from the root directory of the project.
 
-```bash
+```shell
 git init
 ```
 
-Create a new GitHub repository (Psst.. https://repo.new 👀) and push the code to the repository.
+Create a [new GitHub repository](https://repo.new) and push the code to the repository.
 
-Head over to https://vercel.com/dashboard and create a new project and edit the root directory from `./` to `web`.
+Head over to the [Vercel dashboard](https://vercel.com/dashboard) and create a new project and edit the root directory from `./` to `web`.
 
 ![](https://imgur.com/XunPAf7.png)
 
@@ -1539,9 +1545,9 @@ All those who have read the blog post until here deserve a big round of applause
 
 ## 🔗 Links
 
-- GitHub: https://github.com/Kira272921/thw-faucet-cli
-- npmjs: https://www.npmjs.com/package/thw-faucet-cli
-- Website: https://thw-faucet-cli.vercel.app
-- Backend: https://thw-faucet-cli-production.up.railway.app
+- [GitHub](https://github.com/Kira272921/thw-faucet-cli)
+- [npmjs](https://www.npmjs.com/package/thw-faucet-cli)
+- [Website](https://thw-faucet-cli.vercel.app)
+- [Backend](https://thw-faucet-cli-production.up.railway.app)
 
 ~ Happy building!
