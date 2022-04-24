@@ -15,25 +15,25 @@ The [Paging 3 library](https://developer.android.com/topic/libraries/architectur
 
 The library provides 3 different utilites for loading paginated data:
 
-- solely from a local Room DB.
-- solely from a webservice.
-- from a webservice while storing it in a Room Database for offline use (combination of the above).
+- Solely from a local Room DB.
+- Solely from a webservice.
+- From a webservice while storing it in a Room Database for offline use (combination of the above).
 
-In this tutorial we will focus on implementing pagination only for a **local Room Databases using Paging 3**.
+In this tutorial, we will focus on implementing pagination only for a **local Room Databases using Paging 3**.
 
-If you are interested in just the code for the project, please checkout this [GitHub repository](https://github.com/gouravkhunger/room-paging3-demo).
+If you are interested in just the code for the project, please check out this [GitHub repository](https://github.com/gouravkhunger/room-paging3-demo).
 
 # Prerequisites
 
 ## What is pagination?
 
-Pagination is a way of breaking down huge pieces of data into smaller chunks and serving them one at a time. This improves the user experience as the whole data doesn't need to be loaded all at once. As soon as the user scrolls to the bottom of the screen, the next page of data is loaded.
+Pagination is a way of breaking down huge pieces of data into smaller chunks and serving them one at a time. This improves the user experience as the entirety of the data doesn't need to be loaded all at once. As soon as the user scrolls to the bottom of the screen, the next page of data is loaded.
 
 ## What are we building?
 
-In this tutorial we will implement pagination for large dataset of texts stored in a Room Database in an Android app.
+Throughout this tutorial, we will implement pagination for large datasets of texts stored in a Room Database in an Android app.
 
-We will be building a basic application which shows a list of items in a Recycler view using Paging 3. The data is loaded with delay of 1 second to simulate data being loaded (for demo purpose only).
+We will build a basic application which shows a list of items in a Recycler view using Paging 3. The data is loaded with a delay of 1 second to simulate data being loaded (for demo purpose only).
 
 There will be a progress bar at the end of the RecyclerView.
 
@@ -45,11 +45,11 @@ Here's a short demo of the app:
 
 This tutorial expects you to have intermediate level knowledge in Android app development. You should have a basic understanding of the concepts of **Room Databases**, **RecyclerView** and how to use them although I will explain what's going on in brief.
 
-You are not expected to have knowledge of Paging 3!
+You are not expected to have any knowledge on Paging 3!
 
 ## Setup 
 
-We will be using an Empty Activity as a start project. If you don't know how to create a new Android studio project, do read [this article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio).
+We will be using an Empty Activity as a starter project. If you don't know how to create a new Android studio project, do read [this article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio).
 
 The package name I have for my app is `com.example.paginationdemo`.
 
@@ -92,14 +92,14 @@ With all the prerequisites clear, let's jump into the tutorial now!
 
 ## Needed Files
 
-The first step to begin would to create a Room Database that will hold the data we will be using.
+The first step to begin would be to create a Room Database that will hold the data we will be using.
 
-To do this first create a `db` package, just to make things organised. Create three files in the `db` package:
+To do this, first create a `db` package, to make things organized. Create three files in the `db` package:
 
 - **`ItemDatabase.kt`**: This will be the actual database implementation.
 - **`ItemDao.kt`**: This is the **D**ata **A**ccess **O**bject(**DAO**) that will be used to access the data in the database.
 
-Then we make a the actual **`Item.kt`** data holder class inside a new package called `model`.
+Then we make the actual **`Item.kt`** data holder class inside a new package called `model`.
 
 We will implement these files in a short moment. These are the files we just added: 
 
@@ -193,7 +193,7 @@ abstract class ItemDatabase : RoomDatabase() {
 
 Here, we make the `ItemDatabase` abstract because Room will auto-generate it for us. Inside the class's `companion object` block, we define a function that returns the instance of the database.
 
-The `getInstance()` function is interesting! We put up this `INSTANCE` returning logic to avoid [race conditions](https://en.wikipedia.org/wiki/Race_condition). Basically if two pieces of code try to access the same resource at the same time, it causes rat race. For generalised objects this is okay, but for something like Databases- we never want to cause conflicts between data.
+The `getInstance()` function is interesting! We put up this `INSTANCE` returning logic to avoid [race conditions](https://en.wikipedia.org/wiki/Race_condition). Basically, if two pieces of code try to access the same resource at the same time, it causes rat race. For generalized objects this is okay, but for something like Databases- we never want to cause conflicts between data.
 
 That's the reason we either return `INSTANCE` of the Room Database if it is not null (the `?:` elvis operator), or if it is we then add the logic to build the database, assign it to the instance and then return it.
 
@@ -229,11 +229,11 @@ For the recycler view, we need to update our `MainActivity` to show a recycler v
 
 This is a basic layout - we use `LinearLayout` to make things easier as we don't need a complex UI for this demo anyways.
 
-We add a full screen `RecyclerView` to the layout. The grid manager is set to `LinearLayoutManager` to stack the recyclerview items in a linear direction (in our case vertical).
+We add a full screen `RecyclerView` to the layout. The grid manager is set to `LinearLayoutManager` to stack the RecyclerView items in a linear direction (in our case, vertical).
 
 ###  **`item.xml`**
 
-We need to generate a new layout that serves as a container for the recycler view items. Make a minimal `item.xml` layout which just shows a text view. Again, use `LinearLayout` as it doesn't need to be complex. Don't make the LinearLayout full screen as that can cause lot of whitespace.
+We need to generate a new layout that serves as a container for the recycler view items. Make a minimal `item.xml` layout which just shows a text view. Again, use `LinearLayout` as it doesn't need to be complex. Don't make the LinearLayout full screen as that can cause a lot of whitespace.
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -255,7 +255,7 @@ We need to generate a new layout that serves as a container for the recycler vie
 
 ## Making a RecyclerView Adapter
 
-We need a recycler view adapter to show the data in the recycler view. Create a `MainAdapter.kt` class that inherits from `PagingDataAdapter`. This is a special adpater provided by the Paging 3 library that will help us to show the data in the recycler view. This also supports for header and footer items in recycler view that we will use in a moment.
+We need a recycler view adapter to show the data in the recycler view. Create a `MainAdapter.kt` class that inherits from `PagingDataAdapter`. This is a special adapter provided by the Paging 3 library that will help us to show the data in the recycler view. This also supports header and footer items in recycler view that we will use in a moment.
 
 Code the `MainAdapter` like this:
 
@@ -294,7 +294,7 @@ class MainAdapter : PagingDataAdapter<Item, MainAdapter.MainViewHolder>(DIFF_CAL
 }
 ```
 
-To the super class `PagingDataAdapter`, we pass in the `Item` data class as that is the type of data we want to show in the recycler view and `MainViewHolder` as the type of view holder we want to use.
+To the superclass `PagingDataAdapter`, we pass in the `Item` data class as that is the type of data we want to show in the recycler view and `MainViewHolder` as the type of view holder we want to use.
 
 The `DIFF_CALLBACK` is used by the Paging library to determine if the data in the recycler view has changed.
 
@@ -356,17 +356,17 @@ The class inherits from `PagingSource`:
 Each class that inherits from `PagingSource` needs to override `load()` and `getRefreshKey()` functions.
 
 - The `load()` function gets details about the page we need to load, loads it, and returns the page with the needed meta-data. It also handles errors that might occur.
-- The `getRefreshKey()` method of the `PagingSource` class is used to get the key of the page that will be passed into the params for `load()` function. This is calculated on subsequent refreshes / invalidation of the data after the initial load.
+- The `getRefreshKey()` method of the `PagingSource` class is used to get the key of the page that will be passed into the params for `load()` function. This is calculated on subsequent refreshes/invalidation of the data after the initial load.
 
 The `load()` function calls `getPagedList()` from the dao by passing in values of `limit` and `offset` from the `params`. We will define these parameters in `MainViewModel` while accessing data.
 
-If the page load was successful, we return `LoadResult.Page()` with the data and meta information for next and preivious pages if the db call was sucessful, else we return `LoadResult.Error` with the exception that occured.
+If the page load was successful, we return `LoadResult.Page()` with the data and meta information for the next and preivious pages if the db call was successful, else we return `LoadResult.Error` with the exception that occurred.
 
 This is basically it for the `PagingSource`!
 
 ## Setting up LoadStateAdapter
 
-The `LoadStateAdapter` is used to show the loading state of the recycler view. Suppose a user scrolls to the bottom of the screen and the next pagination data isn't loaded yet. If there's no visual indiction for this, it creates confusion for the user.
+The `LoadStateAdapter` is used to show the loading state of the recycler view. Suppose a user scrolls to the bottom of the screen and the next pagination data isn't loaded yet. If there's no visual indication for this, it creates confusion for the user.
 
 `LoadStateAdapter` helps us to show the visual info on the loading state of the recycler view. In our case, we will show a progress bar while the next page is loading.
 
@@ -421,7 +421,7 @@ class MainLoadStateAdapter : LoadStateAdapter<MainLoadStateAdapter.LoadStateView
 
 We basically bind the progress bar from `load_state_view.xml` to the `LoadStateViewHolder` class. The key thing to notice here is the progress bar is visible only if `loadState` is `LoadState.Loading`.
 
-The `onBindViewHolder()` inside `MainLoadStateAdapter` is called everytime the recycler view is invalidated, which provides possibility to show and hide the progress bar based on the load state.
+The `onBindViewHolder()` inside `MainLoadStateAdapter` is called every time the recycler view is invalidated, which provides the possibility to show and hide the progress bar based on the load state.
 
 # 4. Attaching Data to the UI
 
@@ -467,11 +467,11 @@ class MainViewModelFactory(
 }
 ```
 
-Inside the `MainViewModel`, we hold create a variable `data` that is a `Pager` object, to which we pass the `PagingConfig` and `PagingSource` objects. This is the place where we define our pagination configuration.
+Inside the `MainViewModel`, we hold to create a variable `data` that is a `Pager` object, to which we pass the `PagingConfig` and `PagingSource` objects. This is the place where we define our pagination configuration.
 
-We define that the `pageSize` should be `20`, this menas that the Paging 3 library will load `20` values at a time from the data. The `initialLoadSize` is also set to `20` because if unset, the paging library loads `3 * pageSize` for the first load.
+We define that the `pageSize` should be `20`. This means that the Paging 3 library will load `20` values at a time from the data. The `initialLoadSize` is also set to `20` because if unset, the paging library loads `3 * pageSize` for the first load.
 
-We pass a lambda that defines a lambda and pass in our `MainPagingSource` class. Paging 3 handles calling the `load()` function for us as and when needed by the `PagingAdapter` so we don't need to worry about the hassle of calling it manually.
+We pass a lambda that defines a lambda and pass in our `MainPagingSource` class. Paging 3 handles calling the `load()` function for us as and when needed by the `PagingAdapter`, so we don't need to worry about the hassle of calling it manually.
 
 Then we access the `flow` property so that we can collect the new emissions of data. We also cache these in `viewModelScope` for memory optimizations.
 
@@ -524,10 +524,10 @@ It's time to run our application! You might not see data at the first run becaus
 
 # Wrapping Up
 
-This was a brief intro on how to paginate data from a Room Database using the Paging 3 library. In this tutorial we covered the setup for situations when we just have a local data source to get the data from.
+This was a brief intro on how to paginate data from a Room Database using the Paging 3 library. In this tutorial, we covered the setup for situations when we just have a local data source to get the data from.
 
 The Paging 3 library supports more use cases like loading the paginated data from a network, or a combination of network and local data sources. You can learn more about the library from the [documentation](https://developer.android.com/topic/libraries/architecture/paging/v3-overview).
 
-I hope you enjoyed reading this in-depth tutorial and hope you learnt something now!
+I hope you enjoyed reading this in-depth tutorial and hope you learned something new!
 
 Happy Coding!
