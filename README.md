@@ -2,7 +2,7 @@
 
 Static site for genicsblog.com
 
-## [Licsense](https://github.com/genicsblog/genicsblog.com/blob/main/LICENSE.md)
+## [License](https://github.com/genicsblog/genicsblog.com/blob/main/LICENSE.md)
 
 The content under `_posts` folder belongs to the respective authors. Please contact the authors for questions relating to their content and licensing.
 
