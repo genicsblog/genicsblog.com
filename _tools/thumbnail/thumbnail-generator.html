@@ -1,0 +1,41 @@
+---
+layout: tool
+title: "Thumbnail Generator"
+excerpt: "A tool to quickly generate a minimal thumbnail for posts to be published at Genics Blog."
+---
+
+<article class="bg-white dark:bg-background rounded-2xl md:text-lg m-8 md:m-10 lg:m-14 p-6 md:p-8 shadow-xl dark:shadow-none shadow-slate-200">
+
+  <div>
+    <label for="post-title">Post title</label><br />
+    <input type="text" id="post-title" placeholder="Please enter the title of your post." required
+        class="mt-1 w-full rounded-lg px-2 py-1.5 border-2 dark:border-slate-700 focus:border-primary dark:focus:border-blue-400 outline-none dark:bg-background" />
+  </div>
+
+  <div class="mt-4">
+    <label for="author-avatar">Author profile picture</label><br />
+    <input type="text" id="author-avatar" placeholder="Please enter author's profile picture url (Optional)."
+        class="mt-1 w-full rounded-lg px-2 py-1.5 border-2 dark:border-slate-700 focus:border-primary dark:focus:border-blue-400 outline-none dark:bg-background" />
+  </div>
+
+  <div class="mt-4 flex justify-center">
+    <button
+        class="submit-form px-2.5 py-0.5 mt-4 rounded-md bg-black dark:bg-slate-100 text-white dark:text-black hover:shadow-lg hover:scale-110 transition">
+        Generate >
+    </button>
+  </div>
+
+</article>
+
+<script>
+const generate = document.querySelector('.submit-form');
+
+generate.addEventListener("click", () => {
+  const title = document.getElementById('post-title').value;
+  const avatar = document.getElementById('author-avatar').value;
+
+  if(!title) return;
+
+  window.open(`/tool/thumbnail-downloader?title=${title}&avatar=${avatar}`, "_blank");
+});
+</script>
