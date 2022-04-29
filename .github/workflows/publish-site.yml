@@ -34,6 +34,7 @@ jobs:
             - '_pages/**'
             - '_posts/**'
             - '_series/**'
+            - '_tools/**'
             - '_config.yml'
 
     - uses: ruby/setup-ruby@v1
