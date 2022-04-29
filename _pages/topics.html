@@ -10,10 +10,18 @@ permalink: /topics
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-    {% for category in site.categories %}
+    {% capture categories %}
+        {% for category in site.categories %}
+            {{ category[0] }}
+        {% endfor %}
+    {% endcapture %}
+
+    {% assign sortedCategories = categories | split:' ' | sort %}
+
+    {% for category in sortedCategories %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl archive-name !bg-{{ category[0] }} underline-none" href="/category/{{ category[0] }}">
-            #{{ category[0] }}
+        <a class="dark:text-black text-xl archive-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
+            #{{ category }}
         </a>
     </div>
     {% endfor %}
@@ -24,10 +32,18 @@ permalink: /topics
 </div>
 
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
-    {% for tag in site.tags %}
+    {% capture tags %}
+        {% for tag in site.tags %}
+            {{ tag[0] }}
+        {% endfor %}
+    {% endcapture %}
+
+    {% assign sortedtags = tags | split:' ' | sort %}
+
+    {% for tag in sortedtags %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl archive-name !bg-{{ tag[0] }} underline-none" href="/tag/{{ tag[0] }}">
-            #{{ tag[0] }}
+        <a class="dark:text-black text-xl archive-name !bg-{{ tag }} underline-none" href="/tag/{{ tag }}">
+            #{{ tag }}
         </a>
     </div>
     {% endfor %}
