@@ -6,10 +6,20 @@ permalink: /topics
 ---
 
 <div class="flex justify-center">
+    <h1>Series</h1>
+</div>
+
+<div class="mt-2 flex flex-col items-center justify-center">
+    {% for series in site.series %}
+    <a href="{{ series.url }}" class="text-lg">{{ series.name }}</a>
+    {% endfor %}
+</div>
+
+<div class="mt-12 flex justify-center">
     <h1>Categories</h1>
 </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-3">
     {% capture categories %}
         {% for category in site.categories %}
             {{ category[0] }}
@@ -27,11 +37,11 @@ permalink: /topics
     {% endfor %}
 </div>
 
-<div class="flex justify-center mt-6">
+<div class="mt-12 flex justify-center">
     <h1>Tags</h1>
 </div>
 
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 md:grid-cols-3">
+<div class="mt-2 grid grid-cols-1 sm:grid-cols-2 gap-6 lg:grid-cols-3">
     {% capture tags %}
         {% for tag in site.tags %}
             {{ tag[0] }}
