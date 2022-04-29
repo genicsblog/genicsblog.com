@@ -48,15 +48,15 @@ jobs:
         node-version: '16'
 
     - name: Install npm dependencies
-      if: steps.changes.outputs.files == 'true' || github.event_name == "workflow_dispatch"
+      if: steps.changes.outputs.files == 'true' || github.event_name == workflow_dispatch
       run: npm install
 
     - name: Build production jekyll site
-      if: steps.changes.outputs.files == 'true' || github.event_name == "workflow_dispatch"
+      if: steps.changes.outputs.files == 'true' || github.event_name == workflow_dispatch
       run: JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build
 
     - name: Deploy to gh-pages
-      if: steps.changes.outputs.files == 'true' || github.event_name == "workflow_dispatch"
+      if: steps.changes.outputs.files == 'true' || github.event_name == workflow_dispatch
       uses: s0/git-publish-subdir-action@develop
       env:
         REPO: self
