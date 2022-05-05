@@ -1,3 +1,15 @@
+---
+layout: post
+title:  "Kotlin: Multi-dimensional (2D, 3D, etc.) Array Initialization"
+excerpt: "This concise tutorial explains how to declare and initialize 2D, 3D, and other multidimensional arrays in Kotlin programming language."
+hasCode: true
+image: "https://user-images.githubusercontent.com/46792249/166893523-b49fc45f-e356-45a9-a545-ac0086aa98a5.jpg"
+category: coding
+tags: ["kotlin", "beginners"]
+author: gouravkhunger
+---
+
+
 At some point of time, we all have worked with arrays. It is a useful data structure to store multiple values of the same type in a single variable. Complex usage of arrays includes storing data in 2D, 3D, or other multidimensional arrays, that allow us to store data like matrices, grids, and cubes.
 
 In this tutorial, we will specifically focus on declaring, initializing and using 2D, 3D, and other multidimensional arrays in the Kotlin programming language.
