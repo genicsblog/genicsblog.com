@@ -9,7 +9,7 @@ tags: ["kotlin", "beginners"]
 author: gouravkhunger
 ---
 
-At some point of time, we all have worked with arrays. It is a useful data structure to store multiple values of the same type in a single variable. Complex usage of arrays includes storing data in 2D, 3D, or other multidimensional arrays, that allow us to store data like matrices, grids, and cubes.
+At some point of time, we all have worked with arrays. It is a useful data structure to store multiple values of the same type in a single variable. Complex usage of arrays includes storing data in 2D, 3D, or other multidimensional arrays. This allows us to represent things like matrices, grids, and cubes effectively.
 
 In this tutorial, we will specifically focus on declaring, initializing and using 2D, 3D, and other multidimensional arrays in the Kotlin programming language.
 
@@ -77,7 +77,7 @@ It is pretty useful if you want to store data that is strongly typed.
 > ### Fun Fact
 > Kotlin standard library supports for functions like `intArrayOf()`, `doubleArrayOf()`, `booleanArrayOf()`, etc. to declare strongly typed arrays.
 
-### With dynamic size
+### 1D arrays with dynamic size
 
 For lists of dynamic size, we use the function `mutableListOf()`. It works similar to `arrayOf()`, but provides us functions to perform actions on the list. Using them, we can add, remove, or modify the elements in the list without re-creating it!
 
@@ -161,7 +161,7 @@ val array = arrayOf<Array<Int>>( // Declaring the type gives error if data types
 )
 ```
 
-### 2D arrays with variable size
+### 2D arrays with dynamic size
 
 To create 2D lists where we don't have a fixed known size, we use `mutableListOf<MutableList<T>>()` declaration where `T` is the data type we expect the inner lists to hold. We don't pass any initial value because the array will be populated using some logic later.
 
