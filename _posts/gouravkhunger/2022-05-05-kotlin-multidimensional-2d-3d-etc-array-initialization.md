@@ -3,6 +3,7 @@ layout: post
 title:  "Kotlin: Multi-dimensional (2D, 3D, etc.) Array Initialization"
 excerpt: "This concise tutorial explains how to declare and initialize 2D, 3D, and other multidimensional arrays in Kotlin programming language."
 hasCode: true
+audioId: 4123777
 image: "https://user-images.githubusercontent.com/46792249/166893523-b49fc45f-e356-45a9-a545-ac0086aa98a5.jpg"
 category: coding
 tags: ["kotlin", "beginners"]
