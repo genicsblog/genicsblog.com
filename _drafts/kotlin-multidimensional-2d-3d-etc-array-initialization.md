@@ -9,7 +9,6 @@ tags: ["kotlin", "beginners"]
 author: gouravkhunger
 ---
 
-
 At some point of time, we all have worked with arrays. It is a useful data structure to store multiple values of the same type in a single variable. Complex usage of arrays includes storing data in 2D, 3D, or other multidimensional arrays, that allow us to store data like matrices, grids, and cubes.
 
 In this tutorial, we will specifically focus on declaring, initializing and using 2D, 3D, and other multidimensional arrays in the Kotlin programming language.
