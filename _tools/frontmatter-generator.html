@@ -115,7 +115,7 @@ hasCode: true
     const description = document.getElementById("post-description").value.trim();
     const notice = document.getElementById("post-notice").value.trim();
     const canonical = document.getElementById("post-canonical").value.trim();
-    let frontmatter = "---"
+    let frontmatter = "---\nlayout: post"
 
     author && (frontmatter += `\nauthor: ${author}`);
     title && (frontmatter += `\ntitle: "${title}"`);
