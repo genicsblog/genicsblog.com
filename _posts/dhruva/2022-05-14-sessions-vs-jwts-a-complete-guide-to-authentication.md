@@ -13,6 +13,7 @@ original: "https://blog.dhruva.is-a.dev/sessions-vs-jwts-a-complete-guide-to-aut
 Hello, in this post I will go over authentication, various methods to implement it, each of their drawbacks, and which one you may want to use! Let's get started!
 
 ## What is Authentication?
+
 Authentication or auth for short is the process where a server recognizes **the identity of a user**. Authorization is then done, to allocate a role to the 
 authenticated user and allocate the required services to that particular user.
 
@@ -22,7 +23,8 @@ There are 2 ways you can implement auth:
 
 Let's take a deep dive into sessions! 
 
-## Sessions 
+## Sessions
+
 Server-side sessions were the traditional way to implement auth. The flow of a session can be illustrated like this:
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1652199081833/Xut5oskzV.png)
@@ -51,12 +53,12 @@ To log the user out, you can destroy the cookie and delete the key-value pair as
 Now let's take a look at JSON Web Tokens.
 
 ## JSON Web Tokens (JWTs)
+
 JWTs take a completely different approach to solving the problem. Authentication is done on the **client-side** here, rather than in the **server** like in sessions. 
 The process can be illustrated in this way:
 
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1652256338392/ET6Zrh480.png)
-
 
 It begins the same way as in sessions, but instead of asking the session store for a session ID, the server issues a **JWT access token** with a JWT Secret.
 
