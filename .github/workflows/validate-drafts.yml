@@ -1,7 +1,7 @@
 name: Validate draft authors
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - main
 
@@ -10,15 +10,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=branch;]$(echo ${{github.head_ref}})"
-      id: extract_branch
-
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
       with:
-        repository: "${{ github.event.pull_request.user.login }}/genicsblog.com"
-        ref: "${{ steps.extract_branch.outputs.branch }}"
+        ref: "${{ github.event.pull_request.head.sha }}"
 
     - uses: dorny/paths-filter@v2
       id: filter
@@ -33,6 +27,7 @@ jobs:
       uses: Ana06/get-changed-files@v2.1.0
 
     - uses: actions/setup-python@v2
+      if: steps.filter.outputs.drafts == 'true'
       with:
         python-version: '3.x'
 
@@ -53,12 +48,3 @@ jobs:
         echo "${{ steps.files.outputs.all }}" >> temp.txt
         python _scripts/validate-drafts.py ${{ github.event.pull_request.user.login }}
         rm temp.txt
-
-    - name: Auto-merge if no errors
-      if: steps.filter.outputs.drafts == 'true'
-      uses: "pascalgn/automerge-action@v0.14.3"
-      env:
-        GITHUB_TOKEN: "${{ secrets.COMMIT_TOKEN }}"
-        MERGE_LABELS: ""
-        MERGE_METHOD: "squash"
-        MERGE_COMMIT_MESSAGE: "Auto merge changes to drafts #{pullRequest.number}"
