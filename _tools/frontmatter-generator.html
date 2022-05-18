@@ -101,7 +101,7 @@ hasCode: true
     const codeHolder = document.getElementById("frontmatter");
     codeHolder.classList.add("hidden");
     
-    document.getElementById("form").reportValidity()
+    document.getElementById("form").reportValidity();
     const valid = document.getElementById("form").checkValidity();
     if (!valid) return;
 
