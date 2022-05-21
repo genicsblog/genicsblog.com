@@ -176,16 +176,16 @@ arshroop:
     linkedin: "in/arshroop-saini-a376a21b9/"
     twitter: "arshroop_saini"
     instagram: "arshroop_saini"
-  shockz:
+shockz:
   name: "Rohit Mishra"
   role: "Web Developer"
   avatar: "https://avatars.githubusercontent.com/u/87615572?v=4"
   bio: "13 year old web developer and programming enthusiast"
   links:
-      github: "shockz09"
-      stackoverflow: "16145261"
-      linkedin: "in/gourav-khunger-584351216/"
-      twitter: "rohit200827"
+    github: "shockz09"
+    stackoverflow: "16145261"
+    linkedin: "in/gourav-khunger-584351216/"
+    twitter: "rohit200827"
       
 
 
