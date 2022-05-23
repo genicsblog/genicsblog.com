@@ -70,7 +70,7 @@ let obj = {
     }
 };
 
-obj.sayHi(); // execurtes the sayHi() function and alerts "Hello"
+obj.sayHi(); // executes the sayHi() function and alerts "Hello"
 ```
 
 This comes in handy when you want to execute a function on similar kinds of objects when a certain event happens!
