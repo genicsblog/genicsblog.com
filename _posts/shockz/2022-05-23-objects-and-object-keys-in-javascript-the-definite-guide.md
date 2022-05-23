@@ -1,9 +1,10 @@
 ---
 layout: post
-title: "Objects and Object Keys in JavaScript: The Definite Give"
+title: "Objects and Object Keys in JavaScript: The Definite Guide"
 excerpt: "The complete beginner's guide to objects and object keys in javascript for web development."
 image: "https://user-images.githubusercontent.com/46792249/169762706-0a457425-f5e5-49a9-9888-d963b8ba26c7.jpg"
 hasCode: true
+audioId: 4237242
 category: web
 tags: ["beginners", "javascript", "web-development"]
 author: shockz
@@ -287,7 +288,7 @@ for(key in obj){
 > }
 > 
 > for(key in obj){
->     console.log(key); //logs 30,42,69
+>     console.log(key); // logs 30, 42, 69
 > }
 > ```
 >
