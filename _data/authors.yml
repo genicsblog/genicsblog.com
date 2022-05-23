@@ -156,7 +156,7 @@ siddharth_sable:
     twitter: "sidsabale" 
     instagram: "siddo.exe"
     youtube: "channel/UCf-RytOIE5VugpaPDZdhobA" 
-      
+
 benny:
   name: "Benny Ifeanyi Iheagwara"
   role: "Data analyst, technical writer, and speaker" 
@@ -166,6 +166,7 @@ benny:
     github: "Bennykillua"
     linkedin: "in/ifeanyi-iheagwara/" 
     twitter: "bennykillua"
+
 arshroop:
   name: "Arshroop Singh"
   role: "Full Stack Web and Bot Developer, Tech Blogger"
@@ -176,6 +177,7 @@ arshroop:
     linkedin: "in/arshroop-saini-a376a21b9/"
     twitter: "arshroop_saini"
     instagram: "arshroop_saini"
+
 shockz:
   name: "Rohit Mishra"
   role: "Web Developer"
@@ -185,3 +187,13 @@ shockz:
     github: "shockz09"
     linkedin: "in/rohit-mishra-41057b229/"
     twitter: "rohit200827"
+
+bhawna1203:
+  name: "Bhawna"
+  role: "Blockchain Enthusiast"
+  bio: "Passionate App developer and Web3 Enthusiast"
+  avatar: "https://avatars.githubusercontent.com/u/81790585?v=4"
+  links:
+    github: "Bhawna1203"
+    linkedin: "in/bhawna-chauhan-00a32a200/"
+    twitter: "BhawnaC18275984"
