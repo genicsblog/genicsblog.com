@@ -11,7 +11,7 @@ permalink: /topics
 
 <div class="mt-2 flex flex-col items-center justify-center">
     {% for series in site.series %}
-    <a href="{{ series.url }}" class="text-lg">{{ series.name }}</a>
+    <a href="{{ site.baseurl }}{{ series.url }}" class="text-lg">{{ series.name }}</a>
     {% endfor %}
 </div>
 
@@ -30,7 +30,7 @@ permalink: /topics
 
     {% for category in sortedCategories %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl archive-name !bg-{{ category }} underline-none" href="/category/{{ category }}">
+        <a class="dark:text-black text-xl archive-name !bg-{{ category }} underline-none" href="{{ site.baseurl }}/category/{{ category }}">
             #{{ category }}
         </a>
     </div>
@@ -52,7 +52,7 @@ permalink: /topics
 
     {% for tag in sortedtags %}
     <div class="mx-auto">
-        <a class="dark:text-black text-xl archive-name !bg-{{ tag }} underline-none" href="/tag/{{ tag }}">
+        <a class="dark:text-black text-xl archive-name !bg-{{ tag }} underline-none" href="{{ site.baseurl }}/tag/{{ tag }}">
             #{{ tag }}
         </a>
     </div>

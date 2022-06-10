@@ -18,13 +18,13 @@ pagination:
   {% if paginator.total_pages > 1 %}
   <div class="flex justify-center items-center w-full">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="mr-2 px-2 py-0.5 hover:shadow-xl hover:shadow-slate-200 dark:hover:shadow-none rounded-md bg-background dark:bg-slate-100 dark:text-black text-white text-lg hover:scale-110 transition underline-none">
+    <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="mr-2 px-2 py-0.5 hover:shadow-xl hover:shadow-slate-200 dark:hover:shadow-none rounded-md bg-background dark:bg-slate-100 dark:text-black text-white text-lg hover:scale-110 transition underline-none">
       Previous
     </a>
     {% endif %}
     <span>Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="ml-2 px-2 py-0.5 hover:shadow-xl hover:shadow-slate-200 dark:hover:shadow-none rounded-md bg-background dark:bg-slate-100 dark:text-black text-white text-lg hover:scale-110 transition underline-none">
+    <a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="ml-2 px-2 py-0.5 hover:shadow-xl hover:shadow-slate-200 dark:hover:shadow-none rounded-md bg-background dark:bg-slate-100 dark:text-black text-white text-lg hover:scale-110 transition underline-none">
       Next
     </a>
     {% endif %}
