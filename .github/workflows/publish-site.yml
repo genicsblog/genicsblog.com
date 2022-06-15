@@ -25,6 +25,7 @@ jobs:
       run: |
         mv theme/* .
         rm -rf theme
+        rm robots.txt
         touch .nojekyll
         echo "google.com, pub-8114751086331659, DIRECT, f08c47fec0942fa0" >> ads.txt
 
