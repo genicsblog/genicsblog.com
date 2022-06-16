@@ -1,525 +1,1004 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://genicsblog.com/ways-to-open-a-new-activity-in-an-android-app</loc>
-<lastmod>2021-02-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs</loc>
-<lastmod>2021-02-08T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-make-efficient-content-applications-in-android</loc>
-<lastmod>2021-02-09T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/mistakes-that-beginners-do-in-blogging-dont-make-these-yourself</loc>
-<lastmod>2021-02-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-create-city-boundaries-in-google-maps</loc>
-<lastmod>2021-02-11T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-make-accordions-in-android</loc>
-<lastmod>2021-02-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/toasty-library</loc>
-<lastmod>2021-02-13T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/beginning-android-development-with-android-studio</loc>
-<lastmod>2021-02-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/must-have-free-seo-tools-for-everyone</loc>
-<lastmod>2021-02-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/beautiful-patterns-you-can-try-making-with-code</loc>
-<lastmod>2021-02-28T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/introducing-quotes-app</loc>
-<lastmod>2021-05-23T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/introducing-jekyllex-android-app</loc>
-<lastmod>2021-08-31T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-and-when-to-override-android-activity-lifecycle-methods</loc>
-<lastmod>2021-09-06T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/3-years-of-blogging</loc>
-<lastmod>2021-09-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio</loc>
-<lastmod>2021-09-16T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/android-application-fundamentals</loc>
-<lastmod>2021-09-22T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/authentication-in-android-app-with-auth0</loc>
-<lastmod>2021-09-26T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/trying-out-nextjs</loc>
-<lastmod>2021-09-26T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/lock-a-folder-in-windows-with-no-mess</loc>
-<lastmod>2021-11-06T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app</loc>
-<lastmod>2021-11-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/swipe-animation-on-a-cardview-android</loc>
-<lastmod>2021-11-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anurag/supabase-database-nextjs</loc>
-<lastmod>2022-01-05T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anishde12020/making-a-toast-notification-with-html-css-and-js</loc>
-<lastmod>2022-01-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/avneesh/building-a-crud-api-with-node-js-and-mongodb</loc>
-<lastmod>2022-01-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/usman/whatsapp-api-with-node-js-and-express</loc>
-<lastmod>2022-01-09T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anurag/metamask-authentication-with-thirdweb-in-nextjs</loc>
-<lastmod>2022-01-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/avneesh/make-your-first-crypto-with-thirdweb</loc>
-<lastmod>2022-01-15T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/MaheshtheDev/how-to-secure-api-tokens</loc>
-<lastmod>2022-01-20T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/five-css-methodologies-you-need-to-know-in-2022</loc>
-<lastmod>2022-01-21T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/kira/how-to-build-a-rest-api-using-nodejs</loc>
-<lastmod>2022-01-23T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/avneesh/add-google-analytics-to-your-next-js-app</loc>
-<lastmod>2022-01-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/avneesh/metamask-authentication-in-next-js-with-clerk</loc>
-<lastmod>2022-01-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/6-free-websites-to-learn-web3</loc>
-<lastmod>2022-01-25T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/five-projects-to-become-better-at-webdev</loc>
-<lastmod>2022-01-26T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/dhruva/intro-to-graphql-with-node-and-typescript</loc>
-<lastmod>2022-01-26T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/next-generation-hello-world-program</loc>
-<lastmod>2022-01-31T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/10-seo-tools-you-need-to-use-in-2022</loc>
-<lastmod>2022-02-02T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anurag/how-i-prefer-to-structure-my-next-js-projects</loc>
-<lastmod>2022-02-07T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/genics-log-1</loc>
-<lastmod>2022-02-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/underrated-html-attributes-every-webdev-should-know</loc>
-<lastmod>2022-02-12T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/github-repositories-to-crush-any-programming-interview</loc>
-<lastmod>2022-02-13T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/kira/how-to-build-a-blog-using-remix-and-mdx</loc>
-<lastmod>2022-02-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anishde12020/privacy-friendly-website-analytics-with-umami-and-next-js</loc>
-<lastmod>2022-02-20T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/kira/solidity-quickstart-0</loc>
-<lastmod>2022-02-27T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anurag/basics-of-e2e-testing-and-integrating-cypress-with-next-js</loc>
-<lastmod>2022-03-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/dhruva/building-clis-with-react-ink</loc>
-<lastmod>2022-03-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/abhiraj/the-javascript-cheatsheet-for-new-coders</loc>
-<lastmod>2022-03-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/gouravkhunger/8-ways-to-keep-your-heroku-app-awake</loc>
-<lastmod>2022-03-17T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/anishde12020/5-chrome-keyboard-shortcuts-to-boost-your-productivity</loc>
-<lastmod>2022-03-25T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/usman/how-to-sort-imports-for-a-javascript-project-using-prettier</loc>
-<lastmod>2022-03-29T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/gouravkhunger/how-to-create-a-pull-request-in-github-correctly</loc>
-<lastmod>2022-04-03T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/gouravkhunger/adding-multiple-authors-to-a-jekyll-blog-got-easier</loc>
-<lastmod>2022-04-10T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/benny/no-code-ways-to-contribute-to-open-source-projects</loc>
-<lastmod>2022-04-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/usman/how-to-use-mongoose-with-next-js-for-mongodb</loc>
-<lastmod>2022-04-17T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/gouravkhunger/pagination-in-android-room-database-using-the-paging-3-library</loc>
-<lastmod>2022-04-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/kira/how-to-build-a-faucet-cli-using-node-js</loc>
-<lastmod>2022-04-24T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/gouravkhunger/kotlin-multi-dimensional-2d-3d-etc-array-initialization</loc>
-<lastmod>2022-05-05T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/dhruva/sessions-vs-jwts-a-complete-guide-to-authentication</loc>
-<lastmod>2022-05-14T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/shockz/objects-and-object-keys-in-javascript-the-definite-guide</loc>
-<lastmod>2022-05-23T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/series/android-development</loc>
-<lastmod>2022-06-13T09:17:19+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/series/android-library-testing</loc>
-<lastmod>2022-06-13T09:17:19+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/tool/frontmatter-generator</loc>
-<lastmod>2022-06-13T09:17:19+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/tool/thumbnail-generator</loc>
-<lastmod>2022-06-13T09:17:19+00:00</lastmod>
-</url>
-<url>
-<loc>https://genicsblog.com/code-of-conduct</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/contribution-guide</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/about</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/advertise</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/contact</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/contribute</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/licensing</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/privacy-policy</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/terms</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/topics</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/3/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/4/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/5/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/6/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/page/7/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/beginners/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/beginners/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/beginners/page/3/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/app-development/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/app-development/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tips/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tips/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/geocoding/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/google-maps/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/libraries/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tools/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/free-stuff/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/design/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/open-source/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/apps/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/jekyll/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/motivation/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/authentication/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/web-development/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/web-development/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/next-js/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/security/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/a11y/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/animation/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/supabase/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/node-js/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/mongodb/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/api/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/blockchain/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/crypto/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/advanced/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/react/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/remix/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/testing/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/productivity/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/intermediates/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/cli/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/kotlin/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/javascript/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tag-1/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tag-2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/tag/tag-3/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/android/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/android/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/blogging/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/seo/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/coding/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/web/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/web/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/windows/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/backend/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/web3/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/genics-log/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/frontend/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/jekyll/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/open-source/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/category/drafts/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/gouravkhunger/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/gouravkhunger/page/2/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/gouravkhunger/page/3/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/gouravkhunger/page/4/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/anurag/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/anishde12020/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/avneesh/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/usman/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/maheshthedev/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/abhiraj/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/kira/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/adityasingh/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/dhruva/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/arindol/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/benny/</loc>
-</url>
-<url>
-<loc>https://genicsblog.com/author/shockz/</loc>
-</url>
+  
+  
+    
+    
+  
+    
+    
+      
+      <url>
+        <loc>https://genicsblog.com/ways-to-open-a-new-activity-in-an-android-app</loc>
+        
+          <lastmod>2021-02-07T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-change-the-font-of-text-in-view-pager-tabs</loc>
+        
+          <lastmod>2021-02-08T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-make-efficient-content-applications-in-android</loc>
+        
+          <lastmod>2021-02-09T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/mistakes-that-beginners-do-in-blogging-dont-make-these-yourself</loc>
+        
+          <lastmod>2021-02-10T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-create-city-boundaries-in-google-maps</loc>
+        
+          <lastmod>2021-02-11T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-make-accordions-in-android</loc>
+        
+          <lastmod>2021-02-12T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/toasty-library</loc>
+        
+          <lastmod>2021-02-13T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/beginning-android-development-with-android-studio</loc>
+        
+          <lastmod>2021-02-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/must-have-free-seo-tools-for-everyone</loc>
+        
+          <lastmod>2021-02-15T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/beautiful-patterns-you-can-try-making-with-code</loc>
+        
+          <lastmod>2021-02-28T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/introducing-quotes-app</loc>
+        
+          <lastmod>2021-05-23T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/introducing-jekyllex-android-app</loc>
+        
+          <lastmod>2021-08-31T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-and-when-to-override-android-activity-lifecycle-methods</loc>
+        
+          <lastmod>2021-09-06T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/3-years-of-blogging</loc>
+        
+          <lastmod>2021-09-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio</loc>
+        
+          <lastmod>2021-09-16T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/android-application-fundamentals</loc>
+        
+          <lastmod>2021-09-22T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/authentication-in-android-app-with-auth0</loc>
+        
+          <lastmod>2021-09-26T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/trying-out-nextjs</loc>
+        
+          <lastmod>2021-09-26T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/lock-a-folder-in-windows-with-no-mess</loc>
+        
+          <lastmod>2021-11-06T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/how-to-support-multiple-fonts-in-an-android-app</loc>
+        
+          <lastmod>2021-11-07T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/swipe-animation-on-a-cardview-android</loc>
+        
+          <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anurag/supabase-database-nextjs</loc>
+        
+          <lastmod>2022-01-05T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anishde12020/making-a-toast-notification-with-html-css-and-js</loc>
+        
+          <lastmod>2022-01-07T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/avneesh/building-a-crud-api-with-node-js-and-mongodb</loc>
+        
+          <lastmod>2022-01-07T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/usman/whatsapp-api-with-node-js-and-express</loc>
+        
+          <lastmod>2022-01-09T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anurag/metamask-authentication-with-thirdweb-in-nextjs</loc>
+        
+          <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/avneesh/make-your-first-crypto-with-thirdweb</loc>
+        
+          <lastmod>2022-01-15T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/MaheshtheDev/how-to-secure-api-tokens</loc>
+        
+          <lastmod>2022-01-20T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/five-css-methodologies-you-need-to-know-in-2022</loc>
+        
+          <lastmod>2022-01-21T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/kira/how-to-build-a-rest-api-using-nodejs</loc>
+        
+          <lastmod>2022-01-23T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/avneesh/add-google-analytics-to-your-next-js-app</loc>
+        
+          <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/avneesh/metamask-authentication-in-next-js-with-clerk</loc>
+        
+          <lastmod>2022-01-24T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/6-free-websites-to-learn-web3</loc>
+        
+          <lastmod>2022-01-25T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/five-projects-to-become-better-at-webdev</loc>
+        
+          <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/dhruva/intro-to-graphql-with-node-and-typescript</loc>
+        
+          <lastmod>2022-01-26T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/next-generation-hello-world-program</loc>
+        
+          <lastmod>2022-01-31T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/10-seo-tools-you-need-to-use-in-2022</loc>
+        
+          <lastmod>2022-02-02T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anurag/how-i-prefer-to-structure-my-next-js-projects</loc>
+        
+          <lastmod>2022-02-07T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/genics-log-1</loc>
+        
+          <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/underrated-html-attributes-every-webdev-should-know</loc>
+        
+          <lastmod>2022-02-12T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/github-repositories-to-crush-any-programming-interview</loc>
+        
+          <lastmod>2022-02-13T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/kira/how-to-build-a-blog-using-remix-and-mdx</loc>
+        
+          <lastmod>2022-02-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anishde12020/privacy-friendly-website-analytics-with-umami-and-next-js</loc>
+        
+          <lastmod>2022-02-20T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/kira/solidity-quickstart-0</loc>
+        
+          <lastmod>2022-02-27T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anurag/basics-of-e2e-testing-and-integrating-cypress-with-next-js</loc>
+        
+          <lastmod>2022-03-01T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/dhruva/building-clis-with-react-ink</loc>
+        
+          <lastmod>2022-03-10T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/abhiraj/the-javascript-cheatsheet-for-new-coders</loc>
+        
+          <lastmod>2022-03-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/gouravkhunger/8-ways-to-keep-your-heroku-app-awake</loc>
+        
+          <lastmod>2022-03-17T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/anishde12020/5-chrome-keyboard-shortcuts-to-boost-your-productivity</loc>
+        
+          <lastmod>2022-03-25T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/usman/how-to-sort-imports-for-a-javascript-project-using-prettier</loc>
+        
+          <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/gouravkhunger/how-to-create-a-pull-request-in-github-correctly</loc>
+        
+          <lastmod>2022-04-03T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/gouravkhunger/adding-multiple-authors-to-a-jekyll-blog-got-easier</loc>
+        
+          <lastmod>2022-04-10T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/benny/no-code-ways-to-contribute-to-open-source-projects</loc>
+        
+          <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/usman/how-to-use-mongoose-with-next-js-for-mongodb</loc>
+        
+          <lastmod>2022-04-17T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/gouravkhunger/pagination-in-android-room-database-using-the-paging-3-library</loc>
+        
+          <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/kira/how-to-build-a-faucet-cli-using-node-js</loc>
+        
+          <lastmod>2022-04-24T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/gouravkhunger/kotlin-multi-dimensional-2d-3d-etc-array-initialization</loc>
+        
+          <lastmod>2022-05-05T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/dhruva/sessions-vs-jwts-a-complete-guide-to-authentication</loc>
+        
+          <lastmod>2022-05-14T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/shockz/objects-and-object-keys-in-javascript-the-definite-guide</loc>
+        
+          <lastmod>2022-05-23T00:00:00+00:00</lastmod>
+        
+      </url>
+    
+  
+    
+    
+      
+      <url>
+        <loc>https://genicsblog.com/series/android-development</loc>
+        
+          <lastmod>2022-06-16T17:42:56+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/series/android-library-testing</loc>
+        
+          <lastmod>2022-06-16T17:42:56+00:00</lastmod>
+        
+      </url>
+    
+  
+    
+    
+      
+      <url>
+        <loc>https://genicsblog.com/tool/frontmatter-generator</loc>
+        
+          <lastmod>2022-06-16T17:42:56+00:00</lastmod>
+        
+      </url>
+    
+      
+      <url>
+        <loc>https://genicsblog.com/tool/thumbnail-generator</loc>
+        
+          <lastmod>2022-06-16T17:42:56+00:00</lastmod>
+        
+      </url>
+    
+  
+
+  
+  
+    
+    <url>
+      <loc>https://genicsblog.com/code-of-conduct</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/contribution-guide</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/about</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/advertise</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/contact</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/contribute</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/licensing</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/privacy-policy</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/terms</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/topics</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/</loc>
+      
+    </url>
+  
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/tag/beginners/</loc>
+      
+    </url>
+  
+    
+      
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/tag/app-development/</loc>
+      
+    </url>
+  
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/tag/tips/</loc>
+      
+    </url>
+  
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/tag/geocoding/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/google-maps/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/libraries/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/tools/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/free-stuff/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/design/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/open-source/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/apps/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/jekyll/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/motivation/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/authentication/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/web-development/</loc>
+      
+    </url>
+  
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/tag/next-js/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/security/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/a11y/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/animation/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/supabase/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/node-js/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/mongodb/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/api/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/blockchain/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/crypto/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/advanced/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/react/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/remix/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/testing/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/productivity/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/intermediates/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/cli/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/kotlin/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/javascript/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/tag-1/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/tag-2/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/tag/tag-3/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/android/</loc>
+      
+    </url>
+  
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/category/blogging/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/seo/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/coding/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/web/</loc>
+      
+    </url>
+  
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/category/windows/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/backend/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/web3/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/genics-log/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/frontend/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/jekyll/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/open-source/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/category/drafts/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/gouravkhunger/</loc>
+      
+    </url>
+  
+    
+      
+    
+      
+    
+      
+    
+    <url>
+      <loc>https://genicsblog.com/author/anurag/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/anishde12020/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/avneesh/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/usman/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/maheshthedev/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/abhiraj/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/kira/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/adityasingh/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/dhruva/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/arindol/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/benny/</loc>
+      
+    </url>
+  
+    
+    <url>
+      <loc>https://genicsblog.com/author/shockz/</loc>
+      
+    </url>
+  
+
+  
+  
 </urlset>
