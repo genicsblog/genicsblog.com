@@ -4,19 +4,21 @@ author: avneesh
 title: "How not to write clean code in React? 🧹"
 image: "https://user-images.githubusercontent.com/76690419/174092726-03b0760f-1385-45f9-9680-9c617ff3adef.png"
 category: web
-tags: ["react,", "web-development,", "javascript"]
-excerpt: "Wassup everyone, long time no see. Today we will see a few ways to not clean code in React, let's jump right into it!"
+audioId: 4410520
+tags: ["react", "web-development", "javascript"]
+excerpt: "A few ways to *not* clean code and maintainable in React!"
 original: "https://blog.avneesh.tech/how-not-to-write-clean-code-in-react"
 ---
 
 ## Introduction
+
 Wassup everyone, long time no see. Today we will see a few ways to not clean code in React, let's jump right into it!
 
 ![Jump right into it](https://media1.giphy.com/media/iMBEgyXkFBtdCFS93i/200.gif)
 
 ## 10 ways to not write clean code
 
-### Not use a linter
+### Not using a linter
 Who needs a linter to keep good code styles, and keep the code clean when you can define the rules as you go.  🚨
 
 ### Add everything in one file
@@ -51,4 +53,3 @@ I hope you were able to understand how not to write clean code, now it is up to 
 [How to not become a better developer](https://blog.avneesh.tech/how-to-not-become-a-better-developer)
 
 [Connect with me](https://links.avneesh.tech/)
-
