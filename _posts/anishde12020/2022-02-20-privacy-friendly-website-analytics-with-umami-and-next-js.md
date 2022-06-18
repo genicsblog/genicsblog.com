@@ -3,7 +3,6 @@ layout: post
 title:  "Privacy friendly website analytics with Umami and Next.js"
 excerpt: "A guide on settting up Umami on Railway and adding it to a Next.js project."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1645091755632/-NyymMbeL.png"
-hasCode: true
 audioId: 3573705
 category: "web"
 tags: ["next-js", "tools", "free-stuff"]

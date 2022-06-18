@@ -3,7 +3,6 @@ layout: post
 title: "Pagination in Android Room Database using the Paging 3 Library"
 excerpt: "The complete guide to paginating *just* a room database (without Network level pagination) with the Paging 3 library in Android using Kotlin."
 image: "https://user-images.githubusercontent.com/46792249/164977196-3de454f4-8a7e-4feb-9d1b-cfd6ea53ba03.jpg"
-hasCode: true
 audioId: 4052597
 category: android
 tags: ["intermediates", "app-development", "libraries"]

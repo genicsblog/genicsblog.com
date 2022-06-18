@@ -4,7 +4,6 @@ title:  "How to build a REST API using NodeJS"
 excerpt: "The guide to teach you how to build a REST API from beginning till deployment."
 image: "https://user-images.githubusercontent.com/90365542/150640432-993a9fd8-4472-457c-9074-9e6fbd273743.png"
 original: "https://kirablog.hashnode.dev/rest-api-using-nodejs"
-hasCode: true
 audioId: 3468413
 category: backend
 tags: ["node-js", "mongodb", "api"]

@@ -4,7 +4,6 @@ title:  "Metamask authentication with ThirdWeb in Next.js"
 excerpt: "Let's learn how authentication works in the web3 world!"
 image: "https://user-images.githubusercontent.com/77309809/149489789-db55b033-3196-45e7-9f72-cb49c3630c2f.png"
 audioId: 3468564
-hasCode: true
 category: web3
 tags: ["blockchain", "crypto", "next-js"]
 author: anurag

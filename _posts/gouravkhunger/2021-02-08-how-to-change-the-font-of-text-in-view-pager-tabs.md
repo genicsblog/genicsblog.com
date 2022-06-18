@@ -5,7 +5,6 @@ excerpt: "This article explains how to change the Font family of the text in Vie
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612804759970/w2robLovl.jpeg"
 notice: "*Thumbnail art by [freepik - freepik.com](https://www.freepik.com/vectors/technology)*"
 audioId: 3467997
-hasCode: true
 category: android
 tags: ["app-development"]
 author: gouravkhunger

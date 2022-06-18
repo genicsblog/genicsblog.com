@@ -4,7 +4,6 @@ title:  "Lock a Folder in Windows with no mess"
 excerpt: "Learn how to lock a folder on your computer to safeguard it from unauthorized access."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1614498876551/PoGi9qzEM.png"
 audioId: 3468133
-hasCode: true
 category: windows
 tags: ["security"]
 author: gouravkhunger

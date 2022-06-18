@@ -4,7 +4,6 @@ title:  "Intro to GraphQL with Node.js and TypeScript"
 excerpt: "The complete guide to working with GraphQL using TypeGraphQL and building a basic CRUD functionality with TypeORM and Postgres."
 image: "https://user-images.githubusercontent.com/46792249/151178959-781d2ea4-a4dc-4f89-90d9-b98d62821944.png"
 original: "https://thecatblog.hashnode.dev/intro-to-graphql-with-nodejs-and-typescript"
-hasCode: true
 audioId: 3468789
 category: backend
 tags: ["api", "node-js", "web-development"]

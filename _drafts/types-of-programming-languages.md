@@ -3,7 +3,6 @@ layout: post
 author: abhiraj
 title: "6 types of programming languages for you to make the right choice."
 image: "https://us-east-1.tixte.net/uploads/me.likes.cash/types-of-programming-languages.png"
-hasCode: true
 category: coding
 tags: ["web-development", "tips", "beginners"]
 excerpt: "A comprehensive list of types of programming languages with their use cases to help beginners choose their language of choice."

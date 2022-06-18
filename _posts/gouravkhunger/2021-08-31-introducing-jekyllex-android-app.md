@@ -5,7 +5,6 @@ excerpt: "A project I made for the Hashnode x Auth0 August Hackathon."
 image: "https://raw.githubusercontent.com/jekyllex/jekyllex-android/main/media/cover-image.png"
 audioId: 3467849
 category: android
-hasCode: true
 tags: ["open-source", "apps", "jekyll"]
 author: gouravkhunger
 ---

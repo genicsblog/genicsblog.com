@@ -3,7 +3,6 @@ layout: post
 title: "Adding Multiple Authors to a Jekyll Blog got Easier!"
 excerpt: "Jekyll doesn't support multiple authors out of the box. But we can add that functionality using this plugin I made!"
 image: "https://user-images.githubusercontent.com/46792249/162621431-f9004144-8a56-4cb5-b3ac-5c5a2660a6fa.png"
-hasCode: true
 audioId: 3968519
 category: jekyll
 tags: ["open-source", "libraries"]

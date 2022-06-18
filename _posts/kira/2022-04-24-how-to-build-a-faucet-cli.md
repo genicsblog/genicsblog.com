@@ -5,7 +5,6 @@ excerpt: "The complete guide to building a faucet CLI using NodeJS."
 original: "https://blog.kiradev.co/how-to-build-a-faucet-cli-using-nodejs"
 image: "https://imgur.com/0qQxUt3.png"
 audioId: 4050344
-hasCode: true
 category: web3
 tags: ["blockchain", "node-js", "cli"]
 author: kira

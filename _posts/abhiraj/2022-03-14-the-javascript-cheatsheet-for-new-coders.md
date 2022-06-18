@@ -4,7 +4,6 @@ title:  "A newbie's cheatsheet for Javascript"
 excerpt: "This is the go-to super guide/cheatsheet for beginner coders learing Javascript"
 image: "https://user-images.githubusercontent.com/46792249/158066053-34b1c462-70cb-4054-be5a-02a56d9df49c.png"
 audioId: 3803231
-hasCode: true
 category: web
 tags: ["web-development", "beginners"]
 author: abhiraj

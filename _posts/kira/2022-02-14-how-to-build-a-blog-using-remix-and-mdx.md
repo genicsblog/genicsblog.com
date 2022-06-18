@@ -4,7 +4,6 @@ title:  "How to build a blog using Remix and MDX"
 excerpt: "The guide to teach you how to build a blog using the latest javascript framework, Remix 🚀."
 image: "https://user-images.githubusercontent.com/90365542/153700424-ffc22df1-7d4d-4530-983d-01eb5348807a.png"
 original: "https://kirablog.hashnode.dev/build-a-blog-using-remix-and-mdx"
-hasCode: true
 audioId: 3497697
 category: frontend
 tags: ["react", "remix"]

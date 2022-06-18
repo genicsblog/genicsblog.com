@@ -4,7 +4,6 @@ title:  "Beautiful Patterns You Can Try Making With Code"
 excerpt: "Learning the syntax of a language with patterns can be fun!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1614086705341/KvZHQQVpn.gif"
 audioId: 3468105
-hasCode: true
 category: coding
 tags: ["beginners", "design"]
 author: gouravkhunger

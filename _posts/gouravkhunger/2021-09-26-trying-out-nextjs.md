@@ -4,7 +4,6 @@ title:  "Trying out Next.js for the first time 🤯"
 excerpt: "I tried to learn Next.js by building basic web-apps and here's my reaction."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632678583912/7LS_JbQIY.png"
 audioId: 3467446
-hasCode: true
 category: web
 tags: ["web-development", "next-js"]
 author: gouravkhunger

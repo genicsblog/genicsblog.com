@@ -4,7 +4,6 @@ title: "Making a toast notification with HTML, CSS, and JS"
 excerpt: "A guide to making toast notifications for your webpage with HTML, CSS, and JavaScript."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1638697970037/zAYKG5UvP.png"
 audioId: 3468367
-hasCode: true
 category: web
 tags: ["web-development", "beginners"]
 author: anishde12020

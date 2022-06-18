@@ -4,7 +4,6 @@ title:  "Solidity Quickstart [0]"
 excerpt: "Get started with your web3 journey by learning the solidity language, used to create smart contracts on the blockchain 🚀"
 image: "https://user-images.githubusercontent.com/46792249/156168666-85804b30-d9db-4d0e-9433-4a668d42f65c.png"
 original: "https://blog.kiradev.co/solidity-quickstart-0"
-hasCode: true
 audioId: 3722842
 category: web3
 tags: ["beginners", "blockchain"]
