@@ -5,7 +5,6 @@ excerpt: "This article explains an Android app-development use case in which an 
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612892448407/fOCn_s9fg.jpeg"
 notice: "*Thumbnail art by [pikisuperstar - freepik.com](https://www.freepik.com/vectors/technology)*"
 audioId: 3467885
-hasCode: true
 category: android
 tags: ["app-development", "beginners"]
 author: gouravkhunger

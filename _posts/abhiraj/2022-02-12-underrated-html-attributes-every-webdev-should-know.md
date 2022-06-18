@@ -3,7 +3,6 @@ layout: post
 title:  "15 underrated HTML attributes every web developer should know"
 excerpt: "There are a few lesser known HTML attributes that are easy to learn and can help you to achieve common tasks, which would otherwise be fulfilled using some external libraries."
 image: "https://user-images.githubusercontent.com/46792249/153724225-aa374faa-db20-451f-9291-fcdc4db064cf.png"
-hasCode: true
 audioId: 3487925
 category: web
 tags: ["web-development", "tips", "beginners"]

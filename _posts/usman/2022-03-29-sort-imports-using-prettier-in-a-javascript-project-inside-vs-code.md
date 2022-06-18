@@ -4,7 +4,6 @@ title:  "How to sort imports for a JavaScript Project using Prettier"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1647939834412/-rOHcxwbV.png"
 excerpt: "Make your code clean, structured and look better by sorting import statements automatically using the prettier plugin for VS Code"
 original: "https://blog.usman-s.me/sort-imports-using-prettier-in-a-javascript-project-inside-vs-code"
-hasCode: true
 audioId: 3900225
 category: coding
 tags: ["libraries", "tools", "tips"]

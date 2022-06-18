@@ -4,7 +4,6 @@ title:  "Introducing Quotes App"
 excerpt: "An Open Source Quotes App made by Gourav Khunger. The app is open source and uses zenquotes' API to fetch quotes"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1621705813818/nq9ltm2ud.png"
 audioId: 3467755
-hasCode: true
 category: android
 tags: ["open-source", "apps"]
 author: gouravkhunger

@@ -4,7 +4,6 @@ title:  "How and when to override Android Activity's Lifecycle methods?"
 excerpt: "Explanation of a StackOverflow question regarding an Android Activity's lifecycle"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1630916159630/gZuyRfFaz.png"
 audioId: 3467787
-hasCode: true
 category: android
 tags: ["app-development", "beginners", "tips"]
 author: gouravkhunger

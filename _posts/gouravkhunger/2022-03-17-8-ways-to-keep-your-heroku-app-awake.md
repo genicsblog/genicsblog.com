@@ -4,7 +4,6 @@ title:  "8 No Brainer Ways to Keep Your Heroku App Awake"
 excerpt: "Compilation of the easiest ways to keep your free Heroku dyno running 24/7."
 image: "https://user-images.githubusercontent.com/46792249/158544648-96aac1a5-d4dc-4f55-adff-d0479f6f447f.png"
 audioId: 3827320
-hasCode: true
 category: web
 tags: ["web-development", "tools"]
 author: gouravkhunger

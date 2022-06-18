@@ -4,7 +4,6 @@ title:  "Next generation Hello World program"
 excerpt: "Done writing simple Hello World code? Give yourself a challenge by building this Next-gen Hello World program!"
 image: "https://user-images.githubusercontent.com/46792249/151851304-f4c3746f-7c60-4cf9-84b6-cf551e627ada.jpg"
 audioId: 3467576
-hasCode: true
 category: coding
 tags: ["advanced", "tips"]
 author: gouravkhunger

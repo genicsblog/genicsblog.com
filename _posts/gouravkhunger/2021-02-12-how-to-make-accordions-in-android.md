@@ -12,7 +12,6 @@ notice: >-
     <br/><br/>
     If you find something that doesn't work, please write in the comments below.
 audioId: 3468036
-hasCode: true
 category: android
 tags: ["beginners", "app-development"]
 author: gouravkhunger

@@ -3,7 +3,6 @@ layout: post
 title:  "How to Create a Pull Request in GitHub *Correctly*"
 excerpt: "Guide that teaches you how to fork a GitHub repository, make changes and create pull requests in the correct way."
 image: "https://user-images.githubusercontent.com/46792249/161420369-eb87073e-b49c-462e-84bf-57c442839eb3.png"
-hasCode: true
 audioId: 3922814
 category: "coding"
 tags: ["open-source", "beginners", "tips"]

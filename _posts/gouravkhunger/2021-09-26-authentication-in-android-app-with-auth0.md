@@ -4,7 +4,6 @@ title:  "Integrate Authentication to your Android App with Auth0"
 excerpt: "The complete guide to integrating auth0 authentication in your Android app."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1632651818188/OlwaCV_aL.png"
 audioId: 3463098
-hasCode: true
 category: android
 tags: ["authentication", "app-development"]
 author: gouravkhunger

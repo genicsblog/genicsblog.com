@@ -3,7 +3,6 @@ layout: post
 title:  "Make your first Crypto with ThirdWeb 🤯"
 excerpt: "With all this web3 hype going on, are you keen to learn how you can jump right in and build your own crypto?"
 image: "https://user-images.githubusercontent.com/76690419/149300558-70052677-940d-49d1-b243-e4e0ba437c01.png"
-hasCode: true
 category: web3
 tags: ["blockchain", "crypto"]
 author: avneesh

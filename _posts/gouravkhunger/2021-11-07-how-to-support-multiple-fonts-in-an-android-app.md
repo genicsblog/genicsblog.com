@@ -5,7 +5,6 @@ excerpt: "This article explains how to increase an android app's accessibility b
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636226069099/jLbjyNOXm.png"
 audioId: 3467729
 category: android
-hasCode: true
 tags: ["app-development", "libraries", "a11y"]
 author: gouravkhunger
 ---

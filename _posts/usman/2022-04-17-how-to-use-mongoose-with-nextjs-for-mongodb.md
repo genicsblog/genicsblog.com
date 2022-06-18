@@ -4,7 +4,6 @@ title:  "How to use Mongoose with Next.js for MongoDB?"
 excerpt: "Learn using Mongoose for MongoDB by building a hands-on project!"
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1650187197534/EONUGmGt8.png"
 audioId: 4008578
-hasCode: true
 category: web
 tags: ["mongodb", "next-js"]
 author: usman

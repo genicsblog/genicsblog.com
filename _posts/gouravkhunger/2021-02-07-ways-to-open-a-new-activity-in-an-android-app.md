@@ -5,7 +5,6 @@ excerpt: "This article explains the basics of linking two activities in Android 
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1612701204335/IlBdysPPI.png"
 notice: "*Thumbnail art by: [rawpixel.com - freepik.com](https://www.freepik.com/psd/background)*"
 audioId: 3467986
-hasCode: true
 category: android
 tags: ["beginners", "app-development"]
 author: gouravkhunger

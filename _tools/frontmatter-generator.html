@@ -2,7 +2,6 @@
 layout: tool
 title: "Frontmatter Generator"
 excerpt: "A tool to quickly generate yaml frontmatter for posts to be published at Genics Blog."
-hasCode: true
 ---
 
 <article class="bg-white dark:bg-background rounded-2xl md:text-lg m-8 md:m-10 lg:m-14 p-6 md:p-8 shadow-xl dark:shadow-none shadow-slate-200">
@@ -24,13 +23,6 @@ hasCode: true
       <input type="text" id="post-thumbnail" required
           placeholder="Upload to a GitHub comment thread for quickly generating a link."
           class="mt-1 w-full rounded-lg px-2 py-1.5 border-2 dark:border-slate-700 focus:border-primary dark:focus:border-blue-400 outline-none dark:bg-background" />
-    </div>
-
-    <div class="mt-4">
-      <input type="checkbox" id="post-hascode"
-          placeholder="Upload image to any GitHub comment thread for generating a link."
-          class="mt-1 px-2 py-1.5" />
-      <label for="post-hascode">My post contains code blocks</label>
     </div>
 
     <div class="mt-4">
@@ -108,7 +100,6 @@ hasCode: true
     const author = document.getElementById("post-author").value.trim();
     const title = document.getElementById("post-title").value.trim();
     const thumbnail = document.getElementById("post-thumbnail").value.trim();
-    const hasCode = document.getElementById("post-hascode").checked;
     const category = document.getElementById("post-category").value.trim();
     const tags = document.getElementById("post-tags").value.trim().split(" ").filter(tag => tag != "");
     const excerpt = document.getElementById("post-excerpt").value.trim();
@@ -120,7 +111,6 @@ hasCode: true
     author && (frontmatter += `\nauthor: ${author}`);
     title && (frontmatter += `\ntitle: "${title}"`);
     thumbnail && (frontmatter += `\nimage: "${thumbnail}"`);
-    hasCode && (frontmatter += `\nhasCode: ${hasCode}`);
     category && (frontmatter += `\ncategory: ${category}`);
     (tags.length > 0 && tags[0] != "") && (frontmatter += `\ntags: [${tags.map(tag => `"${tag}"`).join(", ")}]`);
     excerpt && (frontmatter += `\nexcerpt: "${excerpt}"`);
