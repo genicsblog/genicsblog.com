@@ -197,3 +197,16 @@ bhawna1203:
     github: "Bhawna1203"
     linkedin: "in/bhawna-chauhan-00a32a200/"
     twitter: "BhawnaC18275984"
+    
+florianwalther:
+  name: "Florian Walther"
+  role: "Founder of TutHub.io & Coding in Flow (YouTube)"
+  avatar: "https://avatars.githubusercontent.com/u/96349921?v=4"
+  bio: "Web & mobile developer, Youtuber & indie hacker"
+  links:
+      github: "FlorianWalther"
+      stackoverflow: "8281994"
+      linkedin: "in/flowalther/"
+      twitter: "flo_walther"
+      instagram: "codinginflow"
+      youtube: "codinginflow"
