@@ -64,7 +64,9 @@ There exists another way, by changing the `themes.xml` values at runtime and app
 
 ## The Result
 
-As a result, I built the android library [Fontize](https://github.com/gouravkhunger/Fontize)
+As a result, I built the android library Fontize!
+
+{% include linkpreview.html url="https://github.com/gouravkhunger/Fontize" title="gouravkhunger/Fontize" %}
 
 Once you add it to your project, you need to follow certain steps mentioned in the [repository's `README.md` file](https://github.com/gouravkhunger/Fontize/blob/main/README.md) and your project will migrate to use intelligent `Fontize` views that can work united and can change fonts in a snap.
 

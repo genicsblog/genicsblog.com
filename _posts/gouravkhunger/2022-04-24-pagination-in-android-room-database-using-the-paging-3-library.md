@@ -20,7 +20,9 @@ The library provides 3 different utilities for loading paginated data:
 
 In this tutorial, we will focus on implementing pagination only for a **local Room Databases using Paging 3**.
 
-If you are interested in just the code for the project, please check out this [GitHub repository](https://github.com/gouravkhunger/room-paging3-demo).
+If you are interested in just the code for the project, please check out this GitHub repository:
+
+{% include linkpreview.html url = "https://github.com/gouravkhunger/room-paging3-demo" title = "gouravkhunger/paging3-room-demo" %}
 
 # Prerequisites
 
@@ -48,7 +50,9 @@ You are not expected to have any knowledge of Paging 3!
 
 ## Setup 
 
-We will be using an Empty Activity as a starter project. If you don't know how to create a new Android studio project, do read [this article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio).
+We will be using an Empty Activity as a starter project. If you don't know how to create a new Android studio project, do read this article:
+
+{% include linkpreview.html url="https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio" rel="dofollow" target="_self" %}
 
 The package name I have for my app is `com.example.paginationdemo`.
 

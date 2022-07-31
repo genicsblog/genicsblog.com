@@ -144,6 +144,8 @@ I've already setup [`jekyll-paginate-v2`](https://github.com/sverrirs/jekyll-pag
 
 I wished to integrate autopages for authors functionality to it, but the paginate-v2 plugin isn't being actively maintained. So I decided to build [`jekyll-auto-authors`](https://github.com/gouravkhunger/jekyll-auto-authors){:rel="dofollow"} that works in sync with it. Drop a star at GitHub to show support!
 
+{% include linkpreview.html url="https://github.com/gouravkhunger/jekyll-auto-authors" title="gouravkhunger/jekyll-auto-authors" %}
+
 Let's look at how to start using the plugin. If you prefer a video tutorial, watch this:
 
 {% include youtube.html id="V5Ly6T_bWwU" %}
