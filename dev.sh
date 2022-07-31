@@ -3,13 +3,6 @@
 # This script removes the need for having docker to build the site locally.
 # You can run it through "./dev.sh"
 
-# move out of the .theme folder once script is closed
-function cleanup () {
-  cd ..
-}
-
-trap "cleanup" 2
-
 if [ ! -d ".theme" ]
 then
   echo "No cached '.theme' directory found. Fetching the latest theme files..."
