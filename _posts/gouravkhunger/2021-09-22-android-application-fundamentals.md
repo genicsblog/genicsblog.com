@@ -12,7 +12,7 @@ series: "android-development"
 
 Hello there!
 
-In the last article at the [Android app development series](https://genicsblog.com/series/android-development), we learned [how to make a Hello World app](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio). We made a new project in Android Studio and ran the app.
+In the last article at the [Android app development series](/series/android-development), we learned [how to make a Hello World app](/how-to-create-your-first-android-app-using-android-studio). We made a new project in Android Studio and ran the app.
 
 Now, in this article, we are going to learn more about the Android App structure, its basic components, how to use [Android Studio](https://developer.android.com/studio), how to navigate through the project, and a lot many things that will be helpful along the way! 
 
@@ -20,7 +20,7 @@ Let's dig into it!
 
 ## Know Android Studio in depth
 
-[Last time](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio), after we created a new app, this kind of screen popped up after the app was built.
+[Last time](/how-to-create-your-first-android-app-using-android-studio), after we created a new app, this kind of screen popped up after the app was built.
 
 ![Android Studio main window](https://cdn.hashnode.com/res/hashnode/image/upload/v1631773265969/Sq2JDNXFps.png)
 

@@ -103,7 +103,9 @@ You should try to reply to each comment your post gets, because that invokes int
 
 You can make an email newsletter too- that helps to regain users. You know what? Hashnode blogs get an email newsletter feature completely free! What are you waiting for? [Join hashnode](https://hashnode.com/@gouravkhunger/joinme) and start blogging in minutes!
 
-Here's one of my in-depth articles about some of the [mistakes I had been making in blogging](https://genicsblog.com/mistakes-that-beginners-do-in-blogging-dont-make-these-yourself), which you should stop making right away!
+Here's one of my in-depth articles about some of the, which you should stop making right away!
+
+{% include linkpreview.html url="https://genicsblog.com/mistakes-that-beginners-do-in-blogging-dont-make-these-yourself" rel="dofollow" target="_self" %}
 
 ## Final words
 

@@ -68,7 +68,9 @@ As of now, here's a list of tools and frameworks this app uses:
 - Retrofit Library
 - Android Navigation Components
 
-All the code for this app is hosted on [this Github repository](https://github.com/GouravKhunger/QuotesApp).
+All the code for this app is hosted on this Github repository:
+
+{% include linkpreview.html url="https://github.com/gouravkhunger/QuotesApp" title="gouravkhunger/QuotesApp" %}
 
 Feel free to clone the repository and add new amazing features that you have in your mind 🙂
 

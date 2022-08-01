@@ -22,7 +22,7 @@ In this tutorial, we will focus on implementing pagination only for a **local Ro
 
 If you are interested in just the code for the project, please check out this GitHub repository:
 
-{% include linkpreview.html url = "https://github.com/gouravkhunger/room-paging3-demo" title = "gouravkhunger/paging3-room-demo" %}
+{% include linkpreview.html url="https://github.com/gouravkhunger/room-paging3-demo" title="gouravkhunger/paging3-room-demo" %}
 
 # Prerequisites
 

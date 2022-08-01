@@ -14,7 +14,11 @@ A major aspect of open source is the ability to create and maintain a community 
 
 [Git](https://git-scm.com) and [GitHub](https://github.com) are popular open source collaboration tools. Git helps you keep track of changes to your code, and GitHub helps you share your code with others. In this article, we will teach you how to create a pull request in GitHub in the correct way.
 
-We will use this [demo repository](https://github.com/gouravkhunger/PRs-demo) to demonstrate the process on collaboration. Feel free to play with it and see how it works. Follow along with the tutorial below.
+We will use this demo repository to demonstrate the process on collaboration:
+
+{% include linkpreview.html url="https://github.com/gouravkhunger/PRs-demo" title="gouravkhunger/PRs-demo" %}
+
+Feel free to play with it and see how it works. Follow along with the tutorial below.
 
 ## 1. Fork the Repository
 

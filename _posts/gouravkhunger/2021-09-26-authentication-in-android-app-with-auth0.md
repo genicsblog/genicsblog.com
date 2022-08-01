@@ -17,13 +17,17 @@ Check out this video to learn what we are going to build in this tutorial:
 
 {% include youtube.html id="obk3q1AaH6I" %}
 
-The code for this basic app that we are going to build is present [here on GitHub](https://github.com/gouravkhunger/auth0-demo-android), star it and follow me :)
+The code for this basic app that we are going to build is present here on GitHub:
+
+{% include linkpreview.html url="https://github.com/gouravkhunger/auth0-demo-android" title="gouravkhunger/auth0-demo-android" %}
+
+Do star it and follow me to show some support :)
 
 # Android app setup
 
 ## Initialize the project
 
-First, create a new Android Studio Project.  If you are just checking out Auth0, you can follow the steps mentioned in [my previous article](https://genicsblog.com/how-to-create-your-first-android-app-using-android-studio) on how to make a basic project using Android Studio.
+First, create a new Android Studio Project.  If you are just checking out Auth0, you can follow the steps mentioned in [my previous article](/how-to-create-your-first-android-app-using-android-studio) on how to make a basic project using Android Studio.
 
 You can also use an existing project!
 
@@ -164,7 +168,7 @@ Open the `res/layout/activity_main.xml` file and replace the content with this l
 
 This will create a simple layout that has the name and email text on top and two buttons to log-in and log-out. You'll have to create string resources for dummy name and email placeholder.
 
-![Basic user profile layout preview for demo Android app](https://cdn.hashnode.com/res/hashnode/image/upload/v1632600993177/-UK3Y3RsZ.png)
+![Basic user profile layout preview for demo Android app](https://cdn.hashnode.com/res/hashnode/image/upload/v1632600993177/-UK3Y3RsZ.png){:width="50%"}
 
 ## Coding the `MainActivity`
 
@@ -278,7 +282,7 @@ class MainActivity : AppCompatActivity() {
 
 Now, once a user presses this button, the login process will start and they'll be asked to log in with their E-mail id. 
 
-You can use any scheme name, here I used `demo`. I recommend not to use `https` because it might conflict with the intent-filters internally. I got this error while building [JekyllEx](https://genicsblog.com/introducing-jekyllex-android-app).
+You can use any scheme name, here I used `demo`. I recommend not to use `https` because it might conflict with the intent-filters internally. I got this error while building [JekyllEx](/introducing-jekyllex-android-app).
 
 Once the login is successful, we can get the access token which can be used to retrieve the user profile. Let's make a function to get the user profile from the token:
 

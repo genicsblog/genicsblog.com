@@ -27,7 +27,7 @@ A few months ago, I got to learn about [Jekyll](https://jekyllrb.com/), which is
 
 >  Jekyll is a simple, blog-aware, static site generator perfect for personal, project, or organization sites. Think of it like a file-based CMS, without all the complexity. Jekyll takes your content, renders Markdown and Liquid templates, and spits out a complete, static website ready to be served by Apache, Nginx, or another web server.
 
-This caught my attention in the first go as I am a blogging freak who has been [testing different blogging solutions for a few years now](https://genicsblog.com/introductory-first-post) 😆.
+This caught my attention in the first go as I am a blogging freak who has been [testing different blogging solutions for a few years now](https://blog.gouravkhunger.me/introductory-first-post) 😆.
 
 I used Jekyll in many places, testing things locally and then finally making [my sister's blog](https://samdisha.me){:rel="dofollow"} with it, and helped someone(can't mention) to make a [small blog](https://60wordsofwisdom.xyz) for him.
 
