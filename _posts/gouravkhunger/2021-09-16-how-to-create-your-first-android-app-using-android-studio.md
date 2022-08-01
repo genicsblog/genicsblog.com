@@ -12,7 +12,7 @@ series: "android-development"
 
 Hello there!
 
-This is the second article in the [Android App Development For Beginner](https://genicsblog.com/series/android-development) series. If you have followed along with the previous article, then you will have Android Studio set up.
+This is the second article in the [Android App Development For Beginner](/series/android-development) series. If you have followed along with the previous article, then you will have Android Studio set up.
 
 I will continue this article from where the previous article ended, and by the end, we will be having a Hello World Android App ready!
 
@@ -94,7 +94,7 @@ Once the project is built, you will see the IDE window with two files open: `Mai
 
 ![Android Studio IDE Project Screen Image](https://cdn.hashnode.com/res/hashnode/image/upload/v1631773265969/Sq2JDNXFps.png)
 
-[In the last article](https://genicsblog.com/beginning-android-development-with-android-studio#emulators-yes-or-no), I explained whether or not you should use emulators or not. In this article, I will run the app on my device but you can also use 
+[In the last article](/beginning-android-development-with-android-studio#emulators-yes-or-no), I explained whether or not you should use emulators or not. In this article, I will run the app on my device but you can also use 
 
 Now, you can enable USB debugging on your Android Device through developer options (I will write an article on it and link it here). Then connect your android device to your machine, and you will see that Android Studio shows the device name on the toolbar.
 

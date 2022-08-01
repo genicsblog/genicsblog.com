@@ -17,7 +17,7 @@ Accessibility is a major aspect that every app developer should focus on. Imagin
 
 I used to neglect this, but here's why I am writing this post.
 
-If you follow me on any social media, or here on my blog, you know that [I built JekyllEx](https://genicsblog.com/introducing-jekyllex-android-app) to be able to manage Jekyll blogs from my Android device.
+If you follow me on any social media, or here on my blog, you know that [I built JekyllEx](/introducing-jekyllex-android-app) to be able to manage Jekyll blogs from my Android device.
 
 Recently, I [a person reached out](https://github.com/jekyllex/jekyllex-android/issues/2) to discuss about their chronic headaches that are triggered by font and colours that don't go well on their eyes and it would be great if I allowed some settings to be able to customise it based on user preferences. 
 
@@ -64,7 +64,9 @@ There exists another way, by changing the `themes.xml` values at runtime and app
 
 ## The Result
 
-As a result, I built the android library [Fontize](https://github.com/gouravkhunger/Fontize)
+As a result, I built the android library Fontize!
+
+{% include linkpreview.html url="https://github.com/gouravkhunger/Fontize" title="gouravkhunger/Fontize" %}
 
 Once you add it to your project, you need to follow certain steps mentioned in the [repository's `README.md` file](https://github.com/gouravkhunger/Fontize/blob/main/README.md) and your project will migrate to use intelligent `Fontize` views that can work united and can change fonts in a snap.
 

@@ -89,7 +89,9 @@ That's how the thing works in laymen's terms. I hope you understood what's going
 
 ----
 
-Also read [Common ways to open a New Activity in Android](/ways-to-open-a-new-activity-in-an-android-app)
+Also read:
+
+{% include linkpreview.html url="https://genicsblog.com/ways-to-open-a-new-activity-in-an-android-app" rel="dofollow" target="_self" %}
 
 ----
 

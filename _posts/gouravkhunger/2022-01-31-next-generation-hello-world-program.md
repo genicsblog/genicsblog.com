@@ -338,7 +338,9 @@ public class NextGenHelloWorld {
 
 It's pretty long but I'm sure you understand most of it!
 
-You can find all the code for this tutorial in [this repository](https://github.com/Kushagra-Jain99/NextGenHelloWorld).
+You can find all the code for this tutorial in this repository:
+
+{% include linkpreview.html url="https://github.com/Kushagra-Jain99/NextGenHelloWorld" title="Kushagra-Jain99/NextGenHelloWorld" %}
 
 ## Conclusion
 

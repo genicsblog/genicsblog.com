@@ -113,4 +113,4 @@ Do check out the projects on GitHub and star them. And since you are going to st
 
 I post resourceful content on this blog, consider subscribing to the newsletter by filling the form at the top of the article to get notified of the new content that I keep posting. Alternatively, [join Hashnode](https://hashnode.com/@gouravkhunger/joinme) and [follow me](https://hashnode.com/@gouravkhunger)!
 
-[Let's get in touch](https://genicsblog.com/contact).
+[Let's get in touch](https://github.com/gouravkhunger).

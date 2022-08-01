@@ -130,7 +130,9 @@ You can set up a free version to monitor your application. In the process of mon
 
 ## 7. Uptime Robot
 
-[Uptime Robot](https://uptimerobot.com) is yet another free and flexible website monitoring tool, whose free plan can help you monitor HTTP security, response times, ports, keywords and a lot more.
+Uptime Robot is yet another free and flexible website monitoring tool, whose free plan can help you monitor HTTP security, response times, ports, keywords and a lot more.
+
+{% include linkpreview.html url="https://uptimerobot.com" %}
 
 It does it in the same way, by pinging the site to get the details. When it pings your Heroku app, it simulates traffic to it, which will keep it awake!
 
