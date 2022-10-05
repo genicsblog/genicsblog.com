@@ -1,16 +1,17 @@
 ---
 layout: post
-title:  "Chakra UI is amazing!"
+title:  "Chakra UI is awesome!"
 excerpt: "Chakra UI is an absolutely amazing UI library built for React. It consists of a plethora of components that you can use as building blocks for a beautiful and responsive front end."
-description: "My thoughts on Chakra UI and how it compares to Tailwind"
-image: "https://hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1664781131491%2Feh6-oeNXK.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
-category: coding
+description: "My thoughts on Chakra UI and how it compares to Tailwind."
+image: "https://user-images.githubusercontent.com/46792249/194068868-31884742-ea9c-428e-8f57-3de2ea6dc8e9.png"
+audioId: 5286916
+category: frontend
 original: "https://blog.dhruva.is-a.dev/chakra-ui-is-amazing"
-tags: ["libraries", "web-development"]
+tags: ["web-development", "libraries"]
 author: dhruva
 ---
 
-Chakra UI is an absolutely amazing UI library built for React. It consists of a plethora of components that you can use as building blocks for a beautiful and responsive front end. In this article, I’m gonna go over its selling features and how it compares to one of its key alternatives- Tailwind CSS. 
+[Chakra UI](https://chakra-ui.com/) is an absolutely amazing UI library built for React. It consists of a plethora of components that you can use as building blocks for a beautiful and responsive front end. In this article, I’m gonna go over its selling features and how it compares to one of its key alternatives- Tailwind CSS.
 
 ## Why should you use Chakra UI?
 
@@ -33,7 +34,7 @@ function Example() {
 }
 ```
 
-That’s it! It’s very easy to set up, and everything you require to get started with it is all mentioned elaborately in their documentation. 
+That’s it! It’s very easy to set up, and everything you require to get started with it is all mentioned elaborately in their documentation.
 
 It’s also easy to switch between colors based on light and dark mode as illustrated below:
 
@@ -57,11 +58,11 @@ function StyleColorMode() {
 }
 ```
 
-Here the value of `bg` will be `red.500` in light mode and `red.200` in dark mode. This system allows for easy modification of the UI based on the color mode. 
+Here the value of `bg` will be `red.500` in light mode and `red.200` in dark mode. This system allows for easy modification of the UI based on the color mode.
 
 ### 2. Colors
 
-Chakra has a huge set of colors with varying accents, which is inspired by [Tailwind’s](https://tailwindcss.com) colors. 
+Chakra has a huge set of colors with varying accents, which is inspired by [Tailwind’s](https://tailwindcss.com) colors.
 
 ![https://i.imgur.com/UWt2Q38.png](https://i.imgur.com/UWt2Q38.png)
 
@@ -85,11 +86,11 @@ Just stick `Center` everywhere. How cool is that 😭
 
 Another component that I find really useful is the `Box` component. It’s like a `div` on steroids. It can easily be sized and made responsive. 
 
-The `SimpleGrid` component is also really, really cool. These can also be made auto-responsive using the `minChildWidth` property. 
+The `SimpleGrid` component is also really, really cool. These can also be made auto-responsive using the `minChildWidth` property.
 
 ```tsx
-// Passing `columns={[2, null, 3]}` and `columns={{sm: 2, md: 3}}`
-// will have the same effect.
+{% raw %}// Passing `columns={[2, null, 3]}` and `columns={{sm: 2, md: 3}}`
+// will have the same effect.{% endraw %}
 
 <SimpleGrid columns={[2, null, 3]} spacing='40px'>
   <Box bg='tomato' height='80px'></Box>
@@ -148,14 +149,13 @@ import { Box } from "@chakra-ui/react"
 <Box backgroundColor='tomato' />
 ```
 
-There are also various shorthands you can use to style faster like `mt` for margin-top, `w` for width, `h` for height, etc. 
+There are also various shorthands you can use to style faster like `mt` for margin-top, `w` for width, `h` for height, etc.
 
 ### 5. Complete TypeScript support
 
 I’m a complete TypeScript simp and Chakra comes with built-in type definitions so it has great autocomplete in VSCode and other such editors.
 
-![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664782123605/i99hnESZd.png align="left")
-
+![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1664782123605/i99hnESZd.png)
 
 ![https://i.imgur.com/kEcFWkt.png](https://i.imgur.com/kEcFWkt.png)
 
@@ -177,19 +177,25 @@ The default color theme can be changed by extending the main theme object and yo
 
 ![https://i.imgur.com/De4pOPL.png](https://i.imgur.com/De4pOPL.png)
 
-[https://chakra-ui.com/](https://chakra-ui.com/)
+The documentation for Chakra UI is thorough and easy to understand, with everything you could possibly need during development. It has editable examples which are really useful to do some quick tinkering.
 
-The documentation for Chakra UI is thorough and easy to understand, with everything you could possibly need during development. It has editable examples which are really useful to do some quick tinkering. In fact, I barely remember having to google anything while working with Chakra since everything was in the docs. 
+In fact, I barely remember having to google anything while working with Chakra since everything was in the docs.
 
 ![](https://i.imgur.com/i334l12.png)
 
 ## Chakra UI vs Tailwind
 
-Tailwind focuses on **styling**, which means you’ll have to handle a lot of stuff like accessibility, keyboard navigation, etc. Meanwhile, Chakra focuses more on being a UI library, with all the styling and other related functionality taken care of. But this means that you will obviously be losing out on customization when compared to Tailwind, but I am fine with that. Writing responsive styles and styling, in general, is pretty similar to vanilla CSS, which I don't like, but many love the simplicity of Tailwind. Tailwind can be used with other frameworks like Angular, Vue, Svelte, etc., but Chakra only has support for React and other React-based libraries like Next, Redwood, Remix, etc. Personally, I prefer using Chakra UI as it's easier to use with its in-built components rather than styling them all myself. And I know Tailwind UI exists, but again it doesn’t really focus on the functional aspect of things. 
+Tailwind focuses on **styling**, which means you’ll have to handle a lot of stuff like accessibility, keyboard navigation, etc. Meanwhile, Chakra focuses more on being a UI library, with all the styling and other related functionality taken care of.
 
-A more detailed comparison for Tailwind and other libraries like Material UI and Ant Design can be found in their docs:
+But this means that you will obviously be losing out on customization when compared to Tailwind, but I am fine with that.
 
-[https://chakra-ui.com/getting-started/comparison](https://chakra-ui.com/getting-started/comparison)
+Writing responsive styles and styling, in general, is pretty similar to vanilla CSS, which I don't like, but many love the simplicity of Tailwind.
+
+Tailwind can be used with other frameworks like Angular, Vue, Svelte, etc., but Chakra only has support for React and other React-based libraries like Next, Redwood, Remix, etc.
+
+Personally, I prefer using Chakra UI as it's easier to use with its in-built components rather than styling them all myself. And I know Tailwind UI exists, but again it doesn’t really focus on the functional aspect of things. 
+
+A more detailed comparison for Tailwind and other libraries like Material UI and Ant Design can be [found in their docs](https://chakra-ui.com/getting-started/comparison).
 
 ## The End
 
