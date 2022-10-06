@@ -61,7 +61,7 @@ jobs:
       run: npm install
 
     - name: Restore/cache .jekyll-cache folder
-      if: inputs.cache == 'false'
+      if: github.event_name == 'push' || inputs.cache == 'false'
       id: jekyll-cache
       uses: actions/cache@v3
       with:
