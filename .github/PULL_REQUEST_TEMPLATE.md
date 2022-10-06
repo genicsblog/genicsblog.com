@@ -1,4 +1,6 @@
-<!-- If your PR fixes an open issue, use `Closes #999` to link your PR with the issue. #999 stands for the issue number you are fixing -->
+<!-- If your PR fixes an open issue, use `Closes #999` to link your PR with the issue. #999 stands for the issue number you are fixing
+If your PR is a draft for a post, link the issue with its respective submission request.
+-->
 
 ## Fixes Issue
 
@@ -22,9 +24,9 @@
 - [ ] My code follows the code style of this project.
 - [ ] My change requires changes to the documentation.
 - [ ] I have updated the documentation accordingly.
+- [ ] My code is a draft for a post.
+- [ ] I have added the appropriate [frontmatter](https://docs.genicsblog.com/author/writing-the-article).
 - [ ] All new and existing tests passed.
-- [ ] This PR does not contain plagiarized content.
-- [ ] The title of my pull request is a short description of the requested changes.
 
 ## Screenshots
 

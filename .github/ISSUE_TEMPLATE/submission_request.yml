@@ -1,0 +1,40 @@
+name: Submission Request
+description: Submit a request for publishing an article on Genics Blog.
+title: ""
+labels: ""
+assignees: ""
+
+body:
+  - type: textarea
+    attributes:
+      label: Submission Idea
+      description: Briefly describe what your article is about.
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: Category
+      description: The category that your article belongs to (maximum 1). (Check out genicsblog.com/topics)
+  - type: input
+    attributes:
+      label: Tags
+      description: The tags that your article belongs to (maximum 3). (Check out genicsblog.com/topics)
+  - type: checkboxes
+    attributes:
+      label: Cross-posting?
+      description: Is your article already published somewhere else?
+      options:
+        - label: Yes
+          required: true
+  - type: textarea
+    attributes:
+      label: Link to the article
+      description: Provide a link to the article that you want to publish on Genics Blog. You must be the original author of that article to re-post at Genics Blog.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Remarks
+      description: Any remarks or additional information that you want to share with us.
+    validations:
+      required: false
