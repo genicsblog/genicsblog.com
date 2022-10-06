@@ -5,6 +5,11 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      cache:
+        description: "Don't use jekyll cache"
+        required: false
+        type: boolean
 
 jobs:
   publish:
@@ -54,6 +59,14 @@ jobs:
     - name: Install npm dependencies
       if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       run: npm install
+
+    - name: Restore/cache .jekyll-cache folder
+      if: inputs.cache == 'false'
+      id: jekyll-cache
+      uses: actions/cache@v3
+      with:
+        path: .jekyll-cache
+        key: ${{ runner.os }}-${{ hashFiles('Gemfile') }}
 
     - name: Build production jekyll site
       if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
