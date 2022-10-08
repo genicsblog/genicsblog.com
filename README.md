@@ -4,21 +4,19 @@ Genics Blog is an open-source developer publication.
 
 For publishing your content on the blog, please refer to the [Author Docs](https://docs.genicsblog.com/author).
 
-This repository mainly holds all the content for the blog and the static pages of the site. It also has the workflow for building the [Jekyll](https://jekyllrb.com/) site and deploying it. Theme files for the site are stored in the [theme files repository](https://github.com/genicsblog/theme-files).
+This repository mainly holds all the content for the blog and the static pages of the site. It also hosts the workflow for building the [Jekyll](https://jekyllrb.com/) site and deploying it. Theme related setup for the site is done in the [`theme-files`](https://github.com/genicsblog/theme-files) repository.
 
 ## Structure of this repository
 
-`.github` - Contains all the CI/CD workflows, and the issue and pull request templates.
+`.github`: CI/CD workflows, issue and pull request templates.
 
-`_data` - Contains some metadata used by the site
+`_data`: Metadata used by the site.
 
-`_drafts` - Contains the drafts for the blog posts
+`_drafts`: The drafts for the blog posts.
 
-`_pages` - Contains the static pages like the contact page, about page, etc
+`_posts`: The published blog posts, under specific author folders.
 
-`_posts` - Contains the published blog posts
-
-`_series` - Contains blog post serieses
+`_series`: Series pages that list grouped articles.
 
 ## Contributing
 
@@ -28,17 +26,15 @@ To publish a post on the blog, you must first [set up your profile](https://docs
 
 Then you can [create a submission request](https://docs.genicsblog.com/author/create-a-submission-request) by opening an issue and filling out the **Submission Request** template.
 
-Once someone from the team responds and approves your request, you can [create a draft](https://docs.genicsblog.com/author/writing-the-article). Then go back to the submission request issue and let the team know. Someone from the team will review the submission, make some small changes (for grammar, seo, styling, etc) and then publish your post.
+Once someone from the team responds and approves your request, you can [create a draft](https://docs.genicsblog.com/author/writing-the-article). Once done, go back to the submission request and let the team know. Someone from the team will review the submission, make some small changes (for grammar, seo, styling, etc) and then publish your post.
 
-Check out the [authout docs](https://docs.genicsblog.com/author) for more information.
+Check out the [author docs](https://docs.genicsblog.com/author) for more information.
 
-### Anything site-related
+### Site-related discussions
 
-You may open issues related to the site in the repository.
+You may open general issues related to the site in this repository. Only the PRs related to publishing articles or the CI/CD process are to be done in this repository.
 
-PRs related to the CI/CD process and setting up the development environment are to be done in this repository.
-
-Anything related to the styling of the webpage must be done in the [theme files repository](https://github.com/genicsblog/theme-files).
+Anything related to the styling/feature requests for the website must be done in the [`theme-files`](https://github.com/genicsblog/theme-files) repo.
 
 ### Local Setup
 
