@@ -67,3 +67,16 @@ Feel free to [open an issue](https://github.com/genicsblog/genicsblog.com/issues
 The content under `_posts` folder belongs to the respective authors. Please contact the authors for questions relating to their content and licensing.
 
 The content of the site excluding `_posts` is licensed under the [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+
+
+## Project Contributors⭐ 
+
+<table align="center">
+<tr>
+<td>
+<a href="https://github.com/genicsblog/genicsblog.com/graphs/contributors" align="center">
+  <img src="https://contrib.rocks/image?repo=genicsblog/genicsblog.com" /> 
+</a>
+</td>
+</tr>
+</table>
