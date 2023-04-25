@@ -71,6 +71,9 @@ jobs:
     - name: Build production jekyll site
       if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       run: JEKYLL_ENV=production NODE_ENV=production bundle exec jekyll build
+      env:
+        BEYONDWORDS_API_KEY: ${{ secrets.BEYONDWORDS_API_KEY }}
+        BEYONDWORDS_PROJECT_ID: ${{ secrets.BEYONDWORDS_PROJECT_ID }}
 
     - name: Deploy to gh-pages
       if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
