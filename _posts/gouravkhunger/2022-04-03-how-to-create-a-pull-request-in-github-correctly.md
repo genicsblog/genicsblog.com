@@ -145,12 +145,14 @@ Here we are asking git to `push` our changes to the branch `learning-about-prs` 
 
 > ### Additional Note:
 > Here, `origin` is linked to your fork. You can verify it by running this command in your terminal:
-> <br/><br/>
+>
+>
 > ```shell
 > git remote -v
 > ```
 > This should show the `push` and `fetch` links which point to your fork.
-> <br/><br/>
+>
+>
 > If you change these links by using `git remote rm origin` and `git remote add origin <new-link>`, the commits will be sent to new remote then!
 
 ## 7. Make the PR

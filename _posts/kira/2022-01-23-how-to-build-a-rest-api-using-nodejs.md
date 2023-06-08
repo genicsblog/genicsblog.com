@@ -26,6 +26,7 @@ So you have built an amazing e-store application and you wanted other developers
 ## What's a REST API? 🤔
 
 Now as you have let's talk something about "REST APIs". REST stands for **Representational State Transfer**, it's one of the most popularly known type of API architecture. These types of APIs follow the client-server model, where one program sends a request and the other response with some data.
+
 The requests are HTTP methods such as POST, GET, PUT, DELETE...
 
 ![](https://user-images.githubusercontent.com/26124625/104204412-431e2580-5453-11eb-9827-29a65aa6ff82.png)
@@ -744,6 +745,7 @@ Create an account on [Heroku](https://herokuapp.com/) and click on `Create new a
 Head over to the settings tab and click `Reveal Config Vars`
 
 These are the environment variables
+
 ![](https://imgur.com/aj7mHCD.png)
 
 Add a new config var with the key as `MONGODB_URL` and the value as your MongoDB connection URL

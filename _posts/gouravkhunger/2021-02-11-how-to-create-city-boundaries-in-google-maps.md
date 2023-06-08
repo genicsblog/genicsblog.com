@@ -28,7 +28,6 @@ This means we will take each point on a city’s boundary and then use it to for
 
 ## How to get the co-ordinates?
 
-Websites needed
 Here’s a list of websites you need to get the working JSON file containing the coordinates of the boundary.
 
 - [OpenStreetMap Nominatim](http://nominatim.openstreetmap.org/)

@@ -248,6 +248,4 @@ private CharSequence getFormattedMessage() {
 
 This was a tutorial on the [Toasty](https://github.com/GrenderG/Toasty) library, I hope you got well insights on it.
 
-If you wish me to post a tutorial on a specific library, comment it down!
-
-Thanks for reading! Happy Coding :)
+If you wish me to post a tutorial on a specific library, do comment it down. Thanks for reading!

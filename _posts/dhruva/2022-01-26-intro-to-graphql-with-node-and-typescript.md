@@ -622,6 +622,7 @@ Awesome!!
 Now, let’s get to the main part, which is building out our CRUD functionality. Let’s start with the easiest, which is to fetch all the posts:
 
 BUT WAIT A MINUTE!
+
 Remember that `Task` entity we made? Like a hundred years back? Yep, that one.
 
 That is a database **Entity**, but when we get all tasks we have to return a `Task` and we can’t return an **Entity** cause that’s dumb. So what we’re gonna have to do is, to make `Task` a GraphQL type.

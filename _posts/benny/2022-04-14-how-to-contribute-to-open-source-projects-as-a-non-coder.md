@@ -5,6 +5,7 @@ excerpt: "In this article, I share what I have discovered about open-source and 
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1634905825976/pjc7Kwv_F.png"
 notice: "Image by [Stories](https://www.freepik.com/stories) and [Alzea Arafat](https://dribbble.com/alzea)."
 audioId: 3996039
+disableAudioPFP: true
 category: open-source
 tags: ["beginners", "open-source", "tips"]
 author: benny

@@ -21,7 +21,13 @@ Here in this article, I am going to share my background in technical writing - f
 
 I was in 8th grade back then, and I was trying to learn android app development from an amazing book by J. F. Dimarzio titled "[Beginning Android Programming with Android Studio](https://amzn.to/3A93YMM)".
 
-[![Beginning Android Development with Android Studio Book](https://cdn.hashnode.com/res/hashnode/image/upload/v1631599770243/LwI6JWpNE.jpeg)](https://amzn.to/3A93YMM)
+<p data-marker="none">
+  <a href="https://amzn.to/3A93YMM">
+    <img
+      alt="Beginning Android Development with Android Studio Book"
+      src="https://cdn.hashnode.com/res/hashnode/image/upload/v1631599770243/LwI6JWpNE.jpeg" />
+  </a>
+</p>
 
 I had also learned basic web dev skills like HTML and CSS. Javascript, or broadly, web dev didn't appeal to me that much so I went to learn native app development. I didn't know about frameworks like Vue or React back then, so that was it.
 

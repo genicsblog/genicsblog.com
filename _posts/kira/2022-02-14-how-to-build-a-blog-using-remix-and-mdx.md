@@ -422,6 +422,7 @@ export default function BlogIndex() {
 ```
 
 This is how our main page looks 🚀
+
 ![](https://imgur.com/pmTnI47.png)
 
 ## 🚀 Deploying to Vercel

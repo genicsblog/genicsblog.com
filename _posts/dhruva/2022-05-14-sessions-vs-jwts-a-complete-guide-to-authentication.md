@@ -14,8 +14,7 @@ Hello, in this post I will go over authentication, various methods to implement 
 
 ## What is Authentication?
 
-Authentication or auth for short is the process where a server recognizes **the identity of a user**. Authorization is then done, to allocate a role to the 
-authenticated user and allocate the required services to that particular user.
+Authentication or auth for short is the process where a server recognizes **the identity of a user**. Authorization is then done, to allocate a role to the authenticated user and allocate the required services to that particular user.
 
 There are 2 ways you can implement auth:
 - Sessions
@@ -35,18 +34,17 @@ The process begins with the client:
 - And sending the e-mail and the hashed password to the server 
 
 Hashing is the process of **scrambling** a value using a key that is sent to an algorithm. **Hashed values can't be decrypted!**
+
 [Argon2](https://argon2.online) is an extremely secure hashing algorithm that can be used to hash passwords.
 
 While validating the credentials, the server hashes the given password, and the hash stored in the database (during register) and compares both of them. If the hashes 
 match, the server then sends a request to the **session store** for the session ID.
 
-A session store is a medium where data related to the logged-in user is stored. It could be in memory or a database. [Redis](https://redis.com) is commonly used 
-as a session store because of its speed. 
+A session store is a medium where data related to the logged-in user is stored. It could be in memory or a database. [Redis](https://redis.com) is commonly used as a session store because of its speed. 
 
 The session data contains anything linked to the user who is logged in. It could be the `userId` or any field that is unique to the user.
 
-This session ID is then sent back to the server, which in turn, sends the ID of the session to the client in the form of a **cookie**. Data on the user can then be accessed
-using this session ID which the store can query.
+This session ID is then sent back to the server, which in turn, sends the ID of the session to the client in the form of a **cookie**. Data on the user can then be accessed using this session ID which the store can query.
 
 To log the user out, you can destroy the cookie and delete the key-value pair associated with the session ID in the store.
 
@@ -55,8 +53,8 @@ Now let's take a look at JSON Web Tokens.
 ## JSON Web Tokens (JWTs)
 
 JWTs take a completely different approach to solving the problem. Authentication is done on the **client-side** here, rather than in the **server** like in sessions. 
-The process can be illustrated in this way:
 
+The process can be illustrated in this way:
 
 ![image.png](https://cdn.hashnode.com/res/hashnode/image/upload/v1652256338392/ET6Zrh480.png)
 

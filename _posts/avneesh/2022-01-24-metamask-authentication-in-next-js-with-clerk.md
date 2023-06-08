@@ -170,8 +170,8 @@ If you click on the user profile, it will show you a popup. You can click on man
 
 When you clicked on manage account, you might have noticed that the URL was completely different and was not looking good. So let's see how to keep users on our site itself!
 
-Create the sign in, sign up, and the user page
-Inside the ```pages``` folder we will create 3 folders named
+Create the sign in, sign up, and the user page. Inside the ```pages``` folder we will create 3 folders named:
+
 - sign-in
 - sign-up
 - user

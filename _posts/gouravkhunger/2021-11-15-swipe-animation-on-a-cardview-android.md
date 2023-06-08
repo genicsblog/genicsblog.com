@@ -4,6 +4,7 @@ title:  "How to Add Swipe Animations to a CardView in an Android App"
 excerpt: "Learn how to add swipe animation to a card view. In this tutorial, we will add a sliding animation to a card view to simulate slide to refresh behaviour."
 image: "https://cdn.hashnode.com/res/hashnode/image/upload/v1636707430801/EOfL2jKCy.gif"
 original: "https://freecodecamp.org/news/add-swipe-animations-to-a-card-view-in-android-app"
+audioId: 3467660
 category: android
 tags: ["animation", "app-development"]
 author: gouravkhunger

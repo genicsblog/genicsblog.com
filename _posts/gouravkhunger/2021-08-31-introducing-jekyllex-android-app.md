@@ -221,7 +221,7 @@ The biggest challenge I faced during development was building the proxy API, whi
 
 I had to look through a lot of articles to understand how Node.js works and how would I get my API to work.
 
-With considerable theoretical help from @[SamJakob](@SamJakob), I got clarity and could proceed to start developing the API.
+With considerable theoretical help from @[SamJakob](https://hashnode.com/@SamJakob), I got clarity and could proceed to start developing the API.
 
 To get user profiles from Auth0 Management API, we first get an access token that can be used to retrieve the profile.
 

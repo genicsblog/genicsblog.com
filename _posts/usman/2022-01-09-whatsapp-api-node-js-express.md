@@ -213,9 +213,7 @@ If the message is sent successfully, the number you entered will receive it and 
 
 ## Conclusion
 
-You can read more about the library here:
-
-[https://wwebjs.dev](https://wwebjs.dev)
+You can read more about the library [here](https://wwebjs.dev).
 
 I hope you enjoyed building out the WhatsApp API using Node.js, Express, and `whatsapp-web.js`.
 
