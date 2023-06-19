@@ -176,7 +176,8 @@ Create the sign in, sign up, and the user page. Inside the ```pages``` folder we
 - sign-up
 - user
 
-Inside all the folders we will create a file named `[[…index]].js`
+Inside all the folders we will create a file named `[[…index]].js`.
+
 Here is the code for all the files-
 
 **`sign-in/[[…index]].js`**

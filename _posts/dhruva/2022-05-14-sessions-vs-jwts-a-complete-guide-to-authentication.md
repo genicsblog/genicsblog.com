@@ -37,8 +37,7 @@ Hashing is the process of **scrambling** a value using a key that is sent to an 
 
 [Argon2](https://argon2.online) is an extremely secure hashing algorithm that can be used to hash passwords.
 
-While validating the credentials, the server hashes the given password, and the hash stored in the database (during register) and compares both of them. If the hashes 
-match, the server then sends a request to the **session store** for the session ID.
+While validating the credentials, the server hashes the given password, and the hash stored in the database (during register) and compares both of them. If the hashes match, the server then sends a request to the **session store** for the session ID.
 
 A session store is a medium where data related to the logged-in user is stored. It could be in memory or a database. [Redis](https://redis.com) is commonly used as a session store because of its speed. 
 
@@ -64,7 +63,9 @@ This token is relayed back to the client and should ideally be stored in a cooki
 
 The JWT can then be used as an **Authorization Header's Bearer Token** that can be used to run queries that require auth. This JWT can be validated in the server during requests. Since the secret remains private a JWT cannot be forged. To log a user out, the cookie can be destroyed. 
 
-To keep the app secure, JWT tokens should be short-lived. Another token called a **refresh token** should be signed on login, which can renew the access token when it expires. When a client sends a request with an expired access token, the server would use the given refresh token and use it to generate a new access token. This way, if an attacker gets hold of an access token, the validity of that token is very short. 
+To keep the app secure, JWT tokens should be short-lived. Another token called a **refresh token** should be signed on login, which can renew the access token when it expires.
+
+When a client sends a request with an expired access token, the server would use the given refresh token and use it to generate a new access token. This way, if an attacker gets hold of an access token, the validity of that token is very short. 
 
 > **Note: Do NOT store JWTs in localStorage!**
 
