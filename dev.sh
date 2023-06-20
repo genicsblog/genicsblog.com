@@ -7,6 +7,7 @@ if [ ! -d ".theme" ]
 then
   echo "No cached '.theme' directory found. Fetching the latest theme files..."
   git clone https://github.com/genicsblog/theme-files .theme -q
+  rm -rf .theme/.git
 fi
 
 rsync -r --exclude '.theme' . .theme/
