@@ -13,9 +13,9 @@ Beginning November 28, 2022, Heroku, one of the most popular go to choice used b
 
 The Platform-as-a-Service (PaaS) provider's free tier used to provide a generous 550 hours of dyno uptime which could be easily extended to 1000 hours with a verified credit card.
 
-Even though these dynos shut down after 30 minutes, it could be resolved by various methods to [keep Heroku apps awake](/gouravkhunger/8-ways-to-keep-your-heroku-app-awake), thus becoming the easiest way to host software project for free.
+Even though these dynos shut down after 30 minutes, it could be resolved by various methods to [keep Heroku apps awake](/gouravkhunger/8-ways-to-keep-your-heroku-app-awake), thus becoming the easiest way to host software projects for free.
 
-The free tier shutdown news left many developers in search for alternative hosting platforms that could provide similar API and website hosting services free of cost. As a result, I have compiled a list of the top 9 free Heroku alternatives to use in 2023.
+The free tier shutdown news left many developers in search for alternative hosting platforms that could provide a similar API and website hosting services free of cost. As a result, I have compiled a list of the top 9 free Heroku alternatives to use in 2023.
 
 While there are many hosting platforms available in the market, these carefully selected services provide the best options for developers to host their Frontend/Backend applications, APIs, Servers, etc.
 
@@ -104,7 +104,7 @@ It provides a simple way for developers to create high-performance websites that
 
 Whether you are building a personal blog or a complex web application, Cloudflare Pages offers a range of features and benefits that make it a great choice for web development.
 
-### Pros:
+### Pros
 
 - Free web hosting for static and dynamic websites, including unlimited bandwidth and custom domain support.
 - Full stack support with serverless functions using Cloudflare Workers.
@@ -115,7 +115,7 @@ Whether you are building a personal blog or a complex web application, Cloudflar
 - Support for popular web frameworks like React, Next.js, Vue.js, Angular, etc.
 - Fast and reliable global content delivery network (CDN) powered by Cloudflare's infrastructure.
 
-### Cons:
+### Cons
 
 - 500 builds per month hard limit.
 - A maximum of 20,000 files per deployment where each file should be less than 25 MiB.
@@ -133,7 +133,7 @@ Vercel is a cloud-based platform that provides users with the most modern UI/UX 
 
 It has become a popular choice among developers who are looking for a platform that can offer serverless deployment, scalability, and performance. With Vercel, developers can easily deploy their code and enjoy fast loading speeds, excellent scalability, and reliability.
 
-### Pros:
+### Pros
 
 - Best for Next.js powered projects.
 - Easy to use dashboard built for fast deployments.
@@ -143,10 +143,10 @@ It has become a popular choice among developers who are looking for a platform t
 - Excellent documentation and community support.
 - [Vercel Sponsorships](https://vercel.com/guides/can-vercel-sponsor-my-open-source-project) for open-source projects.
 
-### Cons:
+### Cons
 
 - Vercel's free plan has [various limitations](https://vercel.com/docs/concepts/limits/overview).
-- Although it supports popular web frameworks like Next.js and Nuxt.js, it is not be the best choice if you require more flexibility and control over your stack.
+- Although it supports popular web frameworks like Next.js and Nuxt.js, it is not the best choice if you require more flexibility and control over your stack.
 - It is a cloud-based platform, which means that developers do not have complete control over the underlying infrastructure and environment.
 - Vercel's recently launched [serverless storage solutions](https://vercel.com/blog/vercel-storage) are relatively new.
 
@@ -181,7 +181,6 @@ Render is a powerful cloud platform designed to simplify the process of building
 - Render offers a generous free tier with ample resources, including free SSL certificates and custom domain support.
 - Automatic scaling and zero-downtime deployments, ensuring your website or application can handle traffic spikes and updates without interruption.
 - Support for a wide range of programming languages and frameworks like Node, Python, Go, Rust, PHP, Elixir, Docker, etc.
-- Generous [free tier limits](https://render.com/docs/free#free-web-services) to host applications.
 
 ### Cons
 
@@ -190,7 +189,7 @@ Render is a powerful cloud platform designed to simplify the process of building
 
 ## 8. Cyclic
 
-Cyclic is designed to streamline your DevOps workflows and revolutionize the way you approach continuous integration and deployment. With Cyclic.sh, developers can harness the power of automation to build, test, and deploy their applications effortlessly.
+Cyclic is designed to streamline your DevOps workflows and revolutionize the way you approach continuous integration and deployment. With Cyclic, developers can harness the power of automation to build, test, and deploy their applications effortlessly.
 
 {% include linkpreview.html url="https://cyclic.sh" %}
 
@@ -198,7 +197,7 @@ Cyclic is designed to streamline your DevOps workflows and revolutionize the way
 
 - Apps on Cyclic do not sleep even on the free tier.
 - Cyclic's smart caching technology delivers the best performance globally.
-- Features cron jobs technology with 1 second precision triggering.
+- Features its cron jobs technology with 1 second precision triggering.
 - Easily scalable.
 
 ### Cons
