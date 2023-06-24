@@ -1,9 +1,9 @@
 gouravkhunger:
   name: "Gourav Khunger"
-  birthdate: "26-06-2005" # Required for `{ age }` in bio to be substituted
+  # birthdate: "DD-MM-YYYY" # Required for `{ age }` string in bio to be substituted
   role: "Founder @ Genics Blog"
   avatar: "https://avatars.githubusercontent.com/u/46792249"
-  bio: "{ age }; Google AAD; Software Developer (Android + Web); Technical Writer; YouTuber"
+  bio: "Google Certified AAD; Software Developer (Android + Web); Technical Writer; YouTuber"
   links:
     stackoverflow: "9819031"
     github: "gouravkhunger"
