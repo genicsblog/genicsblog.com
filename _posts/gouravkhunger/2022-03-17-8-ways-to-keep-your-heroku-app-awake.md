@@ -8,6 +8,10 @@ category: web
 tags: ["web-development", "tools"]
 author: gouravkhunger
 permalink: /gouravkhunger/8-ways-to-keep-your-heroku-app-awake
+notice: >-
+    **NOTE**: As of November 28, 2022, Heroku has shut down their free plan and deleted dynos on the free tier.
+
+    Please refer the [9 Hand Picked **FREE Heroku Alternatives**](/gouravkhunger/9-hand-picked-free-heroku-alternative-hosting-platforms) guide to find the best alternatives to host your projects for free!
 ---
 
 Heroku is one of the easiest ways to quickly get your applications up and running on the web!
