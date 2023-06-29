@@ -18,7 +18,18 @@ jobs:
       with:
         fetch-depth: 1
 
+    - uses: dorny/paths-filter@v2
+      id: changes
+      with:
+        filters: |
+          files:
+            - '_data/**'
+            - '_posts/**'
+            - '_drafts/**'
+            - '_series/**'
+
     - name: Checkout theme-files repo
+      if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       uses: actions/checkout@v3
       with:
         repository: genicsblog/theme-files
@@ -26,6 +37,7 @@ jobs:
         fetch-depth: 1
 
     - name: Setup theme and necessary files
+      if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       run: |
         mv theme/* .
         rm -rf theme
@@ -35,25 +47,14 @@ jobs:
         echo "AWG.LA, 22950318798, DIRECT" >> ads.txt
         echo "google.com, pub-9130183266015225, RESELLER, f08c47fec0942fa0" >> ads.txt
 
-    - uses: dorny/paths-filter@v2
-      id: changes
-      with:
-        filters: |
-          files:
-            - '_data/**'
-            - '_drafts/**'
-            - '_pages/**'
-            - '_posts/**'
-            - '_series/**'
-            - '_tools/**'
-            - '_config.yml'
-
     - uses: ruby/setup-ruby@v1
+      if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       with:
         ruby-version: 2.7.5
         bundler-cache: true
 
     - uses: actions/setup-node@v2
+      if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
       with:
         node-version: '16'
 
@@ -62,7 +63,7 @@ jobs:
       run: npm install
 
     - name: Restore/cache .jekyll-cache folder
-      if: github.event_name == 'push' || github.event.inputs.cache == 'false'
+      if: steps.changes.outputs.files == 'true' || github.event.inputs.cache == 'false'
       id: jekyll-cache
       uses: actions/cache@v3
       with:
