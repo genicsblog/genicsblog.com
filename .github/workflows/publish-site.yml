@@ -77,11 +77,12 @@ jobs:
         BEYONDWORDS_API_KEY: ${{ secrets.BEYONDWORDS_API_KEY }}
         BEYONDWORDS_PROJECT_ID: ${{ secrets.BEYONDWORDS_PROJECT_ID }}
 
-    - name: Deploy to gh-pages
+    - name: Deploy site
       if: steps.changes.outputs.files == 'true' || github.event_name == 'workflow_dispatch'
-      uses: peaceiris/actions-gh-pages@v3
+      uses: cloudflare/pages-action@1
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: _site
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+        directory: '_site'
+        projectName: 'genicsblog'
+        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
