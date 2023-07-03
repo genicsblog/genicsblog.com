@@ -17,6 +17,10 @@ Even though these dynos shut down after 30 minutes, it could be resolved by vari
 
 The free tier shutdown news left many developers in search for alternative hosting platforms that could provide a similar API and website hosting services free of cost. As a result, I have compiled a list of the top 9 free Heroku alternatives to use in 2023.
 
+If you are interested in watching a video format of this article, check this out:
+
+{% include youtube.html id="XOcrXqvTyOI" %}
+
 While there are many hosting platforms available in the market, these carefully selected services provide the best options for developers to host their Frontend/Backend applications, APIs, Servers, etc.
 
 These alternatives offer features similar to Heroku, such as support for multiple programming languages, easy deployment, and scalability. So whether you are a seasoned developer or just getting started, keep reading to discover the top free Heroku alternative hosting platforms:
