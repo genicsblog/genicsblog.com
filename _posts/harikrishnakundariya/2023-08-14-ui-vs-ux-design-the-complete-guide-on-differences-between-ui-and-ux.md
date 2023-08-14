@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "UI vs UX Design: The Complete Guide on Differences Between UI and UX"
-excerpt: "A demo draft that you can refer to, for creating draft posts at Genics Blog."
+excerpt: "Discover the difference between UI and UX design and their impact on your digital product. Learn how to enhance website usability with user-centered UI and UX design in this informative article."
 image: "https://github-production-user-asset-6210df.s3.amazonaws.com/46792249/258579843-efbeeb67-39ef-4cb0-89e4-36829ec07a22.jpeg"
+audioId: 2118e0a0-91a1-4c81-9c39-0d20e4c77a6d
 category: frontend
 tags: ["design", "a11y", "web-development"]
 author: harikrishnakundariya
