@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Showcase GitHub Network Dependents in the README"
-image: "https://dependents.info/images/social-preview.png"
+image: "https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ha0p5gbw0mt3xqsji7nx.png"
 excerpt: "Easily showcase a live image of GitHub network dependents (repository users) in your project's readme file."
 audioId: "3a3eae44-9913-406e-a6e4-794751051647"
+optimizeImages: false
 category: open-source
 tags: ["libraries", "tools"]
 author: gouravkhunger
@@ -17,7 +18,7 @@ Unfortunately, this info is only visible if **100+ repositories** depend on your
 
 That sucks because I maintain several open source libraries like [jekyll-auto-authors](https://github.com/gouravkhunger/jekyll-auto-authors) that have dozens of real users and I'd love to showcase that information despite the thresholds.
 
-So I built [dependents.info](https://dependents.info) — a simple tool that shows your network dependents right inside your README!
+So I built [dependents.info](https://dependents.info){:rel="dofollow"} — a simple tool that shows your network dependents right inside your README!
 
 ## Live demo
 
@@ -92,8 +93,8 @@ As soon as you push these changes, you'll see the image inserted automatically!
 
 ## See It Live
 
-- Website: https://dependents.info
-- GitHub: https://github.com/gouravkhunger/dependents.info
+- Website: [dependents.info](https://dependents.info)
+- GitHub: [gouravkhunger/dependents.info](https://github.com/gouravkhunger/dependents.info)
 
 > Got ideas or feature requests? Drop them on the repo — contributions and feedback are super welcome.
 
